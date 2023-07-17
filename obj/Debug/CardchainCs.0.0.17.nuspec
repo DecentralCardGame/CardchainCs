@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CardchainCs</id>
+    <version>0.0.17</version>
+    <authors>lxgr</authors>
+    <license type="expression">GPL-3.0-only</license>
+    <licenseUrl>https://licenses.nuget.org/GPL-3.0-only</licenseUrl>
+    <readme>README.md</readme>
+    <description>A C# client library for cosmos-sdk blockchains</description>
+    <repository url="https://github.com/decentralcardgame/cosmcs" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="Cosmcs" version="0.0.17" exclude="Build,Analyzers" />
+        <dependency id="Google.Protobuf" version="3.23.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/arch/projects/CardchainCs/bin/Debug/net6.0/CardchainCs.dll" target="lib/net6.0/CardchainCs.dll" />
+    <file src="/home/arch/projects/CardchainCs/README.md" target="/README.md" />
+  </files>
+</package>

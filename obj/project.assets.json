@@ -5,14 +5,10 @@
       "CardanoBech32/0.9.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/CardanoBech32.dll": {
-            "related": ".pdb"
-          }
+          "lib/netstandard2.0/CardanoBech32.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/CardanoBech32.dll": {
-            "related": ".pdb"
-          }
+          "lib/netstandard2.0/CardanoBech32.dll": {}
         }
       },
       "Cosmcs/0.0.17": {
@@ -64,14 +60,10 @@
       "Google.Protobuf/3.23.3": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Google.Protobuf.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net5.0/Google.Protobuf.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Google.Protobuf.dll": {
-            "related": ".pdb;.xml"
-          }
+          "lib/net5.0/Google.Protobuf.dll": {}
         }
       },
       "RIPEMD160/1.0.0": {
@@ -198,7 +190,7 @@
     "/home/arch/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "0.0.1",
     "restore": {
       "projectUniqueName": "/home/arch/projects/CardchainCs/CardchainCs.csproj",
       "projectName": "CardchainCs",

@@ -1,15 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<PackageId>CardchainCs</PackageId>
+		<Version>0.0.1</Version>
+		<Authors>lxgr</Authors>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageDescription>A C# client library for cosmos-sdk blockchains</PackageDescription>
+		<RepositoryUrl>https://github.com/decentralcardgame/CardchainCs</RepositoryUrl>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Cosmcs" Version="0.0.17" />
-    <PackageReference Include="Google.Protobuf" Version="3.23.3" />
-  </ItemGroup>
+	<PropertyGroup>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	<PropertyGroup>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Cosmcs" Version="0.0.17" />
+		<PackageReference Include="Google.Protobuf" Version="3.23.3" />
+	</ItemGroup>
 
 </Project>
+

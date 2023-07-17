@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "CardchainCs/1.0.0": {
+      "CardchainCs/0.0.1": {
         "dependencies": {
           "Cosmcs": "0.0.17",
           "Google.Protobuf": "3.23.3"
@@ -84,7 +84,7 @@
     }
   },
   "libraries": {
-    "CardchainCs/1.0.0": {
+    "CardchainCs/0.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
