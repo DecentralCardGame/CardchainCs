@@ -8,9 +8,6 @@
 /home/arch/projects/CardchainCs/bin/Debug/net6.0/Ed25519.dll
 /home/arch/projects/CardchainCs/bin/Debug/net6.0/Encrypter.dll
 /home/arch/projects/CardchainCs/bin/Debug/net6.0/Google.Protobuf.dll
-/home/arch/projects/CardchainCs/bin/Debug/net6.0/Newtonsoft.Json.dll
-/home/arch/projects/CardchainCs/bin/Debug/net6.0/Phantasma.Tendermint.RPC.dll
-/home/arch/projects/CardchainCs/bin/Debug/net6.0/RestSharp.dll
 /home/arch/projects/CardchainCs/bin/Debug/net6.0/RIPEMD160.dll
 /home/arch/projects/CardchainCs/obj/Debug/net6.0/CardchainCs.csproj.AssemblyReference.cache
 /home/arch/projects/CardchainCs/obj/Debug/net6.0/CardchainCs.GeneratedMSBuildEditorConfig.editorconfig

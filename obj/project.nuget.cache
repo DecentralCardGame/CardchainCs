@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SI2wbHaNSyNcvOMd8fp4LvcPyT6vOmxLlOpk0PPDAGv8p0Ejj/M6IDKH0yVutD93V0abUgjDtpQrdb9odoNG5Q==",
+  "dgSpecHash": "KLcSJdA6VFOqc2xGXQUS6jf4upC7nqsJDAJNM9H//SMXWS3TecBgaxE4Q2audQavC4Qp8QIWcHP2cDHrP2ZpaA==",
   "success": true,
   "projectFilePath": "/home/arch/projects/CardchainCs/CardchainCs.csproj",
   "expectedPackageFiles": [
@@ -10,9 +10,6 @@
     "/home/arch/.nuget/packages/ed25519/1.0.0/ed25519.1.0.0.nupkg.sha512",
     "/home/arch/.nuget/packages/encrypter/1.0.0/encrypter.1.0.0.nupkg.sha512",
     "/home/arch/.nuget/packages/google.protobuf/3.23.3/google.protobuf.3.23.3.nupkg.sha512",
-    "/home/arch/.nuget/packages/newtonsoft.json/12.0.1/newtonsoft.json.12.0.1.nupkg.sha512",
-    "/home/arch/.nuget/packages/phantasma.tendermint.rpc/1.0.6/phantasma.tendermint.rpc.1.0.6.nupkg.sha512",
-    "/home/arch/.nuget/packages/restsharp/106.6.9/restsharp.106.6.9.nupkg.sha512",
     "/home/arch/.nuget/packages/ripemd160/1.0.0/ripemd160.1.0.0.nupkg.sha512",
     "/home/arch/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.19/microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512"
   ],

@@ -98,21 +98,19 @@ public class CardchainClient
 		);
 	}
 
-	public Task<string> SendMsgExecMsgReportMatch(string playerA, string playerB, ulong[] cardsA, ulong[] cardsB)
+	public Task<string> SendMsgExecMsgConfirmMatch(ulong matchId, Outcome outcome)
 	{
-		var msg = new MsgReportMatch
+		var msg = new MsgConfirmMatch()
 		{
 			Creator = AccoutAddress.ToString(),
-			PlayerA = playerA,
-			PlayerB = playerB,
+			MatchId = matchId,
+			Outcome = outcome,
 		};
-		msg.CardsA.AddRange(cardsA);
-		msg.CardsB.AddRange(cardsB);
 
 		return SendMsgExec(new Any
 			{
 				Value = msg.ToByteString(),
-				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgReportMatch"
+				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConfirmMatch"
 			}
 		);
 	}
@@ -130,6 +128,26 @@ public class CardchainClient
 			{
 				Value = msg.ToByteString(),
 				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
+			}
+		);
+	}
+
+	public Task<string> MsgReportMatch(string playerA, string playerB, ulong[] cardsA, ulong[] cardsB, Outcome outcome)
+	{
+		var msg = new MsgReportMatch
+		{
+			Creator = AccoutAddress.ToString(),
+			PlayerA = playerA,
+			PlayerB = playerB,
+			Outcome = outcome,
+		};
+		msg.CardsA.AddRange(cardsA);
+		msg.CardsB.AddRange(cardsB);
+
+		return BuildAndBroadcast(new Any
+			{
+				Value = msg.ToByteString(),
+				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgReportMatch"
 			}
 		);
 	}

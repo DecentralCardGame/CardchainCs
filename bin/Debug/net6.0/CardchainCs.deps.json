@@ -9,8 +9,7 @@
       "CardchainCs/1.0.0": {
         "dependencies": {
           "Cosmcs": "0.0.17",
-          "Google.Protobuf": "3.23.3",
-          "Phantasma.Tendermint.RPC": "1.0.6"
+          "Google.Protobuf": "3.23.3"
         },
         "runtime": {
           "CardchainCs.dll": {}
@@ -74,35 +73,6 @@
           }
         }
       },
-      "Newtonsoft.Json/12.0.1": {
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.1.22727"
-          }
-        }
-      },
-      "Phantasma.Tendermint.RPC/1.0.6": {
-        "dependencies": {
-          "Google.Protobuf": "3.23.3",
-          "Newtonsoft.Json": "12.0.1",
-          "RestSharp": "106.6.9"
-        },
-        "runtime": {
-          "lib/net6.0/Phantasma.Tendermint.RPC.dll": {
-            "assemblyVersion": "1.0.6.0",
-            "fileVersion": "1.0.6.0"
-          }
-        }
-      },
-      "RestSharp/106.6.9": {
-        "runtime": {
-          "lib/netstandard2.0/RestSharp.dll": {
-            "assemblyVersion": "106.6.9.0",
-            "fileVersion": "106.6.9.0"
-          }
-        }
-      },
       "RIPEMD160/1.0.0": {
         "runtime": {
           "lib/netcoreapp2.0/RIPEMD160.dll": {
@@ -160,27 +130,6 @@
       "sha512": "sha512-CH/9X2w7zTYyZjGCMDlfi3ZaB1HZ3BM35XUm4WADcNWQuT5QttjE2BQ+ydSROaZ1JEJ5p7gh1LKIbf9hoWrFNA==",
       "path": "google.protobuf/3.23.3",
       "hashPath": "google.protobuf.3.23.3.nupkg.sha512"
-    },
-    "Newtonsoft.Json/12.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
-      "path": "newtonsoft.json/12.0.1",
-      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
-    },
-    "Phantasma.Tendermint.RPC/1.0.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TkvQtkI/QoDebG5lW8oYSib/o7zK5lTNwjDGj7sSsShxBihrBLnq7FN7ab7e3Ee+H4f62kzBS5jYg/5NtBABqg==",
-      "path": "phantasma.tendermint.rpc/1.0.6",
-      "hashPath": "phantasma.tendermint.rpc.1.0.6.nupkg.sha512"
-    },
-    "RestSharp/106.6.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/IAQTwlnlQcjlIyvelf+rhQcCRPy/r/0MftpNbff/D7PZVnmVXE4AnHk/F4NJJJEZbI4M+QTglB+xFkAyzr+9A==",
-      "path": "restsharp/106.6.9",
-      "hashPath": "restsharp.106.6.9.nupkg.sha512"
     },
     "RIPEMD160/1.0.0": {
       "type": "package",

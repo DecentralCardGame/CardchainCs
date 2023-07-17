@@ -5,10 +5,14 @@
       "CardanoBech32/0.9.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/CardanoBech32.dll": {}
+          "lib/netstandard2.0/CardanoBech32.dll": {
+            "related": ".pdb"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/CardanoBech32.dll": {}
+          "lib/netstandard2.0/CardanoBech32.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "Cosmcs/0.0.17": {
@@ -60,42 +64,14 @@
       "Google.Protobuf/3.23.3": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Google.Protobuf.dll": {}
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0/Google.Protobuf.dll": {}
-        }
-      },
-      "Newtonsoft.Json/12.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Phantasma.Tendermint.RPC/1.0.6": {
-        "type": "package",
-        "dependencies": {
-          "Google.Protobuf": "3.15.0",
-          "Newtonsoft.Json": "12.0.1",
-          "RestSharp": "106.6.9"
-        },
-        "compile": {
-          "lib/net6.0/Phantasma.Tendermint.RPC.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Phantasma.Tendermint.RPC.dll": {}
-        }
-      },
-      "RestSharp/106.6.9": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/RestSharp.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/RestSharp.dll": {}
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "RIPEMD160/1.0.0": {
@@ -199,73 +175,6 @@
         "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
-    "Newtonsoft.Json/12.0.1": {
-      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.pdb",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.pdb",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.pdb",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.pdb",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.pdb",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.pdb",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.pdb",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.1.nupkg.sha512",
-        "newtonsoft.json.nuspec"
-      ]
-    },
-    "Phantasma.Tendermint.RPC/1.0.6": {
-      "sha512": "TkvQtkI/QoDebG5lW8oYSib/o7zK5lTNwjDGj7sSsShxBihrBLnq7FN7ab7e3Ee+H4f62kzBS5jYg/5NtBABqg==",
-      "type": "package",
-      "path": "phantasma.tendermint.rpc/1.0.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Phantasma.Tendermint.RPC.dll",
-        "logo.png",
-        "phantasma.tendermint.rpc.1.0.6.nupkg.sha512",
-        "phantasma.tendermint.rpc.nuspec"
-      ]
-    },
-    "RestSharp/106.6.9": {
-      "sha512": "/IAQTwlnlQcjlIyvelf+rhQcCRPy/r/0MftpNbff/D7PZVnmVXE4AnHk/F4NJJJEZbI4M+QTglB+xFkAyzr+9A==",
-      "type": "package",
-      "path": "restsharp/106.6.9",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/RestSharp.dll",
-        "lib/net452/RestSharp.xml",
-        "lib/netstandard2.0/RestSharp.dll",
-        "lib/netstandard2.0/RestSharp.xml",
-        "restsharp.106.6.9.nupkg.sha512",
-        "restsharp.nuspec"
-      ]
-    },
     "RIPEMD160/1.0.0": {
       "sha512": "7E+oKx+nalm9wuE1Adze0QRRjYvF8VMBay4ZHdN0i8l2XhsczvG0I4FmUteH1tcaFQ1wsBhZCtj2pf8C1Ofy3Q==",
       "type": "package",
@@ -282,8 +191,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Cosmcs >= 0.0.17",
-      "Google.Protobuf >= 3.23.3",
-      "Phantasma.Tendermint.RPC >= 1.0.6"
+      "Google.Protobuf >= 3.23.3"
     ]
   },
   "packageFolders": {
@@ -330,10 +238,6 @@
           "Google.Protobuf": {
             "target": "Package",
             "version": "[3.23.3, )"
-          },
-          "Phantasma.Tendermint.RPC": {
-            "target": "Package",
-            "version": "[1.0.6, )"
           }
         },
         "imports": [
