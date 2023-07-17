@@ -100,16 +100,14 @@ public class CardchainClient
 
 	public Task<string> SendMsgExecMsgConfirmMatch(ulong matchId, Outcome outcome)
 	{
-		var msg = new MsgConfirmMatch()
-		{
-			Creator = AccoutAddress.ToString(),
-			MatchId = matchId,
-			Outcome = outcome,
-		};
-
 		return SendMsgExec(new Any
 			{
-				Value = msg.ToByteString(),
+				Value = new MsgConfirmMatch
+				{
+					Creator = AccoutAddress.ToString(),
+					MatchId = matchId,
+					Outcome = outcome,
+				}.ToByteString(),
 				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConfirmMatch"
 			}
 		);
