@@ -116,4 +116,21 @@ public class CardchainClient
 			}
 		);
 	}
+
+	public Task<string> SendMsgExecMsgVoteCard(ulong cardId, string voteType)
+	{
+		var msg = new MsgVoteCard
+		{
+			Creator = AccoutAddress.ToString(),
+			CardId = cardId,
+			VoteType = voteType,
+		};
+
+		return SendMsgExec(new Any
+			{
+				Value = msg.ToByteString(),
+				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
+			}
+		);
+	}
 }
