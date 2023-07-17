@@ -17,15 +17,17 @@ public class CardchainClient
 	public JsonParser Parser { get; }
 	public PrivateKey PrivateKey { get; }
 	public BaseAccount BaseAccount { get; }
-	public AccountId AccoutAddress {get;}
+	public AccountId AccoutAddress { get; }
+	public string ChainId { get; }
 
-	public CardchainClient(string baseUrl, byte[] bytes)
+	public CardchainClient(string baseUrl, string chainId, byte[] bytes)
 	{
 		var reg = TypeRegistry.FromFiles(
 			Cosmos.Auth.V1beta1.QueryReflection.Descriptor,
 			Cosmos.Crypto.Secp256k1.KeysReflection.Descriptor,
-			DecentralCardGame.Cardchain.Cardchain.TxReflection.Descriptor
+			TxReflection.Descriptor
 		);
+		ChainId = chainId;
 		Parser = new JsonParser(new JsonParser.Settings(20, reg));
 		Formatter = new JsonFormatter(new JsonFormatter.Settings(true, reg));
 		Broadcaster = new DefaultBroadcaster(baseUrl, Formatter, Parser);
@@ -43,14 +45,14 @@ public class CardchainClient
 		);
 	}
 
-	private HttpContent BuildAndBroadcast(Any msg)
+	private Task<string> BuildAndBroadcast(Any msg)
 	{
 		var fee = new Fee(200_000);
 		var body = new Builder().AddMsgs(new List<Any> { msg }).SetMemo("").Finish();
 		var authInfo = new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(fee);
-		var signDoc = new SignDoc(body, authInfo, "Testnet3", BaseAccount.AccountNumber);
+		var signDoc = new SignDoc(body, authInfo, ChainId, BaseAccount.AccountNumber);
 		var txRaw = signDoc.Sign(PrivateKey);
-		return txRaw.BroadcastCommit(Broadcaster).Result;
+		return txRaw.BroadcastCommit(Broadcaster).Result.ReadAsStringAsync();
 	}
 
 	public Task<Cosmos.Auth.V1beta1.QueryAccountResponse> QueryAccount(string addr)
@@ -62,7 +64,7 @@ public class CardchainClient
 		);
 	}
 
-	public HttpContent SendMsgBuyCardScheme(string bidAmout, string bidDenom)
+	public Task<string> SendMsgBuyCardScheme(string bidAmout, string bidDenom)
 	{
 		return BuildAndBroadcast(
 			new Any
@@ -77,6 +79,40 @@ public class CardchainClient
 					}
 				}.ToByteString(),
 				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCardScheme"
+			}
+		);
+	}
+
+	public Task<string> SendMsgExec(Any msg)
+	{
+		return BuildAndBroadcast(
+			new Any
+			{
+				Value = new Cosmos.Authz.V1beta1.MsgExec
+				{
+					Grantee = AccoutAddress.ToString(),
+					Msgs = { msg }
+				}.ToByteString(),
+				TypeUrl = "/cosmos.authz.v1beta1.MsgExec"
+			}
+		);
+	}
+
+	public Task<string> SendMsgExecMsgReportMatch(string playerA, string playerB, ulong[] cardsA, ulong[] cardsB)
+	{
+		var msg = new MsgReportMatch
+		{
+			Creator = AccoutAddress.ToString(),
+			PlayerA = playerA,
+			PlayerB = playerB,
+		};
+		msg.CardsA.AddRange(cardsA);
+		msg.CardsB.AddRange(cardsB);
+
+		return SendMsgExec(new Any
+			{
+				Value = msg.ToByteString(),
+				TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgReportMatch"
 			}
 		);
 	}
