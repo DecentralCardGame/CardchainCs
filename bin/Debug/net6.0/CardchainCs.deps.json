@@ -1,0 +1,193 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CardchainCs/1.0.0": {
+        "dependencies": {
+          "Cosmcs": "0.0.17",
+          "Google.Protobuf": "3.23.3",
+          "Phantasma.Tendermint.RPC": "1.0.6"
+        },
+        "runtime": {
+          "CardchainCs.dll": {}
+        }
+      },
+      "CardanoBech32/0.9.1": {
+        "runtime": {
+          "lib/netstandard2.0/CardanoBech32.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Cosmcs/0.0.17": {
+        "dependencies": {
+          "CardanoBech32": "0.9.1",
+          "Cryptography.ECDSA.Secp256K1": "1.1.3",
+          "Ed25519": "1.0.0",
+          "Google.Protobuf": "3.23.3",
+          "RIPEMD160": "1.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Cosmcs.dll": {
+            "assemblyVersion": "0.0.17.0",
+            "fileVersion": "0.0.17.0"
+          }
+        }
+      },
+      "Cryptography.ECDSA.Secp256K1/1.1.3": {
+        "runtime": {
+          "lib/netstandard2.0/Cryptography.ECDSA.dll": {
+            "assemblyVersion": "1.1.3.0",
+            "fileVersion": "1.1.3.0"
+          }
+        }
+      },
+      "Ed25519/1.0.0": {
+        "dependencies": {
+          "Encrypter": "1.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Ed25519.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Encrypter/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Encrypter.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.23.3": {
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.23.3.0",
+            "fileVersion": "3.23.3.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
+          }
+        }
+      },
+      "Phantasma.Tendermint.RPC/1.0.6": {
+        "dependencies": {
+          "Google.Protobuf": "3.23.3",
+          "Newtonsoft.Json": "12.0.1",
+          "RestSharp": "106.6.9"
+        },
+        "runtime": {
+          "lib/net6.0/Phantasma.Tendermint.RPC.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
+      "RestSharp/106.6.9": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.6.9.0",
+            "fileVersion": "106.6.9.0"
+          }
+        }
+      },
+      "RIPEMD160/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/RIPEMD160.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CardchainCs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CardanoBech32/0.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IG1re596uzkRiwkAnG7BuW7BKBkqN1S88iT8bVnoTUImJqfRpDGOJyheLDbEJ7JaK36jYdsRJrRPxZ4BjR7XKA==",
+      "path": "cardanobech32/0.9.1",
+      "hashPath": "cardanobech32.0.9.1.nupkg.sha512"
+    },
+    "Cosmcs/0.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sj82K71vAk1ycbkQC6zUB/ncIiZb0RcuNDrmAtWXpfarrLV/Yc15SsBisFS9Y7DMInZRkiaIK4CWpcgG22lF2w==",
+      "path": "cosmcs/0.0.17",
+      "hashPath": "cosmcs.0.0.17.nupkg.sha512"
+    },
+    "Cryptography.ECDSA.Secp256K1/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-imHmS/4npo6AzcUA7KpXehZIUq8h7iBRJsvEK/pwH6ysVJUow7bWft9yrODSgq5SYuFm8aYhsSCODFvDKq7dUQ==",
+      "path": "cryptography.ecdsa.secp256k1/1.1.3",
+      "hashPath": "cryptography.ecdsa.secp256k1.1.1.3.nupkg.sha512"
+    },
+    "Ed25519/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uzSS6iLQMZ9nRYSU8t8ns30yntyJciTEavk04F5Fz3BhM5wyx61zNDoH++JBlLXMt3giY3NF1oYtU+YQXPSodg==",
+      "path": "ed25519/1.0.0",
+      "hashPath": "ed25519.1.0.0.nupkg.sha512"
+    },
+    "Encrypter/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5UKc7lpjQA3tf7Y0ZkTt8XZz6ZdYQEeCTJcGFdVd355VfRZhjqitrC1JlN0XHx5XCQTwiNIt999xrQwnaZPj3g==",
+      "path": "encrypter/1.0.0",
+      "hashPath": "encrypter.1.0.0.nupkg.sha512"
+    },
+    "Google.Protobuf/3.23.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CH/9X2w7zTYyZjGCMDlfi3ZaB1HZ3BM35XUm4WADcNWQuT5QttjE2BQ+ydSROaZ1JEJ5p7gh1LKIbf9hoWrFNA==",
+      "path": "google.protobuf/3.23.3",
+      "hashPath": "google.protobuf.3.23.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
+    },
+    "Phantasma.Tendermint.RPC/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TkvQtkI/QoDebG5lW8oYSib/o7zK5lTNwjDGj7sSsShxBihrBLnq7FN7ab7e3Ee+H4f62kzBS5jYg/5NtBABqg==",
+      "path": "phantasma.tendermint.rpc/1.0.6",
+      "hashPath": "phantasma.tendermint.rpc.1.0.6.nupkg.sha512"
+    },
+    "RestSharp/106.6.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/IAQTwlnlQcjlIyvelf+rhQcCRPy/r/0MftpNbff/D7PZVnmVXE4AnHk/F4NJJJEZbI4M+QTglB+xFkAyzr+9A==",
+      "path": "restsharp/106.6.9",
+      "hashPath": "restsharp.106.6.9.nupkg.sha512"
+    },
+    "RIPEMD160/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7E+oKx+nalm9wuE1Adze0QRRjYvF8VMBay4ZHdN0i8l2XhsczvG0I4FmUteH1tcaFQ1wsBhZCtj2pf8C1Ofy3Q==",
+      "path": "ripemd160/1.0.0",
+      "hashPath": "ripemd160.1.0.0.nupkg.sha512"
+    }
+  }
+}
