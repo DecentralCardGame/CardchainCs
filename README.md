@@ -17,3 +17,10 @@ byte[] hex = new byte[32]
 var ccClient = new CardchainClient("http://localhost:1317/", "Testnet3", hex);
 Console.Out.WriteLine(ccClient.SendMsgBuyCardScheme("10000000000000000000", "ucredits").Result);
 ```
+
+## Development
+### Build proto
+```bash
+git submodule sync
+./gen_proto.sh
+```
