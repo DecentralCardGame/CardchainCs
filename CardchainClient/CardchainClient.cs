@@ -35,16 +35,22 @@ namespace CardchainCs.CardchainClient
             Formatter = new JsonFormatter(new JsonFormatter.Settings(true, reg));
             Broadcaster = new DefaultBroadcaster(baseUrl, Formatter, Parser);
             PrivateKey = new PrivateKey(bytes);
-            AccoutAddress = PrivateKey.PublicKey().AccountId("cc");
-            BaseAccount = GetBaseAccount();
+            var pubkey = PrivateKey.PublicKey();
+            AccoutAddress = pubkey.AccountId("cc");
+            var queriedBaseAccount = GetBaseAccount();
+            BaseAccount = new BaseAccount(
+                AccoutAddress, pubkey, queriedBaseAccount.AccountNumber,
+                queriedBaseAccount.Sequence
+            );
         }
 
         private BaseAccount GetBaseAccount()
         {
+            var data = Cosmos.Auth.V1beta1.BaseAccount.Parser.ParseFrom(
+                QueryAccount(AccoutAddress.ToString()).Result.Account.Value
+            );
             return BaseAccount.FromProto(
-                Cosmos.Auth.V1beta1.BaseAccount.Parser.ParseFrom(
-                    QueryAccount(AccoutAddress.ToString()).Result.Account.Value
-                )
+                data
             );
         }
 
