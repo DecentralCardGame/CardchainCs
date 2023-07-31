@@ -1,10 +1,5 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Cosmcs.Auth;
-using Cosmcs.Base;
-using Cosmcs.Broadcaster;
-using Cosmcs.Crypto.Secp256k1;
-using Cosmcs.Tx;
+using Cosmcs.Client;
 using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
@@ -15,13 +10,9 @@ namespace CardchainCs.CardchainClient
 {
     public class CardchainClient
     {
-        public DefaultBroadcaster Broadcaster { get; }
-        public JsonFormatter Formatter { get; }
-        public JsonParser Parser { get; }
-        public PrivateKey PrivateKey { get; }
-        public BaseAccount BaseAccount { get; }
-        public AccountId AccoutAddress { get; }
-        public string ChainId { get; }
+        public EasyClient Ec { get; }
+        public DecentralCardGame.Cardchain.Cardchain.MsgClient CcModuleClient { get; }
+        public Cosmos.Authz.V1beta1.MsgClient AuthzClient { get; }
 
         public CardchainClient(string baseUrl, string chainId, byte[] bytes)
         {
@@ -30,80 +21,31 @@ namespace CardchainCs.CardchainClient
                 Cosmos.Crypto.Secp256k1.KeysReflection.Descriptor,
                 TxReflection.Descriptor
             );
-            ChainId = chainId;
-            Parser = new JsonParser(new JsonParser.Settings(20, reg));
-            Formatter = new JsonFormatter(new JsonFormatter.Settings(true, reg));
-            Broadcaster = new DefaultBroadcaster(baseUrl, Formatter, Parser);
-            PrivateKey = new PrivateKey(bytes);
-            var pubkey = PrivateKey.PublicKey();
-            AccoutAddress = pubkey.AccountId("cc");
-            var queriedBaseAccount = GetBaseAccount();
-            BaseAccount = new BaseAccount(
-                AccoutAddress, pubkey, queriedBaseAccount.AccountNumber,
-                queriedBaseAccount.Sequence
-            );
-        }
-
-        private BaseAccount GetBaseAccount()
-        {
-            var data = Cosmos.Auth.V1beta1.BaseAccount.Parser.ParseFrom(
-                QueryAccount(AccoutAddress.ToString()).Result.Account.Value
-            );
-            return BaseAccount.FromProto(
-                data
-            );
-        }
-
-        private Task<string> BuildAndBroadcast(Any msg)
-        {
-            var fee = new Fee(200_000);
-            var body = new Builder().AddMsgs(new List<Any> { msg }).SetMemo("").Finish();
-            var authInfo =
-                new SignerInfo(PrivateKey.PublicKey().IntoSignerPublicKey(), BaseAccount.Sequence).AuthInfo(fee);
-            var signDoc = new SignDoc(body, authInfo, ChainId, BaseAccount.AccountNumber);
-            var txRaw = signDoc.Sign(PrivateKey);
-            return txRaw.BroadcastCommit(Broadcaster).Result.ReadAsStringAsync();
-        }
-
-        public Task<Cosmos.Auth.V1beta1.QueryAccountResponse> QueryAccount(string addr)
-        {
-            return Broadcaster.Query<
-                Cosmos.Auth.V1beta1.QueryAccountResponse
-            >(
-                $"cosmos/auth/v1beta1/accounts/{addr}"
-            );
+            Ec = new EasyClient(baseUrl, chainId, bytes, "cc", reg);
+            CcModuleClient = new DecentralCardGame.Cardchain.Cardchain.MsgClient(Ec);
+            AuthzClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
         }
 
         public Task<string> SendMsgBuyCardScheme(string bidAmout, string bidDenom)
         {
-            return BuildAndBroadcast(
-                new Any
+            return CcModuleClient.SendMsgBuyCardScheme(new MsgBuyCardScheme
                 {
-                    Value = new MsgBuyCardScheme
+                    Creator = Ec.AccoutAddress.ToString(),
+                    Bid = new Cosmos.Base.V1beta1.Coin
                     {
-                        Creator = AccoutAddress.ToString(),
-                        Bid = new Cosmos.Base.V1beta1.Coin
-                        {
-                            Amount = bidAmout,
-                            Denom = bidDenom
-                        }
-                    }.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCardScheme"
+                        Amount = bidAmout,
+                        Denom = bidDenom
+                    }
                 }
             );
         }
 
         public Task<string> SendMsgExec(Any msg)
         {
-            return BuildAndBroadcast(
-                new Any
+            return AuthzClient.SendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
                 {
-                    Value = new Cosmos.Authz.V1beta1.MsgExec
-                    {
-                        Grantee = AccoutAddress.ToString(),
-                        Msgs = { msg }
-                    }.ToByteString(),
-                    TypeUrl = "/cosmos.authz.v1beta1.MsgExec"
+                    Grantee = Ec.AccoutAddress.ToString(),
+                    Msgs = { msg }
                 }
             );
         }
@@ -114,7 +56,7 @@ namespace CardchainCs.CardchainClient
                 {
                     Value = new MsgConfirmMatch
                     {
-                        Creator = AccoutAddress.ToString(),
+                        Creator = Ec.AccoutAddress.ToString(),
                         MatchId = matchId,
                         Outcome = outcome,
                     }.ToByteString(),
@@ -127,7 +69,7 @@ namespace CardchainCs.CardchainClient
         {
             var msg = new MsgVoteCard
             {
-                Creator = AccoutAddress.ToString(),
+                Creator = Ec.AccoutAddress.ToString(),
                 CardId = cardId,
                 VoteType = voteType,
             };
@@ -145,7 +87,7 @@ namespace CardchainCs.CardchainClient
         {
             var msg = new MsgReportMatch
             {
-                Creator = AccoutAddress.ToString(),
+                Creator = Ec.AccoutAddress.ToString(),
                 PlayerA = playerA,
                 PlayerB = playerB,
                 Outcome = outcome,
@@ -153,12 +95,7 @@ namespace CardchainCs.CardchainClient
             msg.CardsA.AddRange(cardsA);
             msg.CardsB.AddRange(cardsB);
 
-            return BuildAndBroadcast(new Any
-                {
-                    Value = msg.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgReportMatch"
-                }
-            );
+            return CcModuleClient.SendMsgReportMatch(msg);
         }
     }
 }
