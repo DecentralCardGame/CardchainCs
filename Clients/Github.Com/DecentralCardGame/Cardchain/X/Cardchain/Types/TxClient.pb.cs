@@ -7,420 +7,420 @@ using Google.Protobuf;
 namespace DecentralCardGame.Cardchain.Cardchain {
 	
 	public class MsgClient {
-		public EasyClient EasyClient { get; }
+		public IClient Client { get; }
 
-		public MsgClient (EasyClient client) {
-			EasyClient = client;
+		public MsgClient (IClient client) {
+			Client = client;
 		}
 
-		public Task<string> SendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>> SendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateuser"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse.Parser));
 		}
 
-		public Task<string> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCardScheme"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse.Parser));
 		}
 
-		public Task<string> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse.Parser));
 		}
 
-		public Task<string> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSaveCardContent"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse.Parser));
 		}
 
-		public Task<string> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgTransferCard"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse.Parser));
 		}
 
-		public Task<string> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgDonateToCard"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse.Parser));
 		}
 
-		public Task<string> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddArtwork"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse.Parser));
 		}
 
-		public Task<string> SendMsgSubmitCopyrightProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposal msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>> SendMsgSubmitCopyrightProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposal msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitCopyrightProposal"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse.Parser));
 		}
 
-		public Task<string> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgChangeArtist"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse.Parser));
 		}
 
-		public Task<string> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRegisterForCouncil"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse.Parser));
 		}
 
-		public Task<string> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgReportMatch"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse.Parser));
 		}
 
-		public Task<string> SendMsgSubmitMatchReporterProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposal msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>> SendMsgSubmitMatchReporterProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposal msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitMatchReporterProposal"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse.Parser));
 		}
 
-		public Task<string> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgApointMatchReporter"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse.Parser));
 		}
 
-		public Task<string> SendMsgCreateCollection(DecentralCardGame.Cardchain.Cardchain.MsgCreateCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse>> SendMsgCreateCollection(DecentralCardGame.Cardchain.Cardchain.MsgCreateCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgAddCardToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse>> SendMsgAddCardToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddCardToCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgFinalizeCollection(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse>> SendMsgFinalizeCollection(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgFinalizeCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgBuyCollection(DecentralCardGame.Cardchain.Cardchain.MsgBuyCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse>> SendMsgBuyCollection(DecentralCardGame.Cardchain.Cardchain.MsgBuyCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgRemoveCardFromCollection(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse>> SendMsgRemoveCardFromCollection(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRemoveCardFromCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgRemoveContributorFromCollection(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse>> SendMsgRemoveContributorFromCollection(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRemoveContributorFromCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgAddContributorToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse>> SendMsgAddContributorToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddContributorToCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgSubmitCollectionProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposal msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse>> SendMsgSubmitCollectionProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposal msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitCollectionProposal"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse.Parser));
 		}
 
-		public Task<string> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateSellOffer"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse.Parser));
 		}
 
-		public Task<string> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCard"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse.Parser));
 		}
 
-		public Task<string> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRemoveSellOffer"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse.Parser));
 		}
 
-		public Task<string> SendMsgAddArtworkToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse>> SendMsgAddArtworkToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddArtworkToCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgAddStoryToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollection msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse>> SendMsgAddStoryToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollection msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddStoryToCollection"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse.Parser));
 		}
 
-		public Task<string> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetCardRarity"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse.Parser));
 		}
 
-		public Task<string> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateCouncil"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse.Parser));
 		}
 
-		public Task<string> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCommitCouncilResponse"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse.Parser));
 		}
 
-		public Task<string> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRevealCouncilResponse"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse.Parser));
 		}
 
-		public Task<string> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRestartCouncil"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse.Parser));
 		}
 
-		public Task<string> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRewokeCouncilRegistration"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse.Parser));
 		}
 
-		public Task<string> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConfirmMatch"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse.Parser));
 		}
 
-		public Task<string> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetProfileCard"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse.Parser));
 		}
 
-		public Task<string> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse.Parser));
 		}
 
-		public Task<string> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgTransferBoosterPack"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse.Parser));
 		}
 
-		public Task<string> SendMsgSetCollectionStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriter msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse>> SendMsgSetCollectionStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriter msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetCollectionStoryWriter"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse.Parser));
 		}
 
-		public Task<string> SendMsgSetCollectionArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtist msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse>> SendMsgSetCollectionArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtist msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetCollectionArtist"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse.Parser));
 		}
 
-		public Task<string> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetUserWebsite"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse.Parser));
 		}
 
-		public Task<string> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetUserBiography"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse.Parser));
 		}
 
-		public Task<string> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg) {
-			return EasyClient.BuildAndBroadcast(
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg) {
+			return Client.BuildAndBroadcast(
 				new Any
 				{
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgMultiVoteCard"
 				}
-			);
+			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse.Parser));
 		}
 
 	}

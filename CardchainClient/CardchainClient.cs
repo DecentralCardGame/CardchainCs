@@ -1,9 +1,11 @@
 using System.Threading.Tasks;
 using Cosmcs.Client;
+using Cosmos.Authz.V1beta1;
 using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
+using TxReflection = DecentralCardGame.Cardchain.Cardchain.TxReflection;
 
 namespace CardchainCs.CardchainClient
 
@@ -26,7 +28,7 @@ namespace CardchainCs.CardchainClient
             AuthzClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
         }
 
-        public Task<string> SendMsgBuyCardScheme(string bidAmout, string bidDenom)
+        public Task<Cosmcs.Client.ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(string bidAmout, string bidDenom)
         {
             return CcModuleClient.SendMsgBuyCardScheme(new MsgBuyCardScheme
                 {
@@ -40,7 +42,7 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<string> SendMsgExec(Any msg)
+        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExec(Any msg)
         {
             return AuthzClient.SendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
                 {
@@ -50,7 +52,7 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<string> SendMsgExecMsgConfirmMatch(ulong matchId, Outcome outcome)
+        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgConfirmMatch(ulong matchId, Outcome outcome)
         {
             return SendMsgExec(new Any
                 {
@@ -65,7 +67,7 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<string> SendMsgExecMsgVoteCard(ulong cardId, string voteType)
+        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgVoteCard(ulong cardId, string voteType)
         {
             var msg = new MsgVoteCard
             {
@@ -82,7 +84,7 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<string> MsgReportMatch(string playerA, string playerB, ulong[] cardsA, ulong[] cardsB,
+        public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> MsgReportMatch(string playerA, string playerB, ulong[] cardsA, ulong[] cardsB,
             Outcome outcome)
         {
             var msg = new MsgReportMatch
