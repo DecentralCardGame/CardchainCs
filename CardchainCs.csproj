@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<PackageId>CardchainCs</PackageId>
-		<Version>0.0.9</Version>
+		<Version>0.0.10</Version>
 		<Authors>lxgr</Authors>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>enable</Nullable>
