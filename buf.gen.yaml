@@ -4,6 +4,8 @@ managed:
 plugins:
     - plugin: cosmosCsharp
       out: ../../Clients
+    - plugin: buf.build/grpc/csharp
+      out: ../../Clients
     - plugin: buf.build/protocolbuffers/csharp
       out: ../../buf
       opt: base_namespace=
