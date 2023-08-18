@@ -20,7 +20,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateuser"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg) {
@@ -30,7 +39,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCardScheme"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg) {
@@ -40,7 +58,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg) {
@@ -50,7 +77,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSaveCardContent"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg) {
@@ -60,7 +96,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgTransferCard"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg) {
@@ -70,7 +115,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgDonateToCard"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg) {
@@ -80,7 +134,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddArtwork"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>> SendMsgSubmitCopyrightProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposal msg) {
@@ -90,7 +153,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitCopyrightProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg) {
@@ -100,7 +172,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgChangeArtist"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg) {
@@ -110,7 +191,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRegisterForCouncil"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg) {
@@ -120,7 +210,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgReportMatch"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>> SendMsgSubmitMatchReporterProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposal msg) {
@@ -130,7 +229,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitMatchReporterProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg) {
@@ -140,7 +248,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgApointMatchReporter"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse>> SendMsgCreateCollection(DecentralCardGame.Cardchain.Cardchain.MsgCreateCollection msg) {
@@ -150,7 +267,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgCreateCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse>> SendMsgAddCardToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollection msg) {
@@ -160,7 +286,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddCardToCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgAddCardToCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse>> SendMsgFinalizeCollection(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollection msg) {
@@ -170,7 +305,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgFinalizeCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgFinalizeCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse>> SendMsgBuyCollection(DecentralCardGame.Cardchain.Cardchain.MsgBuyCollection msg) {
@@ -180,7 +324,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgBuyCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse>> SendMsgRemoveCardFromCollection(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollection msg) {
@@ -190,7 +343,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRemoveCardFromCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse>> SendMsgRemoveContributorFromCollection(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollection msg) {
@@ -200,7 +362,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRemoveContributorFromCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse>> SendMsgAddContributorToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollection msg) {
@@ -210,7 +381,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddContributorToCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse>> SendMsgSubmitCollectionProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposal msg) {
@@ -220,7 +400,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitCollectionProposal"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSubmitCollectionProposalResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg) {
@@ -230,7 +419,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateSellOffer"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg) {
@@ -240,7 +438,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCard"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg) {
@@ -250,7 +457,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRemoveSellOffer"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse>> SendMsgAddArtworkToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollection msg) {
@@ -260,7 +476,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddArtworkToCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse>> SendMsgAddStoryToCollection(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollection msg) {
@@ -270,7 +495,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgAddStoryToCollection"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToCollectionResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg) {
@@ -280,7 +514,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetCardRarity"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg) {
@@ -290,7 +533,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCreateCouncil"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg) {
@@ -300,7 +552,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgCommitCouncilResponse"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg) {
@@ -310,7 +571,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRevealCouncilResponse"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg) {
@@ -320,7 +590,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRestartCouncil"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg) {
@@ -330,7 +609,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgRewokeCouncilRegistration"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg) {
@@ -340,7 +628,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConfirmMatch"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg) {
@@ -350,7 +647,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetProfileCard"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg) {
@@ -360,7 +666,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg) {
@@ -370,7 +685,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgTransferBoosterPack"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse>> SendMsgSetCollectionStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriter msg) {
@@ -380,7 +704,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetCollectionStoryWriter"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionStoryWriterResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse>> SendMsgSetCollectionArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtist msg) {
@@ -390,7 +723,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetCollectionArtist"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSetCollectionArtistResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg) {
@@ -400,7 +742,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetUserWebsite"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg) {
@@ -410,7 +761,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSetUserBiography"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse.Parser
+			));
 		}
 
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg) {
@@ -420,7 +780,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 					Value = msg.ToByteString(),
 					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgMultiVoteCard"
 				}
-			).ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>(r.Result, DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse.Parser));
+			).ContinueWith(r =>
+			{
+				System.Threading.Thread.Sleep(10000);
+				return r.Result;
+			})
+			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>(
+				r.Result.Result.TxResponse,
+				DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse.Parser
+			));
 		}
 
 	}
