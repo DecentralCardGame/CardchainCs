@@ -20,7 +20,7 @@ var privateKey = new PrivateKey(hex);
 var accoutAddress = privateKey.PublicKey().AccountId("cc");
 Console.Out.WriteLine(accoutAddress);
 
-var ccClient = new CardchainClient("http://localhost:9090/", "Testnet3", hex);
+var ccClient = new CardchainClient("http://localhost:9090", "Testnet3", hex);
 var resp = ccClient.SendMsgBuyCardScheme("10000000000000000000", "ucredits").Result;
 Console.Out.WriteLine(resp.RawResponse);
 if (resp.ResponseMessage != null)

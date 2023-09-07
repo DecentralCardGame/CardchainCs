@@ -5,11 +5,9 @@ using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
-using Microsoft.Extensions.Logging;
 using TxReflection = DecentralCardGame.Cardchain.Cardchain.TxReflection;
 
 namespace CardchainCs.CardchainClient
-
 {
     public class CardchainClient
     {
