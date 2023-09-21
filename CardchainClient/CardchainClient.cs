@@ -15,14 +15,14 @@ namespace CardchainCs.CardchainClient
         public DecentralCardGame.Cardchain.Cardchain.MsgClient CcModuleClient { get; }
         public Cosmos.Authz.V1beta1.MsgClient AuthzClient { get; }
 
-        public CardchainClient(string rpcUrl, string chainId, byte[] bytes)
+        public CardchainClient(string rpcUrl, string chainId, byte[] bytes, EasyClientOptions? options = null)
         {
             var reg = TypeRegistry.FromFiles(
                 Cosmos.Auth.V1beta1.QueryReflection.Descriptor,
                 Cosmos.Crypto.Secp256k1.KeysReflection.Descriptor,
                 TxReflection.Descriptor
             );
-            Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", reg);
+            Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", reg, options);
             CcModuleClient = new DecentralCardGame.Cardchain.Cardchain.MsgClient(Ec);
             AuthzClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
         }
