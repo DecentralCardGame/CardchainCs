@@ -89,20 +89,36 @@ namespace CardchainCs.CardchainClient
 
         public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> MsgReportMatch(
             ulong matchId,
-            ulong[] cardsA,
-            ulong[] cardsB,
+            ulong[] playedCardsA,
+            ulong[] playedCardsB,
             Outcome outcome)
         {
-            var msg = new MsgReportMatch
+            return CcModuleClient.SendMsgReportMatch(new MsgReportMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 MatchId = matchId,
                 Outcome = outcome,
-            };
-            msg.PlayedCardsA.AddRange(cardsA);
-            msg.PlayedCardsB.AddRange(cardsB);
+                PlayedCardsA = { playedCardsA },
+                PlayedCardsB = { playedCardsB }
+            });
+        }
 
-            return CcModuleClient.SendMsgReportMatch(msg);
+        public Task<Cosmcs.Client.ClientResponse<MsgMsgOpenMatchResponse>> MsgOpenMatch(
+            ulong matchId,
+            ulong[] playerADeck,
+            ulong[] playerBDeck,
+            string playerA,
+            string playerB,
+            Outcome outcome)
+        {
+            return CcModuleClient.SendMsgMsgOpenMatch(new MsgMsgOpenMatch
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                PlayerA = playerA,
+                PlayerB = playerB,
+                PlayerADeck = { playerADeck },
+                PlayerBDeck = { playerBDeck }
+            });
         }
     }
 }
