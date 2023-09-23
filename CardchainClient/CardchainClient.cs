@@ -27,7 +27,9 @@ namespace CardchainCs.CardchainClient
             AuthzClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(string bidAmout, string bidDenom)
+        public Task<Cosmcs.Client.ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(
+            string bidAmout,
+            string bidDenom)
         {
             return CcModuleClient.SendMsgBuyCardScheme(new MsgBuyCardScheme
                 {
@@ -51,7 +53,9 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgConfirmMatch(ulong matchId, Outcome outcome)
+        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgConfirmMatch(
+            ulong matchId,
+            Outcome outcome)
         {
             return SendMsgExec(new Any
                 {
@@ -83,18 +87,20 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> MsgReportMatch(string playerA, string playerB, ulong[] cardsA, ulong[] cardsB,
+        public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> MsgReportMatch(
+            ulong matchId,
+            ulong[] cardsA,
+            ulong[] cardsB,
             Outcome outcome)
         {
             var msg = new MsgReportMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
-                PlayerA = playerA,
-                PlayerB = playerB,
+                MatchId = matchId,
                 Outcome = outcome,
             };
-            msg.CardsA.AddRange(cardsA);
-            msg.CardsB.AddRange(cardsB);
+            msg.PlayedCardsA.AddRange(cardsA);
+            msg.PlayedCardsB.AddRange(cardsB);
 
             return CcModuleClient.SendMsgReportMatch(msg);
         }
