@@ -12,8 +12,10 @@ namespace CardchainCs.CardchainClient
     public class CardchainClient
     {
         public EasyClient Ec { get; }
-        public DecentralCardGame.Cardchain.Cardchain.MsgClient CcModuleClient { get; }
-        public Cosmos.Authz.V1beta1.MsgClient AuthzClient { get; }
+        public DecentralCardGame.Cardchain.Cardchain.MsgClient CcTxClient { get; }
+        public Cosmos.Authz.V1beta1.MsgClient AuthzTxClient { get; }
+        public DecentralCardGame.Cardchain.Cardchain.Query.QueryClient CcQueryClient { get; }
+        public Cosmos.Auth.V1beta1.Query.QueryClient AuthQueryClient { get; }
 
         public CardchainClient(string rpcUrl, string chainId, byte[] bytes, EasyClientOptions? options = null)
         {
@@ -23,15 +25,17 @@ namespace CardchainCs.CardchainClient
                 TxReflection.Descriptor
             );
             Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", reg, options);
-            CcModuleClient = new DecentralCardGame.Cardchain.Cardchain.MsgClient(Ec);
-            AuthzClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
+            CcTxClient = new DecentralCardGame.Cardchain.Cardchain.MsgClient(Ec);
+            AuthzTxClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
+            CcQueryClient = new DecentralCardGame.Cardchain.Cardchain.Query.QueryClient(Ec.Channel);
+            AuthQueryClient = Ec.AuthClient;
         }
 
         public Task<Cosmcs.Client.ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(
             string bidAmout,
             string bidDenom)
         {
-            return CcModuleClient.SendMsgBuyCardScheme(new MsgBuyCardScheme
+            return CcTxClient.SendMsgBuyCardScheme(new MsgBuyCardScheme
                 {
                     Creator = Ec.AccoutAddress.ToString(),
                     Bid = new Cosmos.Base.V1beta1.Coin
@@ -45,7 +49,7 @@ namespace CardchainCs.CardchainClient
 
         public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExec(Any msg)
         {
-            return AuthzClient.SendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
+            return AuthzTxClient.SendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
                 {
                     Grantee = Ec.AccoutAddress.ToString(),
                     Msgs = { msg }
@@ -93,7 +97,7 @@ namespace CardchainCs.CardchainClient
             ulong[] playedCardsB,
             Outcome outcome)
         {
-            return CcModuleClient.SendMsgReportMatch(new MsgReportMatch
+            return CcTxClient.SendMsgReportMatch(new MsgReportMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 MatchId = matchId,
@@ -111,7 +115,7 @@ namespace CardchainCs.CardchainClient
             string playerB,
             Outcome outcome)
         {
-            return CcModuleClient.SendMsgMsgOpenMatch(new MsgMsgOpenMatch
+            return CcTxClient.SendMsgMsgOpenMatch(new MsgMsgOpenMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 PlayerA = playerA,
