@@ -91,7 +91,7 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> MsgReportMatch(
+        public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> SendMsgReportMatch(
             ulong matchId,
             ulong[] playedCardsA,
             ulong[] playedCardsB,
@@ -107,7 +107,7 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgMsgOpenMatchResponse>> MsgOpenMatch(
+        public Task<Cosmcs.Client.ClientResponse<MsgMsgOpenMatchResponse>> SendMsgOpenMatch(
             ulong matchId,
             ulong[] playerADeck,
             ulong[] playerBDeck,
