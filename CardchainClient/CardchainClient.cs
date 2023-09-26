@@ -16,7 +16,9 @@ namespace CardchainCs.CardchainClient
         public Cosmos.Authz.V1beta1.MsgClient AuthzTxClient { get; }
         public DecentralCardGame.Cardchain.Cardchain.Query.QueryClient CcQueryClient { get; }
         public Cosmos.Auth.V1beta1.Query.QueryClient AuthQueryClient { get; }
-        public Cosmos.Bank.V1beta1.Query.QueryClient BankQueryClient {get;}
+        public Cosmos.Bank.V1beta1.Query.QueryClient BankQueryClient { get; }
+        public Cosmos.Authz.V1beta1.Query.QueryClient AuthzQueryClient { get; }
+        public Cosmos.Gov.V1beta1.Query.QueryClient GovQueryClient { get; }
 
         public CardchainClient(string rpcUrl, string chainId, byte[] bytes, EasyClientOptions? options = null)
         {
@@ -30,6 +32,8 @@ namespace CardchainCs.CardchainClient
             AuthzTxClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
             CcQueryClient = new DecentralCardGame.Cardchain.Cardchain.Query.QueryClient(Ec.Channel);
             BankQueryClient = new Cosmos.Bank.V1beta1.Query.QueryClient(Ec.Channel);
+            AuthzQueryClient = new Cosmos.Authz.V1beta1.Query.QueryClient(Ec.Channel);
+            GovQueryClient = new Cosmos.Gov.V1beta1.Query.QueryClient(Ec.Channel);
             AuthQueryClient = Ec.AuthClient;
         }
 
