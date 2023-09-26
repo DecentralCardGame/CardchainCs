@@ -3,6 +3,7 @@
 //    The plugin is part of the DecentralCardgame project and written by lxgr@protonmail.com
 // </auto-generated>
 
+using System;
 using Cosmcs.Client;
 using System.Threading.Tasks;
 using Google.Protobuf.WellKnownTypes;
@@ -274,6 +275,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			).ContinueWith(r =>
 			{
 				System.Threading.Thread.Sleep(10000);
+				Console.Out.WriteLine(r.Result);
 				return r.Result;
 			})
 			.ContinueWith(r => Client.QueryTx(r.Result.TxResponse.Txhash))

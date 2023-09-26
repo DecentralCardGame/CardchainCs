@@ -130,5 +130,38 @@ namespace CardchainCs.CardchainClient
                 PlayerBDeck = { playerBDeck }
             });
         }
+
+        public Task<Cosmcs.Client.ClientResponse<MsgCreateCollectionResponse>> SendMsgCreateCollection(
+            string name,
+            string artist,
+            string storyWriter,
+            string[] contributors)
+        {
+            return CcTxClient.SendMsgCreateCollection(new MsgCreateCollection
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                Name = name,
+                Artist = artist,
+                StoryWriter = storyWriter,
+                Contributors = { contributors }
+            });
+        }
+
+        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgBuyCollection(
+            ulong collectionId)
+        {
+            var msg = new MsgBuyCollection
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                CollectionId = collectionId,
+            };
+
+            return SendMsgExec(new Any
+                {
+                    Value = msg.ToByteString(),
+                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
+                }
+            );
+        }
     }
 }
