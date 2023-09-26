@@ -163,5 +163,22 @@ namespace CardchainCs.CardchainClient
                 }
             );
         }
+
+        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgOpenBoosterPack(
+            ulong boosterPackId)
+        {
+            var msg = new MsgOpenBoosterPack
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                BoosterPackId = boosterPackId
+            };
+
+            return SendMsgExec(new Any
+                {
+                    Value = msg.ToByteString(),
+                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+                }
+            );
+        }
     }
 }
