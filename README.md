@@ -14,7 +14,7 @@ byte[] hex = new byte[32]
 	129, 238, 212, 107, 207, 147, 217,
 	51, 43, 217, 82, 136, 182, 245,
 	189, 104, 186, 17
-};  // Place byte publikKey here
+};  // Place byte privateKey here
 
 var privateKey = new PrivateKey(hex);
 var accoutAddress = privateKey.PublicKey().AccountId("cc");

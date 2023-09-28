@@ -21,12 +21,7 @@ namespace CardchainCs.CardchainClient
 
         public CardchainClient(string rpcUrl, string chainId, byte[] bytes, EasyClientOptions? options = null)
         {
-            var reg = TypeRegistry.FromFiles(
-                Cosmos.Auth.V1beta1.QueryReflection.Descriptor,
-                Cosmos.Crypto.Secp256k1.KeysReflection.Descriptor,
-                TxReflection.Descriptor
-            );
-            Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", reg, options);
+            Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", options);
             CcTxClient = new MsgClient(Ec);
             AuthzTxClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
             CcQueryClient = new Query.QueryClient(Ec.Channel);
