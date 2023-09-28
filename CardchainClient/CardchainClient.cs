@@ -1,21 +1,19 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Cosmcs.Client;
-using Cosmos.Authz.V1beta1;
 using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
 using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
-using TxReflection = DecentralCardGame.Cardchain.Cardchain.TxReflection;
 
 namespace CardchainCs.CardchainClient
 {
     public class CardchainClient
     {
         public EasyClient Ec { get; }
-        public DecentralCardGame.Cardchain.Cardchain.MsgClient CcTxClient { get; }
+        public MsgClient CcTxClient { get; }
         public Cosmos.Authz.V1beta1.MsgClient AuthzTxClient { get; }
-        public DecentralCardGame.Cardchain.Cardchain.Query.QueryClient CcQueryClient { get; }
+        public Query.QueryClient CcQueryClient { get; }
         public Cosmos.Auth.V1beta1.Query.QueryClient AuthQueryClient { get; }
         public Cosmos.Bank.V1beta1.Query.QueryClient BankQueryClient { get; }
         public Cosmos.Authz.V1beta1.Query.QueryClient AuthzQueryClient { get; }
@@ -29,9 +27,9 @@ namespace CardchainCs.CardchainClient
                 TxReflection.Descriptor
             );
             Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", reg, options);
-            CcTxClient = new DecentralCardGame.Cardchain.Cardchain.MsgClient(Ec);
+            CcTxClient = new MsgClient(Ec);
             AuthzTxClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
-            CcQueryClient = new DecentralCardGame.Cardchain.Cardchain.Query.QueryClient(Ec.Channel);
+            CcQueryClient = new Query.QueryClient(Ec.Channel);
             BankQueryClient = new Cosmos.Bank.V1beta1.Query.QueryClient(Ec.Channel);
             AuthzQueryClient = new Cosmos.Authz.V1beta1.Query.QueryClient(Ec.Channel);
             GovQueryClient = new Cosmos.Gov.V1beta1.Query.QueryClient(Ec.Channel);
@@ -91,18 +89,16 @@ namespace CardchainCs.CardchainClient
             ulong cardId,
             string voteType)
         {
-            var msg = new MsgVoteCard
-            {
-                Creator = creator,
-                CardId = cardId,
-                VoteType = voteType,
-            };
-
             return SendMsgExec(new[]
                 {
                     new Any
                     {
-                        Value = msg.ToByteString(),
+                        Value = new MsgVoteCard
+                        {
+                            Creator = creator,
+                            CardId = cardId,
+                            VoteType = voteType,
+                        }.ToByteString(),
                         TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
                     }
                 }, new MessageParser[] { MsgVoteCardResponse.Parser }
@@ -163,17 +159,15 @@ namespace CardchainCs.CardchainClient
             string creator,
             ulong collectionId)
         {
-            var msg = new MsgBuyCollection
-            {
-                Creator = creator,
-                CollectionId = collectionId,
-            };
-
             return SendMsgExec(new[]
                 {
                     new Any
                     {
-                        Value = msg.ToByteString(),
+                        Value = new MsgBuyCollection
+                        {
+                            Creator = creator,
+                            CollectionId = collectionId,
+                        }.ToByteString(),
                         TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
                     }
                 }, new MessageParser[] { MsgBuyCollectionResponse.Parser }
@@ -199,17 +193,15 @@ namespace CardchainCs.CardchainClient
             string creator,
             ulong boosterPackId)
         {
-            var msg = new MsgOpenBoosterPack
-            {
-                Creator = creator,
-                BoosterPackId = boosterPackId
-            };
-
             return SendMsgExec(new[]
                 {
                     new Any
                     {
-                        Value = msg.ToByteString(),
+                        Value = new MsgOpenBoosterPack
+                        {
+                            Creator = creator,
+                            BoosterPackId = boosterPackId
+                        }.ToByteString(),
                         TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
                     }
                 }, new MessageParser[] { MsgOpenBoosterPackResponse.Parser }
