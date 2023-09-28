@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading.Tasks;
 using Cosmcs.Client;
 using Cosmos.Authz.V1beta1;
@@ -37,7 +38,7 @@ namespace CardchainCs.CardchainClient
             AuthQueryClient = Ec.AuthClient;
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(
+        public Task<ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(
             string bidAmout,
             string bidDenom)
         {
@@ -53,51 +54,62 @@ namespace CardchainCs.CardchainClient
             );
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExec(Any msg)
+        public Task<SendMsgExecResponse> SendMsgExec(Any[] msgs, MessageParser[] parsers)
         {
             return AuthzTxClient.SendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
                 {
                     Grantee = Ec.AccoutAddress.ToString(),
-                    Msgs = { msg }
+                    Msgs = { msgs }
                 }
-            );
+            ).ContinueWith(r => new SendMsgExecResponse(r.Result, parsers));
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgConfirmMatch(
+        public Task<SendMsgExecResponse> SendMsgExecMsgConfirmMatch(
+            string creator,
             ulong matchId,
-            Outcome outcome)
+            Outcome outcome,
+            SingleVote[] votedCards)
         {
-            return SendMsgExec(new Any
+            return SendMsgExec(new[]
+            {
+                new Any
                 {
                     Value = new MsgConfirmMatch
                     {
-                        Creator = Ec.AccoutAddress.ToString(),
+                        Creator = creator,
                         MatchId = matchId,
                         Outcome = outcome,
+                        VotedCards = { votedCards }
                     }.ToByteString(),
                     TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConfirmMatch"
                 }
-            );
+            }, new MessageParser[] { MsgConfirmMatchResponse.Parser });
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgVoteCard(ulong cardId, string voteType)
+        public Task<SendMsgExecResponse> SendMsgExecMsgVoteCard(
+            string creator,
+            ulong cardId,
+            string voteType)
         {
             var msg = new MsgVoteCard
             {
-                Creator = Ec.AccoutAddress.ToString(),
+                Creator = creator,
                 CardId = cardId,
                 VoteType = voteType,
             };
 
-            return SendMsgExec(new Any
+            return SendMsgExec(new[]
                 {
-                    Value = msg.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
-                }
+                    new Any
+                    {
+                        Value = msg.ToByteString(),
+                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
+                    }
+                }, new MessageParser[] { MsgVoteCardResponse.Parser }
             );
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgReportMatchResponse>> SendMsgReportMatch(
+        public Task<ClientResponse<MsgReportMatchResponse>> SendMsgReportMatch(
             ulong matchId,
             ulong[] playedCardsA,
             ulong[] playedCardsB,
@@ -113,7 +125,7 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgMsgOpenMatchResponse>> SendMsgOpenMatch(
+        public Task<ClientResponse<MsgMsgOpenMatchResponse>> SendMsgOpenMatch(
             ulong matchId,
             ulong[] playerADeck,
             ulong[] playerBDeck,
@@ -131,7 +143,7 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgCreateCollectionResponse>> SendMsgCreateCollection(
+        public Task<ClientResponse<MsgCreateCollectionResponse>> SendMsgCreateCollection(
             string name,
             string artist,
             string storyWriter,
@@ -147,37 +159,60 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgBuyCollection(
+        public Task<SendMsgExecResponse> SendMsgExecMsgBuyCollection(
+            string creator,
             ulong collectionId)
         {
             var msg = new MsgBuyCollection
             {
-                Creator = Ec.AccoutAddress.ToString(),
+                Creator = creator,
                 CollectionId = collectionId,
             };
 
-            return SendMsgExec(new Any
+            return SendMsgExec(new[]
                 {
-                    Value = msg.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
-                }
+                    new Any
+                    {
+                        Value = msg.ToByteString(),
+                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
+                    }
+                }, new MessageParser[] { MsgBuyCollectionResponse.Parser }
             );
         }
 
-        public Task<Cosmcs.Client.ClientResponse<MsgExecResponse>> SendMsgExecMsgOpenBoosterPack(
+        public Task<SendMsgExecResponse> MultiSendMsgExecMsgBuyCollection(
+            string creator,
+            ulong[] collectionIds)
+        {
+            return SendMsgExec(collectionIds.Select(id => new Any
+            {
+                Value = new MsgBuyCollection
+                {
+                    Creator = creator,
+                    CollectionId = id,
+                }.ToByteString(),
+                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
+            }).ToArray(), collectionIds.Select<ulong, MessageParser>(_ => MsgBuyCollectionResponse.Parser).ToArray());
+        }
+
+        public Task<SendMsgExecResponse> SendMsgExecMsgOpenBoosterPack(
+            string creator,
             ulong boosterPackId)
         {
             var msg = new MsgOpenBoosterPack
             {
-                Creator = Ec.AccoutAddress.ToString(),
+                Creator = creator,
                 BoosterPackId = boosterPackId
             };
 
-            return SendMsgExec(new Any
+            return SendMsgExec(new[]
                 {
-                    Value = msg.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
-                }
+                    new Any
+                    {
+                        Value = msg.ToByteString(),
+                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+                    }
+                }, new MessageParser[] { MsgOpenBoosterPackResponse.Parser }
             );
         }
     }
