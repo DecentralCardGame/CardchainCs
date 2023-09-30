@@ -26,7 +26,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "Ch5jYXJkY2hhaW4vY2FyZGNoYWluL2NhcmQucHJvdG8SJURlY2VudHJhbENh",
             "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4aFGdvZ29wcm90by9nb2dvLnBy",
-            "b3RvIr0ECgRDYXJkEhQKBW93bmVyGAEgASgJUgVvd25lchIWCgZhcnRpc3QY",
+            "b3RvIt8ECgRDYXJkEhQKBW93bmVyGAEgASgJUgVvd25lchIWCgZhcnRpc3QY",
             "AiABKAlSBmFydGlzdBIYCgdjb250ZW50GAMgASgMUgdjb250ZW50EhkKCGlt",
             "YWdlX2lkGAQgASgEUgdpbWFnZUlkEhgKB2Z1bGxBcnQYBSABKAhSB2Z1bGxB",
             "cnQSFAoFbm90ZXMYBiABKAlSBW5vdGVzEkUKBnN0YXR1cxgHIAEoDjItLkRl",
@@ -38,36 +38,38 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "cG93ZXJlZFZvdGVzEiwKEXVuZGVycG93ZXJlZFZvdGVzGAsgASgEUhF1bmRl",
             "cnBvd2VyZWRWb3RlcxIuChJpbmFwcHJvcHJpYXRlVm90ZXMYDCABKARSEmlu",
             "YXBwcm9wcmlhdGVWb3RlcxIcCgluZXJmbGV2ZWwYDSABKANSCW5lcmZsZXZl",
-            "bBIkCg1iYWxhbmNlQW5jaG9yGA8gASgIUg1iYWxhbmNlQW5jaG9yItAECghP",
-            "dXRwQ2FyZBIUCgVvd25lchgBIAEoCVIFb3duZXISFgoGYXJ0aXN0GAIgASgJ",
-            "UgZhcnRpc3QSGAoHY29udGVudBgDIAEoCVIHY29udGVudBIUCgVpbWFnZRgE",
-            "IAEoCVIFaW1hZ2USGAoHZnVsbEFydBgFIAEoCFIHZnVsbEFydBIUCgVub3Rl",
-            "cxgGIAEoCVIFbm90ZXMSRQoGc3RhdHVzGAcgASgOMi0uRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5TdGF0dXNSBnN0YXR1cxJLCgh2",
-            "b3RlUG9vbBgIIAEoCUIvyN4fANreHydnaXRodWIuY29tL2Nvc21vcy9jb3Nt",
-            "b3Mtc2RrL3R5cGVzLkNvaW5SCHZvdGVQb29sEhYKBnZvdGVycxgOIAMoCVIG",
-            "dm90ZXJzEigKD2ZhaXJFbm91Z2hWb3RlcxgJIAEoBFIPZmFpckVub3VnaFZv",
-            "dGVzEioKEG92ZXJwb3dlcmVkVm90ZXMYCiABKARSEG92ZXJwb3dlcmVkVm90",
-            "ZXMSLAoRdW5kZXJwb3dlcmVkVm90ZXMYCyABKARSEXVuZGVycG93ZXJlZFZv",
-            "dGVzEi4KEmluYXBwcm9wcmlhdGVWb3RlcxgMIAEoBFISaW5hcHByb3ByaWF0",
-            "ZVZvdGVzEhwKCW5lcmZsZXZlbBgNIAEoA1IJbmVyZmxldmVsEiQKDWJhbGFu",
-            "Y2VBbmNob3IYDyABKAhSDWJhbGFuY2VBbmNob3ISEgoEaGFzaBgQIAEoCVIE",
-            "aGFzaCIpCglUaW1lU3RhbXASHAoJdGltZVN0YW1wGAEgASgEUgl0aW1lU3Rh",
-            "bXAqhgEKBlN0YXR1cxIKCgZzY2hlbWUQABINCglwcm90b3R5cGUQARIJCgV0",
-            "cmlhbBACEg0KCXBlcm1hbmVudBADEg0KCXN1c3BlbmRlZBAEEgoKBmJhbm5l",
-            "ZBAFEg4KCmJhbm5lZFNvb24QBhISCg5iYW5uZWRWZXJ5U29vbhAHEggKBG5v",
-            "bmUQCEKmAgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW5CCUNhcmRQcm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRH",
-            "YW1lL0NhcmRjaGFpbi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2Vu",
-            "dHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxD",
-            "YXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdh",
-            "bWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJh",
-            "bENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
+            "bBIkCg1iYWxhbmNlQW5jaG9yGA8gASgIUg1iYWxhbmNlQW5jaG9yEiAKC3N0",
+            "YXJ0ZXJDYXJkGBAgASgIUgtzdGFydGVyQ2FyZCLyBAoIT3V0cENhcmQSFAoF",
+            "b3duZXIYASABKAlSBW93bmVyEhYKBmFydGlzdBgCIAEoCVIGYXJ0aXN0EhgK",
+            "B2NvbnRlbnQYAyABKAlSB2NvbnRlbnQSFAoFaW1hZ2UYBCABKAlSBWltYWdl",
+            "EhgKB2Z1bGxBcnQYBSABKAhSB2Z1bGxBcnQSFAoFbm90ZXMYBiABKAlSBW5v",
+            "dGVzEkUKBnN0YXR1cxgHIAEoDjItLkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
+            "aGFpbi5jYXJkY2hhaW4uU3RhdHVzUgZzdGF0dXMSSwoIdm90ZVBvb2wYCCAB",
+            "KAlCL8jeHwDa3h8nZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBl",
+            "cy5Db2luUgh2b3RlUG9vbBIWCgZ2b3RlcnMYDiADKAlSBnZvdGVycxIoCg9m",
+            "YWlyRW5vdWdoVm90ZXMYCSABKARSD2ZhaXJFbm91Z2hWb3RlcxIqChBvdmVy",
+            "cG93ZXJlZFZvdGVzGAogASgEUhBvdmVycG93ZXJlZFZvdGVzEiwKEXVuZGVy",
+            "cG93ZXJlZFZvdGVzGAsgASgEUhF1bmRlcnBvd2VyZWRWb3RlcxIuChJpbmFw",
+            "cHJvcHJpYXRlVm90ZXMYDCABKARSEmluYXBwcm9wcmlhdGVWb3RlcxIcCglu",
+            "ZXJmbGV2ZWwYDSABKANSCW5lcmZsZXZlbBIkCg1iYWxhbmNlQW5jaG9yGA8g",
+            "ASgIUg1iYWxhbmNlQW5jaG9yEhIKBGhhc2gYECABKAlSBGhhc2gSIAoLc3Rh",
+            "cnRlckNhcmQYESABKAhSC3N0YXJ0ZXJDYXJkIikKCVRpbWVTdGFtcBIcCgl0",
+            "aW1lU3RhbXAYASABKARSCXRpbWVTdGFtcCqGAQoGU3RhdHVzEgoKBnNjaGVt",
+            "ZRAAEg0KCXByb3RvdHlwZRABEgkKBXRyaWFsEAISDQoJcGVybWFuZW50EAMS",
+            "DQoJc3VzcGVuZGVkEAQSCgoGYmFubmVkEAUSDgoKYmFubmVkU29vbhAGEhIK",
+            "DmJhbm5lZFZlcnlTb29uEAcSCAoEbm9uZRAIQqYCCiljb20uRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbkIJQ2FyZFByb3RvUAFaOGdp",
+            "dGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL3gvY2FyZGNo",
+            "YWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWlu",
+            "LkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJk",
+            "Y2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu",
+            "XEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6",
+            "Q2FyZGNoYWluYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.Status), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Card), global::DecentralCardGame.Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpCard), global::DecentralCardGame.Cardchain.Cardchain.OutpCard.Parser, new[]{ "Owner", "Artist", "Content", "Image", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "Hash" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Card), global::DecentralCardGame.Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "StarterCard" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpCard), global::DecentralCardGame.Cardchain.Cardchain.OutpCard.Parser, new[]{ "Owner", "Artist", "Content", "Image", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "Hash", "StarterCard" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.TimeStamp), global::DecentralCardGame.Cardchain.Cardchain.TimeStamp.Parser, new[]{ "TimeStamp_" }, null, null, null, null)
           }));
     }
@@ -139,6 +141,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       inappropriateVotes_ = other.inappropriateVotes_;
       nerflevel_ = other.nerflevel_;
       balanceAnchor_ = other.balanceAnchor_;
+      starterCard_ = other.starterCard_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -327,6 +330,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "starterCard" field.</summary>
+    public const int StarterCardFieldNumber = 16;
+    private bool starterCard_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool StarterCard {
+      get { return starterCard_; }
+      set {
+        starterCard_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -357,6 +372,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (InappropriateVotes != other.InappropriateVotes) return false;
       if (Nerflevel != other.Nerflevel) return false;
       if (BalanceAnchor != other.BalanceAnchor) return false;
+      if (StarterCard != other.StarterCard) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -379,6 +395,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (InappropriateVotes != 0UL) hash ^= InappropriateVotes.GetHashCode();
       if (Nerflevel != 0L) hash ^= Nerflevel.GetHashCode();
       if (BalanceAnchor != false) hash ^= BalanceAnchor.GetHashCode();
+      if (StarterCard != false) hash ^= StarterCard.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -454,6 +471,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(120);
         output.WriteBool(BalanceAnchor);
       }
+      if (StarterCard != false) {
+        output.WriteRawTag(128, 1);
+        output.WriteBool(StarterCard);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -521,6 +542,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(120);
         output.WriteBool(BalanceAnchor);
       }
+      if (StarterCard != false) {
+        output.WriteRawTag(128, 1);
+        output.WriteBool(StarterCard);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -573,6 +598,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (BalanceAnchor != false) {
         size += 1 + 1;
+      }
+      if (StarterCard != false) {
+        size += 2 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -628,6 +656,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.BalanceAnchor != false) {
         BalanceAnchor = other.BalanceAnchor;
+      }
+      if (other.StarterCard != false) {
+        StarterCard = other.StarterCard;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -702,6 +733,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 120: {
             BalanceAnchor = input.ReadBool();
+            break;
+          }
+          case 128: {
+            StarterCard = input.ReadBool();
             break;
           }
         }
@@ -779,6 +814,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             BalanceAnchor = input.ReadBool();
             break;
           }
+          case 128: {
+            StarterCard = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -836,6 +875,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       nerflevel_ = other.nerflevel_;
       balanceAnchor_ = other.balanceAnchor_;
       hash_ = other.hash_;
+      starterCard_ = other.starterCard_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1036,6 +1076,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "starterCard" field.</summary>
+    public const int StarterCardFieldNumber = 17;
+    private bool starterCard_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool StarterCard {
+      get { return starterCard_; }
+      set {
+        starterCard_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1067,6 +1119,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Nerflevel != other.Nerflevel) return false;
       if (BalanceAnchor != other.BalanceAnchor) return false;
       if (Hash != other.Hash) return false;
+      if (StarterCard != other.StarterCard) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1090,6 +1143,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Nerflevel != 0L) hash ^= Nerflevel.GetHashCode();
       if (BalanceAnchor != false) hash ^= BalanceAnchor.GetHashCode();
       if (Hash.Length != 0) hash ^= Hash.GetHashCode();
+      if (StarterCard != false) hash ^= StarterCard.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1169,6 +1223,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(130, 1);
         output.WriteString(Hash);
       }
+      if (StarterCard != false) {
+        output.WriteRawTag(136, 1);
+        output.WriteBool(StarterCard);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1240,6 +1298,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(130, 1);
         output.WriteString(Hash);
       }
+      if (StarterCard != false) {
+        output.WriteRawTag(136, 1);
+        output.WriteBool(StarterCard);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1295,6 +1357,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (Hash.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Hash);
+      }
+      if (StarterCard != false) {
+        size += 2 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1353,6 +1418,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.Hash.Length != 0) {
         Hash = other.Hash;
+      }
+      if (other.StarterCard != false) {
+        StarterCard = other.StarterCard;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1433,6 +1501,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             Hash = input.ReadString();
             break;
           }
+          case 136: {
+            StarterCard = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -1510,6 +1582,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 130: {
             Hash = input.ReadString();
+            break;
+          }
+          case 136: {
+            StarterCard = input.ReadBool();
             break;
           }
         }

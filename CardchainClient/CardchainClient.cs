@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Cosmcs.Client;
 using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
-using Google.Protobuf.Reflection;
 using Google.Protobuf.WellKnownTypes;
 
 namespace CardchainCs.CardchainClient
@@ -116,7 +115,7 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<ClientResponse<MsgMsgOpenMatchResponse>> SendMsgOpenMatch(
+        public Task<ClientResponse<MsgOpenMatchResponse>> SendMsgOpenMatch(
             ulong matchId,
             ulong[] playerADeck,
             ulong[] playerBDeck,
@@ -124,7 +123,7 @@ namespace CardchainCs.CardchainClient
             string playerB,
             Outcome outcome)
         {
-            return CcTxClient.SendMsgMsgOpenMatch(new MsgMsgOpenMatch
+            return CcTxClient.SendMsgOpenMatch(new MsgOpenMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 PlayerA = playerA,
@@ -134,13 +133,13 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<ClientResponse<MsgCreateCollectionResponse>> SendMsgCreateCollection(
+        public Task<ClientResponse<MsgCreateSetResponse>> SendMsgCreateSet(
             string name,
             string artist,
             string storyWriter,
             string[] contributors)
         {
-            return CcTxClient.SendMsgCreateCollection(new MsgCreateCollection
+            return CcTxClient.SendMsgCreateSet(new MsgCreateSet
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 Name = name,
@@ -150,38 +149,38 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<SendMsgExecResponse> SendMsgExecMsgBuyCollection(
+        public Task<SendMsgExecResponse> SendMsgExecMsgBuySet(
             string creator,
-            ulong collectionId)
+            ulong setId)
         {
             return SendMsgExec(new[]
                 {
                     new Any
                     {
-                        Value = new MsgBuyCollection
+                        Value = new MsgBuySet
                         {
                             Creator = creator,
-                            CollectionId = collectionId,
+                            SetId = setId,
                         }.ToByteString(),
-                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
+                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuySet"
                     }
-                }, new MessageParser[] { MsgBuyCollectionResponse.Parser }
+                }, new MessageParser[] { MsgBuySetResponse.Parser }
             );
         }
 
-        public Task<SendMsgExecResponse> MultiSendMsgExecMsgBuyCollection(
+        public Task<SendMsgExecResponse> MultiSendMsgExecMsgBuySet(
             string creator,
-            ulong[] collectionIds)
+            ulong[] setIds)
         {
-            return SendMsgExec(collectionIds.Select(id => new Any
+            return SendMsgExec(setIds.Select(id => new Any
             {
-                Value = new MsgBuyCollection
+                Value = new MsgBuySet
                 {
                     Creator = creator,
-                    CollectionId = id,
+                    SetId = id,
                 }.ToByteString(),
-                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyCollection"
-            }).ToArray(), collectionIds.Select<ulong, MessageParser>(_ => MsgBuyCollectionResponse.Parser).ToArray());
+                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuySet"
+            }).ToArray(), setIds.Select<ulong, MessageParser>(_ => MsgBuySetResponse.Parser).ToArray());
         }
 
         public Task<SendMsgExecResponse> SendMsgExecMsgOpenBoosterPack(
