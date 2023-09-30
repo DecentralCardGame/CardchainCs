@@ -26,45 +26,44 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "CiBjYXJkY2hhaW4vY2FyZGNoYWluL3BhcmFtcy5wcm90bxIlRGVjZW50cmFs",
             "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbhoUZ29nb3Byb3RvL2dvZ28u",
-            "cHJvdG8i4gkKBlBhcmFtcxI+Chp2b3RpbmdSaWdodHNFeHBpcmF0aW9uVGlt",
-            "ZRgBIAEoA1Iadm90aW5nUmlnaHRzRXhwaXJhdGlvblRpbWUSJgoOY29sbGVj",
-            "dGlvblNpemUYAiABKARSDmNvbGxlY3Rpb25TaXplElkKD2NvbGxlY3Rpb25Q",
-            "cmljZRgDIAEoCUIvyN4fANreHydnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mt",
-            "c2RrL3R5cGVzLkNvaW5SD2NvbGxlY3Rpb25QcmljZRI4ChdhY3RpdmVDb2xs",
-            "ZWN0aW9uc0Ftb3VudBgEIAEoBFIXYWN0aXZlQ29sbGVjdGlvbnNBbW91bnQS",
-            "ZQoVY29sbGVjdGlvbkNyZWF0aW9uRmVlGAUgASgJQi/I3h8A2t4fJ2dpdGh1",
-            "Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pblIVY29sbGVjdGlv",
-            "bkNyZWF0aW9uRmVlEl0KEWNvbGxhdGVyYWxEZXBvc2l0GAYgASgJQi/I3h8A",
-            "2t4fJ2dpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pblIR",
-            "Y29sbGF0ZXJhbERlcG9zaXQSIgoMd2lubmVyUmV3YXJkGAcgASgDUgx3aW5u",
-            "ZXJSZXdhcmQSUwoMaG91cmx5RmF1Y2V0GAkgASgJQi/I3h8A2t4fJ2dpdGh1",
-            "Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pblIMaG91cmx5RmF1",
-            "Y2V0EiQKDWluZmxhdGlvblJhdGUYCiABKAlSDWluZmxhdGlvblJhdGUSIgoM",
-            "cmFyZXNQZXJQYWNrGAsgASgEUgxyYXJlc1BlclBhY2sSJgoOY29tbW9uc1Bl",
-            "clBhY2sYDCABKARSDmNvbW1vbnNQZXJQYWNrEioKEHVuQ29tbW9uc1BlclBh",
-            "Y2sYDSABKARSEHVuQ29tbW9uc1BlclBhY2sSIAoLdHJpYWxQZXJpb2QYDiAB",
-            "KARSC3RyaWFsUGVyaW9kEiQKDWdhbWVWb3RlUmF0aW8YDyABKANSDWdhbWVW",
-            "b3RlUmF0aW8SSAofY2FyZEF1Y3Rpb25QcmljZVJlZHVjdGlvblBlcmlvZBgQ",
-            "IAEoA1IfY2FyZEF1Y3Rpb25QcmljZVJlZHVjdGlvblBlcmlvZBJTCgxhaXJE",
-            "cm9wVmFsdWUYESABKAlCL8jeHwDa3h8nZ2l0aHViLmNvbS9jb3Ntb3MvY29z",
-            "bW9zLXNkay90eXBlcy5Db2luUgxhaXJEcm9wVmFsdWUSNAoVYWlyRHJvcE1h",
-            "eEJsb2NrSGVpZ2h0GBIgASgDUhVhaXJEcm9wTWF4QmxvY2tIZWlnaHQSWQoP",
-            "dHJpYWxWb3RlUmV3YXJkGBMgASgJQi/I3h8A2t4fJ2dpdGh1Yi5jb20vY29z",
-            "bW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pblIPdHJpYWxWb3RlUmV3YXJkEioK",
-            "EHZvdGVQb29sRnJhY3Rpb24YFCABKANSEHZvdGVQb29sRnJhY3Rpb24SKAoP",
-            "dm90aW5nUmV3YXJkQ2FwGAggASgDUg92b3RpbmdSZXdhcmRDYXASKgoQbWF0",
-            "Y2hXb3JrZXJEZWxheRgVIAEoBFIQbWF0Y2hXb3JrZXJEZWxheToEmKAfAEKo",
-            "AgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5C",
-            "C1BhcmFtc1Byb3RvUAFaOGdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUv",
-            "Q2FyZGNoYWluL3gvY2FyZGNoYWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFs",
-            "Q2FyZEdhbWUuQ2FyZGNoYWluLkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRH",
-            "YW1lXENhcmRjaGFpblxDYXJkY2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxD",
-            "YXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2Fy",
-            "ZEdhbWU6OkNhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "cHJvdG8iqgkKBlBhcmFtcxI+Chp2b3RpbmdSaWdodHNFeHBpcmF0aW9uVGlt",
+            "ZRgBIAEoA1Iadm90aW5nUmlnaHRzRXhwaXJhdGlvblRpbWUSGAoHc2V0U2l6",
+            "ZRgCIAEoBFIHc2V0U2l6ZRJLCghzZXRQcmljZRgDIAEoCUIvyN4fANreHydn",
+            "aXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5SCHNldFBy",
+            "aWNlEioKEGFjdGl2ZVNldHNBbW91bnQYBCABKARSEGFjdGl2ZVNldHNBbW91",
+            "bnQSVwoOc2V0Q3JlYXRpb25GZWUYBSABKAlCL8jeHwDa3h8nZ2l0aHViLmNv",
+            "bS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2luUg5zZXRDcmVhdGlvbkZl",
+            "ZRJdChFjb2xsYXRlcmFsRGVwb3NpdBgGIAEoCUIvyN4fANreHydnaXRodWIu",
+            "Y29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5SEWNvbGxhdGVyYWxE",
+            "ZXBvc2l0EiIKDHdpbm5lclJld2FyZBgHIAEoA1IMd2lubmVyUmV3YXJkElMK",
+            "DGhvdXJseUZhdWNldBgJIAEoCUIvyN4fANreHydnaXRodWIuY29tL2Nvc21v",
+            "cy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5SDGhvdXJseUZhdWNldBIkCg1pbmZs",
+            "YXRpb25SYXRlGAogASgJUg1pbmZsYXRpb25SYXRlEiIKDHJhcmVzUGVyUGFj",
+            "axgLIAEoBFIMcmFyZXNQZXJQYWNrEiYKDmNvbW1vbnNQZXJQYWNrGAwgASgE",
+            "Ug5jb21tb25zUGVyUGFjaxIqChB1bkNvbW1vbnNQZXJQYWNrGA0gASgEUhB1",
+            "bkNvbW1vbnNQZXJQYWNrEiAKC3RyaWFsUGVyaW9kGA4gASgEUgt0cmlhbFBl",
+            "cmlvZBIkCg1nYW1lVm90ZVJhdGlvGA8gASgDUg1nYW1lVm90ZVJhdGlvEkgK",
+            "H2NhcmRBdWN0aW9uUHJpY2VSZWR1Y3Rpb25QZXJpb2QYECABKANSH2NhcmRB",
+            "dWN0aW9uUHJpY2VSZWR1Y3Rpb25QZXJpb2QSUwoMYWlyRHJvcFZhbHVlGBEg",
+            "ASgJQi/I3h8A2t4fJ2dpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlw",
+            "ZXMuQ29pblIMYWlyRHJvcFZhbHVlEjQKFWFpckRyb3BNYXhCbG9ja0hlaWdo",
+            "dBgSIAEoA1IVYWlyRHJvcE1heEJsb2NrSGVpZ2h0ElkKD3RyaWFsVm90ZVJl",
+            "d2FyZBgTIAEoCUIvyN4fANreHydnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mt",
+            "c2RrL3R5cGVzLkNvaW5SD3RyaWFsVm90ZVJld2FyZBIqChB2b3RlUG9vbEZy",
+            "YWN0aW9uGBQgASgDUhB2b3RlUG9vbEZyYWN0aW9uEigKD3ZvdGluZ1Jld2Fy",
+            "ZENhcBgIIAEoA1IPdm90aW5nUmV3YXJkQ2FwEioKEG1hdGNoV29ya2VyRGVs",
+            "YXkYFSABKARSEG1hdGNoV29ya2VyRGVsYXk6BJigHwBCqAIKKWNvbS5EZWNl",
+            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgtQYXJhbXNQcm90",
+            "b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi94",
+            "L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNh",
+            "cmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hh",
+            "aW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENh",
+            "cmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJk",
+            "Y2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Params), global::DecentralCardGame.Cardchain.Cardchain.Params.Parser, new[]{ "VotingRightsExpirationTime", "CollectionSize", "CollectionPrice", "ActiveCollectionsAmount", "CollectionCreationFee", "CollateralDeposit", "WinnerReward", "HourlyFaucet", "InflationRate", "RaresPerPack", "CommonsPerPack", "UnCommonsPerPack", "TrialPeriod", "GameVoteRatio", "CardAuctionPriceReductionPeriod", "AirDropValue", "AirDropMaxBlockHeight", "TrialVoteReward", "VotePoolFraction", "VotingRewardCap", "MatchWorkerDelay" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Params), global::DecentralCardGame.Cardchain.Cardchain.Params.Parser, new[]{ "VotingRightsExpirationTime", "SetSize", "SetPrice", "ActiveSetsAmount", "SetCreationFee", "CollateralDeposit", "WinnerReward", "HourlyFaucet", "InflationRate", "RaresPerPack", "CommonsPerPack", "UnCommonsPerPack", "TrialPeriod", "GameVoteRatio", "CardAuctionPriceReductionPeriod", "AirDropValue", "AirDropMaxBlockHeight", "TrialVoteReward", "VotePoolFraction", "VotingRewardCap", "MatchWorkerDelay" }, null, null, null, null)
           }));
     }
     #endregion
@@ -109,10 +108,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Params(Params other) : this() {
       votingRightsExpirationTime_ = other.votingRightsExpirationTime_;
-      collectionSize_ = other.collectionSize_;
-      collectionPrice_ = other.collectionPrice_;
-      activeCollectionsAmount_ = other.activeCollectionsAmount_;
-      collectionCreationFee_ = other.collectionCreationFee_;
+      setSize_ = other.setSize_;
+      setPrice_ = other.setPrice_;
+      activeSetsAmount_ = other.activeSetsAmount_;
+      setCreationFee_ = other.setCreationFee_;
       collateralDeposit_ = other.collateralDeposit_;
       winnerReward_ = other.winnerReward_;
       hourlyFaucet_ = other.hourlyFaucet_;
@@ -150,51 +149,51 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
-    /// <summary>Field number for the "collectionSize" field.</summary>
-    public const int CollectionSizeFieldNumber = 2;
-    private ulong collectionSize_;
+    /// <summary>Field number for the "setSize" field.</summary>
+    public const int SetSizeFieldNumber = 2;
+    private ulong setSize_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong CollectionSize {
-      get { return collectionSize_; }
+    public ulong SetSize {
+      get { return setSize_; }
       set {
-        collectionSize_ = value;
+        setSize_ = value;
       }
     }
 
-    /// <summary>Field number for the "collectionPrice" field.</summary>
-    public const int CollectionPriceFieldNumber = 3;
-    private string collectionPrice_ = "";
+    /// <summary>Field number for the "setPrice" field.</summary>
+    public const int SetPriceFieldNumber = 3;
+    private string setPrice_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CollectionPrice {
-      get { return collectionPrice_; }
+    public string SetPrice {
+      get { return setPrice_; }
       set {
-        collectionPrice_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        setPrice_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
-    /// <summary>Field number for the "activeCollectionsAmount" field.</summary>
-    public const int ActiveCollectionsAmountFieldNumber = 4;
-    private ulong activeCollectionsAmount_;
+    /// <summary>Field number for the "activeSetsAmount" field.</summary>
+    public const int ActiveSetsAmountFieldNumber = 4;
+    private ulong activeSetsAmount_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong ActiveCollectionsAmount {
-      get { return activeCollectionsAmount_; }
+    public ulong ActiveSetsAmount {
+      get { return activeSetsAmount_; }
       set {
-        activeCollectionsAmount_ = value;
+        activeSetsAmount_ = value;
       }
     }
 
-    /// <summary>Field number for the "collectionCreationFee" field.</summary>
-    public const int CollectionCreationFeeFieldNumber = 5;
-    private string collectionCreationFee_ = "";
+    /// <summary>Field number for the "setCreationFee" field.</summary>
+    public const int SetCreationFeeFieldNumber = 5;
+    private string setCreationFee_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CollectionCreationFee {
-      get { return collectionCreationFee_; }
+    public string SetCreationFee {
+      get { return setCreationFee_; }
       set {
-        collectionCreationFee_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        setCreationFee_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -406,10 +405,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         return true;
       }
       if (VotingRightsExpirationTime != other.VotingRightsExpirationTime) return false;
-      if (CollectionSize != other.CollectionSize) return false;
-      if (CollectionPrice != other.CollectionPrice) return false;
-      if (ActiveCollectionsAmount != other.ActiveCollectionsAmount) return false;
-      if (CollectionCreationFee != other.CollectionCreationFee) return false;
+      if (SetSize != other.SetSize) return false;
+      if (SetPrice != other.SetPrice) return false;
+      if (ActiveSetsAmount != other.ActiveSetsAmount) return false;
+      if (SetCreationFee != other.SetCreationFee) return false;
       if (CollateralDeposit != other.CollateralDeposit) return false;
       if (WinnerReward != other.WinnerReward) return false;
       if (HourlyFaucet != other.HourlyFaucet) return false;
@@ -434,10 +433,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     public override int GetHashCode() {
       int hash = 1;
       if (VotingRightsExpirationTime != 0L) hash ^= VotingRightsExpirationTime.GetHashCode();
-      if (CollectionSize != 0UL) hash ^= CollectionSize.GetHashCode();
-      if (CollectionPrice.Length != 0) hash ^= CollectionPrice.GetHashCode();
-      if (ActiveCollectionsAmount != 0UL) hash ^= ActiveCollectionsAmount.GetHashCode();
-      if (CollectionCreationFee.Length != 0) hash ^= CollectionCreationFee.GetHashCode();
+      if (SetSize != 0UL) hash ^= SetSize.GetHashCode();
+      if (SetPrice.Length != 0) hash ^= SetPrice.GetHashCode();
+      if (ActiveSetsAmount != 0UL) hash ^= ActiveSetsAmount.GetHashCode();
+      if (SetCreationFee.Length != 0) hash ^= SetCreationFee.GetHashCode();
       if (CollateralDeposit.Length != 0) hash ^= CollateralDeposit.GetHashCode();
       if (WinnerReward != 0L) hash ^= WinnerReward.GetHashCode();
       if (HourlyFaucet.Length != 0) hash ^= HourlyFaucet.GetHashCode();
@@ -476,21 +475,21 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(8);
         output.WriteInt64(VotingRightsExpirationTime);
       }
-      if (CollectionSize != 0UL) {
+      if (SetSize != 0UL) {
         output.WriteRawTag(16);
-        output.WriteUInt64(CollectionSize);
+        output.WriteUInt64(SetSize);
       }
-      if (CollectionPrice.Length != 0) {
+      if (SetPrice.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(CollectionPrice);
+        output.WriteString(SetPrice);
       }
-      if (ActiveCollectionsAmount != 0UL) {
+      if (ActiveSetsAmount != 0UL) {
         output.WriteRawTag(32);
-        output.WriteUInt64(ActiveCollectionsAmount);
+        output.WriteUInt64(ActiveSetsAmount);
       }
-      if (CollectionCreationFee.Length != 0) {
+      if (SetCreationFee.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(CollectionCreationFee);
+        output.WriteString(SetCreationFee);
       }
       if (CollateralDeposit.Length != 0) {
         output.WriteRawTag(50);
@@ -570,21 +569,21 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(8);
         output.WriteInt64(VotingRightsExpirationTime);
       }
-      if (CollectionSize != 0UL) {
+      if (SetSize != 0UL) {
         output.WriteRawTag(16);
-        output.WriteUInt64(CollectionSize);
+        output.WriteUInt64(SetSize);
       }
-      if (CollectionPrice.Length != 0) {
+      if (SetPrice.Length != 0) {
         output.WriteRawTag(26);
-        output.WriteString(CollectionPrice);
+        output.WriteString(SetPrice);
       }
-      if (ActiveCollectionsAmount != 0UL) {
+      if (ActiveSetsAmount != 0UL) {
         output.WriteRawTag(32);
-        output.WriteUInt64(ActiveCollectionsAmount);
+        output.WriteUInt64(ActiveSetsAmount);
       }
-      if (CollectionCreationFee.Length != 0) {
+      if (SetCreationFee.Length != 0) {
         output.WriteRawTag(42);
-        output.WriteString(CollectionCreationFee);
+        output.WriteString(SetCreationFee);
       }
       if (CollateralDeposit.Length != 0) {
         output.WriteRawTag(50);
@@ -663,17 +662,17 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (VotingRightsExpirationTime != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(VotingRightsExpirationTime);
       }
-      if (CollectionSize != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CollectionSize);
+      if (SetSize != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(SetSize);
       }
-      if (CollectionPrice.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CollectionPrice);
+      if (SetPrice.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SetPrice);
       }
-      if (ActiveCollectionsAmount != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ActiveCollectionsAmount);
+      if (ActiveSetsAmount != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ActiveSetsAmount);
       }
-      if (CollectionCreationFee.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CollectionCreationFee);
+      if (SetCreationFee.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SetCreationFee);
       }
       if (CollateralDeposit.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(CollateralDeposit);
@@ -738,17 +737,17 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other.VotingRightsExpirationTime != 0L) {
         VotingRightsExpirationTime = other.VotingRightsExpirationTime;
       }
-      if (other.CollectionSize != 0UL) {
-        CollectionSize = other.CollectionSize;
+      if (other.SetSize != 0UL) {
+        SetSize = other.SetSize;
       }
-      if (other.CollectionPrice.Length != 0) {
-        CollectionPrice = other.CollectionPrice;
+      if (other.SetPrice.Length != 0) {
+        SetPrice = other.SetPrice;
       }
-      if (other.ActiveCollectionsAmount != 0UL) {
-        ActiveCollectionsAmount = other.ActiveCollectionsAmount;
+      if (other.ActiveSetsAmount != 0UL) {
+        ActiveSetsAmount = other.ActiveSetsAmount;
       }
-      if (other.CollectionCreationFee.Length != 0) {
-        CollectionCreationFee = other.CollectionCreationFee;
+      if (other.SetCreationFee.Length != 0) {
+        SetCreationFee = other.SetCreationFee;
       }
       if (other.CollateralDeposit.Length != 0) {
         CollateralDeposit = other.CollateralDeposit;
@@ -818,19 +817,19 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             break;
           }
           case 16: {
-            CollectionSize = input.ReadUInt64();
+            SetSize = input.ReadUInt64();
             break;
           }
           case 26: {
-            CollectionPrice = input.ReadString();
+            SetPrice = input.ReadString();
             break;
           }
           case 32: {
-            ActiveCollectionsAmount = input.ReadUInt64();
+            ActiveSetsAmount = input.ReadUInt64();
             break;
           }
           case 42: {
-            CollectionCreationFee = input.ReadString();
+            SetCreationFee = input.ReadString();
             break;
           }
           case 50: {
@@ -917,19 +916,19 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             break;
           }
           case 16: {
-            CollectionSize = input.ReadUInt64();
+            SetSize = input.ReadUInt64();
             break;
           }
           case 26: {
-            CollectionPrice = input.ReadString();
+            SetPrice = input.ReadString();
             break;
           }
           case 32: {
-            ActiveCollectionsAmount = input.ReadUInt64();
+            ActiveSetsAmount = input.ReadUInt64();
             break;
           }
           case 42: {
-            CollectionCreationFee = input.ReadString();
+            SetCreationFee = input.ReadString();
             break;
           }
           case 50: {

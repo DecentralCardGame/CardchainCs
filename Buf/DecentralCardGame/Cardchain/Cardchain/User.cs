@@ -39,28 +39,27 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "Y2FyZGNoYWluLkFpckRyb3BzUghhaXJEcm9wcxJWCgxib29zdGVyUGFja3MY",
             "CiADKAsyMi5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
             "LkJvb3N0ZXJQYWNrUgxib29zdGVyUGFja3MSGAoHd2Vic2l0ZRgLIAEoCVIH",
-            "d2Vic2l0ZRIcCgliaW9ncmFwaHkYDCABKAlSCWJpb2dyYXBoeSJ5CgtCb29z",
-            "dGVyUGFjaxIiCgxjb2xsZWN0aW9uSWQYASABKARSDGNvbGxlY3Rpb25JZBIc",
-            "Cgl0aW1lU3RhbXAYAiABKANSCXRpbWVTdGFtcBIoCg9yYXJpdGllc1BlclBh",
-            "Y2sYAyADKARSD3Jhcml0aWVzUGVyUGFjayJwCghBaXJEcm9wcxISCgR2b3Rl",
-            "GAEgASgIUgR2b3RlEhYKBmNyZWF0ZRgCIAEoCFIGY3JlYXRlEhAKA2J1eRgD",
-            "IAEoCFIDYnV5EhIKBHBsYXkYBCABKAhSBHBsYXkSEgoEdXNlchgFIAEoCFIE",
-            "dXNlcipUCg1Db3VuY2lsU3RhdHVzEg0KCWF2YWlsYWJsZRAAEg8KC3VuYXZh",
-            "aWxhYmxlEAESDwoLb3BlbkNvdW5jaWwQAhISCg5zdGFydGVkQ291bmNpbBAD",
-            "KjwKB0FpckRyb3ASCAoEcGxheRAAEggKBHZvdGUQARIKCgZjcmVhdGUQAhIH",
-            "CgNidXkQAxIICgR1c2VyEARCpgIKKWNvbS5EZWNlbnRyYWxDYXJkR2FtZS5j",
-            "YXJkY2hhaW4uY2FyZGNoYWluQglVc2VyUHJvdG9QAVo4Z2l0aHViLmNvbS9E",
-            "ZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4veC9jYXJkY2hhaW4vdHlwZXOi",
-            "AgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hhaW4uQ2FyZGNoYWlu",
-            "ygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFpbuICMURl",
-            "Y2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW5cR1BCTWV0YWRh",
-            "dGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWluOjpDYXJkY2hhaW5i",
-            "BnByb3RvMw=="));
+            "d2Vic2l0ZRIcCgliaW9ncmFwaHkYDCABKAlSCWJpb2dyYXBoeSJrCgtCb29z",
+            "dGVyUGFjaxIUCgVzZXRJZBgBIAEoBFIFc2V0SWQSHAoJdGltZVN0YW1wGAIg",
+            "ASgDUgl0aW1lU3RhbXASKAoPcmFyaXRpZXNQZXJQYWNrGAMgAygEUg9yYXJp",
+            "dGllc1BlclBhY2sicAoIQWlyRHJvcHMSEgoEdm90ZRgBIAEoCFIEdm90ZRIW",
+            "CgZjcmVhdGUYAiABKAhSBmNyZWF0ZRIQCgNidXkYAyABKAhSA2J1eRISCgRw",
+            "bGF5GAQgASgIUgRwbGF5EhIKBHVzZXIYBSABKAhSBHVzZXIqVAoNQ291bmNp",
+            "bFN0YXR1cxINCglhdmFpbGFibGUQABIPCgt1bmF2YWlsYWJsZRABEg8KC29w",
+            "ZW5Db3VuY2lsEAISEgoOc3RhcnRlZENvdW5jaWwQAyo8CgdBaXJEcm9wEggK",
+            "BHBsYXkQABIICgR2b3RlEAESCgoGY3JlYXRlEAISBwoDYnV5EAMSCAoEdXNl",
+            "chAEQqYCCiljb20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
+            "aGFpbkIJVXNlclByb3RvUAFaOGdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdh",
+            "bWUvQ2FyZGNoYWluL3gvY2FyZGNoYWluL3R5cGVzogIDRENDqgIlRGVjZW50",
+            "cmFsQ2FyZEdhbWUuQ2FyZGNoYWluLkNhcmRjaGFpbsoCJURlY2VudHJhbENh",
+            "cmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW7iAjFEZWNlbnRyYWxDYXJkR2Ft",
+            "ZVxDYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gInRGVjZW50cmFs",
+            "Q2FyZEdhbWU6OkNhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::DecentralCardGame.Cardchain.Cardchain.VoteingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus), typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrop), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.User), global::DecentralCardGame.Cardchain.Cardchain.User.Parser, new[]{ "Alias", "OwnedCardSchemes", "OwnedPrototypes", "Cards", "VoteRights", "CouncilStatus", "ReportMatches", "ProfileCard", "AirDrops", "BoosterPacks", "Website", "Biography" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.BoosterPack), global::DecentralCardGame.Cardchain.Cardchain.BoosterPack.Parser, new[]{ "CollectionId", "TimeStamp", "RaritiesPerPack" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.BoosterPack), global::DecentralCardGame.Cardchain.Cardchain.BoosterPack.Parser, new[]{ "SetId", "TimeStamp", "RaritiesPerPack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrops), global::DecentralCardGame.Cardchain.Cardchain.AirDrops.Parser, new[]{ "Vote", "Create", "Buy", "Play", "User" }, null, null, null, null)
           }));
     }
@@ -676,7 +675,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public BoosterPack(BoosterPack other) : this() {
-      collectionId_ = other.collectionId_;
+      setId_ = other.setId_;
       timeStamp_ = other.timeStamp_;
       raritiesPerPack_ = other.raritiesPerPack_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -688,15 +687,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       return new BoosterPack(this);
     }
 
-    /// <summary>Field number for the "collectionId" field.</summary>
-    public const int CollectionIdFieldNumber = 1;
-    private ulong collectionId_;
+    /// <summary>Field number for the "setId" field.</summary>
+    public const int SetIdFieldNumber = 1;
+    private ulong setId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong CollectionId {
-      get { return collectionId_; }
+    public ulong SetId {
+      get { return setId_; }
       set {
-        collectionId_ = value;
+        setId_ = value;
       }
     }
 
@@ -738,7 +737,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (CollectionId != other.CollectionId) return false;
+      if (SetId != other.SetId) return false;
       if (TimeStamp != other.TimeStamp) return false;
       if(!raritiesPerPack_.Equals(other.raritiesPerPack_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -748,7 +747,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (CollectionId != 0UL) hash ^= CollectionId.GetHashCode();
+      if (SetId != 0UL) hash ^= SetId.GetHashCode();
       if (TimeStamp != 0L) hash ^= TimeStamp.GetHashCode();
       hash ^= raritiesPerPack_.GetHashCode();
       if (_unknownFields != null) {
@@ -769,9 +768,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (CollectionId != 0UL) {
+      if (SetId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(CollectionId);
+        output.WriteUInt64(SetId);
       }
       if (TimeStamp != 0L) {
         output.WriteRawTag(16);
@@ -788,9 +787,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (CollectionId != 0UL) {
+      if (SetId != 0UL) {
         output.WriteRawTag(8);
-        output.WriteUInt64(CollectionId);
+        output.WriteUInt64(SetId);
       }
       if (TimeStamp != 0L) {
         output.WriteRawTag(16);
@@ -807,8 +806,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (CollectionId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CollectionId);
+      if (SetId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(SetId);
       }
       if (TimeStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TimeStamp);
@@ -826,8 +825,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other == null) {
         return;
       }
-      if (other.CollectionId != 0UL) {
-        CollectionId = other.CollectionId;
+      if (other.SetId != 0UL) {
+        SetId = other.SetId;
       }
       if (other.TimeStamp != 0L) {
         TimeStamp = other.TimeStamp;
@@ -849,7 +848,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            CollectionId = input.ReadUInt64();
+            SetId = input.ReadUInt64();
             break;
           }
           case 16: {
@@ -877,7 +876,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            CollectionId = input.ReadUInt64();
+            SetId = input.ReadUInt64();
             break;
           }
           case 16: {

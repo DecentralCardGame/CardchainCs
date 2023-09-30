@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<PackageId>CardchainCs</PackageId>
-		<Version>0.2.0</Version>
+		<Version>0.2.1</Version>
 		<Authors>lxgr</Authors>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>enable</Nullable>
@@ -21,7 +21,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Cosmcs" Version="0.4.0" />
+		<PackageReference Include="Cosmcs" Version="0.4.1" />
 	</ItemGroup>
 
 </Project>
