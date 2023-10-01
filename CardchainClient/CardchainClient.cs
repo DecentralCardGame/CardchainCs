@@ -149,7 +149,7 @@ namespace CardchainCs.CardchainClient
             });
         }
 
-        public Task<SendMsgExecResponse> SendMsgExecMsgBuySet(
+        public Task<SendMsgExecResponse> SendMsgExecMsgBuyBoosterPack(
             string creator,
             ulong setId)
         {
@@ -157,30 +157,30 @@ namespace CardchainCs.CardchainClient
                 {
                     new Any
                     {
-                        Value = new MsgBuySet
+                        Value = new MsgBuyBoosterPack
                         {
                             Creator = creator,
                             SetId = setId,
                         }.ToByteString(),
-                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuySet"
+                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyBoosterPack"
                     }
-                }, new MessageParser[] { MsgBuySetResponse.Parser }
+                }, new MessageParser[] { MsgBuyBoosterPackResponse.Parser }
             );
         }
 
-        public Task<SendMsgExecResponse> MultiSendMsgExecMsgBuySet(
+        public Task<SendMsgExecResponse> MultiSendMsgExecMsgBuyBoosterPack(
             string creator,
             ulong[] setIds)
         {
             return SendMsgExec(setIds.Select(id => new Any
             {
-                Value = new MsgBuySet
+                Value = new MsgBuyBoosterPack
                 {
                     Creator = creator,
                     SetId = id,
                 }.ToByteString(),
-                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuySet"
-            }).ToArray(), setIds.Select<ulong, MessageParser>(_ => MsgBuySetResponse.Parser).ToArray());
+                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyBoosterPack"
+            }).ToArray(), setIds.Select<ulong, MessageParser>(_ => MsgBuyBoosterPackResponse.Parser).ToArray());
         }
 
         public Task<SendMsgExecResponse> SendMsgExecMsgOpenBoosterPack(
