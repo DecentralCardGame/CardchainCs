@@ -385,12 +385,12 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuySetResponse>> SendMsgBuySet(DecentralCardGame.Cardchain.Cardchain.MsgBuySet msg) {
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>> SendMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
 					Value = msg.ToByteString(),
-					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuySet"
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyBoosterPack"
 				}}
 			).ContinueWith(r =>
 			{
@@ -402,9 +402,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				System.Threading.Thread.Sleep(10000);
 				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
 			})
-			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuySetResponse>(
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>(
 				r.Result,
-				DecentralCardGame.Cardchain.Cardchain.MsgBuySetResponse.Parser
+				DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse.Parser
 			));
 		}
 
