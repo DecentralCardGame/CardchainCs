@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Cosmcs.Client;
+using Cosmcs.Tx;
 using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
@@ -52,7 +53,8 @@ namespace CardchainCs.CardchainClient
                 {
                     Grantee = Ec.AccoutAddress.ToString(),
                     Msgs = { msgs }
-                }
+                },
+                new Fee(500_000)
             ).ContinueWith(r => new SendMsgExecResponse(r.Result, parsers));
         }
 
