@@ -187,30 +187,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>> SendMsgSubmitCopyrightProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposal msg, Fee? fee = null) {
-			return Client.BuildAndBroadcast(new Any[] {
-				new Any
-				{
-					Value = msg.ToByteString(),
-					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitCopyrightProposal"
-				}},
-				fee
-			).ContinueWith(r =>
-			{
-				var res = r.Result;
-				if (res.TxResponse.Code != 0)
-				{
-					return res.TxResponse;
-				}
-				System.Threading.Thread.Sleep(10000);
-				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
-			})
-			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse>(
-				r.Result,
-				DecentralCardGame.Cardchain.Cardchain.MsgSubmitCopyrightProposalResponse.Parser
-			));
-		}
-
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
@@ -280,30 +256,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>(
 				r.Result,
 				DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse.Parser
-			));
-		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>> SendMsgSubmitMatchReporterProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposal msg, Fee? fee = null) {
-			return Client.BuildAndBroadcast(new Any[] {
-				new Any
-				{
-					Value = msg.ToByteString(),
-					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitMatchReporterProposal"
-				}},
-				fee
-			).ContinueWith(r =>
-			{
-				var res = r.Result;
-				if (res.TxResponse.Code != 0)
-				{
-					return res.TxResponse;
-				}
-				System.Threading.Thread.Sleep(10000);
-				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
-			})
-			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse>(
-				r.Result,
-				DecentralCardGame.Cardchain.Cardchain.MsgSubmitMatchReporterProposalResponse.Parser
 			));
 		}
 
@@ -496,30 +448,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse>(
 				r.Result,
 				DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse.Parser
-			));
-		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitSetProposalResponse>> SendMsgSubmitSetProposal(DecentralCardGame.Cardchain.Cardchain.MsgSubmitSetProposal msg, Fee? fee = null) {
-			return Client.BuildAndBroadcast(new Any[] {
-				new Any
-				{
-					Value = msg.ToByteString(),
-					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgSubmitSetProposal"
-				}},
-				fee
-			).ContinueWith(r =>
-			{
-				var res = r.Result;
-				if (res.TxResponse.Code != 0)
-				{
-					return res.TxResponse;
-				}
-				System.Threading.Thread.Sleep(10000);
-				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
-			})
-			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSubmitSetProposalResponse>(
-				r.Result,
-				DecentralCardGame.Cardchain.Cardchain.MsgSubmitSetProposalResponse.Parser
 			));
 		}
 

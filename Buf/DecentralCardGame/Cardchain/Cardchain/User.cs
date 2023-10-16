@@ -25,41 +25,42 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5jYXJkY2hhaW4vY2FyZGNoYWluL3VzZXIucHJvdG8SJURlY2VudHJhbENh",
-            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4aIWNhcmRjaGFpbi9jYXJkY2hh",
-            "aW4vdm90ZWluZy5wcm90byLbBAoEVXNlchIUCgVhbGlhcxgBIAEoCVIFYWxp",
-            "YXMSKgoQb3duZWRDYXJkU2NoZW1lcxgCIAMoBFIQb3duZWRDYXJkU2NoZW1l",
-            "cxIoCg9vd25lZFByb3RvdHlwZXMYAyADKARSD293bmVkUHJvdG90eXBlcxIU",
-            "CgVjYXJkcxgEIAMoBFIFY2FyZHMSUAoKdm90ZVJpZ2h0cxgFIAMoCzIwLkRl",
-            "Y2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uVm90ZVJpZ2h0",
-            "Ugp2b3RlUmlnaHRzEloKDUNvdW5jaWxTdGF0dXMYBiABKA4yNC5EZWNlbnRy",
-            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNvdW5jaWxTdGF0dXNS",
-            "DUNvdW5jaWxTdGF0dXMSJAoNUmVwb3J0TWF0Y2hlcxgHIAEoCFINUmVwb3J0",
-            "TWF0Y2hlcxIgCgtwcm9maWxlQ2FyZBgIIAEoBFILcHJvZmlsZUNhcmQSSwoI",
-            "YWlyRHJvcHMYCSABKAsyLy5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4u",
-            "Y2FyZGNoYWluLkFpckRyb3BzUghhaXJEcm9wcxJWCgxib29zdGVyUGFja3MY",
-            "CiADKAsyMi5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "LkJvb3N0ZXJQYWNrUgxib29zdGVyUGFja3MSGAoHd2Vic2l0ZRgLIAEoCVIH",
-            "d2Vic2l0ZRIcCgliaW9ncmFwaHkYDCABKAlSCWJpb2dyYXBoeSJrCgtCb29z",
+            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4aIGNhcmRjaGFpbi9jYXJkY2hh",
+            "aW4vdm90aW5nLnByb3RvItsECgRVc2VyEhQKBWFsaWFzGAEgASgJUgVhbGlh",
+            "cxIqChBvd25lZENhcmRTY2hlbWVzGAIgAygEUhBvd25lZENhcmRTY2hlbWVz",
+            "EigKD293bmVkUHJvdG90eXBlcxgDIAMoBFIPb3duZWRQcm90b3R5cGVzEhQK",
+            "BWNhcmRzGAQgAygEUgVjYXJkcxJQCgp2b3RlUmlnaHRzGAUgAygLMjAuRGVj",
+            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Wb3RlUmlnaHRS",
+            "CnZvdGVSaWdodHMSWgoNQ291bmNpbFN0YXR1cxgGIAEoDjI0LkRlY2VudHJh",
+            "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ291bmNpbFN0YXR1c1IN",
+            "Q291bmNpbFN0YXR1cxIkCg1SZXBvcnRNYXRjaGVzGAcgASgIUg1SZXBvcnRN",
+            "YXRjaGVzEiAKC3Byb2ZpbGVDYXJkGAggASgEUgtwcm9maWxlQ2FyZBJLCghh",
+            "aXJEcm9wcxgJIAEoCzIvLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
+            "YXJkY2hhaW4uQWlyRHJvcHNSCGFpckRyb3BzElYKDGJvb3N0ZXJQYWNrcxgK",
+            "IAMoCzIyLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4u",
+            "Qm9vc3RlclBhY2tSDGJvb3N0ZXJQYWNrcxIYCgd3ZWJzaXRlGAsgASgJUgd3",
+            "ZWJzaXRlEhwKCWJpb2dyYXBoeRgMIAEoCVIJYmlvZ3JhcGh5IpkBCgtCb29z",
             "dGVyUGFjaxIUCgVzZXRJZBgBIAEoBFIFc2V0SWQSHAoJdGltZVN0YW1wGAIg",
             "ASgDUgl0aW1lU3RhbXASKAoPcmFyaXRpZXNQZXJQYWNrGAMgAygEUg9yYXJp",
-            "dGllc1BlclBhY2sicAoIQWlyRHJvcHMSEgoEdm90ZRgBIAEoCFIEdm90ZRIW",
-            "CgZjcmVhdGUYAiABKAhSBmNyZWF0ZRIQCgNidXkYAyABKAhSA2J1eRISCgRw",
-            "bGF5GAQgASgIUgRwbGF5EhIKBHVzZXIYBSABKAhSBHVzZXIqVAoNQ291bmNp",
-            "bFN0YXR1cxINCglhdmFpbGFibGUQABIPCgt1bmF2YWlsYWJsZRABEg8KC29w",
-            "ZW5Db3VuY2lsEAISEgoOc3RhcnRlZENvdW5jaWwQAyo8CgdBaXJEcm9wEggK",
-            "BHBsYXkQABIICgR2b3RlEAESCgoGY3JlYXRlEAISBwoDYnV5EAMSCAoEdXNl",
-            "chAEQqYCCiljb20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
-            "aGFpbkIJVXNlclByb3RvUAFaOGdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdh",
-            "bWUvQ2FyZGNoYWluL3gvY2FyZGNoYWluL3R5cGVzogIDRENDqgIlRGVjZW50",
-            "cmFsQ2FyZEdhbWUuQ2FyZGNoYWluLkNhcmRjaGFpbsoCJURlY2VudHJhbENh",
-            "cmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW7iAjFEZWNlbnRyYWxDYXJkR2Ft",
-            "ZVxDYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gInRGVjZW50cmFs",
-            "Q2FyZEdhbWU6OkNhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "dGllc1BlclBhY2sSLAoRZHJvcFJhdGlvc1BlclBhY2sYBCADKARSEWRyb3BS",
+            "YXRpb3NQZXJQYWNrInAKCEFpckRyb3BzEhIKBHZvdGUYASABKAhSBHZvdGUS",
+            "FgoGY3JlYXRlGAIgASgIUgZjcmVhdGUSEAoDYnV5GAMgASgIUgNidXkSEgoE",
+            "cGxheRgEIAEoCFIEcGxheRISCgR1c2VyGAUgASgIUgR1c2VyKlQKDUNvdW5j",
+            "aWxTdGF0dXMSDQoJYXZhaWxhYmxlEAASDwoLdW5hdmFpbGFibGUQARIPCgtv",
+            "cGVuQ291bmNpbBACEhIKDnN0YXJ0ZWRDb3VuY2lsEAMqPAoHQWlyRHJvcBII",
+            "CgRwbGF5EAASCAoEdm90ZRABEgoKBmNyZWF0ZRACEgcKA2J1eRADEggKBHVz",
+            "ZXIQBEKmAgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
+            "Y2hhaW5CCVVzZXJQcm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRH",
+            "YW1lL0NhcmRjaGFpbi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2Vu",
+            "dHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxD",
+            "YXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdh",
+            "bWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJh",
+            "bENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::DecentralCardGame.Cardchain.Cardchain.VoteingReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus), typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrop), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.User), global::DecentralCardGame.Cardchain.Cardchain.User.Parser, new[]{ "Alias", "OwnedCardSchemes", "OwnedPrototypes", "Cards", "VoteRights", "CouncilStatus", "ReportMatches", "ProfileCard", "AirDrops", "BoosterPacks", "Website", "Biography" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.BoosterPack), global::DecentralCardGame.Cardchain.Cardchain.BoosterPack.Parser, new[]{ "SetId", "TimeStamp", "RaritiesPerPack" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.BoosterPack), global::DecentralCardGame.Cardchain.Cardchain.BoosterPack.Parser, new[]{ "SetId", "TimeStamp", "RaritiesPerPack", "DropRatiosPerPack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrops), global::DecentralCardGame.Cardchain.Cardchain.AirDrops.Parser, new[]{ "Vote", "Create", "Buy", "Play", "User" }, null, null, null, null)
           }));
     }
@@ -678,6 +679,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       setId_ = other.setId_;
       timeStamp_ = other.timeStamp_;
       raritiesPerPack_ = other.raritiesPerPack_.Clone();
+      dropRatiosPerPack_ = other.dropRatiosPerPack_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -716,10 +718,27 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     private static readonly pb::FieldCodec<ulong> _repeated_raritiesPerPack_codec
         = pb::FieldCodec.ForUInt64(26);
     private readonly pbc::RepeatedField<ulong> raritiesPerPack_ = new pbc::RepeatedField<ulong>();
+    /// <summary>
+    /// How often the different rarities will appear in a BoosterPack
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<ulong> RaritiesPerPack {
       get { return raritiesPerPack_; }
+    }
+
+    /// <summary>Field number for the "dropRatiosPerPack" field.</summary>
+    public const int DropRatiosPerPackFieldNumber = 4;
+    private static readonly pb::FieldCodec<ulong> _repeated_dropRatiosPerPack_codec
+        = pb::FieldCodec.ForUInt64(34);
+    private readonly pbc::RepeatedField<ulong> dropRatiosPerPack_ = new pbc::RepeatedField<ulong>();
+    /// <summary>
+    /// The chances of the rare beeing a normal rare, an exceptional or a unique
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<ulong> DropRatiosPerPack {
+      get { return dropRatiosPerPack_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -740,6 +759,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (SetId != other.SetId) return false;
       if (TimeStamp != other.TimeStamp) return false;
       if(!raritiesPerPack_.Equals(other.raritiesPerPack_)) return false;
+      if(!dropRatiosPerPack_.Equals(other.dropRatiosPerPack_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -750,6 +770,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (SetId != 0UL) hash ^= SetId.GetHashCode();
       if (TimeStamp != 0L) hash ^= TimeStamp.GetHashCode();
       hash ^= raritiesPerPack_.GetHashCode();
+      hash ^= dropRatiosPerPack_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -777,6 +798,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteInt64(TimeStamp);
       }
       raritiesPerPack_.WriteTo(output, _repeated_raritiesPerPack_codec);
+      dropRatiosPerPack_.WriteTo(output, _repeated_dropRatiosPerPack_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -796,6 +818,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteInt64(TimeStamp);
       }
       raritiesPerPack_.WriteTo(ref output, _repeated_raritiesPerPack_codec);
+      dropRatiosPerPack_.WriteTo(ref output, _repeated_dropRatiosPerPack_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -813,6 +836,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TimeStamp);
       }
       size += raritiesPerPack_.CalculateSize(_repeated_raritiesPerPack_codec);
+      size += dropRatiosPerPack_.CalculateSize(_repeated_dropRatiosPerPack_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -832,6 +856,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         TimeStamp = other.TimeStamp;
       }
       raritiesPerPack_.Add(other.raritiesPerPack_);
+      dropRatiosPerPack_.Add(other.dropRatiosPerPack_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -860,6 +885,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             raritiesPerPack_.AddEntriesFrom(input, _repeated_raritiesPerPack_codec);
             break;
           }
+          case 34:
+          case 32: {
+            dropRatiosPerPack_.AddEntriesFrom(input, _repeated_dropRatiosPerPack_codec);
+            break;
+          }
         }
       }
     #endif
@@ -886,6 +916,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           case 26:
           case 24: {
             raritiesPerPack_.AddEntriesFrom(ref input, _repeated_raritiesPerPack_codec);
+            break;
+          }
+          case 34:
+          case 32: {
+            dropRatiosPerPack_.AddEntriesFrom(ref input, _repeated_dropRatiosPerPack_codec);
             break;
           }
         }
