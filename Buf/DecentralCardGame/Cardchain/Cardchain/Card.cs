@@ -26,7 +26,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "Ch5jYXJkY2hhaW4vY2FyZGNoYWluL2NhcmQucHJvdG8SJURlY2VudHJhbENh",
             "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4aFGdvZ29wcm90by9nb2dvLnBy",
-            "b3RvIt8ECgRDYXJkEhQKBW93bmVyGAEgASgJUgVvd25lchIWCgZhcnRpc3QY",
+            "b3RvIqoFCgRDYXJkEhQKBW93bmVyGAEgASgJUgVvd25lchIWCgZhcnRpc3QY",
             "AiABKAlSBmFydGlzdBIYCgdjb250ZW50GAMgASgMUgdjb250ZW50EhkKCGlt",
             "YWdlX2lkGAQgASgEUgdpbWFnZUlkEhgKB2Z1bGxBcnQYBSABKAhSB2Z1bGxB",
             "cnQSFAoFbm90ZXMYBiABKAlSBW5vdGVzEkUKBnN0YXR1cxgHIAEoDjItLkRl",
@@ -39,37 +39,42 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "cnBvd2VyZWRWb3RlcxIuChJpbmFwcHJvcHJpYXRlVm90ZXMYDCABKARSEmlu",
             "YXBwcm9wcmlhdGVWb3RlcxIcCgluZXJmbGV2ZWwYDSABKANSCW5lcmZsZXZl",
             "bBIkCg1iYWxhbmNlQW5jaG9yGA8gASgIUg1iYWxhbmNlQW5jaG9yEiAKC3N0",
-            "YXJ0ZXJDYXJkGBAgASgIUgtzdGFydGVyQ2FyZCLyBAoIT3V0cENhcmQSFAoF",
-            "b3duZXIYASABKAlSBW93bmVyEhYKBmFydGlzdBgCIAEoCVIGYXJ0aXN0EhgK",
-            "B2NvbnRlbnQYAyABKAlSB2NvbnRlbnQSFAoFaW1hZ2UYBCABKAlSBWltYWdl",
-            "EhgKB2Z1bGxBcnQYBSABKAhSB2Z1bGxBcnQSFAoFbm90ZXMYBiABKAlSBW5v",
-            "dGVzEkUKBnN0YXR1cxgHIAEoDjItLkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uU3RhdHVzUgZzdGF0dXMSSwoIdm90ZVBvb2wYCCAB",
-            "KAlCL8jeHwDa3h8nZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBl",
-            "cy5Db2luUgh2b3RlUG9vbBIWCgZ2b3RlcnMYDiADKAlSBnZvdGVycxIoCg9m",
-            "YWlyRW5vdWdoVm90ZXMYCSABKARSD2ZhaXJFbm91Z2hWb3RlcxIqChBvdmVy",
-            "cG93ZXJlZFZvdGVzGAogASgEUhBvdmVycG93ZXJlZFZvdGVzEiwKEXVuZGVy",
-            "cG93ZXJlZFZvdGVzGAsgASgEUhF1bmRlcnBvd2VyZWRWb3RlcxIuChJpbmFw",
-            "cHJvcHJpYXRlVm90ZXMYDCABKARSEmluYXBwcm9wcmlhdGVWb3RlcxIcCglu",
-            "ZXJmbGV2ZWwYDSABKANSCW5lcmZsZXZlbBIkCg1iYWxhbmNlQW5jaG9yGA8g",
-            "ASgIUg1iYWxhbmNlQW5jaG9yEhIKBGhhc2gYECABKAlSBGhhc2gSIAoLc3Rh",
-            "cnRlckNhcmQYESABKAhSC3N0YXJ0ZXJDYXJkIikKCVRpbWVTdGFtcBIcCgl0",
-            "aW1lU3RhbXAYASABKARSCXRpbWVTdGFtcCqGAQoGU3RhdHVzEgoKBnNjaGVt",
-            "ZRAAEg0KCXByb3RvdHlwZRABEgkKBXRyaWFsEAISDQoJcGVybWFuZW50EAMS",
-            "DQoJc3VzcGVuZGVkEAQSCgoGYmFubmVkEAUSDgoKYmFubmVkU29vbhAGEhIK",
-            "DmJhbm5lZFZlcnlTb29uEAcSCAoEbm9uZRAIQqYCCiljb20uRGVjZW50cmFs",
-            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbkIJQ2FyZFByb3RvUAFaOGdp",
-            "dGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL3gvY2FyZGNo",
-            "YWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWlu",
-            "LkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJk",
-            "Y2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu",
-            "XEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6",
-            "Q2FyZGNoYWluYgZwcm90bzM="));
+            "YXJ0ZXJDYXJkGBAgASgIUgtzdGFydGVyQ2FyZBJJCgZyYXJpdHkYESABKA4y",
+            "MS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNhcmRS",
+            "YXJpdHlSBnJhcml0eSK9BQoIT3V0cENhcmQSFAoFb3duZXIYASABKAlSBW93",
+            "bmVyEhYKBmFydGlzdBgCIAEoCVIGYXJ0aXN0EhgKB2NvbnRlbnQYAyABKAlS",
+            "B2NvbnRlbnQSFAoFaW1hZ2UYBCABKAlSBWltYWdlEhgKB2Z1bGxBcnQYBSAB",
+            "KAhSB2Z1bGxBcnQSFAoFbm90ZXMYBiABKAlSBW5vdGVzEkUKBnN0YXR1cxgH",
+            "IAEoDjItLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4u",
+            "U3RhdHVzUgZzdGF0dXMSSwoIdm90ZVBvb2wYCCABKAlCL8jeHwDa3h8nZ2l0",
+            "aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2luUgh2b3RlUG9v",
+            "bBIWCgZ2b3RlcnMYDiADKAlSBnZvdGVycxIoCg9mYWlyRW5vdWdoVm90ZXMY",
+            "CSABKARSD2ZhaXJFbm91Z2hWb3RlcxIqChBvdmVycG93ZXJlZFZvdGVzGAog",
+            "ASgEUhBvdmVycG93ZXJlZFZvdGVzEiwKEXVuZGVycG93ZXJlZFZvdGVzGAsg",
+            "ASgEUhF1bmRlcnBvd2VyZWRWb3RlcxIuChJpbmFwcHJvcHJpYXRlVm90ZXMY",
+            "DCABKARSEmluYXBwcm9wcmlhdGVWb3RlcxIcCgluZXJmbGV2ZWwYDSABKANS",
+            "CW5lcmZsZXZlbBIkCg1iYWxhbmNlQW5jaG9yGA8gASgIUg1iYWxhbmNlQW5j",
+            "aG9yEhIKBGhhc2gYECABKAlSBGhhc2gSIAoLc3RhcnRlckNhcmQYESABKAhS",
+            "C3N0YXJ0ZXJDYXJkEkkKBnJhcml0eRgSIAEoDjIxLkRlY2VudHJhbENhcmRH",
+            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ2FyZFJhcml0eVIGcmFyaXR5IikK",
+            "CVRpbWVTdGFtcBIcCgl0aW1lU3RhbXAYASABKARSCXRpbWVTdGFtcCqGAQoG",
+            "U3RhdHVzEgoKBnNjaGVtZRAAEg0KCXByb3RvdHlwZRABEgkKBXRyaWFsEAIS",
+            "DQoJcGVybWFuZW50EAMSDQoJc3VzcGVuZGVkEAQSCgoGYmFubmVkEAUSDgoK",
+            "YmFubmVkU29vbhAGEhIKDmJhbm5lZFZlcnlTb29uEAcSCAoEbm9uZRAIKk0K",
+            "CkNhcmRSYXJpdHkSCgoGY29tbW9uEAASDAoIdW5jb21tb24QARIICgRyYXJl",
+            "EAISDwoLZXhjZXB0aW9uYWwQAxIKCgZ1bmlxdWUQBEKmAgopY29tLkRlY2Vu",
+            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CCUNhcmRQcm90b1AB",
+            "WjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi94L2Nh",
+            "cmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNhcmRj",
+            "aGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5c",
+            "Q2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRj",
+            "aGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJkY2hh",
+            "aW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.Status), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Card), global::DecentralCardGame.Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "StarterCard" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpCard), global::DecentralCardGame.Cardchain.Cardchain.OutpCard.Parser, new[]{ "Owner", "Artist", "Content", "Image", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "Hash", "StarterCard" }, null, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.Status), typeof(global::DecentralCardGame.Cardchain.Cardchain.CardRarity), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Card), global::DecentralCardGame.Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "StarterCard", "Rarity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpCard), global::DecentralCardGame.Cardchain.Cardchain.OutpCard.Parser, new[]{ "Owner", "Artist", "Content", "Image", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "Hash", "StarterCard", "Rarity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.TimeStamp), global::DecentralCardGame.Cardchain.Cardchain.TimeStamp.Parser, new[]{ "TimeStamp_" }, null, null, null, null)
           }));
     }
@@ -87,6 +92,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [pbr::OriginalName("bannedSoon")] BannedSoon = 6,
     [pbr::OriginalName("bannedVerySoon")] BannedVerySoon = 7,
     [pbr::OriginalName("none")] None = 8,
+  }
+
+  public enum CardRarity {
+    [pbr::OriginalName("common")] Common = 0,
+    [pbr::OriginalName("uncommon")] Uncommon = 1,
+    [pbr::OriginalName("rare")] Rare = 2,
+    [pbr::OriginalName("exceptional")] Exceptional = 3,
+    [pbr::OriginalName("unique")] Unique = 4,
   }
 
   #endregion
@@ -142,6 +155,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       nerflevel_ = other.nerflevel_;
       balanceAnchor_ = other.balanceAnchor_;
       starterCard_ = other.starterCard_;
+      rarity_ = other.rarity_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -342,6 +356,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "rarity" field.</summary>
+    public const int RarityFieldNumber = 17;
+    private global::DecentralCardGame.Cardchain.Cardchain.CardRarity rarity_ = global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DecentralCardGame.Cardchain.Cardchain.CardRarity Rarity {
+      get { return rarity_; }
+      set {
+        rarity_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -373,6 +399,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Nerflevel != other.Nerflevel) return false;
       if (BalanceAnchor != other.BalanceAnchor) return false;
       if (StarterCard != other.StarterCard) return false;
+      if (Rarity != other.Rarity) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -396,6 +423,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Nerflevel != 0L) hash ^= Nerflevel.GetHashCode();
       if (BalanceAnchor != false) hash ^= BalanceAnchor.GetHashCode();
       if (StarterCard != false) hash ^= StarterCard.GetHashCode();
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) hash ^= Rarity.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -475,6 +503,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(128, 1);
         output.WriteBool(StarterCard);
       }
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        output.WriteRawTag(136, 1);
+        output.WriteEnum((int) Rarity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -546,6 +578,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(128, 1);
         output.WriteBool(StarterCard);
       }
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        output.WriteRawTag(136, 1);
+        output.WriteEnum((int) Rarity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -601,6 +637,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (StarterCard != false) {
         size += 2 + 1;
+      }
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Rarity);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -659,6 +698,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.StarterCard != false) {
         StarterCard = other.StarterCard;
+      }
+      if (other.Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        Rarity = other.Rarity;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -737,6 +779,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 128: {
             StarterCard = input.ReadBool();
+            break;
+          }
+          case 136: {
+            Rarity = (global::DecentralCardGame.Cardchain.Cardchain.CardRarity) input.ReadEnum();
             break;
           }
         }
@@ -818,6 +864,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             StarterCard = input.ReadBool();
             break;
           }
+          case 136: {
+            Rarity = (global::DecentralCardGame.Cardchain.Cardchain.CardRarity) input.ReadEnum();
+            break;
+          }
         }
       }
     }
@@ -876,6 +926,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       balanceAnchor_ = other.balanceAnchor_;
       hash_ = other.hash_;
       starterCard_ = other.starterCard_;
+      rarity_ = other.rarity_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1088,6 +1139,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "rarity" field.</summary>
+    public const int RarityFieldNumber = 18;
+    private global::DecentralCardGame.Cardchain.Cardchain.CardRarity rarity_ = global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DecentralCardGame.Cardchain.Cardchain.CardRarity Rarity {
+      get { return rarity_; }
+      set {
+        rarity_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1120,6 +1183,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (BalanceAnchor != other.BalanceAnchor) return false;
       if (Hash != other.Hash) return false;
       if (StarterCard != other.StarterCard) return false;
+      if (Rarity != other.Rarity) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1144,6 +1208,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (BalanceAnchor != false) hash ^= BalanceAnchor.GetHashCode();
       if (Hash.Length != 0) hash ^= Hash.GetHashCode();
       if (StarterCard != false) hash ^= StarterCard.GetHashCode();
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) hash ^= Rarity.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1227,6 +1292,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(136, 1);
         output.WriteBool(StarterCard);
       }
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) Rarity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1302,6 +1371,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(136, 1);
         output.WriteBool(StarterCard);
       }
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        output.WriteRawTag(144, 1);
+        output.WriteEnum((int) Rarity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1360,6 +1433,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (StarterCard != false) {
         size += 2 + 1;
+      }
+      if (Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Rarity);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1421,6 +1497,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.StarterCard != false) {
         StarterCard = other.StarterCard;
+      }
+      if (other.Rarity != global::DecentralCardGame.Cardchain.Cardchain.CardRarity.Common) {
+        Rarity = other.Rarity;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1505,6 +1584,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             StarterCard = input.ReadBool();
             break;
           }
+          case 144: {
+            Rarity = (global::DecentralCardGame.Cardchain.Cardchain.CardRarity) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -1586,6 +1669,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 136: {
             StarterCard = input.ReadBool();
+            break;
+          }
+          case 144: {
+            Rarity = (global::DecentralCardGame.Cardchain.Cardchain.CardRarity) input.ReadEnum();
             break;
           }
         }
