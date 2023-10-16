@@ -26,7 +26,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "CiBjYXJkY2hhaW4vY2FyZGNoYWluL3BhcmFtcy5wcm90bxIlRGVjZW50cmFs",
             "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbhoUZ29nb3Byb3RvL2dvZ28u",
-            "cHJvdG8iqgkKBlBhcmFtcxI+Chp2b3RpbmdSaWdodHNFeHBpcmF0aW9uVGlt",
+            "cHJvdG8irgoKBlBhcmFtcxI+Chp2b3RpbmdSaWdodHNFeHBpcmF0aW9uVGlt",
             "ZRgBIAEoA1Iadm90aW5nUmlnaHRzRXhwaXJhdGlvblRpbWUSGAoHc2V0U2l6",
             "ZRgCIAEoBFIHc2V0U2l6ZRJLCghzZXRQcmljZRgDIAEoCUIvyN4fANreHydn",
             "aXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5SCHNldFBy",
@@ -52,18 +52,21 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "c2RrL3R5cGVzLkNvaW5SD3RyaWFsVm90ZVJld2FyZBIqChB2b3RlUG9vbEZy",
             "YWN0aW9uGBQgASgDUhB2b3RlUG9vbEZyYWN0aW9uEigKD3ZvdGluZ1Jld2Fy",
             "ZENhcBgIIAEoA1IPdm90aW5nUmV3YXJkQ2FwEioKEG1hdGNoV29ya2VyRGVs",
-            "YXkYFSABKARSEG1hdGNoV29ya2VyRGVsYXk6BJigHwBCqAIKKWNvbS5EZWNl",
-            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgtQYXJhbXNQcm90",
-            "b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi94",
-            "L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNh",
-            "cmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hh",
-            "aW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENh",
-            "cmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJk",
-            "Y2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
+            "YXkYFSABKARSEG1hdGNoV29ya2VyRGVsYXkSJAoNcmFyZURyb3BSYXRpbxgW",
+            "IAEoBFINcmFyZURyb3BSYXRpbxIyChRleGNlcHRpb25hbERyb3BSYXRpbxgX",
+            "IAEoBFIUZXhjZXB0aW9uYWxEcm9wUmF0aW8SKAoPdW5pcXVlRHJvcFJhdGlv",
+            "GBggASgEUg91bmlxdWVEcm9wUmF0aW86BJigHwBCqAIKKWNvbS5EZWNlbnRy",
+            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgtQYXJhbXNQcm90b1AB",
+            "WjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi94L2Nh",
+            "cmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNhcmRj",
+            "aGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5c",
+            "Q2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRj",
+            "aGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJkY2hh",
+            "aW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Params), global::DecentralCardGame.Cardchain.Cardchain.Params.Parser, new[]{ "VotingRightsExpirationTime", "SetSize", "SetPrice", "ActiveSetsAmount", "SetCreationFee", "CollateralDeposit", "WinnerReward", "HourlyFaucet", "InflationRate", "RaresPerPack", "CommonsPerPack", "UnCommonsPerPack", "TrialPeriod", "GameVoteRatio", "CardAuctionPriceReductionPeriod", "AirDropValue", "AirDropMaxBlockHeight", "TrialVoteReward", "VotePoolFraction", "VotingRewardCap", "MatchWorkerDelay" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Params), global::DecentralCardGame.Cardchain.Cardchain.Params.Parser, new[]{ "VotingRightsExpirationTime", "SetSize", "SetPrice", "ActiveSetsAmount", "SetCreationFee", "CollateralDeposit", "WinnerReward", "HourlyFaucet", "InflationRate", "RaresPerPack", "CommonsPerPack", "UnCommonsPerPack", "TrialPeriod", "GameVoteRatio", "CardAuctionPriceReductionPeriod", "AirDropValue", "AirDropMaxBlockHeight", "TrialVoteReward", "VotePoolFraction", "VotingRewardCap", "MatchWorkerDelay", "RareDropRatio", "ExceptionalDropRatio", "UniqueDropRatio" }, null, null, null, null)
           }));
     }
     #endregion
@@ -128,6 +131,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       votePoolFraction_ = other.votePoolFraction_;
       votingRewardCap_ = other.votingRewardCap_;
       matchWorkerDelay_ = other.matchWorkerDelay_;
+      rareDropRatio_ = other.rareDropRatio_;
+      exceptionalDropRatio_ = other.exceptionalDropRatio_;
+      uniqueDropRatio_ = other.uniqueDropRatio_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -389,6 +395,42 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "rareDropRatio" field.</summary>
+    public const int RareDropRatioFieldNumber = 22;
+    private ulong rareDropRatio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong RareDropRatio {
+      get { return rareDropRatio_; }
+      set {
+        rareDropRatio_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "exceptionalDropRatio" field.</summary>
+    public const int ExceptionalDropRatioFieldNumber = 23;
+    private ulong exceptionalDropRatio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong ExceptionalDropRatio {
+      get { return exceptionalDropRatio_; }
+      set {
+        exceptionalDropRatio_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "uniqueDropRatio" field.</summary>
+    public const int UniqueDropRatioFieldNumber = 24;
+    private ulong uniqueDropRatio_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ulong UniqueDropRatio {
+      get { return uniqueDropRatio_; }
+      set {
+        uniqueDropRatio_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -425,6 +467,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (VotePoolFraction != other.VotePoolFraction) return false;
       if (VotingRewardCap != other.VotingRewardCap) return false;
       if (MatchWorkerDelay != other.MatchWorkerDelay) return false;
+      if (RareDropRatio != other.RareDropRatio) return false;
+      if (ExceptionalDropRatio != other.ExceptionalDropRatio) return false;
+      if (UniqueDropRatio != other.UniqueDropRatio) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -453,6 +498,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (VotePoolFraction != 0L) hash ^= VotePoolFraction.GetHashCode();
       if (VotingRewardCap != 0L) hash ^= VotingRewardCap.GetHashCode();
       if (MatchWorkerDelay != 0UL) hash ^= MatchWorkerDelay.GetHashCode();
+      if (RareDropRatio != 0UL) hash ^= RareDropRatio.GetHashCode();
+      if (ExceptionalDropRatio != 0UL) hash ^= ExceptionalDropRatio.GetHashCode();
+      if (UniqueDropRatio != 0UL) hash ^= UniqueDropRatio.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -555,6 +603,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(168, 1);
         output.WriteUInt64(MatchWorkerDelay);
       }
+      if (RareDropRatio != 0UL) {
+        output.WriteRawTag(176, 1);
+        output.WriteUInt64(RareDropRatio);
+      }
+      if (ExceptionalDropRatio != 0UL) {
+        output.WriteRawTag(184, 1);
+        output.WriteUInt64(ExceptionalDropRatio);
+      }
+      if (UniqueDropRatio != 0UL) {
+        output.WriteRawTag(192, 1);
+        output.WriteUInt64(UniqueDropRatio);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -649,6 +709,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(168, 1);
         output.WriteUInt64(MatchWorkerDelay);
       }
+      if (RareDropRatio != 0UL) {
+        output.WriteRawTag(176, 1);
+        output.WriteUInt64(RareDropRatio);
+      }
+      if (ExceptionalDropRatio != 0UL) {
+        output.WriteRawTag(184, 1);
+        output.WriteUInt64(ExceptionalDropRatio);
+      }
+      if (UniqueDropRatio != 0UL) {
+        output.WriteRawTag(192, 1);
+        output.WriteUInt64(UniqueDropRatio);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -721,6 +793,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (MatchWorkerDelay != 0UL) {
         size += 2 + pb::CodedOutputStream.ComputeUInt64Size(MatchWorkerDelay);
+      }
+      if (RareDropRatio != 0UL) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt64Size(RareDropRatio);
+      }
+      if (ExceptionalDropRatio != 0UL) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt64Size(ExceptionalDropRatio);
+      }
+      if (UniqueDropRatio != 0UL) {
+        size += 2 + pb::CodedOutputStream.ComputeUInt64Size(UniqueDropRatio);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -796,6 +877,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.MatchWorkerDelay != 0UL) {
         MatchWorkerDelay = other.MatchWorkerDelay;
+      }
+      if (other.RareDropRatio != 0UL) {
+        RareDropRatio = other.RareDropRatio;
+      }
+      if (other.ExceptionalDropRatio != 0UL) {
+        ExceptionalDropRatio = other.ExceptionalDropRatio;
+      }
+      if (other.UniqueDropRatio != 0UL) {
+        UniqueDropRatio = other.UniqueDropRatio;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -896,6 +986,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             MatchWorkerDelay = input.ReadUInt64();
             break;
           }
+          case 176: {
+            RareDropRatio = input.ReadUInt64();
+            break;
+          }
+          case 184: {
+            ExceptionalDropRatio = input.ReadUInt64();
+            break;
+          }
+          case 192: {
+            UniqueDropRatio = input.ReadUInt64();
+            break;
+          }
         }
       }
     #endif
@@ -993,6 +1095,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 168: {
             MatchWorkerDelay = input.ReadUInt64();
+            break;
+          }
+          case 176: {
+            RareDropRatio = input.ReadUInt64();
+            break;
+          }
+          case 184: {
+            ExceptionalDropRatio = input.ReadUInt64();
+            break;
+          }
+          case 192: {
+            UniqueDropRatio = input.ReadUInt64();
             break;
           }
         }
