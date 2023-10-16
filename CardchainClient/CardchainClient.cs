@@ -118,12 +118,10 @@ namespace CardchainCs.CardchainClient
         }
 
         public Task<ClientResponse<MsgOpenMatchResponse>> SendMsgOpenMatch(
-            ulong matchId,
             ulong[] playerADeck,
             ulong[] playerBDeck,
             string playerA,
-            string playerB,
-            Outcome outcome)
+            string playerB)
         {
             return CcTxClient.SendMsgOpenMatch(new MsgOpenMatch
             {
