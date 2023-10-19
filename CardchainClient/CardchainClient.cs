@@ -201,5 +201,20 @@ namespace CardchainCs.CardchainClient
                 }, new MessageParser[] { MsgOpenBoosterPackResponse.Parser }
             );
         }
+
+        public Task<SendMsgExecResponse> MultiSendMsgExecMsgOpenBoosterPack(
+            string creator,
+            ulong[] boosterPackIds)
+        {
+            return SendMsgExec(boosterPackIds.Select(id => new Any
+            {
+                Value = new MsgOpenBoosterPack
+                {
+                    Creator = creator,
+                    BoosterPackId = id
+                }.ToByteString(),
+                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+            }).ToArray(), boosterPackIds.Select<ulong, MessageParser>(_ => MsgOpenBoosterPackResponse.Parser).ToArray());
+        }
     }
 }
