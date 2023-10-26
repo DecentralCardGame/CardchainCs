@@ -26,40 +26,40 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "Ch5jYXJkY2hhaW4vY2FyZGNoYWluL3VzZXIucHJvdG8SJURlY2VudHJhbENh",
             "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4aIGNhcmRjaGFpbi9jYXJkY2hh",
-            "aW4vdm90aW5nLnByb3RvItsECgRVc2VyEhQKBWFsaWFzGAEgASgJUgVhbGlh",
+            "aW4vdm90aW5nLnByb3RvIs0ECgRVc2VyEhQKBWFsaWFzGAEgASgJUgVhbGlh",
             "cxIqChBvd25lZENhcmRTY2hlbWVzGAIgAygEUhBvd25lZENhcmRTY2hlbWVz",
             "EigKD293bmVkUHJvdG90eXBlcxgDIAMoBFIPb3duZWRQcm90b3R5cGVzEhQK",
-            "BWNhcmRzGAQgAygEUgVjYXJkcxJQCgp2b3RlUmlnaHRzGAUgAygLMjAuRGVj",
-            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Wb3RlUmlnaHRS",
-            "CnZvdGVSaWdodHMSWgoNQ291bmNpbFN0YXR1cxgGIAEoDjI0LkRlY2VudHJh",
-            "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ291bmNpbFN0YXR1c1IN",
-            "Q291bmNpbFN0YXR1cxIkCg1SZXBvcnRNYXRjaGVzGAcgASgIUg1SZXBvcnRN",
-            "YXRjaGVzEiAKC3Byb2ZpbGVDYXJkGAggASgEUgtwcm9maWxlQ2FyZBJLCghh",
-            "aXJEcm9wcxgJIAEoCzIvLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
-            "YXJkY2hhaW4uQWlyRHJvcHNSCGFpckRyb3BzElYKDGJvb3N0ZXJQYWNrcxgK",
-            "IAMoCzIyLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4u",
-            "Qm9vc3RlclBhY2tSDGJvb3N0ZXJQYWNrcxIYCgd3ZWJzaXRlGAsgASgJUgd3",
-            "ZWJzaXRlEhwKCWJpb2dyYXBoeRgMIAEoCVIJYmlvZ3JhcGh5IpkBCgtCb29z",
-            "dGVyUGFjaxIUCgVzZXRJZBgBIAEoBFIFc2V0SWQSHAoJdGltZVN0YW1wGAIg",
-            "ASgDUgl0aW1lU3RhbXASKAoPcmFyaXRpZXNQZXJQYWNrGAMgAygEUg9yYXJp",
-            "dGllc1BlclBhY2sSLAoRZHJvcFJhdGlvc1BlclBhY2sYBCADKARSEWRyb3BS",
-            "YXRpb3NQZXJQYWNrInAKCEFpckRyb3BzEhIKBHZvdGUYASABKAhSBHZvdGUS",
-            "FgoGY3JlYXRlGAIgASgIUgZjcmVhdGUSEAoDYnV5GAMgASgIUgNidXkSEgoE",
-            "cGxheRgEIAEoCFIEcGxheRISCgR1c2VyGAUgASgIUgR1c2VyKlQKDUNvdW5j",
-            "aWxTdGF0dXMSDQoJYXZhaWxhYmxlEAASDwoLdW5hdmFpbGFibGUQARIPCgtv",
-            "cGVuQ291bmNpbBACEhIKDnN0YXJ0ZWRDb3VuY2lsEAMqPAoHQWlyRHJvcBII",
-            "CgRwbGF5EAASCAoEdm90ZRABEgoKBmNyZWF0ZRACEgcKA2J1eRADEggKBHVz",
-            "ZXIQBEKmAgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW5CCVVzZXJQcm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRH",
-            "YW1lL0NhcmRjaGFpbi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2Vu",
-            "dHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxD",
-            "YXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdh",
-            "bWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJh",
-            "bENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
+            "BWNhcmRzGAQgAygEUgVjYXJkcxJaCg1Db3VuY2lsU3RhdHVzGAYgASgOMjQu",
+            "RGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Db3VuY2ls",
+            "U3RhdHVzUg1Db3VuY2lsU3RhdHVzEiQKDVJlcG9ydE1hdGNoZXMYByABKAhS",
+            "DVJlcG9ydE1hdGNoZXMSIAoLcHJvZmlsZUNhcmQYCCABKARSC3Byb2ZpbGVD",
+            "YXJkEksKCGFpckRyb3BzGAkgASgLMi8uRGVjZW50cmFsQ2FyZEdhbWUuY2Fy",
+            "ZGNoYWluLmNhcmRjaGFpbi5BaXJEcm9wc1IIYWlyRHJvcHMSVgoMYm9vc3Rl",
+            "clBhY2tzGAogAygLMjIuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
+            "cmRjaGFpbi5Cb29zdGVyUGFja1IMYm9vc3RlclBhY2tzEhgKB3dlYnNpdGUY",
+            "CyABKAlSB3dlYnNpdGUSHAoJYmlvZ3JhcGh5GAwgASgJUgliaW9ncmFwaHkS",
+            "IgoMdm90YWJsZUNhcmRzGA0gAygEUgx2b3RhYmxlQ2FyZHMSHgoKdm90ZWRD",
+            "YXJkcxgOIAMoBFIKdm90ZWRDYXJkcyKZAQoLQm9vc3RlclBhY2sSFAoFc2V0",
+            "SWQYASABKARSBXNldElkEhwKCXRpbWVTdGFtcBgCIAEoA1IJdGltZVN0YW1w",
+            "EigKD3Jhcml0aWVzUGVyUGFjaxgDIAMoBFIPcmFyaXRpZXNQZXJQYWNrEiwK",
+            "EWRyb3BSYXRpb3NQZXJQYWNrGAQgAygEUhFkcm9wUmF0aW9zUGVyUGFjayJw",
+            "CghBaXJEcm9wcxISCgR2b3RlGAEgASgIUgR2b3RlEhYKBmNyZWF0ZRgCIAEo",
+            "CFIGY3JlYXRlEhAKA2J1eRgDIAEoCFIDYnV5EhIKBHBsYXkYBCABKAhSBHBs",
+            "YXkSEgoEdXNlchgFIAEoCFIEdXNlcipUCg1Db3VuY2lsU3RhdHVzEg0KCWF2",
+            "YWlsYWJsZRAAEg8KC3VuYXZhaWxhYmxlEAESDwoLb3BlbkNvdW5jaWwQAhIS",
+            "Cg5zdGFydGVkQ291bmNpbBADKjwKB0FpckRyb3ASCAoEcGxheRAAEggKBHZv",
+            "dGUQARIKCgZjcmVhdGUQAhIHCgNidXkQAxIICgR1c2VyEARCpgIKKWNvbS5E",
+            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQglVc2VyUHJv",
+            "dG9QAVo4Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4v",
+            "eC9jYXJkY2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5D",
+            "YXJkY2hhaW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNo",
+            "YWluXENhcmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxD",
+            "YXJkY2hhaW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2Fy",
+            "ZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus), typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrop), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.User), global::DecentralCardGame.Cardchain.Cardchain.User.Parser, new[]{ "Alias", "OwnedCardSchemes", "OwnedPrototypes", "Cards", "VoteRights", "CouncilStatus", "ReportMatches", "ProfileCard", "AirDrops", "BoosterPacks", "Website", "Biography" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.User), global::DecentralCardGame.Cardchain.Cardchain.User.Parser, new[]{ "Alias", "OwnedCardSchemes", "OwnedPrototypes", "Cards", "CouncilStatus", "ReportMatches", "ProfileCard", "AirDrops", "BoosterPacks", "Website", "Biography", "VotableCards", "VotedCards" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.BoosterPack), global::DecentralCardGame.Cardchain.Cardchain.BoosterPack.Parser, new[]{ "SetId", "TimeStamp", "RaritiesPerPack", "DropRatiosPerPack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrops), global::DecentralCardGame.Cardchain.Cardchain.AirDrops.Parser, new[]{ "Vote", "Create", "Buy", "Play", "User" }, null, null, null, null)
           }));
@@ -124,7 +124,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       ownedCardSchemes_ = other.ownedCardSchemes_.Clone();
       ownedPrototypes_ = other.ownedPrototypes_.Clone();
       cards_ = other.cards_.Clone();
-      voteRights_ = other.voteRights_.Clone();
       councilStatus_ = other.councilStatus_;
       reportMatches_ = other.reportMatches_;
       profileCard_ = other.profileCard_;
@@ -132,6 +131,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       boosterPacks_ = other.boosterPacks_.Clone();
       website_ = other.website_;
       biography_ = other.biography_;
+      votableCards_ = other.votableCards_.Clone();
+      votedCards_ = other.votedCards_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -184,17 +185,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<ulong> Cards {
       get { return cards_; }
-    }
-
-    /// <summary>Field number for the "voteRights" field.</summary>
-    public const int VoteRightsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.VoteRight> _repeated_voteRights_codec
-        = pb::FieldCodec.ForMessage(42, global::DecentralCardGame.Cardchain.Cardchain.VoteRight.Parser);
-    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.VoteRight> voteRights_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.VoteRight>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.VoteRight> VoteRights {
-      get { return voteRights_; }
     }
 
     /// <summary>Field number for the "CouncilStatus" field.</summary>
@@ -280,6 +270,28 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "votableCards" field.</summary>
+    public const int VotableCardsFieldNumber = 13;
+    private static readonly pb::FieldCodec<ulong> _repeated_votableCards_codec
+        = pb::FieldCodec.ForUInt64(106);
+    private readonly pbc::RepeatedField<ulong> votableCards_ = new pbc::RepeatedField<ulong>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<ulong> VotableCards {
+      get { return votableCards_; }
+    }
+
+    /// <summary>Field number for the "votedCards" field.</summary>
+    public const int VotedCardsFieldNumber = 14;
+    private static readonly pb::FieldCodec<ulong> _repeated_votedCards_codec
+        = pb::FieldCodec.ForUInt64(114);
+    private readonly pbc::RepeatedField<ulong> votedCards_ = new pbc::RepeatedField<ulong>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<ulong> VotedCards {
+      get { return votedCards_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -299,7 +311,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if(!ownedCardSchemes_.Equals(other.ownedCardSchemes_)) return false;
       if(!ownedPrototypes_.Equals(other.ownedPrototypes_)) return false;
       if(!cards_.Equals(other.cards_)) return false;
-      if(!voteRights_.Equals(other.voteRights_)) return false;
       if (CouncilStatus != other.CouncilStatus) return false;
       if (ReportMatches != other.ReportMatches) return false;
       if (ProfileCard != other.ProfileCard) return false;
@@ -307,6 +318,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if(!boosterPacks_.Equals(other.boosterPacks_)) return false;
       if (Website != other.Website) return false;
       if (Biography != other.Biography) return false;
+      if(!votableCards_.Equals(other.votableCards_)) return false;
+      if(!votedCards_.Equals(other.votedCards_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -318,7 +331,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       hash ^= ownedCardSchemes_.GetHashCode();
       hash ^= ownedPrototypes_.GetHashCode();
       hash ^= cards_.GetHashCode();
-      hash ^= voteRights_.GetHashCode();
       if (CouncilStatus != global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus.Available) hash ^= CouncilStatus.GetHashCode();
       if (ReportMatches != false) hash ^= ReportMatches.GetHashCode();
       if (ProfileCard != 0UL) hash ^= ProfileCard.GetHashCode();
@@ -326,6 +338,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       hash ^= boosterPacks_.GetHashCode();
       if (Website.Length != 0) hash ^= Website.GetHashCode();
       if (Biography.Length != 0) hash ^= Biography.GetHashCode();
+      hash ^= votableCards_.GetHashCode();
+      hash ^= votedCards_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -351,7 +365,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       ownedCardSchemes_.WriteTo(output, _repeated_ownedCardSchemes_codec);
       ownedPrototypes_.WriteTo(output, _repeated_ownedPrototypes_codec);
       cards_.WriteTo(output, _repeated_cards_codec);
-      voteRights_.WriteTo(output, _repeated_voteRights_codec);
       if (CouncilStatus != global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus.Available) {
         output.WriteRawTag(48);
         output.WriteEnum((int) CouncilStatus);
@@ -377,6 +390,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(98);
         output.WriteString(Biography);
       }
+      votableCards_.WriteTo(output, _repeated_votableCards_codec);
+      votedCards_.WriteTo(output, _repeated_votedCards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -394,7 +409,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       ownedCardSchemes_.WriteTo(ref output, _repeated_ownedCardSchemes_codec);
       ownedPrototypes_.WriteTo(ref output, _repeated_ownedPrototypes_codec);
       cards_.WriteTo(ref output, _repeated_cards_codec);
-      voteRights_.WriteTo(ref output, _repeated_voteRights_codec);
       if (CouncilStatus != global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus.Available) {
         output.WriteRawTag(48);
         output.WriteEnum((int) CouncilStatus);
@@ -420,6 +434,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(98);
         output.WriteString(Biography);
       }
+      votableCards_.WriteTo(ref output, _repeated_votableCards_codec);
+      votedCards_.WriteTo(ref output, _repeated_votedCards_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -436,7 +452,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       size += ownedCardSchemes_.CalculateSize(_repeated_ownedCardSchemes_codec);
       size += ownedPrototypes_.CalculateSize(_repeated_ownedPrototypes_codec);
       size += cards_.CalculateSize(_repeated_cards_codec);
-      size += voteRights_.CalculateSize(_repeated_voteRights_codec);
       if (CouncilStatus != global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus.Available) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) CouncilStatus);
       }
@@ -456,6 +471,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Biography.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Biography);
       }
+      size += votableCards_.CalculateSize(_repeated_votableCards_codec);
+      size += votedCards_.CalculateSize(_repeated_votedCards_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -474,7 +491,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       ownedCardSchemes_.Add(other.ownedCardSchemes_);
       ownedPrototypes_.Add(other.ownedPrototypes_);
       cards_.Add(other.cards_);
-      voteRights_.Add(other.voteRights_);
       if (other.CouncilStatus != global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus.Available) {
         CouncilStatus = other.CouncilStatus;
       }
@@ -497,6 +513,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other.Biography.Length != 0) {
         Biography = other.Biography;
       }
+      votableCards_.Add(other.votableCards_);
+      votedCards_.Add(other.votedCards_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -531,10 +549,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             cards_.AddEntriesFrom(input, _repeated_cards_codec);
             break;
           }
-          case 42: {
-            voteRights_.AddEntriesFrom(input, _repeated_voteRights_codec);
-            break;
-          }
           case 48: {
             CouncilStatus = (global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus) input.ReadEnum();
             break;
@@ -564,6 +578,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 98: {
             Biography = input.ReadString();
+            break;
+          }
+          case 106:
+          case 104: {
+            votableCards_.AddEntriesFrom(input, _repeated_votableCards_codec);
+            break;
+          }
+          case 114:
+          case 112: {
+            votedCards_.AddEntriesFrom(input, _repeated_votedCards_codec);
             break;
           }
         }
@@ -600,10 +624,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             cards_.AddEntriesFrom(ref input, _repeated_cards_codec);
             break;
           }
-          case 42: {
-            voteRights_.AddEntriesFrom(ref input, _repeated_voteRights_codec);
-            break;
-          }
           case 48: {
             CouncilStatus = (global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus) input.ReadEnum();
             break;
@@ -633,6 +653,16 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 98: {
             Biography = input.ReadString();
+            break;
+          }
+          case 106:
+          case 104: {
+            votableCards_.AddEntriesFrom(ref input, _repeated_votableCards_codec);
+            break;
+          }
+          case 114:
+          case 112: {
+            votedCards_.AddEntriesFrom(ref input, _repeated_votedCards_codec);
             break;
           }
         }
