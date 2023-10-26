@@ -83,7 +83,7 @@ namespace CardchainCs.CardchainClient
         public Task<SendMsgExecResponse> SendMsgExecMsgVoteCard(
             string creator,
             ulong cardId,
-            string voteType)
+            VoteType voteType)
         {
             return SendMsgExec(new[]
                 {
