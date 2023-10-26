@@ -39,29 +39,39 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "dmVycG93ZXJlZFZvdGVzGAMgASgEUhBvdmVycG93ZXJlZFZvdGVzEiwKEXVu",
             "ZGVycG93ZXJlZFZvdGVzGAQgASgEUhF1bmRlcnBvd2VyZWRWb3RlcxIuChJp",
             "bmFwcHJvcHJpYXRlVm90ZXMYBSABKARSEmluYXBwcm9wcmlhdGVWb3RlcxIW",
-            "CgZyZXN1bHQYBiABKAlSBnJlc3VsdCJACgpTaW5nbGVWb3RlEhYKBmNhcmRJ",
-            "ZBgBIAEoBFIGY2FyZElkEhoKCHZvdGVUeXBlGAIgASgJUgh2b3RlVHlwZSJF",
-            "CglWb3RlUmlnaHQSFgoGY2FyZElkGAEgASgEUgZjYXJkSWQSIAoLZXhwaXJl",
-            "QmxvY2sYAiABKANSC2V4cGlyZUJsb2NrQqgCCiljb20uRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbkILVm90aW5nUHJvdG9QAVo4Z2l0",
-            "aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4veC9jYXJkY2hh",
-            "aW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hhaW4u",
-            "Q2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRj",
-            "aGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW5c",
-            "R1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWluOjpD",
-            "YXJkY2hhaW5iBnByb3RvMw=="));
+            "CgZyZXN1bHQYBiABKAlSBnJlc3VsdCJxCgpTaW5nbGVWb3RlEhYKBmNhcmRJ",
+            "ZBgBIAEoBFIGY2FyZElkEksKCHZvdGVUeXBlGAIgASgOMi8uRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Wb3RlVHlwZVIIdm90ZVR5",
+            "cGUqUAoIVm90ZVR5cGUSDgoKZmFpckVub3VnaBAAEhEKDWluYXBwcm9wcmlh",
+            "dGUQARIPCgtvdmVycG93ZXJlZBACEhAKDHVuZGVycG93ZXJlZBADQqgCCilj",
+            "b20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbkILVm90",
+            "aW5nUHJvdG9QAVo4Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJk",
+            "Y2hhaW4veC9jYXJkY2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJk",
+            "R2FtZS5DYXJkY2hhaW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVc",
+            "Q2FyZGNoYWluXENhcmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRj",
+            "aGFpblxDYXJkY2hhaW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2Ft",
+            "ZTo6Q2FyZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.VoteType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.VotingResults), global::DecentralCardGame.Cardchain.Cardchain.VotingResults.Parser, new[]{ "TotalVotes", "TotalFairEnoughVotes", "TotalOverpoweredVotes", "TotalUnderpoweredVotes", "TotalInappropriateVotes", "CardResults", "Notes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.VotingResult), global::DecentralCardGame.Cardchain.Cardchain.VotingResult.Parser, new[]{ "CardId", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Result" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.SingleVote), global::DecentralCardGame.Cardchain.Cardchain.SingleVote.Parser, new[]{ "CardId", "VoteType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.VoteRight), global::DecentralCardGame.Cardchain.Cardchain.VoteRight.Parser, new[]{ "CardId", "ExpireBlock" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.SingleVote), global::DecentralCardGame.Cardchain.Cardchain.SingleVote.Parser, new[]{ "CardId", "VoteType" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum VoteType {
+    [pbr::OriginalName("fairEnough")] FairEnough = 0,
+    [pbr::OriginalName("inappropriate")] Inappropriate = 1,
+    [pbr::OriginalName("overpowered")] Overpowered = 2,
+    [pbr::OriginalName("underpowered")] Underpowered = 3,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class VotingResults : pb::IMessage<VotingResults>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -896,13 +906,13 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
     /// <summary>Field number for the "voteType" field.</summary>
     public const int VoteTypeFieldNumber = 2;
-    private string voteType_ = "";
+    private global::DecentralCardGame.Cardchain.Cardchain.VoteType voteType_ = global::DecentralCardGame.Cardchain.Cardchain.VoteType.FairEnough;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string VoteType {
+    public global::DecentralCardGame.Cardchain.Cardchain.VoteType VoteType {
       get { return voteType_; }
       set {
-        voteType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        voteType_ = value;
       }
     }
 
@@ -931,7 +941,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     public override int GetHashCode() {
       int hash = 1;
       if (CardId != 0UL) hash ^= CardId.GetHashCode();
-      if (VoteType.Length != 0) hash ^= VoteType.GetHashCode();
+      if (VoteType != global::DecentralCardGame.Cardchain.Cardchain.VoteType.FairEnough) hash ^= VoteType.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -954,9 +964,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(8);
         output.WriteUInt64(CardId);
       }
-      if (VoteType.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(VoteType);
+      if (VoteType != global::DecentralCardGame.Cardchain.Cardchain.VoteType.FairEnough) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) VoteType);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -972,9 +982,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(8);
         output.WriteUInt64(CardId);
       }
-      if (VoteType.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(VoteType);
+      if (VoteType != global::DecentralCardGame.Cardchain.Cardchain.VoteType.FairEnough) {
+        output.WriteRawTag(16);
+        output.WriteEnum((int) VoteType);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -989,8 +999,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (CardId != 0UL) {
         size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CardId);
       }
-      if (VoteType.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(VoteType);
+      if (VoteType != global::DecentralCardGame.Cardchain.Cardchain.VoteType.FairEnough) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) VoteType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1007,7 +1017,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other.CardId != 0UL) {
         CardId = other.CardId;
       }
-      if (other.VoteType.Length != 0) {
+      if (other.VoteType != global::DecentralCardGame.Cardchain.Cardchain.VoteType.FairEnough) {
         VoteType = other.VoteType;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1029,234 +1039,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             CardId = input.ReadUInt64();
             break;
           }
-          case 18: {
-            VoteType = input.ReadString();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            CardId = input.ReadUInt64();
-            break;
-          }
-          case 18: {
-            VoteType = input.ReadString();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  public sealed partial class VoteRight : pb::IMessage<VoteRight>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<VoteRight> _parser = new pb::MessageParser<VoteRight>(() => new VoteRight());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<VoteRight> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor.MessageTypes[3]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public VoteRight() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public VoteRight(VoteRight other) : this() {
-      cardId_ = other.cardId_;
-      expireBlock_ = other.expireBlock_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public VoteRight Clone() {
-      return new VoteRight(this);
-    }
-
-    /// <summary>Field number for the "cardId" field.</summary>
-    public const int CardIdFieldNumber = 1;
-    private ulong cardId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public ulong CardId {
-      get { return cardId_; }
-      set {
-        cardId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "expireBlock" field.</summary>
-    public const int ExpireBlockFieldNumber = 2;
-    private long expireBlock_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long ExpireBlock {
-      get { return expireBlock_; }
-      set {
-        expireBlock_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as VoteRight);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(VoteRight other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (CardId != other.CardId) return false;
-      if (ExpireBlock != other.ExpireBlock) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (CardId != 0UL) hash ^= CardId.GetHashCode();
-      if (ExpireBlock != 0L) hash ^= ExpireBlock.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (CardId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(CardId);
-      }
-      if (ExpireBlock != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(ExpireBlock);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (CardId != 0UL) {
-        output.WriteRawTag(8);
-        output.WriteUInt64(CardId);
-      }
-      if (ExpireBlock != 0L) {
-        output.WriteRawTag(16);
-        output.WriteInt64(ExpireBlock);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (CardId != 0UL) {
-        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CardId);
-      }
-      if (ExpireBlock != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(ExpireBlock);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(VoteRight other) {
-      if (other == null) {
-        return;
-      }
-      if (other.CardId != 0UL) {
-        CardId = other.CardId;
-      }
-      if (other.ExpireBlock != 0L) {
-        ExpireBlock = other.ExpireBlock;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            CardId = input.ReadUInt64();
-            break;
-          }
           case 16: {
-            ExpireBlock = input.ReadInt64();
+            VoteType = (global::DecentralCardGame.Cardchain.Cardchain.VoteType) input.ReadEnum();
             break;
           }
         }
@@ -1279,7 +1063,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             break;
           }
           case 16: {
-            ExpireBlock = input.ReadInt64();
+            VoteType = (global::DecentralCardGame.Cardchain.Cardchain.VoteType) input.ReadEnum();
             break;
           }
         }

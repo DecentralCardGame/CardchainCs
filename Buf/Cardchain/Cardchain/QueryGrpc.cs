@@ -73,10 +73,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotingResultsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotableCardsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotableCardsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse.Parser));
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQCardsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQCardsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse.Parser));
@@ -164,14 +160,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         "QVotingResults",
         __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotingResultsRequest,
         __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotingResultsResponse);
-
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse> __Method_QVotableCards = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse>(
-        grpc::MethodType.Unary,
-        __ServiceName,
-        "QVotableCards",
-        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotableCardsRequest,
-        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQVotableCardsResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse> __Method_QCards = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse>(
@@ -331,18 +319,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse> QVotingResults(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Queries a list of QVotableCards items.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse> QVotableCards(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -783,54 +759,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse> QVotingResultsAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QVotingResults, null, options, request);
-      }
-      /// <summary>
-      /// Queries a list of QVotableCards items.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse QVotableCards(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return QVotableCards(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Queries a list of QVotableCards items.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The response received from the server.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse QVotableCards(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_QVotableCards, null, options, request);
-      }
-      /// <summary>
-      /// Queries a list of QVotableCards items.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
-      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
-      /// <param name="cancellationToken">An optional token for canceling the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse> QVotableCardsAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return QVotableCardsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      /// <summary>
-      /// Queries a list of QVotableCards items.
-      /// </summary>
-      /// <param name="request">The request to send to the server.</param>
-      /// <param name="options">The options for the call.</param>
-      /// <returns>The call object.</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse> QVotableCardsAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_QVotableCards, null, options, request);
       }
       /// <summary>
       /// Queries a list of QCards items.
@@ -1332,7 +1260,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           .AddMethod(__Method_QUser, serviceImpl.QUser)
           .AddMethod(__Method_QCardchainInfo, serviceImpl.QCardchainInfo)
           .AddMethod(__Method_QVotingResults, serviceImpl.QVotingResults)
-          .AddMethod(__Method_QVotableCards, serviceImpl.QVotableCards)
           .AddMethod(__Method_QCards, serviceImpl.QCards)
           .AddMethod(__Method_QMatch, serviceImpl.QMatch)
           .AddMethod(__Method_QSet, serviceImpl.QSet)
@@ -1358,7 +1285,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       serviceBinder.AddMethod(__Method_QUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQUserRequest, global::DecentralCardGame.Cardchain.Cardchain.User>(serviceImpl.QUser));
       serviceBinder.AddMethod(__Method_QCardchainInfo, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardchainInfoRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardchainInfoResponse>(serviceImpl.QCardchainInfo));
       serviceBinder.AddMethod(__Method_QVotingResults, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse>(serviceImpl.QVotingResults));
-      serviceBinder.AddMethod(__Method_QVotableCards, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQVotableCardsResponse>(serviceImpl.QVotableCards));
       serviceBinder.AddMethod(__Method_QCards, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse>(serviceImpl.QCards));
       serviceBinder.AddMethod(__Method_QMatch, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQMatchRequest, global::DecentralCardGame.Cardchain.Cardchain.Match>(serviceImpl.QMatch));
       serviceBinder.AddMethod(__Method_QSet, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Cardchain.QueryQSetRequest, global::DecentralCardGame.Cardchain.Cardchain.OutpSet>(serviceImpl.QSet));
