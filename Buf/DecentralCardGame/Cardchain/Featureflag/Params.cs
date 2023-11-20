@@ -47,6 +47,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
   /// <summary>
   /// Params defines the parameters for the module.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Params : pb::IMessage<Params>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

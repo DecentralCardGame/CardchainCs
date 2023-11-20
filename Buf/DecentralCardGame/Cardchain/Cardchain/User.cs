@@ -86,6 +86,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
   #endregion
 
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class User : pb::IMessage<User>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -672,6 +673,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class BoosterPack : pb::IMessage<BoosterPack>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -960,6 +962,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AirDrops : pb::IMessage<AirDrops>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

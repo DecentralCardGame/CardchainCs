@@ -3,7 +3,7 @@ managed:
     enabled: true
 plugins:
     - plugin: cosmosCsharp
-      out: ../../Clients
+      out: ../../Buf
     - plugin: buf.build/protocolbuffers/csharp
       out: ../../Buf
       opt: base_namespace=

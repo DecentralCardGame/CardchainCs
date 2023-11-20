@@ -54,7 +54,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "c3RDYXJkTW9kaWZpZWQiHAoaUXVlcnlRVm90aW5nUmVzdWx0c1JlcXVlc3Qi",
             "gQEKG1F1ZXJ5UVZvdGluZ1Jlc3VsdHNSZXNwb25zZRJiChFsYXN0Vm90aW5n",
             "UmVzdWx0cxgBIAEoCzI0LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
-            "YXJkY2hhaW4uVm90aW5nUmVzdWx0c1IRbGFzdFZvdGluZ1Jlc3VsdHMimQQK",
+            "YXJkY2hhaW4uVm90aW5nUmVzdWx0c1IRbGFzdFZvdGluZ1Jlc3VsdHMiyQQK",
             "ElF1ZXJ5UUNhcmRzUmVxdWVzdBIUCgVvd25lchgBIAEoCVIFb3duZXISWAoG",
             "c3RhdHVzGAIgASgOMkAuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
             "cmRjaGFpbi5RdWVyeVFDYXJkc1JlcXVlc3QuU3RhdHVzUgZzdGF0dXMSGgoI",
@@ -63,128 +63,129 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "GAYgASgJUgxuYW1lQ29udGFpbnMSKgoQa2V5d29yZHNDb250YWlucxgHIAEo",
             "CVIQa2V5d29yZHNDb250YWlucxIkCg1ub3Rlc0NvbnRhaW5zGAggASgJUg1u",
             "b3Rlc0NvbnRhaW5zEigKD29ubHlTdGFydGVyQ2FyZBgJIAEoCFIPb25seVN0",
-            "YXJ0ZXJDYXJkIqQBCgZTdGF0dXMSCgoGc2NoZW1lEAASDQoJcHJvdG90eXBl",
-            "EAESCQoFdHJpYWwQAhINCglwZXJtYW5lbnQQAxINCglzdXNwZW5kZWQQBBIK",
-            "CgZiYW5uZWQQBRIOCgpiYW5uZWRTb29uEAYSEgoOYmFubmVkVmVyeVNvb24Q",
-            "BxIICgRub25lEAgSDAoIcGxheWFibGUQCRIOCgp1bnBsYXlhYmxlEAoiMwoT",
-            "UXVlcnlRQ2FyZHNSZXNwb25zZRIcCgljYXJkc0xpc3QYASADKARSCWNhcmRz",
-            "TGlzdCIuChJRdWVyeVFNYXRjaFJlcXVlc3QSGAoHbWF0Y2hJZBgBIAEoBFIH",
-            "bWF0Y2hJZCIoChBRdWVyeVFTZXRSZXF1ZXN0EhQKBXNldElkGAEgASgEUgVz",
-            "ZXRJZCI6ChZRdWVyeVFTZWxsT2ZmZXJSZXF1ZXN0EiAKC3NlbGxPZmZlcklk",
-            "GAEgASgEUgtzZWxsT2ZmZXJJZCI0ChRRdWVyeVFDb3VuY2lsUmVxdWVzdBIc",
-            "Cgljb3VuY2lsSWQYASABKARSCWNvdW5jaWxJZCLaAgoUUXVlcnlRTWF0Y2hl",
-            "c1JlcXVlc3QSJAoNdGltZXN0YW1wRG93bhgBIAEoBFINdGltZXN0YW1wRG93",
-            "bhIgCgt0aW1lc3RhbXBVcBgCIAEoBFILdGltZXN0YW1wVXASJAoNY29udGFp",
-            "bnNVc2VycxgDIAMoCVINY29udGFpbnNVc2VycxIaCghyZXBvcnRlchgEIAEo",
-            "CVIIcmVwb3J0ZXISSAoHb3V0Y29tZRgFIAEoDjIuLkRlY2VudHJhbENhcmRH",
-            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uT3V0Y29tZVIHb3V0Y29tZRIgCgtj",
-            "YXJkc1BsYXllZBgGIAMoBFILY2FyZHNQbGF5ZWQSTAoGaWdub3JlGAcgASgL",
-            "MjQuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5JZ25v",
-            "cmVNYXRjaGVzUgZpZ25vcmUiKQoNSWdub3JlTWF0Y2hlcxIYCgdvdXRjb21l",
-            "GAEgASgIUgdvdXRjb21lIoEBChVRdWVyeVFNYXRjaGVzUmVzcG9uc2USIAoL",
-            "bWF0Y2hlc0xpc3QYASADKARSC21hdGNoZXNMaXN0EkYKB21hdGNoZXMYAiAD",
-            "KAsyLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLk1h",
-            "dGNoUgdtYXRjaGVzIrQCChdRdWVyeVFTZWxsT2ZmZXJzUmVxdWVzdBIcCglw",
-            "cmljZURvd24YASABKAlSCXByaWNlRG93bhIYCgdwcmljZVVwGAIgASgJUgdw",
-            "cmljZVVwEhYKBnNlbGxlchgDIAEoCVIGc2VsbGVyEhQKBWJ1eWVyGAQgASgJ",
-            "UgVidXllchISCgRjYXJkGAUgASgEUgRjYXJkEk4KBnN0YXR1cxgGIAEoDjI2",
-            "LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2VsbE9m",
-            "ZmVyU3RhdHVzUgZzdGF0dXMSTwoGaWdub3JlGAcgASgLMjcuRGVjZW50cmFs",
-            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5JZ25vcmVTZWxsT2ZmZXJz",
-            "UgZpZ25vcmUiPgoQSWdub3JlU2VsbE9mZmVycxIWCgZzdGF0dXMYASABKAhS",
-            "BnN0YXR1cxISCgRjYXJkGAIgASgIUgRjYXJkIpIBChhRdWVyeVFTZWxsT2Zm",
-            "ZXJzUmVzcG9uc2USJAoNc2VsbE9mZmVyc0lkcxgBIAMoBFINc2VsbE9mZmVy",
-            "c0lkcxJQCgpzZWxsT2ZmZXJzGAIgAygLMjAuRGVjZW50cmFsQ2FyZEdhbWUu",
-            "Y2FyZGNoYWluLmNhcmRjaGFpbi5TZWxsT2ZmZXJSCnNlbGxPZmZlcnMiJQoT",
-            "UXVlcnlRU2VydmVyUmVxdWVzdBIOCgJpZBgBIAEoBFICaWQiFgoUUXVlcnlR",
-            "U2VydmVyUmVzcG9uc2Ui3wEKEVF1ZXJ5UVNldHNSZXF1ZXN0EkYKBnN0YXR1",
-            "cxgBIAEoDjIuLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hh",
-            "aW4uQ1N0YXR1c1IGc3RhdHVzEiIKDGlnbm9yZVN0YXR1cxgCIAEoCFIMaWdu",
-            "b3JlU3RhdHVzEiIKDGNvbnRyaWJ1dG9ycxgDIAMoCVIMY29udHJpYnV0b3Jz",
-            "EiQKDWNvbnRhaW5zQ2FyZHMYBCADKARSDWNvbnRhaW5zQ2FyZHMSFAoFb3du",
-            "ZXIYBSABKAlSBW93bmVyIiwKElF1ZXJ5UVNldHNSZXNwb25zZRIWCgZzZXRJ",
-            "ZHMYASADKARSBnNldElkcyI2Ch5RdWVyeVJhcml0eURpc3RyaWJ1dGlvblJl",
-            "cXVlc3QSFAoFc2V0SWQYASABKARSBXNldElkIlMKH1F1ZXJ5UmFyaXR5RGlz",
-            "dHJpYnV0aW9uUmVzcG9uc2USGAoHY3VycmVudBgBIAMoDVIHY3VycmVudBIW",
-            "CgZ3YW50ZWQYAiADKA1SBndhbnRlZDL8GAoFUXVlcnkStgEKBlBhcmFtcxI5",
-            "LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlQ",
-            "YXJhbXNSZXF1ZXN0GjouRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5RdWVyeVBhcmFtc1Jlc3BvbnNlIjWC0+STAi8SLS9EZWNlbnRy",
-            "YWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3BhcmFtcxKyAQoFUUNh",
-            "cmQSOC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
-            "ZXJ5UUNhcmRSZXF1ZXN0Gi8uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
-            "LmNhcmRjaGFpbi5PdXRwQ2FyZCI+gtPkkwI4EjYvRGVjZW50cmFsQ2FyZEdh",
-            "bWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NhcmQve2NhcmRJZH0S2QEKDFFD",
-            "YXJkQ29udGVudBI/LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXF1ZXN0GkAuRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkQ29udGVudFJl",
-            "c3BvbnNlIkaC0+STAkASPi9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4v",
-            "Y2FyZGNoYWluL3FfY2FyZF9jb250ZW50L3tjYXJkSWR9Eq8BCgVRVXNlchI4",
-            "LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlR",
-            "VXNlclJlcXVlc3QaKy5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2Fy",
-            "ZGNoYWluLlVzZXIiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRj",
-            "aGFpbi9jYXJkY2hhaW4vcV91c2VyL3thZGRyZXNzfRLYAQoOUUNhcmRjaGFp",
-            "bkluZm8SQS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "LlF1ZXJ5UUNhcmRjaGFpbkluZm9SZXF1ZXN0GkIuRGVjZW50cmFsQ2FyZEdh",
-            "bWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkY2hhaW5JbmZvUmVz",
-            "cG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9j",
-            "YXJkY2hhaW4vcV9jYXJkY2hhaW5faW5mbxLYAQoOUVZvdGluZ1Jlc3VsdHMS",
-            "QS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5",
-            "UVZvdGluZ1Jlc3VsdHNSZXF1ZXN0GkIuRGVjZW50cmFsQ2FyZEdhbWUuY2Fy",
-            "ZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFWb3RpbmdSZXN1bHRzUmVzcG9uc2Ui",
-            "P4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hh",
-            "aW4vcV92b3RpbmdfcmVzdWx0cxLAAQoGUUNhcmRzEjkuRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkc1JlcXVlc3Qa",
-            "Oi5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5",
-            "UUNhcmRzUmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0Nh",
-            "cmRjaGFpbi9jYXJkY2hhaW4vcV9jYXJkcy97c3RhdHVzfRKzAQoGUU1hdGNo",
-            "EjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVy",
-            "eVFNYXRjaFJlcXVlc3QaLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4u",
-            "Y2FyZGNoYWluLk1hdGNoIkCC0+STAjoSOC9EZWNlbnRyYWxDYXJkR2FtZS9D",
-            "YXJkY2hhaW4vY2FyZGNoYWluL3FfbWF0Y2gve21hdGNoSWR9Eq0BCgRRU2V0",
-            "EjcuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVy",
-            "eVFTZXRSZXF1ZXN0Gi4uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5PdXRwU2V0IjyC0+STAjYSNC9EZWNlbnRyYWxDYXJkR2FtZS9D",
-            "YXJkY2hhaW4vY2FyZGNoYWluL3Ffc2V0L3tzZXRJZH0SyAEKClFTZWxsT2Zm",
-            "ZXISPS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
-            "ZXJ5UVNlbGxPZmZlclJlcXVlc3QaMC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJk",
-            "Y2hhaW4uY2FyZGNoYWluLlNlbGxPZmZlciJJgtPkkwJDEkEvRGVjZW50cmFs",
-            "Q2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX3NlbGxfb2ZmZXIve3Nl",
-            "bGxPZmZlcklkfRK9AQoIUUNvdW5jaWwSOy5EZWNlbnRyYWxDYXJkR2FtZS5j",
-            "YXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNvdW5jaWxSZXF1ZXN0Gi4uRGVj",
-            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Db3VuY2lsIkSC",
-            "0+STAj4SPC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWlu",
-            "L3FfY291bmNpbC97Y291bmNpbElkfRK/AQoIUU1hdGNoZXMSOy5EZWNlbnRy",
-            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UU1hdGNoZXNS",
-            "ZXF1ZXN0GjwuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFp",
-            "bi5RdWVyeVFNYXRjaGVzUmVzcG9uc2UiOILT5JMCMhIwL0RlY2VudHJhbENh",
-            "cmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9tYXRjaGVzEtUBCgtRU2Vs",
-            "bE9mZmVycxI+LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hh",
-            "aW4uUXVlcnlRU2VsbE9mZmVyc1JlcXVlc3QaPy5EZWNlbnRyYWxDYXJkR2Ft",
-            "ZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNlbGxPZmZlcnNSZXNwb25z",
-            "ZSJFgtPkkwI/Ej0vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRj",
-            "aGFpbi9xX3NlbGxfb2ZmZXJzL3tzdGF0dXN9ErIBCgdRU2VydmVyEjouRGVj",
-            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFTZXJ2",
-            "ZXJSZXF1ZXN0Gi0uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
-            "aGFpbi5TZXJ2ZXIiPILT5JMCNhI0L0RlY2VudHJhbENhcmRHYW1lL0NhcmRj",
-            "aGFpbi9jYXJkY2hhaW4vcV9zZXJ2ZXIve2lkfRLLAQoFUVNldHMSOC5EZWNl",
-            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNldHNS",
-            "ZXF1ZXN0GjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFp",
-            "bi5RdWVyeVFTZXRzUmVzcG9uc2UiTYLT5JMCRxJFL0RlY2VudHJhbENhcmRH",
-            "YW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZXRzL3tzdGF0dXN9L3tpZ25v",
-            "cmVTdGF0dXN9Eu8BChJSYXJpdHlEaXN0cmlidXRpb24SRS5EZWNlbnRyYWxD",
-            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UmFyaXR5RGlzdHJp",
-            "YnV0aW9uUmVxdWVzdBpGLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
-            "YXJkY2hhaW4uUXVlcnlSYXJpdHlEaXN0cmlidXRpb25SZXNwb25zZSJKgtPk",
-            "kwJEEkIvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9y",
-            "YXJpdHlfZGlzdHJpYnV0aW9uL3tzZXRJZH1CpwIKKWNvbS5EZWNlbnRyYWxD",
-            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgpRdWVyeVByb3RvUAFaOGdp",
-            "dGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL3gvY2FyZGNo",
-            "YWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWlu",
-            "LkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJk",
-            "Y2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu",
-            "XEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6",
-            "Q2FyZGNoYWluYgZwcm90bzM="));
+            "YXJ0ZXJDYXJkEi4KEm9ubHlCYWxhbmNlQW5jaG9ycxgKIAEoCFISb25seUJh",
+            "bGFuY2VBbmNob3JzIqQBCgZTdGF0dXMSCgoGc2NoZW1lEAASDQoJcHJvdG90",
+            "eXBlEAESCQoFdHJpYWwQAhINCglwZXJtYW5lbnQQAxINCglzdXNwZW5kZWQQ",
+            "BBIKCgZiYW5uZWQQBRIOCgpiYW5uZWRTb29uEAYSEgoOYmFubmVkVmVyeVNv",
+            "b24QBxIICgRub25lEAgSDAoIcGxheWFibGUQCRIOCgp1bnBsYXlhYmxlEAoi",
+            "MwoTUXVlcnlRQ2FyZHNSZXNwb25zZRIcCgljYXJkc0xpc3QYASADKARSCWNh",
+            "cmRzTGlzdCIuChJRdWVyeVFNYXRjaFJlcXVlc3QSGAoHbWF0Y2hJZBgBIAEo",
+            "BFIHbWF0Y2hJZCIoChBRdWVyeVFTZXRSZXF1ZXN0EhQKBXNldElkGAEgASgE",
+            "UgVzZXRJZCI6ChZRdWVyeVFTZWxsT2ZmZXJSZXF1ZXN0EiAKC3NlbGxPZmZl",
+            "cklkGAEgASgEUgtzZWxsT2ZmZXJJZCI0ChRRdWVyeVFDb3VuY2lsUmVxdWVz",
+            "dBIcCgljb3VuY2lsSWQYASABKARSCWNvdW5jaWxJZCLaAgoUUXVlcnlRTWF0",
+            "Y2hlc1JlcXVlc3QSJAoNdGltZXN0YW1wRG93bhgBIAEoBFINdGltZXN0YW1w",
+            "RG93bhIgCgt0aW1lc3RhbXBVcBgCIAEoBFILdGltZXN0YW1wVXASJAoNY29u",
+            "dGFpbnNVc2VycxgDIAMoCVINY29udGFpbnNVc2VycxIaCghyZXBvcnRlchgE",
+            "IAEoCVIIcmVwb3J0ZXISSAoHb3V0Y29tZRgFIAEoDjIuLkRlY2VudHJhbENh",
+            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uT3V0Y29tZVIHb3V0Y29tZRIg",
+            "CgtjYXJkc1BsYXllZBgGIAMoBFILY2FyZHNQbGF5ZWQSTAoGaWdub3JlGAcg",
+            "ASgLMjQuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5J",
+            "Z25vcmVNYXRjaGVzUgZpZ25vcmUiKQoNSWdub3JlTWF0Y2hlcxIYCgdvdXRj",
+            "b21lGAEgASgIUgdvdXRjb21lIoEBChVRdWVyeVFNYXRjaGVzUmVzcG9uc2US",
+            "IAoLbWF0Y2hlc0xpc3QYASADKARSC21hdGNoZXNMaXN0EkYKB21hdGNoZXMY",
+            "AiADKAsyLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
+            "Lk1hdGNoUgdtYXRjaGVzIrQCChdRdWVyeVFTZWxsT2ZmZXJzUmVxdWVzdBIc",
+            "CglwcmljZURvd24YASABKAlSCXByaWNlRG93bhIYCgdwcmljZVVwGAIgASgJ",
+            "UgdwcmljZVVwEhYKBnNlbGxlchgDIAEoCVIGc2VsbGVyEhQKBWJ1eWVyGAQg",
+            "ASgJUgVidXllchISCgRjYXJkGAUgASgEUgRjYXJkEk4KBnN0YXR1cxgGIAEo",
+            "DjI2LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2Vs",
+            "bE9mZmVyU3RhdHVzUgZzdGF0dXMSTwoGaWdub3JlGAcgASgLMjcuRGVjZW50",
+            "cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5JZ25vcmVTZWxsT2Zm",
+            "ZXJzUgZpZ25vcmUiPgoQSWdub3JlU2VsbE9mZmVycxIWCgZzdGF0dXMYASAB",
+            "KAhSBnN0YXR1cxISCgRjYXJkGAIgASgIUgRjYXJkIpIBChhRdWVyeVFTZWxs",
+            "T2ZmZXJzUmVzcG9uc2USJAoNc2VsbE9mZmVyc0lkcxgBIAMoBFINc2VsbE9m",
+            "ZmVyc0lkcxJQCgpzZWxsT2ZmZXJzGAIgAygLMjAuRGVjZW50cmFsQ2FyZEdh",
+            "bWUuY2FyZGNoYWluLmNhcmRjaGFpbi5TZWxsT2ZmZXJSCnNlbGxPZmZlcnMi",
+            "JQoTUXVlcnlRU2VydmVyUmVxdWVzdBIOCgJpZBgBIAEoBFICaWQiFgoUUXVl",
+            "cnlRU2VydmVyUmVzcG9uc2Ui3wEKEVF1ZXJ5UVNldHNSZXF1ZXN0EkYKBnN0",
+            "YXR1cxgBIAEoDjIuLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
+            "Y2hhaW4uQ1N0YXR1c1IGc3RhdHVzEiIKDGlnbm9yZVN0YXR1cxgCIAEoCFIM",
+            "aWdub3JlU3RhdHVzEiIKDGNvbnRyaWJ1dG9ycxgDIAMoCVIMY29udHJpYnV0",
+            "b3JzEiQKDWNvbnRhaW5zQ2FyZHMYBCADKARSDWNvbnRhaW5zQ2FyZHMSFAoF",
+            "b3duZXIYBSABKAlSBW93bmVyIiwKElF1ZXJ5UVNldHNSZXNwb25zZRIWCgZz",
+            "ZXRJZHMYASADKARSBnNldElkcyI2Ch5RdWVyeVJhcml0eURpc3RyaWJ1dGlv",
+            "blJlcXVlc3QSFAoFc2V0SWQYASABKARSBXNldElkIlMKH1F1ZXJ5UmFyaXR5",
+            "RGlzdHJpYnV0aW9uUmVzcG9uc2USGAoHY3VycmVudBgBIAMoDVIHY3VycmVu",
+            "dBIWCgZ3YW50ZWQYAiADKA1SBndhbnRlZDL8GAoFUXVlcnkStgEKBlBhcmFt",
+            "cxI5LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVl",
+            "cnlQYXJhbXNSZXF1ZXN0GjouRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5RdWVyeVBhcmFtc1Jlc3BvbnNlIjWC0+STAi8SLS9EZWNl",
+            "bnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3BhcmFtcxKyAQoF",
+            "UUNhcmQSOC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
+            "LlF1ZXJ5UUNhcmRSZXF1ZXN0Gi8uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNo",
+            "YWluLmNhcmRjaGFpbi5PdXRwQ2FyZCI+gtPkkwI4EjYvRGVjZW50cmFsQ2Fy",
+            "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NhcmQve2NhcmRJZH0S2QEK",
+            "DFFDYXJkQ29udGVudBI/LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
+            "YXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXF1ZXN0GkAuRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkQ29udGVu",
+            "dFJlc3BvbnNlIkaC0+STAkASPi9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hh",
+            "aW4vY2FyZGNoYWluL3FfY2FyZF9jb250ZW50L3tjYXJkSWR9Eq8BCgVRVXNl",
+            "chI4LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVl",
+            "cnlRVXNlclJlcXVlc3QaKy5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4u",
+            "Y2FyZGNoYWluLlVzZXIiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0Nh",
+            "cmRjaGFpbi9jYXJkY2hhaW4vcV91c2VyL3thZGRyZXNzfRLYAQoOUUNhcmRj",
+            "aGFpbkluZm8SQS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNo",
+            "YWluLlF1ZXJ5UUNhcmRjaGFpbkluZm9SZXF1ZXN0GkIuRGVjZW50cmFsQ2Fy",
+            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkY2hhaW5JbmZv",
+            "UmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFp",
+            "bi9jYXJkY2hhaW4vcV9jYXJkY2hhaW5faW5mbxLYAQoOUVZvdGluZ1Jlc3Vs",
+            "dHMSQS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
+            "ZXJ5UVZvdGluZ1Jlc3VsdHNSZXF1ZXN0GkIuRGVjZW50cmFsQ2FyZEdhbWUu",
+            "Y2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFWb3RpbmdSZXN1bHRzUmVzcG9u",
+            "c2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJk",
+            "Y2hhaW4vcV92b3RpbmdfcmVzdWx0cxLAAQoGUUNhcmRzEjkuRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkc1JlcXVl",
+            "c3QaOi5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
+            "ZXJ5UUNhcmRzUmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1l",
+            "L0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9jYXJkcy97c3RhdHVzfRKzAQoGUU1h",
+            "dGNoEjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
+            "dWVyeVFNYXRjaFJlcXVlc3QaLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hh",
+            "aW4uY2FyZGNoYWluLk1hdGNoIkCC0+STAjoSOC9EZWNlbnRyYWxDYXJkR2Ft",
+            "ZS9DYXJkY2hhaW4vY2FyZGNoYWluL3FfbWF0Y2gve21hdGNoSWR9Eq0BCgRR",
+            "U2V0EjcuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
+            "dWVyeVFTZXRSZXF1ZXN0Gi4uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5PdXRwU2V0IjyC0+STAjYSNC9EZWNlbnRyYWxDYXJkR2Ft",
+            "ZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffc2V0L3tzZXRJZH0SyAEKClFTZWxs",
+            "T2ZmZXISPS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
+            "LlF1ZXJ5UVNlbGxPZmZlclJlcXVlc3QaMC5EZWNlbnRyYWxDYXJkR2FtZS5j",
+            "YXJkY2hhaW4uY2FyZGNoYWluLlNlbGxPZmZlciJJgtPkkwJDEkEvRGVjZW50",
+            "cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX3NlbGxfb2ZmZXIv",
+            "e3NlbGxPZmZlcklkfRK9AQoIUUNvdW5jaWwSOy5EZWNlbnRyYWxDYXJkR2Ft",
+            "ZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNvdW5jaWxSZXF1ZXN0Gi4u",
+            "RGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Db3VuY2ls",
+            "IkSC0+STAj4SPC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
+            "YWluL3FfY291bmNpbC97Y291bmNpbElkfRK/AQoIUU1hdGNoZXMSOy5EZWNl",
+            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UU1hdGNo",
+            "ZXNSZXF1ZXN0GjwuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
+            "aGFpbi5RdWVyeVFNYXRjaGVzUmVzcG9uc2UiOILT5JMCMhIwL0RlY2VudHJh",
+            "bENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9tYXRjaGVzEtUBCgtR",
+            "U2VsbE9mZmVycxI+LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
+            "Y2hhaW4uUXVlcnlRU2VsbE9mZmVyc1JlcXVlc3QaPy5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNlbGxPZmZlcnNSZXNw",
+            "b25zZSJFgtPkkwI/Ej0vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2Nh",
+            "cmRjaGFpbi9xX3NlbGxfb2ZmZXJzL3tzdGF0dXN9ErIBCgdRU2VydmVyEjou",
+            "RGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFT",
+            "ZXJ2ZXJSZXF1ZXN0Gi0uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
+            "cmRjaGFpbi5TZXJ2ZXIiPILT5JMCNhI0L0RlY2VudHJhbENhcmRHYW1lL0Nh",
+            "cmRjaGFpbi9jYXJkY2hhaW4vcV9zZXJ2ZXIve2lkfRLLAQoFUVNldHMSOC5E",
+            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNl",
+            "dHNSZXF1ZXN0GjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
+            "aGFpbi5RdWVyeVFTZXRzUmVzcG9uc2UiTYLT5JMCRxJFL0RlY2VudHJhbENh",
+            "cmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZXRzL3tzdGF0dXN9L3tp",
+            "Z25vcmVTdGF0dXN9Eu8BChJSYXJpdHlEaXN0cmlidXRpb24SRS5EZWNlbnRy",
+            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UmFyaXR5RGlz",
+            "dHJpYnV0aW9uUmVxdWVzdBpGLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
+            "bi5jYXJkY2hhaW4uUXVlcnlSYXJpdHlEaXN0cmlidXRpb25SZXNwb25zZSJK",
+            "gtPkkwJEEkIvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFp",
+            "bi9yYXJpdHlfZGlzdHJpYnV0aW9uL3tzZXRJZH1CpwIKKWNvbS5EZWNlbnRy",
+            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgpRdWVyeVByb3RvUAFa",
+            "OGdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL3gvY2Fy",
+            "ZGNoYWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNo",
+            "YWluLkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxD",
+            "YXJkY2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNo",
+            "YWluXEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFp",
+            "bjo6Q2FyZGNoYWluYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SellOfferReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ServerReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.TxReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -198,7 +199,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardchainInfoResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardchainInfoResponse.Parser, new[]{ "CardAuctionPrice", "ActiveSets", "CardsNumber", "MatchesNumber", "SellOffersNumber", "CouncilsNumber", "LastCardModified" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse.Parser, new[]{ "LastVotingResults" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Parser, new[]{ "Owner", "Status", "CardType", "Classes", "SortBy", "NameContains", "KeywordsContains", "NotesContains", "OnlyStarterCard" }, null, new[]{ typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Parser, new[]{ "Owner", "Status", "CardType", "Classes", "SortBy", "NameContains", "KeywordsContains", "NotesContains", "OnlyStarterCard", "OnlyBalanceAnchors" }, null, new[]{ typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse.Parser, new[]{ "CardsList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQMatchRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQMatchRequest.Parser, new[]{ "MatchId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQSetRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQSetRequest.Parser, new[]{ "SetId" }, null, null, null, null),
@@ -225,6 +226,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
   /// <summary>
   /// QueryParamsRequest is request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -380,6 +382,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
   /// <summary>
   /// QueryParamsResponse is response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -581,6 +584,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardRequest : pb::IMessage<QueryQCardRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -770,6 +774,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardContentRequest : pb::IMessage<QueryQCardContentRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -959,6 +964,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardContentResponse : pb::IMessage<QueryQCardContentResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1185,6 +1191,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQUserRequest : pb::IMessage<QueryQUserRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1374,6 +1381,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardchainInfoRequest : pb::IMessage<QueryQCardchainInfoRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1526,6 +1534,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardchainInfoResponse : pb::IMessage<QueryQCardchainInfoResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1928,6 +1937,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQVotingResultsRequest : pb::IMessage<QueryQVotingResultsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2080,6 +2090,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQVotingResultsResponse : pb::IMessage<QueryQVotingResultsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2278,6 +2289,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardsRequest : pb::IMessage<QueryQCardsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2321,6 +2333,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       keywordsContains_ = other.keywordsContains_;
       notesContains_ = other.notesContains_;
       onlyStarterCard_ = other.onlyStarterCard_;
+      onlyBalanceAnchors_ = other.onlyBalanceAnchors_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2438,6 +2451,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "onlyBalanceAnchors" field.</summary>
+    public const int OnlyBalanceAnchorsFieldNumber = 10;
+    private bool onlyBalanceAnchors_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool OnlyBalanceAnchors {
+      get { return onlyBalanceAnchors_; }
+      set {
+        onlyBalanceAnchors_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2462,6 +2487,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (KeywordsContains != other.KeywordsContains) return false;
       if (NotesContains != other.NotesContains) return false;
       if (OnlyStarterCard != other.OnlyStarterCard) return false;
+      if (OnlyBalanceAnchors != other.OnlyBalanceAnchors) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2478,6 +2504,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (KeywordsContains.Length != 0) hash ^= KeywordsContains.GetHashCode();
       if (NotesContains.Length != 0) hash ^= NotesContains.GetHashCode();
       if (OnlyStarterCard != false) hash ^= OnlyStarterCard.GetHashCode();
+      if (OnlyBalanceAnchors != false) hash ^= OnlyBalanceAnchors.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2532,6 +2559,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(72);
         output.WriteBool(OnlyStarterCard);
       }
+      if (OnlyBalanceAnchors != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(OnlyBalanceAnchors);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2578,6 +2609,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(72);
         output.WriteBool(OnlyStarterCard);
       }
+      if (OnlyBalanceAnchors != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(OnlyBalanceAnchors);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2613,6 +2648,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(NotesContains);
       }
       if (OnlyStarterCard != false) {
+        size += 1 + 1;
+      }
+      if (OnlyBalanceAnchors != false) {
         size += 1 + 1;
       }
       if (_unknownFields != null) {
@@ -2653,6 +2691,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.OnlyStarterCard != false) {
         OnlyStarterCard = other.OnlyStarterCard;
+      }
+      if (other.OnlyBalanceAnchors != false) {
+        OnlyBalanceAnchors = other.OnlyBalanceAnchors;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2703,6 +2744,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 72: {
             OnlyStarterCard = input.ReadBool();
+            break;
+          }
+          case 80: {
+            OnlyBalanceAnchors = input.ReadBool();
             break;
           }
         }
@@ -2756,6 +2801,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             OnlyStarterCard = input.ReadBool();
             break;
           }
+          case 80: {
+            OnlyBalanceAnchors = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -2785,6 +2834,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCardsResponse : pb::IMessage<QueryQCardsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2965,6 +3015,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQMatchRequest : pb::IMessage<QueryQMatchRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3154,6 +3205,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSetRequest : pb::IMessage<QueryQSetRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3343,6 +3395,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSellOfferRequest : pb::IMessage<QueryQSellOfferRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3532,6 +3585,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQCouncilRequest : pb::IMessage<QueryQCouncilRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3721,6 +3775,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQMatchesRequest : pb::IMessage<QueryQMatchesRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4121,6 +4176,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IgnoreMatches : pb::IMessage<IgnoreMatches>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4310,6 +4366,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQMatchesResponse : pb::IMessage<QueryQMatchesResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4516,6 +4573,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSellOffersRequest : pb::IMessage<QueryQSellOffersRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4936,6 +4994,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class IgnoreSellOffers : pb::IMessage<IgnoreSellOffers>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5162,6 +5221,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSellOffersResponse : pb::IMessage<QueryQSellOffersResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5368,6 +5428,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQServerRequest : pb::IMessage<QueryQServerRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5557,6 +5618,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQServerResponse : pb::IMessage<QueryQServerResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5709,6 +5771,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSetsRequest : pb::IMessage<QueryQSetsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6026,6 +6089,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSetsResponse : pb::IMessage<QueryQSetsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6206,6 +6270,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryRarityDistributionRequest : pb::IMessage<QueryRarityDistributionRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6395,6 +6460,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryRarityDistributionResponse : pb::IMessage<QueryRarityDistributionResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

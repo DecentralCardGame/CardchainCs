@@ -18,8 +18,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 		public MsgClient (IClient client) {
 			Client = client;
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>> SendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>> SendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -42,8 +42,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -66,8 +66,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -90,8 +90,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -114,8 +114,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -138,8 +138,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -162,8 +162,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -186,8 +186,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -210,8 +210,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -234,8 +234,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -258,8 +258,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -282,8 +282,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSetResponse>> SendMsgCreateSet(DecentralCardGame.Cardchain.Cardchain.MsgCreateSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSetResponse>> SendMsgCreateSet(DecentralCardGame.Cardchain.Cardchain.MsgCreateSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -306,8 +306,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgCreateSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSetResponse>> SendMsgAddCardToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSetResponse>> SendMsgAddCardToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -330,8 +330,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSetResponse>> SendMsgFinalizeSet(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSetResponse>> SendMsgFinalizeSet(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -354,8 +354,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>> SendMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>> SendMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -378,8 +378,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSetResponse>> SendMsgRemoveCardFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSetResponse>> SendMsgRemoveCardFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -402,8 +402,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSetResponse>> SendMsgRemoveContributorFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSetResponse>> SendMsgRemoveContributorFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -426,8 +426,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse>> SendMsgAddContributorToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse>> SendMsgAddContributorToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -450,8 +450,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -474,8 +474,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -498,8 +498,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -522,8 +522,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSetResponse>> SendMsgAddArtworkToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSetResponse>> SendMsgAddArtworkToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -546,8 +546,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSetResponse>> SendMsgAddStoryToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSet msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSetResponse>> SendMsgAddStoryToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSet msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -570,8 +570,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSetResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -594,8 +594,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -618,8 +618,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -642,8 +642,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -666,8 +666,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -690,8 +690,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -714,8 +714,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -738,8 +738,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -762,8 +762,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -786,8 +786,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -810,8 +810,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriterResponse>> SendMsgSetSetStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriter msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriterResponse>> SendMsgSetSetStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriter msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -834,8 +834,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriterResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtistResponse>> SendMsgSetSetArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtist msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtistResponse>> SendMsgSetSetArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtist msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -858,8 +858,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtistResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -882,8 +882,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -906,8 +906,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -930,8 +930,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenMatchResponse>> SendMsgOpenMatch(DecentralCardGame.Cardchain.Cardchain.MsgOpenMatch msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenMatchResponse>> SendMsgOpenMatch(DecentralCardGame.Cardchain.Cardchain.MsgOpenMatch msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -954,8 +954,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgOpenMatchResponse.Parser
 			));
 		}
-
-		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetNameResponse>> SendMsgSetSetName(DecentralCardGame.Cardchain.Cardchain.MsgSetSetName msg, Fee? fee = null) {
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetNameResponse>> SendMsgSetSetName(DecentralCardGame.Cardchain.Cardchain.MsgSetSetName msg, Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -978,6 +978,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 				DecentralCardGame.Cardchain.Cardchain.MsgSetSetNameResponse.Parser
 			));
 		}
-
+        
 	}
+	
 }

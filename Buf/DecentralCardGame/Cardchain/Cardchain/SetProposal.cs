@@ -45,6 +45,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SetProposal : pb::IMessage<SetProposal>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

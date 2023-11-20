@@ -383,6 +383,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateuser : pb::IMessage<MsgCreateuser>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -646,6 +647,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateuserResponse : pb::IMessage<MsgCreateuserResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -798,6 +800,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBuyCardScheme : pb::IMessage<MsgBuyCardScheme>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1033,6 +1036,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBuyCardSchemeResponse : pb::IMessage<MsgBuyCardSchemeResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1222,6 +1226,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVoteCard : pb::IMessage<MsgVoteCard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1485,6 +1490,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgVoteCardResponse : pb::IMessage<MsgVoteCardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1674,6 +1680,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSaveCardContent : pb::IMessage<MsgSaveCardContent>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2052,6 +2059,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSaveCardContentResponse : pb::IMessage<MsgSaveCardContentResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2241,6 +2249,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgTransferCard : pb::IMessage<MsgTransferCard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2504,6 +2513,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgTransferCardResponse : pb::IMessage<MsgTransferCardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2656,6 +2666,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDonateToCard : pb::IMessage<MsgDonateToCard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2919,6 +2930,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgDonateToCardResponse : pb::IMessage<MsgDonateToCardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3071,6 +3083,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddArtwork : pb::IMessage<MsgAddArtwork>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3371,6 +3384,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddArtworkResponse : pb::IMessage<MsgAddArtworkResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3523,6 +3537,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgChangeArtist : pb::IMessage<MsgChangeArtist>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3786,6 +3801,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgChangeArtistResponse : pb::IMessage<MsgChangeArtistResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3938,6 +3954,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRegisterForCouncil : pb::IMessage<MsgRegisterForCouncil>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4127,6 +4144,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRegisterForCouncilResponse : pb::IMessage<MsgRegisterForCouncilResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4279,6 +4297,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgReportMatch : pb::IMessage<MsgReportMatch>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4598,6 +4617,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgReportMatchResponse : pb::IMessage<MsgReportMatchResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -4787,6 +4807,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgApointMatchReporter : pb::IMessage<MsgApointMatchReporter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5013,6 +5034,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgApointMatchReporterResponse : pb::IMessage<MsgApointMatchReporterResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5165,6 +5187,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateSet : pb::IMessage<MsgCreateSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5491,6 +5514,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateSetResponse : pb::IMessage<MsgCreateSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5643,6 +5667,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddCardToSet : pb::IMessage<MsgAddCardToSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -5906,6 +5931,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddCardToSetResponse : pb::IMessage<MsgAddCardToSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6058,6 +6084,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgFinalizeSet : pb::IMessage<MsgFinalizeSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6284,6 +6311,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgFinalizeSetResponse : pb::IMessage<MsgFinalizeSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6436,6 +6464,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBuyBoosterPack : pb::IMessage<MsgBuyBoosterPack>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6662,6 +6691,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBuyBoosterPackResponse : pb::IMessage<MsgBuyBoosterPackResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -6851,6 +6881,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRemoveCardFromSet : pb::IMessage<MsgRemoveCardFromSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7114,6 +7145,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRemoveCardFromSetResponse : pb::IMessage<MsgRemoveCardFromSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7266,6 +7298,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRemoveContributorFromSet : pb::IMessage<MsgRemoveContributorFromSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7529,6 +7562,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRemoveContributorFromSetResponse : pb::IMessage<MsgRemoveContributorFromSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7681,6 +7715,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddContributorToSet : pb::IMessage<MsgAddContributorToSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -7944,6 +7979,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddContributorToSetResponse : pb::IMessage<MsgAddContributorToSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8096,6 +8132,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateSellOffer : pb::IMessage<MsgCreateSellOffer>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8359,6 +8396,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateSellOfferResponse : pb::IMessage<MsgCreateSellOfferResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8511,6 +8549,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBuyCard : pb::IMessage<MsgBuyCard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8737,6 +8776,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgBuyCardResponse : pb::IMessage<MsgBuyCardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -8889,6 +8929,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRemoveSellOffer : pb::IMessage<MsgRemoveSellOffer>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9115,6 +9156,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRemoveSellOfferResponse : pb::IMessage<MsgRemoveSellOfferResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9267,6 +9309,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddArtworkToSet : pb::IMessage<MsgAddArtworkToSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9530,6 +9573,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddArtworkToSetResponse : pb::IMessage<MsgAddArtworkToSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9682,6 +9726,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddStoryToSet : pb::IMessage<MsgAddStoryToSet>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -9945,6 +9990,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgAddStoryToSetResponse : pb::IMessage<MsgAddStoryToSetResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10097,6 +10143,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetCardRarity : pb::IMessage<MsgSetCardRarity>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10397,6 +10444,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetCardRarityResponse : pb::IMessage<MsgSetCardRarityResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10549,6 +10597,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateCouncil : pb::IMessage<MsgCreateCouncil>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10775,6 +10824,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCreateCouncilResponse : pb::IMessage<MsgCreateCouncilResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -10930,6 +10980,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
   /// <summary>
   /// Add revision
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCommitCouncilResponse : pb::IMessage<MsgCommitCouncilResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11230,6 +11281,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgCommitCouncilResponseResponse : pb::IMessage<MsgCommitCouncilResponseResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11382,6 +11434,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRevealCouncilResponse : pb::IMessage<MsgRevealCouncilResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11682,6 +11735,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRevealCouncilResponseResponse : pb::IMessage<MsgRevealCouncilResponseResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -11834,6 +11888,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRestartCouncil : pb::IMessage<MsgRestartCouncil>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12060,6 +12115,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRestartCouncilResponse : pb::IMessage<MsgRestartCouncilResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12212,6 +12268,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRewokeCouncilRegistration : pb::IMessage<MsgRewokeCouncilRegistration>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12401,6 +12458,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgRewokeCouncilRegistrationResponse : pb::IMessage<MsgRewokeCouncilRegistrationResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12553,6 +12611,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgConfirmMatch : pb::IMessage<MsgConfirmMatch>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12842,6 +12901,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgConfirmMatchResponse : pb::IMessage<MsgConfirmMatchResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -12994,6 +13054,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetProfileCard : pb::IMessage<MsgSetProfileCard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13220,6 +13281,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetProfileCardResponse : pb::IMessage<MsgSetProfileCardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13372,6 +13434,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgOpenBoosterPack : pb::IMessage<MsgOpenBoosterPack>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13598,6 +13661,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgOpenBoosterPackResponse : pb::IMessage<MsgOpenBoosterPackResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -13778,6 +13842,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgTransferBoosterPack : pb::IMessage<MsgTransferBoosterPack>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14041,6 +14106,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgTransferBoosterPackResponse : pb::IMessage<MsgTransferBoosterPackResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14193,6 +14259,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSetStoryWriter : pb::IMessage<MsgSetSetStoryWriter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14456,6 +14523,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSetStoryWriterResponse : pb::IMessage<MsgSetSetStoryWriterResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14608,6 +14676,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSetArtist : pb::IMessage<MsgSetSetArtist>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -14871,6 +14940,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSetArtistResponse : pb::IMessage<MsgSetSetArtistResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15023,6 +15093,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetUserWebsite : pb::IMessage<MsgSetUserWebsite>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15249,6 +15320,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetUserWebsiteResponse : pb::IMessage<MsgSetUserWebsiteResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15401,6 +15473,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetUserBiography : pb::IMessage<MsgSetUserBiography>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15627,6 +15700,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetUserBiographyResponse : pb::IMessage<MsgSetUserBiographyResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15782,6 +15856,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
   /// <summary>
   /// this line is used by starport scaffolding # proto/tx/message
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgMultiVoteCard : pb::IMessage<MsgMultiVoteCard>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -15997,6 +16072,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgMultiVoteCardResponse : pb::IMessage<MsgMultiVoteCardResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16149,6 +16225,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgOpenMatch : pb::IMessage<MsgOpenMatch>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16468,6 +16545,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgOpenMatchResponse : pb::IMessage<MsgOpenMatchResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16657,6 +16735,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSetName : pb::IMessage<MsgSetSetName>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -16920,6 +16999,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class MsgSetSetNameResponse : pb::IMessage<MsgSetSetNameResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

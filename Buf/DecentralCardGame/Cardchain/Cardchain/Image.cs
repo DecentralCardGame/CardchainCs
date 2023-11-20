@@ -44,6 +44,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Image : pb::IMessage<Image>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

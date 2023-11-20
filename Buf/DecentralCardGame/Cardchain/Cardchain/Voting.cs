@@ -73,6 +73,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
   #endregion
 
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VotingResults : pb::IMessage<VotingResults>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -473,6 +474,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class VotingResult : pb::IMessage<VotingResult>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -847,6 +849,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SingleVote : pb::IMessage<SingleVote>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

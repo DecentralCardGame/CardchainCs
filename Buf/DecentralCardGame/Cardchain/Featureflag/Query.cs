@@ -77,6 +77,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
   /// <summary>
   /// QueryParamsRequest is request type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsRequest : pb::IMessage<QueryParamsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -232,6 +233,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
   /// <summary>
   /// QueryParamsResponse is response type for the Query/Params RPC method.
   /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryParamsResponse : pb::IMessage<QueryParamsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -433,6 +435,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQFlagRequest : pb::IMessage<QueryQFlagRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -659,6 +662,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQFlagResponse : pb::IMessage<QueryQFlagResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -857,6 +861,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQFlagsRequest : pb::IMessage<QueryQFlagsRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1009,6 +1014,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQFlagsResponse : pb::IMessage<QueryQFlagsResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

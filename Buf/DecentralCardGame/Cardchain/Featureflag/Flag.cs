@@ -45,6 +45,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Flag : pb::IMessage<Flag>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage

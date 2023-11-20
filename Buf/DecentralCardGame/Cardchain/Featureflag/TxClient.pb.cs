@@ -18,6 +18,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 		public MsgClient (IClient client) {
 			Client = client;
 		}
-
+        
 	}
+	
 }
