@@ -25,33 +25,48 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch1jYXJkY2hhaW4vY2FyZGNoYWluL3NldC5wcm90bxIlRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbiKnAgoDU2V0EhIKBG5hbWUYASAB",
-            "KAlSBG5hbWUSFAoFY2FyZHMYAiADKARSBWNhcmRzEhYKBmFydGlzdBgDIAEo",
-            "CVIGYXJ0aXN0EiAKC3N0b3J5V3JpdGVyGAQgASgJUgtzdG9yeVdyaXRlchIi",
-            "Cgxjb250cmlidXRvcnMYBSADKAlSDGNvbnRyaWJ1dG9ycxIUCgVzdG9yeRgG",
-            "IAEoCVIFc3RvcnkSHAoJYXJ0d29ya0lkGAcgASgEUglhcnR3b3JrSWQSRgoG",
-            "c3RhdHVzGAggASgOMi4uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5DU3RhdHVzUgZzdGF0dXMSHAoJdGltZVN0YW1wGAkgASgDUgl0",
-            "aW1lU3RhbXAipwIKB091dHBTZXQSEgoEbmFtZRgBIAEoCVIEbmFtZRIUCgVj",
+            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbhoeY29zbW9zL2Jhc2UvdjFiZXRh",
+            "MS9jb2luLnByb3RvIu4DCgNTZXQSEgoEbmFtZRgBIAEoCVIEbmFtZRIUCgVj",
             "YXJkcxgCIAMoBFIFY2FyZHMSFgoGYXJ0aXN0GAMgASgJUgZhcnRpc3QSIAoL",
             "c3RvcnlXcml0ZXIYBCABKAlSC3N0b3J5V3JpdGVyEiIKDGNvbnRyaWJ1dG9y",
-            "cxgFIAMoCVIMY29udHJpYnV0b3JzEhQKBXN0b3J5GAYgASgJUgVzdG9yeRIY",
-            "CgdhcnR3b3JrGAcgASgJUgdhcnR3b3JrEkYKBnN0YXR1cxgIIAEoDjIuLkRl",
-            "Y2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ1N0YXR1c1IG",
-            "c3RhdHVzEhwKCXRpbWVTdGFtcBgJIAEoA1IJdGltZVN0YW1wKj4KB0NTdGF0",
-            "dXMSCgoGZGVzaWduEAASDQoJZmluYWxpemVkEAESCgoGYWN0aXZlEAISDAoI",
-            "YXJjaGl2ZWQQA0KlAgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
-            "bi5jYXJkY2hhaW5CCFNldFByb3RvUAFaOGdpdGh1Yi5jb20vRGVjZW50cmFs",
-            "Q2FyZEdhbWUvQ2FyZGNoYWluL3gvY2FyZGNoYWluL3R5cGVzogIDRENDqgIl",
-            "RGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWluLkNhcmRjaGFpbsoCJURlY2Vu",
-            "dHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW7iAjFEZWNlbnRyYWxD",
-            "YXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gInRGVj",
-            "ZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "cxgFIAMoCVIMY29udHJpYnV0b3JzEhQKBXN0b3J5GAYgASgJUgVzdG9yeRIc",
+            "CglhcnR3b3JrSWQYByABKARSCWFydHdvcmtJZBJGCgZzdGF0dXMYCCABKA4y",
+            "Li5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNTdGF0",
+            "dXNSBnN0YXR1cxIcCgl0aW1lU3RhbXAYCSABKANSCXRpbWVTdGFtcBJzChhj",
+            "b250cmlidXRvcnNEaXN0cmlidXRpb24YCiADKAsyNy5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkFkZHJXaXRoUXVhbnRpdHlSGGNv",
+            "bnRyaWJ1dG9yc0Rpc3RyaWJ1dGlvbhJQCghSYXJpdGllcxgLIAMoCzI0LkRl",
+            "Y2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uSW5uZXJSYXJp",
+            "dGllc1IIUmFyaXRpZXMiHQoNSW5uZXJSYXJpdGllcxIMCgFSGAEgAygEUgFS",
+            "Iu4DCgdPdXRwU2V0EhIKBG5hbWUYASABKAlSBG5hbWUSFAoFY2FyZHMYAiAD",
+            "KARSBWNhcmRzEhYKBmFydGlzdBgDIAEoCVIGYXJ0aXN0EiAKC3N0b3J5V3Jp",
+            "dGVyGAQgASgJUgtzdG9yeVdyaXRlchIiCgxjb250cmlidXRvcnMYBSADKAlS",
+            "DGNvbnRyaWJ1dG9ycxIUCgVzdG9yeRgGIAEoCVIFc3RvcnkSGAoHYXJ0d29y",
+            "axgHIAEoCVIHYXJ0d29yaxJGCgZzdGF0dXMYCCABKA4yLi5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNTdGF0dXNSBnN0YXR1cxIc",
+            "Cgl0aW1lU3RhbXAYCSABKANSCXRpbWVTdGFtcBJzChhjb250cmlidXRvcnNE",
+            "aXN0cmlidXRpb24YCiADKAsyNy5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hh",
+            "aW4uY2FyZGNoYWluLkFkZHJXaXRoUXVhbnRpdHlSGGNvbnRyaWJ1dG9yc0Rp",
+            "c3RyaWJ1dGlvbhJQCghSYXJpdGllcxgLIAMoCzI0LkRlY2VudHJhbENhcmRH",
+            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uSW5uZXJSYXJpdGllc1IIUmFyaXRp",
+            "ZXMiaQoQQWRkcldpdGhRdWFudGl0eRISCgRhZGRyGAEgASgJUgRhZGRyEgwK",
+            "AXEYAiABKA1SAXESMwoHcGF5bWVudBgDIAEoCzIZLmNvc21vcy5iYXNlLnYx",
+            "YmV0YTEuQ29pblIHcGF5bWVudCo+CgdDU3RhdHVzEgoKBmRlc2lnbhAAEg0K",
+            "CWZpbmFsaXplZBABEgoKBmFjdGl2ZRACEgwKCGFyY2hpdmVkEANCpQIKKWNv",
+            "bS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQghTZXRQ",
+            "cm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFp",
+            "bi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1l",
+            "LkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJk",
+            "Y2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWlu",
+            "XENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpD",
+            "YXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.CStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Set), global::DecentralCardGame.Cardchain.Cardchain.Set.Parser, new[]{ "Name", "Cards", "Artist", "StoryWriter", "Contributors", "Story", "ArtworkId", "Status", "TimeStamp" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpSet), global::DecentralCardGame.Cardchain.Cardchain.OutpSet.Parser, new[]{ "Name", "Cards", "Artist", "StoryWriter", "Contributors", "Story", "Artwork", "Status", "TimeStamp" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Set), global::DecentralCardGame.Cardchain.Cardchain.Set.Parser, new[]{ "Name", "Cards", "Artist", "StoryWriter", "Contributors", "Story", "ArtworkId", "Status", "TimeStamp", "ContributorsDistribution", "Rarities" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.InnerRarities), global::DecentralCardGame.Cardchain.Cardchain.InnerRarities.Parser, new[]{ "R" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpSet), global::DecentralCardGame.Cardchain.Cardchain.OutpSet.Parser, new[]{ "Name", "Cards", "Artist", "StoryWriter", "Contributors", "Story", "Artwork", "Status", "TimeStamp", "ContributorsDistribution", "Rarities" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity), global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity.Parser, new[]{ "Addr", "Q", "Payment" }, null, null, null, null)
           }));
     }
     #endregion
@@ -112,6 +127,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       artworkId_ = other.artworkId_;
       status_ = other.status_;
       timeStamp_ = other.timeStamp_;
+      contributorsDistribution_ = other.contributorsDistribution_.Clone();
+      rarities_ = other.rarities_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -227,6 +244,28 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "contributorsDistribution" field.</summary>
+    public const int ContributorsDistributionFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity> _repeated_contributorsDistribution_codec
+        = pb::FieldCodec.ForMessage(82, global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity.Parser);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity> contributorsDistribution_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity> ContributorsDistribution {
+      get { return contributorsDistribution_; }
+    }
+
+    /// <summary>Field number for the "Rarities" field.</summary>
+    public const int RaritiesFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities> _repeated_rarities_codec
+        = pb::FieldCodec.ForMessage(90, global::DecentralCardGame.Cardchain.Cardchain.InnerRarities.Parser);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities> rarities_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities> Rarities {
+      get { return rarities_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -251,6 +290,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (ArtworkId != other.ArtworkId) return false;
       if (Status != other.Status) return false;
       if (TimeStamp != other.TimeStamp) return false;
+      if(!contributorsDistribution_.Equals(other.contributorsDistribution_)) return false;
+      if(!rarities_.Equals(other.rarities_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -267,6 +308,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (ArtworkId != 0UL) hash ^= ArtworkId.GetHashCode();
       if (Status != global::DecentralCardGame.Cardchain.Cardchain.CStatus.Design) hash ^= Status.GetHashCode();
       if (TimeStamp != 0L) hash ^= TimeStamp.GetHashCode();
+      hash ^= contributorsDistribution_.GetHashCode();
+      hash ^= rarities_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -315,6 +358,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(72);
         output.WriteInt64(TimeStamp);
       }
+      contributorsDistribution_.WriteTo(output, _repeated_contributorsDistribution_codec);
+      rarities_.WriteTo(output, _repeated_rarities_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -355,6 +400,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(72);
         output.WriteInt64(TimeStamp);
       }
+      contributorsDistribution_.WriteTo(ref output, _repeated_contributorsDistribution_codec);
+      rarities_.WriteTo(ref output, _repeated_rarities_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -388,6 +435,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (TimeStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TimeStamp);
       }
+      size += contributorsDistribution_.CalculateSize(_repeated_contributorsDistribution_codec);
+      size += rarities_.CalculateSize(_repeated_rarities_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -423,6 +472,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other.TimeStamp != 0L) {
         TimeStamp = other.TimeStamp;
       }
+      contributorsDistribution_.Add(other.contributorsDistribution_);
+      rarities_.Add(other.rarities_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -473,6 +524,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 72: {
             TimeStamp = input.ReadInt64();
+            break;
+          }
+          case 82: {
+            contributorsDistribution_.AddEntriesFrom(input, _repeated_contributorsDistribution_codec);
+            break;
+          }
+          case 90: {
+            rarities_.AddEntriesFrom(input, _repeated_rarities_codec);
             break;
           }
         }
@@ -527,6 +586,195 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             TimeStamp = input.ReadInt64();
             break;
           }
+          case 82: {
+            contributorsDistribution_.AddEntriesFrom(ref input, _repeated_contributorsDistribution_codec);
+            break;
+          }
+          case 90: {
+            rarities_.AddEntriesFrom(ref input, _repeated_rarities_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class InnerRarities : pb::IMessage<InnerRarities>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<InnerRarities> _parser = new pb::MessageParser<InnerRarities>(() => new InnerRarities());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<InnerRarities> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InnerRarities() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InnerRarities(InnerRarities other) : this() {
+      r_ = other.r_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public InnerRarities Clone() {
+      return new InnerRarities(this);
+    }
+
+    /// <summary>Field number for the "R" field.</summary>
+    public const int RFieldNumber = 1;
+    private static readonly pb::FieldCodec<ulong> _repeated_r_codec
+        = pb::FieldCodec.ForUInt64(10);
+    private readonly pbc::RepeatedField<ulong> r_ = new pbc::RepeatedField<ulong>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<ulong> R {
+      get { return r_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as InnerRarities);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(InnerRarities other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!r_.Equals(other.r_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= r_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      r_.WriteTo(output, _repeated_r_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      r_.WriteTo(ref output, _repeated_r_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += r_.CalculateSize(_repeated_r_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(InnerRarities other) {
+      if (other == null) {
+        return;
+      }
+      r_.Add(other.r_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            r_.AddEntriesFrom(input, _repeated_r_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            r_.AddEntriesFrom(ref input, _repeated_r_codec);
+            break;
+          }
         }
       }
     }
@@ -549,7 +797,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor.MessageTypes[1]; }
+      get { return global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -578,6 +826,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       artwork_ = other.artwork_;
       status_ = other.status_;
       timeStamp_ = other.timeStamp_;
+      contributorsDistribution_ = other.contributorsDistribution_.Clone();
+      rarities_ = other.rarities_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -693,6 +943,28 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "contributorsDistribution" field.</summary>
+    public const int ContributorsDistributionFieldNumber = 10;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity> _repeated_contributorsDistribution_codec
+        = pb::FieldCodec.ForMessage(82, global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity.Parser);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity> contributorsDistribution_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.AddrWithQuantity> ContributorsDistribution {
+      get { return contributorsDistribution_; }
+    }
+
+    /// <summary>Field number for the "Rarities" field.</summary>
+    public const int RaritiesFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities> _repeated_rarities_codec
+        = pb::FieldCodec.ForMessage(90, global::DecentralCardGame.Cardchain.Cardchain.InnerRarities.Parser);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities> rarities_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.InnerRarities> Rarities {
+      get { return rarities_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -717,6 +989,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Artwork != other.Artwork) return false;
       if (Status != other.Status) return false;
       if (TimeStamp != other.TimeStamp) return false;
+      if(!contributorsDistribution_.Equals(other.contributorsDistribution_)) return false;
+      if(!rarities_.Equals(other.rarities_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -733,6 +1007,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Artwork.Length != 0) hash ^= Artwork.GetHashCode();
       if (Status != global::DecentralCardGame.Cardchain.Cardchain.CStatus.Design) hash ^= Status.GetHashCode();
       if (TimeStamp != 0L) hash ^= TimeStamp.GetHashCode();
+      hash ^= contributorsDistribution_.GetHashCode();
+      hash ^= rarities_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -781,6 +1057,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(72);
         output.WriteInt64(TimeStamp);
       }
+      contributorsDistribution_.WriteTo(output, _repeated_contributorsDistribution_codec);
+      rarities_.WriteTo(output, _repeated_rarities_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -821,6 +1099,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(72);
         output.WriteInt64(TimeStamp);
       }
+      contributorsDistribution_.WriteTo(ref output, _repeated_contributorsDistribution_codec);
+      rarities_.WriteTo(ref output, _repeated_rarities_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -854,6 +1134,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (TimeStamp != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(TimeStamp);
       }
+      size += contributorsDistribution_.CalculateSize(_repeated_contributorsDistribution_codec);
+      size += rarities_.CalculateSize(_repeated_rarities_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -889,6 +1171,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other.TimeStamp != 0L) {
         TimeStamp = other.TimeStamp;
       }
+      contributorsDistribution_.Add(other.contributorsDistribution_);
+      rarities_.Add(other.rarities_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -941,6 +1225,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             TimeStamp = input.ReadInt64();
             break;
           }
+          case 82: {
+            contributorsDistribution_.AddEntriesFrom(input, _repeated_contributorsDistribution_codec);
+            break;
+          }
+          case 90: {
+            rarities_.AddEntriesFrom(input, _repeated_rarities_codec);
+            break;
+          }
         }
       }
     #endif
@@ -991,6 +1283,287 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 72: {
             TimeStamp = input.ReadInt64();
+            break;
+          }
+          case 82: {
+            contributorsDistribution_.AddEntriesFrom(ref input, _repeated_contributorsDistribution_codec);
+            break;
+          }
+          case 90: {
+            rarities_.AddEntriesFrom(ref input, _repeated_rarities_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AddrWithQuantity : pb::IMessage<AddrWithQuantity>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AddrWithQuantity> _parser = new pb::MessageParser<AddrWithQuantity>(() => new AddrWithQuantity());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AddrWithQuantity> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AddrWithQuantity() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AddrWithQuantity(AddrWithQuantity other) : this() {
+      addr_ = other.addr_;
+      q_ = other.q_;
+      payment_ = other.payment_ != null ? other.payment_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AddrWithQuantity Clone() {
+      return new AddrWithQuantity(this);
+    }
+
+    /// <summary>Field number for the "addr" field.</summary>
+    public const int AddrFieldNumber = 1;
+    private string addr_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Addr {
+      get { return addr_; }
+      set {
+        addr_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "q" field.</summary>
+    public const int QFieldNumber = 2;
+    private uint q_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint Q {
+      get { return q_; }
+      set {
+        q_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "payment" field.</summary>
+    public const int PaymentFieldNumber = 3;
+    private global::Cosmos.Base.V1beta1.Coin payment_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Cosmos.Base.V1beta1.Coin Payment {
+      get { return payment_; }
+      set {
+        payment_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AddrWithQuantity);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AddrWithQuantity other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Addr != other.Addr) return false;
+      if (Q != other.Q) return false;
+      if (!object.Equals(Payment, other.Payment)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Addr.Length != 0) hash ^= Addr.GetHashCode();
+      if (Q != 0) hash ^= Q.GetHashCode();
+      if (payment_ != null) hash ^= Payment.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Addr.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Addr);
+      }
+      if (Q != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Q);
+      }
+      if (payment_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Payment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Addr.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Addr);
+      }
+      if (Q != 0) {
+        output.WriteRawTag(16);
+        output.WriteUInt32(Q);
+      }
+      if (payment_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Payment);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Addr.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Addr);
+      }
+      if (Q != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Q);
+      }
+      if (payment_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Payment);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AddrWithQuantity other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Addr.Length != 0) {
+        Addr = other.Addr;
+      }
+      if (other.Q != 0) {
+        Q = other.Q;
+      }
+      if (other.payment_ != null) {
+        if (payment_ == null) {
+          Payment = new global::Cosmos.Base.V1beta1.Coin();
+        }
+        Payment.MergeFrom(other.Payment);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Addr = input.ReadString();
+            break;
+          }
+          case 16: {
+            Q = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            if (payment_ == null) {
+              Payment = new global::Cosmos.Base.V1beta1.Coin();
+            }
+            input.ReadMessage(Payment);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Addr = input.ReadString();
+            break;
+          }
+          case 16: {
+            Q = input.ReadUInt32();
+            break;
+          }
+          case 26: {
+            if (payment_ == null) {
+              Payment = new global::Cosmos.Base.V1beta1.Coin();
+            }
+            input.ReadMessage(Payment);
             break;
           }
         }
