@@ -39,7 +39,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "c3BvbnNlEksKBnBhcmFtcxgBIAEoCzItLkRlY2VudHJhbENhcmRHYW1lLmNh",
             "cmRjaGFpbi5jYXJkY2hhaW4uUGFyYW1zQgTI3h8AUgZwYXJhbXMiKwoRUXVl",
             "cnlRQ2FyZFJlcXVlc3QSFgoGY2FyZElkGAEgASgJUgZjYXJkSWQiMgoYUXVl",
-            "cnlRQ2FyZENvbnRlbnRSZXF1ZXN0EhYKBmNhcmRJZBgBIAEoCVIGY2FyZElk",
+            "cnlRQ2FyZENvbnRlbnRSZXF1ZXN0EhYKBmNhcmRJZBgBIAEoBFIGY2FyZElk",
             "IkkKGVF1ZXJ5UUNhcmRDb250ZW50UmVzcG9uc2USGAoHY29udGVudBgBIAEo",
             "CVIHY29udGVudBISCgRoYXNoGAIgASgJUgRoYXNoIi0KEVF1ZXJ5UVVzZXJS",
             "ZXF1ZXN0EhgKB2FkZHJlc3MYASABKAlSB2FkZHJlc3MiHAoaUXVlcnlRQ2Fy",
@@ -54,138 +54,147 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "c3RDYXJkTW9kaWZpZWQiHAoaUXVlcnlRVm90aW5nUmVzdWx0c1JlcXVlc3Qi",
             "gQEKG1F1ZXJ5UVZvdGluZ1Jlc3VsdHNSZXNwb25zZRJiChFsYXN0Vm90aW5n",
             "UmVzdWx0cxgBIAEoCzI0LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
-            "YXJkY2hhaW4uVm90aW5nUmVzdWx0c1IRbGFzdFZvdGluZ1Jlc3VsdHMiyQQK",
-            "ElF1ZXJ5UUNhcmRzUmVxdWVzdBIUCgVvd25lchgBIAEoCVIFb3duZXISWAoG",
-            "c3RhdHVzGAIgASgOMkAuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5RdWVyeVFDYXJkc1JlcXVlc3QuU3RhdHVzUgZzdGF0dXMSGgoI",
-            "Y2FyZFR5cGUYAyABKAlSCGNhcmRUeXBlEhgKB2NsYXNzZXMYBCABKAlSB2Ns",
-            "YXNzZXMSFgoGc29ydEJ5GAUgASgJUgZzb3J0QnkSIgoMbmFtZUNvbnRhaW5z",
-            "GAYgASgJUgxuYW1lQ29udGFpbnMSKgoQa2V5d29yZHNDb250YWlucxgHIAEo",
-            "CVIQa2V5d29yZHNDb250YWlucxIkCg1ub3Rlc0NvbnRhaW5zGAggASgJUg1u",
-            "b3Rlc0NvbnRhaW5zEigKD29ubHlTdGFydGVyQ2FyZBgJIAEoCFIPb25seVN0",
-            "YXJ0ZXJDYXJkEi4KEm9ubHlCYWxhbmNlQW5jaG9ycxgKIAEoCFISb25seUJh",
-            "bGFuY2VBbmNob3JzIqQBCgZTdGF0dXMSCgoGc2NoZW1lEAASDQoJcHJvdG90",
-            "eXBlEAESCQoFdHJpYWwQAhINCglwZXJtYW5lbnQQAxINCglzdXNwZW5kZWQQ",
-            "BBIKCgZiYW5uZWQQBRIOCgpiYW5uZWRTb29uEAYSEgoOYmFubmVkVmVyeVNv",
-            "b24QBxIICgRub25lEAgSDAoIcGxheWFibGUQCRIOCgp1bnBsYXlhYmxlEAoi",
-            "MwoTUXVlcnlRQ2FyZHNSZXNwb25zZRIcCgljYXJkc0xpc3QYASADKARSCWNh",
-            "cmRzTGlzdCIuChJRdWVyeVFNYXRjaFJlcXVlc3QSGAoHbWF0Y2hJZBgBIAEo",
-            "BFIHbWF0Y2hJZCIoChBRdWVyeVFTZXRSZXF1ZXN0EhQKBXNldElkGAEgASgE",
-            "UgVzZXRJZCI6ChZRdWVyeVFTZWxsT2ZmZXJSZXF1ZXN0EiAKC3NlbGxPZmZl",
-            "cklkGAEgASgEUgtzZWxsT2ZmZXJJZCI0ChRRdWVyeVFDb3VuY2lsUmVxdWVz",
-            "dBIcCgljb3VuY2lsSWQYASABKARSCWNvdW5jaWxJZCLaAgoUUXVlcnlRTWF0",
-            "Y2hlc1JlcXVlc3QSJAoNdGltZXN0YW1wRG93bhgBIAEoBFINdGltZXN0YW1w",
-            "RG93bhIgCgt0aW1lc3RhbXBVcBgCIAEoBFILdGltZXN0YW1wVXASJAoNY29u",
-            "dGFpbnNVc2VycxgDIAMoCVINY29udGFpbnNVc2VycxIaCghyZXBvcnRlchgE",
-            "IAEoCVIIcmVwb3J0ZXISSAoHb3V0Y29tZRgFIAEoDjIuLkRlY2VudHJhbENh",
-            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uT3V0Y29tZVIHb3V0Y29tZRIg",
-            "CgtjYXJkc1BsYXllZBgGIAMoBFILY2FyZHNQbGF5ZWQSTAoGaWdub3JlGAcg",
-            "ASgLMjQuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5J",
-            "Z25vcmVNYXRjaGVzUgZpZ25vcmUiKQoNSWdub3JlTWF0Y2hlcxIYCgdvdXRj",
-            "b21lGAEgASgIUgdvdXRjb21lIoEBChVRdWVyeVFNYXRjaGVzUmVzcG9uc2US",
-            "IAoLbWF0Y2hlc0xpc3QYASADKARSC21hdGNoZXNMaXN0EkYKB21hdGNoZXMY",
-            "AiADKAsyLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "Lk1hdGNoUgdtYXRjaGVzIrQCChdRdWVyeVFTZWxsT2ZmZXJzUmVxdWVzdBIc",
-            "CglwcmljZURvd24YASABKAlSCXByaWNlRG93bhIYCgdwcmljZVVwGAIgASgJ",
-            "UgdwcmljZVVwEhYKBnNlbGxlchgDIAEoCVIGc2VsbGVyEhQKBWJ1eWVyGAQg",
-            "ASgJUgVidXllchISCgRjYXJkGAUgASgEUgRjYXJkEk4KBnN0YXR1cxgGIAEo",
-            "DjI2LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2Vs",
-            "bE9mZmVyU3RhdHVzUgZzdGF0dXMSTwoGaWdub3JlGAcgASgLMjcuRGVjZW50",
-            "cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5JZ25vcmVTZWxsT2Zm",
-            "ZXJzUgZpZ25vcmUiPgoQSWdub3JlU2VsbE9mZmVycxIWCgZzdGF0dXMYASAB",
-            "KAhSBnN0YXR1cxISCgRjYXJkGAIgASgIUgRjYXJkIpIBChhRdWVyeVFTZWxs",
-            "T2ZmZXJzUmVzcG9uc2USJAoNc2VsbE9mZmVyc0lkcxgBIAMoBFINc2VsbE9m",
-            "ZmVyc0lkcxJQCgpzZWxsT2ZmZXJzGAIgAygLMjAuRGVjZW50cmFsQ2FyZEdh",
-            "bWUuY2FyZGNoYWluLmNhcmRjaGFpbi5TZWxsT2ZmZXJSCnNlbGxPZmZlcnMi",
-            "JQoTUXVlcnlRU2VydmVyUmVxdWVzdBIOCgJpZBgBIAEoBFICaWQiFgoUUXVl",
-            "cnlRU2VydmVyUmVzcG9uc2Ui3wEKEVF1ZXJ5UVNldHNSZXF1ZXN0EkYKBnN0",
-            "YXR1cxgBIAEoDjIuLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW4uQ1N0YXR1c1IGc3RhdHVzEiIKDGlnbm9yZVN0YXR1cxgCIAEoCFIM",
-            "aWdub3JlU3RhdHVzEiIKDGNvbnRyaWJ1dG9ycxgDIAMoCVIMY29udHJpYnV0",
-            "b3JzEiQKDWNvbnRhaW5zQ2FyZHMYBCADKARSDWNvbnRhaW5zQ2FyZHMSFAoF",
-            "b3duZXIYBSABKAlSBW93bmVyIiwKElF1ZXJ5UVNldHNSZXNwb25zZRIWCgZz",
-            "ZXRJZHMYASADKARSBnNldElkcyI2Ch5RdWVyeVJhcml0eURpc3RyaWJ1dGlv",
-            "blJlcXVlc3QSFAoFc2V0SWQYASABKARSBXNldElkIlMKH1F1ZXJ5UmFyaXR5",
-            "RGlzdHJpYnV0aW9uUmVzcG9uc2USGAoHY3VycmVudBgBIAMoDVIHY3VycmVu",
-            "dBIWCgZ3YW50ZWQYAiADKA1SBndhbnRlZDL8GAoFUXVlcnkStgEKBlBhcmFt",
-            "cxI5LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVl",
-            "cnlQYXJhbXNSZXF1ZXN0GjouRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
-            "LmNhcmRjaGFpbi5RdWVyeVBhcmFtc1Jlc3BvbnNlIjWC0+STAi8SLS9EZWNl",
-            "bnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3BhcmFtcxKyAQoF",
-            "UUNhcmQSOC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "LlF1ZXJ5UUNhcmRSZXF1ZXN0Gi8uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNo",
-            "YWluLmNhcmRjaGFpbi5PdXRwQ2FyZCI+gtPkkwI4EjYvRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NhcmQve2NhcmRJZH0S2QEK",
-            "DFFDYXJkQ29udGVudBI/LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
-            "YXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXF1ZXN0GkAuRGVjZW50cmFs",
-            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkQ29udGVu",
-            "dFJlc3BvbnNlIkaC0+STAkASPi9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hh",
-            "aW4vY2FyZGNoYWluL3FfY2FyZF9jb250ZW50L3tjYXJkSWR9Eq8BCgVRVXNl",
-            "chI4LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVl",
-            "cnlRVXNlclJlcXVlc3QaKy5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4u",
-            "Y2FyZGNoYWluLlVzZXIiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0Nh",
-            "cmRjaGFpbi9jYXJkY2hhaW4vcV91c2VyL3thZGRyZXNzfRLYAQoOUUNhcmRj",
-            "aGFpbkluZm8SQS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNo",
-            "YWluLlF1ZXJ5UUNhcmRjaGFpbkluZm9SZXF1ZXN0GkIuRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkY2hhaW5JbmZv",
-            "UmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFp",
-            "bi9jYXJkY2hhaW4vcV9jYXJkY2hhaW5faW5mbxLYAQoOUVZvdGluZ1Jlc3Vs",
-            "dHMSQS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
-            "ZXJ5UVZvdGluZ1Jlc3VsdHNSZXF1ZXN0GkIuRGVjZW50cmFsQ2FyZEdhbWUu",
-            "Y2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFWb3RpbmdSZXN1bHRzUmVzcG9u",
-            "c2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJk",
-            "Y2hhaW4vcV92b3RpbmdfcmVzdWx0cxLAAQoGUUNhcmRzEjkuRGVjZW50cmFs",
-            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkc1JlcXVl",
-            "c3QaOi5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
-            "ZXJ5UUNhcmRzUmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1l",
-            "L0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9jYXJkcy97c3RhdHVzfRKzAQoGUU1h",
-            "dGNoEjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
-            "dWVyeVFNYXRjaFJlcXVlc3QaLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hh",
-            "aW4uY2FyZGNoYWluLk1hdGNoIkCC0+STAjoSOC9EZWNlbnRyYWxDYXJkR2Ft",
-            "ZS9DYXJkY2hhaW4vY2FyZGNoYWluL3FfbWF0Y2gve21hdGNoSWR9Eq0BCgRR",
-            "U2V0EjcuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
-            "dWVyeVFTZXRSZXF1ZXN0Gi4uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
-            "LmNhcmRjaGFpbi5PdXRwU2V0IjyC0+STAjYSNC9EZWNlbnRyYWxDYXJkR2Ft",
-            "ZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffc2V0L3tzZXRJZH0SyAEKClFTZWxs",
-            "T2ZmZXISPS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "LlF1ZXJ5UVNlbGxPZmZlclJlcXVlc3QaMC5EZWNlbnRyYWxDYXJkR2FtZS5j",
-            "YXJkY2hhaW4uY2FyZGNoYWluLlNlbGxPZmZlciJJgtPkkwJDEkEvRGVjZW50",
-            "cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX3NlbGxfb2ZmZXIv",
-            "e3NlbGxPZmZlcklkfRK9AQoIUUNvdW5jaWwSOy5EZWNlbnRyYWxDYXJkR2Ft",
-            "ZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNvdW5jaWxSZXF1ZXN0Gi4u",
-            "RGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Db3VuY2ls",
-            "IkSC0+STAj4SPC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
-            "YWluL3FfY291bmNpbC97Y291bmNpbElkfRK/AQoIUU1hdGNoZXMSOy5EZWNl",
-            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UU1hdGNo",
-            "ZXNSZXF1ZXN0GjwuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
-            "aGFpbi5RdWVyeVFNYXRjaGVzUmVzcG9uc2UiOILT5JMCMhIwL0RlY2VudHJh",
-            "bENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9tYXRjaGVzEtUBCgtR",
-            "U2VsbE9mZmVycxI+LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW4uUXVlcnlRU2VsbE9mZmVyc1JlcXVlc3QaPy5EZWNlbnRyYWxDYXJk",
-            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNlbGxPZmZlcnNSZXNw",
-            "b25zZSJFgtPkkwI/Ej0vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2Nh",
-            "cmRjaGFpbi9xX3NlbGxfb2ZmZXJzL3tzdGF0dXN9ErIBCgdRU2VydmVyEjou",
-            "RGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFT",
-            "ZXJ2ZXJSZXF1ZXN0Gi0uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5TZXJ2ZXIiPILT5JMCNhI0L0RlY2VudHJhbENhcmRHYW1lL0Nh",
-            "cmRjaGFpbi9jYXJkY2hhaW4vcV9zZXJ2ZXIve2lkfRLLAQoFUVNldHMSOC5E",
-            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNl",
-            "dHNSZXF1ZXN0GjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
-            "aGFpbi5RdWVyeVFTZXRzUmVzcG9uc2UiTYLT5JMCRxJFL0RlY2VudHJhbENh",
-            "cmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZXRzL3tzdGF0dXN9L3tp",
-            "Z25vcmVTdGF0dXN9Eu8BChJSYXJpdHlEaXN0cmlidXRpb24SRS5EZWNlbnRy",
-            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UmFyaXR5RGlz",
-            "dHJpYnV0aW9uUmVxdWVzdBpGLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
-            "bi5jYXJkY2hhaW4uUXVlcnlSYXJpdHlEaXN0cmlidXRpb25SZXNwb25zZSJK",
-            "gtPkkwJEEkIvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFp",
-            "bi9yYXJpdHlfZGlzdHJpYnV0aW9uL3tzZXRJZH1CpwIKKWNvbS5EZWNlbnRy",
-            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgpRdWVyeVByb3RvUAFa",
-            "OGdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL3gvY2Fy",
-            "ZGNoYWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNo",
-            "YWluLkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxD",
-            "YXJkY2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNo",
-            "YWluXEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFp",
-            "bjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "YXJkY2hhaW4uVm90aW5nUmVzdWx0c1IRbGFzdFZvdGluZ1Jlc3VsdHMi7wQK",
+            "ElF1ZXJ5UUNhcmRzUmVxdWVzdBIUCgVvd25lchgBIAEoCVIFb3duZXISSQoI",
+            "c3RhdHVzZXMYAiADKA4yLS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4u",
+            "Y2FyZGNoYWluLlN0YXR1c1IIc3RhdHVzZXMSTQoJY2FyZFR5cGVzGAMgAygO",
+            "Mi8uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5DYXJk",
+            "VHlwZVIJY2FyZFR5cGVzEkoKB2NsYXNzZXMYBCADKA4yMC5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNhcmRDbGFzc1IHY2xhc3Nl",
+            "cxIWCgZzb3J0QnkYBSABKAlSBnNvcnRCeRIiCgxuYW1lQ29udGFpbnMYBiAB",
+            "KAlSDG5hbWVDb250YWlucxIqChBrZXl3b3Jkc0NvbnRhaW5zGAcgASgJUhBr",
+            "ZXl3b3Jkc0NvbnRhaW5zEiQKDW5vdGVzQ29udGFpbnMYCCABKAlSDW5vdGVz",
+            "Q29udGFpbnMSKAoPb25seVN0YXJ0ZXJDYXJkGAkgASgIUg9vbmx5U3RhcnRl",
+            "ckNhcmQSLgoSb25seUJhbGFuY2VBbmNob3JzGAogASgIUhJvbmx5QmFsYW5j",
+            "ZUFuY2hvcnMSTQoIcmFyaXRpZXMYCyADKA4yMS5EZWNlbnRyYWxDYXJkR2Ft",
+            "ZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNhcmRSYXJpdHlSCHJhcml0aWVzEiYK",
+            "Dm11bHRpQ2xhc3NPbmx5GAwgASgIUg5tdWx0aUNsYXNzT25seSIzChNRdWVy",
+            "eVFDYXJkc1Jlc3BvbnNlEhwKCWNhcmRzTGlzdBgBIAMoBFIJY2FyZHNMaXN0",
+            "Ii4KElF1ZXJ5UU1hdGNoUmVxdWVzdBIYCgdtYXRjaElkGAEgASgEUgdtYXRj",
+            "aElkIigKEFF1ZXJ5UVNldFJlcXVlc3QSFAoFc2V0SWQYASABKARSBXNldElk",
+            "IjoKFlF1ZXJ5UVNlbGxPZmZlclJlcXVlc3QSIAoLc2VsbE9mZmVySWQYASAB",
+            "KARSC3NlbGxPZmZlcklkIjQKFFF1ZXJ5UUNvdW5jaWxSZXF1ZXN0EhwKCWNv",
+            "dW5jaWxJZBgBIAEoBFIJY291bmNpbElkItoCChRRdWVyeVFNYXRjaGVzUmVx",
+            "dWVzdBIkCg10aW1lc3RhbXBEb3duGAEgASgEUg10aW1lc3RhbXBEb3duEiAK",
+            "C3RpbWVzdGFtcFVwGAIgASgEUgt0aW1lc3RhbXBVcBIkCg1jb250YWluc1Vz",
+            "ZXJzGAMgAygJUg1jb250YWluc1VzZXJzEhoKCHJlcG9ydGVyGAQgASgJUghy",
+            "ZXBvcnRlchJICgdvdXRjb21lGAUgASgOMi4uRGVjZW50cmFsQ2FyZEdhbWUu",
+            "Y2FyZGNoYWluLmNhcmRjaGFpbi5PdXRjb21lUgdvdXRjb21lEiAKC2NhcmRz",
+            "UGxheWVkGAYgAygEUgtjYXJkc1BsYXllZBJMCgZpZ25vcmUYByABKAsyNC5E",
+            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLklnbm9yZU1h",
+            "dGNoZXNSBmlnbm9yZSIpCg1JZ25vcmVNYXRjaGVzEhgKB291dGNvbWUYASAB",
+            "KAhSB291dGNvbWUigQEKFVF1ZXJ5UU1hdGNoZXNSZXNwb25zZRIgCgttYXRj",
+            "aGVzTGlzdBgBIAMoBFILbWF0Y2hlc0xpc3QSRgoHbWF0Y2hlcxgCIAMoCzIs",
+            "LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uTWF0Y2hS",
+            "B21hdGNoZXMitAIKF1F1ZXJ5UVNlbGxPZmZlcnNSZXF1ZXN0EhwKCXByaWNl",
+            "RG93bhgBIAEoCVIJcHJpY2VEb3duEhgKB3ByaWNlVXAYAiABKAlSB3ByaWNl",
+            "VXASFgoGc2VsbGVyGAMgASgJUgZzZWxsZXISFAoFYnV5ZXIYBCABKAlSBWJ1",
+            "eWVyEhIKBGNhcmQYBSABKARSBGNhcmQSTgoGc3RhdHVzGAYgASgOMjYuRGVj",
+            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5TZWxsT2ZmZXJT",
+            "dGF0dXNSBnN0YXR1cxJPCgZpZ25vcmUYByABKAsyNy5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLklnbm9yZVNlbGxPZmZlcnNSBmln",
+            "bm9yZSI+ChBJZ25vcmVTZWxsT2ZmZXJzEhYKBnN0YXR1cxgBIAEoCFIGc3Rh",
+            "dHVzEhIKBGNhcmQYAiABKAhSBGNhcmQikgEKGFF1ZXJ5UVNlbGxPZmZlcnNS",
+            "ZXNwb25zZRIkCg1zZWxsT2ZmZXJzSWRzGAEgAygEUg1zZWxsT2ZmZXJzSWRz",
+            "ElAKCnNlbGxPZmZlcnMYAiADKAsyMC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJk",
+            "Y2hhaW4uY2FyZGNoYWluLlNlbGxPZmZlclIKc2VsbE9mZmVycyIlChNRdWVy",
+            "eVFTZXJ2ZXJSZXF1ZXN0Eg4KAmlkGAEgASgEUgJpZCIWChRRdWVyeVFTZXJ2",
+            "ZXJSZXNwb25zZSLfAQoRUXVlcnlRU2V0c1JlcXVlc3QSRgoGc3RhdHVzGAEg",
+            "ASgOMi4uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5D",
+            "U3RhdHVzUgZzdGF0dXMSIgoMaWdub3JlU3RhdHVzGAIgASgIUgxpZ25vcmVT",
+            "dGF0dXMSIgoMY29udHJpYnV0b3JzGAMgAygJUgxjb250cmlidXRvcnMSJAoN",
+            "Y29udGFpbnNDYXJkcxgEIAMoBFINY29udGFpbnNDYXJkcxIUCgVvd25lchgF",
+            "IAEoCVIFb3duZXIiLAoSUXVlcnlRU2V0c1Jlc3BvbnNlEhYKBnNldElkcxgB",
+            "IAMoBFIGc2V0SWRzIjYKHlF1ZXJ5UmFyaXR5RGlzdHJpYnV0aW9uUmVxdWVz",
+            "dBIUCgVzZXRJZBgBIAEoBFIFc2V0SWQiUwofUXVlcnlSYXJpdHlEaXN0cmli",
+            "dXRpb25SZXNwb25zZRIYCgdjdXJyZW50GAEgAygNUgdjdXJyZW50EhYKBndh",
+            "bnRlZBgCIAMoDVIGd2FudGVkIjUKGVF1ZXJ5UUNhcmRDb250ZW50c1JlcXVl",
+            "c3QSGAoHY2FyZElkcxgBIAMoBFIHY2FyZElkcyJ0ChpRdWVyeVFDYXJkQ29u",
+            "dGVudHNSZXNwb25zZRJWCgVjYXJkcxgBIAMoCzJALkRlY2VudHJhbENhcmRH",
+            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXNw",
+            "b25zZVIFY2FyZHMy1BoKBVF1ZXJ5ErYBCgZQYXJhbXMSOS5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UGFyYW1zUmVxdWVz",
+            "dBo6LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVl",
+            "cnlQYXJhbXNSZXNwb25zZSI1gtPkkwIvEi0vRGVjZW50cmFsQ2FyZEdhbWUv",
+            "Q2FyZGNoYWluL2NhcmRjaGFpbi9wYXJhbXMSsgEKBVFDYXJkEjguRGVjZW50",
+            "cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkUmVx",
+            "dWVzdBovLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4u",
+            "T3V0cENhcmQiPoLT5JMCOBI2L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFp",
+            "bi9jYXJkY2hhaW4vcV9jYXJkL3tjYXJkSWR9EtkBCgxRQ2FyZENvbnRlbnQS",
+            "Py5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5",
+            "UUNhcmRDb250ZW50UmVxdWVzdBpALkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
+            "aGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXNwb25zZSJGgtPk",
+            "kwJAEj4vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9x",
+            "X2NhcmRfY29udGVudC97Y2FyZElkfRKvAQoFUVVzZXISOC5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVVzZXJSZXF1ZXN0",
+            "GisuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Vc2Vy",
+            "Ij+C0+STAjkSNy9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
+            "YWluL3FfdXNlci97YWRkcmVzc30S2AEKDlFDYXJkY2hhaW5JbmZvEkEuRGVj",
+            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJk",
+            "Y2hhaW5JbmZvUmVxdWVzdBpCLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
+            "bi5jYXJkY2hhaW4uUXVlcnlRQ2FyZGNoYWluSW5mb1Jlc3BvbnNlIj+C0+ST",
+            "AjkSNy9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ff",
+            "Y2FyZGNoYWluX2luZm8S2AEKDlFWb3RpbmdSZXN1bHRzEkEuRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFWb3RpbmdSZXN1",
+            "bHRzUmVxdWVzdBpCLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
+            "Y2hhaW4uUXVlcnlRVm90aW5nUmVzdWx0c1Jlc3BvbnNlIj+C0+STAjkSNy9E",
+            "ZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffdm90aW5n",
+            "X3Jlc3VsdHMStwEKBlFDYXJkcxI5LkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
+            "aGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZHNSZXF1ZXN0GjouRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkc1Jlc3Bv",
+            "bnNlIjaC0+STAjASLi9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2Fy",
+            "ZGNoYWluL3FfY2FyZHMSswEKBlFNYXRjaBI5LkRlY2VudHJhbENhcmRHYW1l",
+            "LmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRTWF0Y2hSZXF1ZXN0GiwuRGVj",
+            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5NYXRjaCJAgtPk",
+            "kwI6EjgvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9x",
+            "X21hdGNoL3ttYXRjaElkfRKtAQoEUVNldBI3LkRlY2VudHJhbENhcmRHYW1l",
+            "LmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRU2V0UmVxdWVzdBouLkRlY2Vu",
+            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uT3V0cFNldCI8gtPk",
+            "kwI2EjQvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9x",
+            "X3NldC97c2V0SWR9EsgBCgpRU2VsbE9mZmVyEj0uRGVjZW50cmFsQ2FyZEdh",
+            "bWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFTZWxsT2ZmZXJSZXF1ZXN0",
+            "GjAuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5TZWxs",
+            "T2ZmZXIiSYLT5JMCQxJBL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9j",
+            "YXJkY2hhaW4vcV9zZWxsX29mZmVyL3tzZWxsT2ZmZXJJZH0SvQEKCFFDb3Vu",
+            "Y2lsEjsuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
+            "dWVyeVFDb3VuY2lsUmVxdWVzdBouLkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
+            "aGFpbi5jYXJkY2hhaW4uQ291bmNpbCJEgtPkkwI+EjwvRGVjZW50cmFsQ2Fy",
+            "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NvdW5jaWwve2NvdW5jaWxJ",
+            "ZH0SvwEKCFFNYXRjaGVzEjsuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5RdWVyeVFNYXRjaGVzUmVxdWVzdBo8LkRlY2VudHJhbENh",
+            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRTWF0Y2hlc1Jlc3Bv",
+            "bnNlIjiC0+STAjISMC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2Fy",
+            "ZGNoYWluL3FfbWF0Y2hlcxLVAQoLUVNlbGxPZmZlcnMSPi5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNlbGxPZmZlcnNS",
+            "ZXF1ZXN0Gj8uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFp",
+            "bi5RdWVyeVFTZWxsT2ZmZXJzUmVzcG9uc2UiRYLT5JMCPxI9L0RlY2VudHJh",
+            "bENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZWxsX29mZmVycy97",
+            "c3RhdHVzfRKyAQoHUVNlcnZlchI6LkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
+            "aGFpbi5jYXJkY2hhaW4uUXVlcnlRU2VydmVyUmVxdWVzdBotLkRlY2VudHJh",
+            "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2VydmVyIjyC0+STAjYS",
+            "NC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffc2Vy",
+            "dmVyL3tpZH0SywEKBVFTZXRzEjguRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNo",
+            "YWluLmNhcmRjaGFpbi5RdWVyeVFTZXRzUmVxdWVzdBo5LkRlY2VudHJhbENh",
+            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRU2V0c1Jlc3BvbnNl",
+            "Ik2C0+STAkcSRS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
+            "YWluL3Ffc2V0cy97c3RhdHVzfS97aWdub3JlU3RhdHVzfRLvAQoSUmFyaXR5",
+            "RGlzdHJpYnV0aW9uEkUuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
+            "cmRjaGFpbi5RdWVyeVJhcml0eURpc3RyaWJ1dGlvblJlcXVlc3QaRi5EZWNl",
+            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UmFyaXR5",
+            "RGlzdHJpYnV0aW9uUmVzcG9uc2UiSoLT5JMCRBJCL0RlY2VudHJhbENhcmRH",
+            "YW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcmFyaXR5X2Rpc3RyaWJ1dGlvbi97",
+            "c2V0SWR9Et4BCg1RQ2FyZENvbnRlbnRzEkAuRGVjZW50cmFsQ2FyZEdhbWUu",
+            "Y2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkQ29udGVudHNSZXF1ZXN0",
+            "GkEuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVy",
+            "eVFDYXJkQ29udGVudHNSZXNwb25zZSJIgtPkkwJCEkAvRGVjZW50cmFsQ2Fy",
+            "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NhcmRfY29udGVudHMve2Nh",
+            "cmRJZHN9QqcCCiljb20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
+            "cmRjaGFpbkIKUXVlcnlQcm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENh",
+            "cmRHYW1lL0NhcmRjaGFpbi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURl",
+            "Y2VudHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRy",
+            "YWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2Fy",
+            "ZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2Vu",
+            "dHJhbENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SellOfferReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ServerReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.TxReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -199,7 +208,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardchainInfoResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardchainInfoResponse.Parser, new[]{ "CardAuctionPrice", "ActiveSets", "CardsNumber", "MatchesNumber", "SellOffersNumber", "CouncilsNumber", "LastCardModified" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQVotingResultsResponse.Parser, new[]{ "LastVotingResults" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Parser, new[]{ "Owner", "Status", "CardType", "Classes", "SortBy", "NameContains", "KeywordsContains", "NotesContains", "OnlyStarterCard", "OnlyBalanceAnchors" }, null, new[]{ typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Parser, new[]{ "Owner", "Statuses", "CardTypes", "Classes", "SortBy", "NameContains", "KeywordsContains", "NotesContains", "OnlyStarterCard", "OnlyBalanceAnchors", "Rarities", "MultiClassOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsResponse.Parser, new[]{ "CardsList" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQMatchRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQMatchRequest.Parser, new[]{ "MatchId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQSetRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQSetRequest.Parser, new[]{ "SetId" }, null, null, null, null),
@@ -216,7 +225,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQSetsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQSetsRequest.Parser, new[]{ "Status", "IgnoreStatus", "Contributors", "ContainsCards", "Owner" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQSetsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQSetsResponse.Parser, new[]{ "SetIds" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionRequest.Parser, new[]{ "SetId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionResponse.Parser, new[]{ "Current", "Wanted" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionResponse.Parser, new[]{ "Current", "Wanted" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest.Parser, new[]{ "CardIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse.Parser, new[]{ "Cards" }, null, null, null, null)
           }));
     }
     #endregion
@@ -821,13 +832,13 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
     /// <summary>Field number for the "cardId" field.</summary>
     public const int CardIdFieldNumber = 1;
-    private string cardId_ = "";
+    private ulong cardId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CardId {
+    public ulong CardId {
       get { return cardId_; }
       set {
-        cardId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        cardId_ = value;
       }
     }
 
@@ -854,7 +865,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (CardId.Length != 0) hash ^= CardId.GetHashCode();
+      if (CardId != 0UL) hash ^= CardId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -873,9 +884,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (CardId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(CardId);
+      if (CardId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(CardId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -887,9 +898,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (CardId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(CardId);
+      if (CardId != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(CardId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -901,8 +912,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (CardId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardId);
+      if (CardId != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(CardId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -916,7 +927,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other == null) {
         return;
       }
-      if (other.CardId.Length != 0) {
+      if (other.CardId != 0UL) {
         CardId = other.CardId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -934,8 +945,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            CardId = input.ReadString();
+          case 8: {
+            CardId = input.ReadUInt64();
             break;
           }
         }
@@ -953,8 +964,8 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
-          case 10: {
-            CardId = input.ReadString();
+          case 8: {
+            CardId = input.ReadUInt64();
             break;
           }
         }
@@ -2325,15 +2336,17 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public QueryQCardsRequest(QueryQCardsRequest other) : this() {
       owner_ = other.owner_;
-      status_ = other.status_;
-      cardType_ = other.cardType_;
-      classes_ = other.classes_;
+      statuses_ = other.statuses_.Clone();
+      cardTypes_ = other.cardTypes_.Clone();
+      classes_ = other.classes_.Clone();
       sortBy_ = other.sortBy_;
       nameContains_ = other.nameContains_;
       keywordsContains_ = other.keywordsContains_;
       notesContains_ = other.notesContains_;
       onlyStarterCard_ = other.onlyStarterCard_;
       onlyBalanceAnchors_ = other.onlyBalanceAnchors_;
+      rarities_ = other.rarities_.Clone();
+      multiClassOnly_ = other.multiClassOnly_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2355,40 +2368,37 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
-    /// <summary>Field number for the "status" field.</summary>
-    public const int StatusFieldNumber = 2;
-    private global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status status_ = global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status.Scheme;
+    /// <summary>Field number for the "statuses" field.</summary>
+    public const int StatusesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.Status> _repeated_statuses_codec
+        = pb::FieldCodec.ForEnum(18, x => (int) x, x => (global::DecentralCardGame.Cardchain.Cardchain.Status) x);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.Status> statuses_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.Status>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status Status {
-      get { return status_; }
-      set {
-        status_ = value;
-      }
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.Status> Statuses {
+      get { return statuses_; }
     }
 
-    /// <summary>Field number for the "cardType" field.</summary>
-    public const int CardTypeFieldNumber = 3;
-    private string cardType_ = "";
+    /// <summary>Field number for the "cardTypes" field.</summary>
+    public const int CardTypesFieldNumber = 3;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.CardType> _repeated_cardTypes_codec
+        = pb::FieldCodec.ForEnum(26, x => (int) x, x => (global::DecentralCardGame.Cardchain.Cardchain.CardType) x);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardType> cardTypes_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardType>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string CardType {
-      get { return cardType_; }
-      set {
-        cardType_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardType> CardTypes {
+      get { return cardTypes_; }
     }
 
     /// <summary>Field number for the "classes" field.</summary>
     public const int ClassesFieldNumber = 4;
-    private string classes_ = "";
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.CardClass> _repeated_classes_codec
+        = pb::FieldCodec.ForEnum(34, x => (int) x, x => (global::DecentralCardGame.Cardchain.Cardchain.CardClass) x);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardClass> classes_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardClass>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Classes {
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardClass> Classes {
       get { return classes_; }
-      set {
-        classes_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
     }
 
     /// <summary>Field number for the "sortBy" field.</summary>
@@ -2463,6 +2473,29 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "rarities" field.</summary>
+    public const int RaritiesFieldNumber = 11;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.CardRarity> _repeated_rarities_codec
+        = pb::FieldCodec.ForEnum(90, x => (int) x, x => (global::DecentralCardGame.Cardchain.Cardchain.CardRarity) x);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardRarity> rarities_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardRarity>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.CardRarity> Rarities {
+      get { return rarities_; }
+    }
+
+    /// <summary>Field number for the "multiClassOnly" field.</summary>
+    public const int MultiClassOnlyFieldNumber = 12;
+    private bool multiClassOnly_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool MultiClassOnly {
+      get { return multiClassOnly_; }
+      set {
+        multiClassOnly_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2479,15 +2512,17 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         return true;
       }
       if (Owner != other.Owner) return false;
-      if (Status != other.Status) return false;
-      if (CardType != other.CardType) return false;
-      if (Classes != other.Classes) return false;
+      if(!statuses_.Equals(other.statuses_)) return false;
+      if(!cardTypes_.Equals(other.cardTypes_)) return false;
+      if(!classes_.Equals(other.classes_)) return false;
       if (SortBy != other.SortBy) return false;
       if (NameContains != other.NameContains) return false;
       if (KeywordsContains != other.KeywordsContains) return false;
       if (NotesContains != other.NotesContains) return false;
       if (OnlyStarterCard != other.OnlyStarterCard) return false;
       if (OnlyBalanceAnchors != other.OnlyBalanceAnchors) return false;
+      if(!rarities_.Equals(other.rarities_)) return false;
+      if (MultiClassOnly != other.MultiClassOnly) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2496,15 +2531,17 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     public override int GetHashCode() {
       int hash = 1;
       if (Owner.Length != 0) hash ^= Owner.GetHashCode();
-      if (Status != global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status.Scheme) hash ^= Status.GetHashCode();
-      if (CardType.Length != 0) hash ^= CardType.GetHashCode();
-      if (Classes.Length != 0) hash ^= Classes.GetHashCode();
+      hash ^= statuses_.GetHashCode();
+      hash ^= cardTypes_.GetHashCode();
+      hash ^= classes_.GetHashCode();
       if (SortBy.Length != 0) hash ^= SortBy.GetHashCode();
       if (NameContains.Length != 0) hash ^= NameContains.GetHashCode();
       if (KeywordsContains.Length != 0) hash ^= KeywordsContains.GetHashCode();
       if (NotesContains.Length != 0) hash ^= NotesContains.GetHashCode();
       if (OnlyStarterCard != false) hash ^= OnlyStarterCard.GetHashCode();
       if (OnlyBalanceAnchors != false) hash ^= OnlyBalanceAnchors.GetHashCode();
+      hash ^= rarities_.GetHashCode();
+      if (MultiClassOnly != false) hash ^= MultiClassOnly.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2527,18 +2564,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(10);
         output.WriteString(Owner);
       }
-      if (Status != global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status.Scheme) {
-        output.WriteRawTag(16);
-        output.WriteEnum((int) Status);
-      }
-      if (CardType.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(CardType);
-      }
-      if (Classes.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Classes);
-      }
+      statuses_.WriteTo(output, _repeated_statuses_codec);
+      cardTypes_.WriteTo(output, _repeated_cardTypes_codec);
+      classes_.WriteTo(output, _repeated_classes_codec);
       if (SortBy.Length != 0) {
         output.WriteRawTag(42);
         output.WriteString(SortBy);
@@ -2562,6 +2590,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (OnlyBalanceAnchors != false) {
         output.WriteRawTag(80);
         output.WriteBool(OnlyBalanceAnchors);
+      }
+      rarities_.WriteTo(output, _repeated_rarities_codec);
+      if (MultiClassOnly != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(MultiClassOnly);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2577,18 +2610,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(10);
         output.WriteString(Owner);
       }
-      if (Status != global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status.Scheme) {
-        output.WriteRawTag(16);
-        output.WriteEnum((int) Status);
-      }
-      if (CardType.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(CardType);
-      }
-      if (Classes.Length != 0) {
-        output.WriteRawTag(34);
-        output.WriteString(Classes);
-      }
+      statuses_.WriteTo(ref output, _repeated_statuses_codec);
+      cardTypes_.WriteTo(ref output, _repeated_cardTypes_codec);
+      classes_.WriteTo(ref output, _repeated_classes_codec);
       if (SortBy.Length != 0) {
         output.WriteRawTag(42);
         output.WriteString(SortBy);
@@ -2613,6 +2637,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(80);
         output.WriteBool(OnlyBalanceAnchors);
       }
+      rarities_.WriteTo(ref output, _repeated_rarities_codec);
+      if (MultiClassOnly != false) {
+        output.WriteRawTag(96);
+        output.WriteBool(MultiClassOnly);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2626,15 +2655,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Owner.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Owner);
       }
-      if (Status != global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status.Scheme) {
-        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Status);
-      }
-      if (CardType.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(CardType);
-      }
-      if (Classes.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Classes);
-      }
+      size += statuses_.CalculateSize(_repeated_statuses_codec);
+      size += cardTypes_.CalculateSize(_repeated_cardTypes_codec);
+      size += classes_.CalculateSize(_repeated_classes_codec);
       if (SortBy.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SortBy);
       }
@@ -2653,6 +2676,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (OnlyBalanceAnchors != false) {
         size += 1 + 1;
       }
+      size += rarities_.CalculateSize(_repeated_rarities_codec);
+      if (MultiClassOnly != false) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2668,15 +2695,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (other.Owner.Length != 0) {
         Owner = other.Owner;
       }
-      if (other.Status != global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status.Scheme) {
-        Status = other.Status;
-      }
-      if (other.CardType.Length != 0) {
-        CardType = other.CardType;
-      }
-      if (other.Classes.Length != 0) {
-        Classes = other.Classes;
-      }
+      statuses_.Add(other.statuses_);
+      cardTypes_.Add(other.cardTypes_);
+      classes_.Add(other.classes_);
       if (other.SortBy.Length != 0) {
         SortBy = other.SortBy;
       }
@@ -2694,6 +2715,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (other.OnlyBalanceAnchors != false) {
         OnlyBalanceAnchors = other.OnlyBalanceAnchors;
+      }
+      rarities_.Add(other.rarities_);
+      if (other.MultiClassOnly != false) {
+        MultiClassOnly = other.MultiClassOnly;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2714,16 +2739,19 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             Owner = input.ReadString();
             break;
           }
+          case 18:
           case 16: {
-            Status = (global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status) input.ReadEnum();
+            statuses_.AddEntriesFrom(input, _repeated_statuses_codec);
             break;
           }
-          case 26: {
-            CardType = input.ReadString();
+          case 26:
+          case 24: {
+            cardTypes_.AddEntriesFrom(input, _repeated_cardTypes_codec);
             break;
           }
-          case 34: {
-            Classes = input.ReadString();
+          case 34:
+          case 32: {
+            classes_.AddEntriesFrom(input, _repeated_classes_codec);
             break;
           }
           case 42: {
@@ -2748,6 +2776,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           }
           case 80: {
             OnlyBalanceAnchors = input.ReadBool();
+            break;
+          }
+          case 90:
+          case 88: {
+            rarities_.AddEntriesFrom(input, _repeated_rarities_codec);
+            break;
+          }
+          case 96: {
+            MultiClassOnly = input.ReadBool();
             break;
           }
         }
@@ -2769,16 +2806,19 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             Owner = input.ReadString();
             break;
           }
+          case 18:
           case 16: {
-            Status = (global::DecentralCardGame.Cardchain.Cardchain.QueryQCardsRequest.Types.Status) input.ReadEnum();
+            statuses_.AddEntriesFrom(ref input, _repeated_statuses_codec);
             break;
           }
-          case 26: {
-            CardType = input.ReadString();
+          case 26:
+          case 24: {
+            cardTypes_.AddEntriesFrom(ref input, _repeated_cardTypes_codec);
             break;
           }
-          case 34: {
-            Classes = input.ReadString();
+          case 34:
+          case 32: {
+            classes_.AddEntriesFrom(ref input, _repeated_classes_codec);
             break;
           }
           case 42: {
@@ -2805,32 +2845,19 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             OnlyBalanceAnchors = input.ReadBool();
             break;
           }
+          case 90:
+          case 88: {
+            rarities_.AddEntriesFrom(ref input, _repeated_rarities_codec);
+            break;
+          }
+          case 96: {
+            MultiClassOnly = input.ReadBool();
+            break;
+          }
         }
       }
     }
     #endif
-
-    #region Nested types
-    /// <summary>Container for nested types declared in the QueryQCardsRequest message type.</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static partial class Types {
-      public enum Status {
-        [pbr::OriginalName("scheme")] Scheme = 0,
-        [pbr::OriginalName("prototype")] Prototype = 1,
-        [pbr::OriginalName("trial")] Trial = 2,
-        [pbr::OriginalName("permanent")] Permanent = 3,
-        [pbr::OriginalName("suspended")] Suspended = 4,
-        [pbr::OriginalName("banned")] Banned = 5,
-        [pbr::OriginalName("bannedSoon")] BannedSoon = 6,
-        [pbr::OriginalName("bannedVerySoon")] BannedVerySoon = 7,
-        [pbr::OriginalName("none")] None = 8,
-        [pbr::OriginalName("playable")] Playable = 9,
-        [pbr::OriginalName("unplayable")] Unplayable = 10,
-      }
-
-    }
-    #endregion
 
   }
 
@@ -4573,6 +4600,20 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
   }
 
+  /// <summary>
+  ///
+  ///message QueryQSellOffersRequest {
+  ///message Query {
+  ///string priceDown = 1;
+  ///string priceUp = 2;
+  ///string seller = 3;
+  ///string buyer = 4;
+  ///uint64 card = 5;
+  ///SellOfferStatus status = 6;
+  ///}
+  ///Query query = 1;
+  ///}
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class QueryQSellOffersRequest : pb::IMessage<QueryQSellOffersRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -6660,6 +6701,369 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           case 18:
           case 16: {
             wanted_.AddEntriesFrom(ref input, _repeated_wanted_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// this line is used by starport scaffolding # 3
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class QueryQCardContentsRequest : pb::IMessage<QueryQCardContentsRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryQCardContentsRequest> _parser = new pb::MessageParser<QueryQCardContentsRequest>(() => new QueryQCardContentsRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryQCardContentsRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.QueryReflection.Descriptor.MessageTypes[28]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQCardContentsRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQCardContentsRequest(QueryQCardContentsRequest other) : this() {
+      cardIds_ = other.cardIds_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQCardContentsRequest Clone() {
+      return new QueryQCardContentsRequest(this);
+    }
+
+    /// <summary>Field number for the "cardIds" field.</summary>
+    public const int CardIdsFieldNumber = 1;
+    private static readonly pb::FieldCodec<ulong> _repeated_cardIds_codec
+        = pb::FieldCodec.ForUInt64(10);
+    private readonly pbc::RepeatedField<ulong> cardIds_ = new pbc::RepeatedField<ulong>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<ulong> CardIds {
+      get { return cardIds_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryQCardContentsRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryQCardContentsRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!cardIds_.Equals(other.cardIds_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= cardIds_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      cardIds_.WriteTo(output, _repeated_cardIds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      cardIds_.WriteTo(ref output, _repeated_cardIds_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += cardIds_.CalculateSize(_repeated_cardIds_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryQCardContentsRequest other) {
+      if (other == null) {
+        return;
+      }
+      cardIds_.Add(other.cardIds_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            cardIds_.AddEntriesFrom(input, _repeated_cardIds_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10:
+          case 8: {
+            cardIds_.AddEntriesFrom(ref input, _repeated_cardIds_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class QueryQCardContentsResponse : pb::IMessage<QueryQCardContentsResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryQCardContentsResponse> _parser = new pb::MessageParser<QueryQCardContentsResponse>(() => new QueryQCardContentsResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryQCardContentsResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.QueryReflection.Descriptor.MessageTypes[29]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQCardContentsResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQCardContentsResponse(QueryQCardContentsResponse other) : this() {
+      cards_ = other.cards_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQCardContentsResponse Clone() {
+      return new QueryQCardContentsResponse(this);
+    }
+
+    /// <summary>Field number for the "cards" field.</summary>
+    public const int CardsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentResponse> _repeated_cards_codec
+        = pb::FieldCodec.ForMessage(10, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentResponse.Parser);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentResponse> cards_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentResponse>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentResponse> Cards {
+      get { return cards_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryQCardContentsResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryQCardContentsResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!cards_.Equals(other.cards_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= cards_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      cards_.WriteTo(output, _repeated_cards_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      cards_.WriteTo(ref output, _repeated_cards_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += cards_.CalculateSize(_repeated_cards_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryQCardContentsResponse other) {
+      if (other == null) {
+        return;
+      }
+      cards_.Add(other.cards_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            cards_.AddEntriesFrom(input, _repeated_cards_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            cards_.AddEntriesFrom(ref input, _repeated_cards_codec);
             break;
           }
         }

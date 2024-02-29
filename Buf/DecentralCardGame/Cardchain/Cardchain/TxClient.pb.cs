@@ -979,6 +979,30 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
         
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeAliasResponse>> SendMsgChangeAlias(DecentralCardGame.Cardchain.Cardchain.MsgChangeAlias msg, Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgChangeAlias"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeAliasResponse>(
+				r.Result,
+				DecentralCardGame.Cardchain.Cardchain.MsgChangeAliasResponse.Parser
+			));
+		}
+        
 	}
 	
 }

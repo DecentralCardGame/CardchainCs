@@ -62,17 +62,20 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "DQoJcGVybWFuZW50EAMSDQoJc3VzcGVuZGVkEAQSCgoGYmFubmVkEAUSDgoK",
             "YmFubmVkU29vbhAGEhIKDmJhbm5lZFZlcnlTb29uEAcSCAoEbm9uZRAIKk0K",
             "CkNhcmRSYXJpdHkSCgoGY29tbW9uEAASDAoIdW5jb21tb24QARIICgRyYXJl",
-            "EAISDwoLZXhjZXB0aW9uYWwQAxIKCgZ1bmlxdWUQBEKmAgopY29tLkRlY2Vu",
-            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CCUNhcmRQcm90b1AB",
-            "WjhnaXRodWIuY29tL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi94L2Nh",
-            "cmRjaGFpbi90eXBlc6ICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNhcmRj",
-            "aGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5c",
-            "Q2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRj",
-            "aGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJkY2hh",
-            "aW46OkNhcmRjaGFpbmIGcHJvdG8z"));
+            "EAISDwoLZXhjZXB0aW9uYWwQAxIKCgZ1bmlxdWUQBCpDCglDYXJkQ2xhc3MS",
+            "CgoGbmF0dXJlEAASCwoHY3VsdHVyZRABEg0KCW15c3RpY2lzbRACEg4KCnRl",
+            "Y2hub2xvZ3kQAyo+CghDYXJkVHlwZRIJCgVwbGFjZRAAEgoKBmFjdGlvbhAB",
+            "EgoKBmVudGl0eRACEg8KC2hlYWRxdWFydGVyEANCpgIKKWNvbS5EZWNlbnRy",
+            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQglDYXJkUHJvdG9QAVo4",
+            "Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4veC9jYXJk",
+            "Y2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hh",
+            "aW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENh",
+            "cmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hh",
+            "aW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWlu",
+            "OjpDYXJkY2hhaW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.Status), typeof(global::DecentralCardGame.Cardchain.Cardchain.CardRarity), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.Status), typeof(global::DecentralCardGame.Cardchain.Cardchain.CardRarity), typeof(global::DecentralCardGame.Cardchain.Cardchain.CardClass), typeof(global::DecentralCardGame.Cardchain.Cardchain.CardType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.Card), global::DecentralCardGame.Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "StarterCard", "Rarity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.OutpCard), global::DecentralCardGame.Cardchain.Cardchain.OutpCard.Parser, new[]{ "Owner", "Artist", "Content", "Image", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "Hash", "StarterCard", "Rarity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.TimeStamp), global::DecentralCardGame.Cardchain.Cardchain.TimeStamp.Parser, new[]{ "TimeStamp_" }, null, null, null, null)
@@ -100,6 +103,20 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [pbr::OriginalName("rare")] Rare = 2,
     [pbr::OriginalName("exceptional")] Exceptional = 3,
     [pbr::OriginalName("unique")] Unique = 4,
+  }
+
+  public enum CardClass {
+    [pbr::OriginalName("nature")] Nature = 0,
+    [pbr::OriginalName("culture")] Culture = 1,
+    [pbr::OriginalName("mysticism")] Mysticism = 2,
+    [pbr::OriginalName("technology")] Technology = 3,
+  }
+
+  public enum CardType {
+    [pbr::OriginalName("place")] Place = 0,
+    [pbr::OriginalName("action")] Action = 1,
+    [pbr::OriginalName("entity")] Entity = 2,
+    [pbr::OriginalName("headquarter")] Headquarter = 3,
   }
 
   #endregion
