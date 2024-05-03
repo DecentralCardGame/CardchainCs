@@ -19,9 +19,9 @@
 	<PropertyGroup>
 		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
 	</PropertyGroup>
-
+	
 	<ItemGroup>
-		<PackageReference Include="Cosmcs" Version="0.4.4"/>
+		<ProjectReference Include="../Cosmcs/Cosmcs.csproj"/>
 	</ItemGroup>
 	
 </Project>

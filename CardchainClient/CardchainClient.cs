@@ -1,7 +1,6 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Cosmcs.Client;
-using Cosmcs.Tx;
 using DecentralCardGame.Cardchain.Cardchain;
 using Google.Protobuf;
 using Google.Protobuf.WellKnownTypes;
@@ -35,7 +34,7 @@ namespace CardchainCs.CardchainClient
             string bidAmout,
             string bidDenom)
         {
-            return CcTxClient.SendMsgBuyCardScheme(new MsgBuyCardScheme
+            return CcTxClient.SimulateAndSendMsgBuyCardScheme(new MsgBuyCardScheme
                 {
                     Creator = Ec.AccoutAddress.ToString(),
                     Bid = new Cosmos.Base.V1beta1.Coin
@@ -49,12 +48,11 @@ namespace CardchainCs.CardchainClient
 
         public Task<SendMsgExecResponse> SendMsgExec(Any[] msgs, MessageParser[] parsers)
         {
-            return AuthzTxClient.SendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
+            return AuthzTxClient.SimulateAndSendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
                 {
                     Grantee = Ec.AccoutAddress.ToString(),
                     Msgs = { msgs }
-                },
-                new Fee(500_000)
+                }
             ).ContinueWith(r => new SendMsgExecResponse(r.Result, parsers));
         }
 
@@ -107,7 +105,7 @@ namespace CardchainCs.CardchainClient
             ulong[] playedCardsB,
             Outcome outcome)
         {
-            return CcTxClient.SendMsgReportMatch(new MsgReportMatch
+            return CcTxClient.SimulateAndSendMsgReportMatch(new MsgReportMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 MatchId = matchId,
@@ -123,7 +121,7 @@ namespace CardchainCs.CardchainClient
             string playerA,
             string playerB)
         {
-            return CcTxClient.SendMsgOpenMatch(new MsgOpenMatch
+            return CcTxClient.SimulateAndSendMsgOpenMatch(new MsgOpenMatch
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 PlayerA = playerA,
@@ -139,7 +137,7 @@ namespace CardchainCs.CardchainClient
             string storyWriter,
             string[] contributors)
         {
-            return CcTxClient.SendMsgCreateSet(new MsgCreateSet
+            return CcTxClient.SimulateAndSendMsgCreateSet(new MsgCreateSet
             {
                 Creator = Ec.AccoutAddress.ToString(),
                 Name = name,
@@ -207,14 +205,15 @@ namespace CardchainCs.CardchainClient
             ulong[] boosterPackIds)
         {
             return SendMsgExec(boosterPackIds.Select(id => new Any
-            {
-                Value = new MsgOpenBoosterPack
                 {
-                    Creator = creator,
-                    BoosterPackId = id
-                }.ToByteString(),
-                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
-            }).ToArray(), boosterPackIds.Select<ulong, MessageParser>(_ => MsgOpenBoosterPackResponse.Parser).ToArray());
+                    Value = new MsgOpenBoosterPack
+                    {
+                        Creator = creator,
+                        BoosterPackId = id
+                    }.ToByteString(),
+                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+                }).ToArray(),
+                boosterPackIds.Select<ulong, MessageParser>(_ => MsgOpenBoosterPackResponse.Parser).ToArray());
         }
     }
 }

@@ -4,6 +4,7 @@
 // </auto-generated>
 #nullable enable
 
+using System;
 using Cosmcs.Client;
 using Cosmcs.Tx;
 using System.Threading.Tasks;
