@@ -26,7 +26,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "Ch5jYXJkY2hhaW4vY2FyZGNoYWluL3VzZXIucHJvdG8SJURlY2VudHJhbENh",
             "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4aIGNhcmRjaGFpbi9jYXJkY2hh",
-            "aW4vdm90aW5nLnByb3RvIs0ECgRVc2VyEhQKBWFsaWFzGAEgASgJUgVhbGlh",
+            "aW4vdm90aW5nLnByb3RvIqMFCgRVc2VyEhQKBWFsaWFzGAEgASgJUgVhbGlh",
             "cxIqChBvd25lZENhcmRTY2hlbWVzGAIgAygEUhBvd25lZENhcmRTY2hlbWVz",
             "EigKD293bmVkUHJvdG90eXBlcxgDIAMoBFIPb3duZWRQcm90b3R5cGVzEhQK",
             "BWNhcmRzGAQgAygEUgVjYXJkcxJaCg1Db3VuY2lsU3RhdHVzGAYgASgOMjQu",
@@ -39,27 +39,32 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "cmRjaGFpbi5Cb29zdGVyUGFja1IMYm9vc3RlclBhY2tzEhgKB3dlYnNpdGUY",
             "CyABKAlSB3dlYnNpdGUSHAoJYmlvZ3JhcGh5GAwgASgJUgliaW9ncmFwaHkS",
             "IgoMdm90YWJsZUNhcmRzGA0gAygEUgx2b3RhYmxlQ2FyZHMSHgoKdm90ZWRD",
-            "YXJkcxgOIAMoBFIKdm90ZWRDYXJkcyKZAQoLQm9vc3RlclBhY2sSFAoFc2V0",
-            "SWQYASABKARSBXNldElkEhwKCXRpbWVTdGFtcBgCIAEoA1IJdGltZVN0YW1w",
-            "EigKD3Jhcml0aWVzUGVyUGFjaxgDIAMoBFIPcmFyaXRpZXNQZXJQYWNrEiwK",
-            "EWRyb3BSYXRpb3NQZXJQYWNrGAQgAygEUhFkcm9wUmF0aW9zUGVyUGFjayJw",
-            "CghBaXJEcm9wcxISCgR2b3RlGAEgASgIUgR2b3RlEhYKBmNyZWF0ZRgCIAEo",
-            "CFIGY3JlYXRlEhAKA2J1eRgDIAEoCFIDYnV5EhIKBHBsYXkYBCABKAhSBHBs",
-            "YXkSEgoEdXNlchgFIAEoCFIEdXNlcipUCg1Db3VuY2lsU3RhdHVzEg0KCWF2",
-            "YWlsYWJsZRAAEg8KC3VuYXZhaWxhYmxlEAESDwoLb3BlbkNvdW5jaWwQAhIS",
-            "Cg5zdGFydGVkQ291bmNpbBADKjwKB0FpckRyb3ASCAoEcGxheRAAEggKBHZv",
-            "dGUQARIKCgZjcmVhdGUQAhIHCgNidXkQAxIICgR1c2VyEARCpgIKKWNvbS5E",
-            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQglVc2VyUHJv",
-            "dG9QAVo4Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4v",
-            "eC9jYXJkY2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5D",
-            "YXJkY2hhaW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNo",
-            "YWluXENhcmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxD",
-            "YXJkY2hhaW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2Fy",
-            "ZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
+            "YXJkcxgOIAMoBFIKdm90ZWRDYXJkcxJUCgtlYXJseUFjY2VzcxgPIAEoCzIy",
+            "LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uRWFybHlB",
+            "Y2Nlc3NSC2Vhcmx5QWNjZXNzIm0KC0Vhcmx5QWNjZXNzEhYKBmFjdGl2ZRgB",
+            "IAEoCFIGYWN0aXZlEiQKDWludml0ZWRCeVVzZXIYAiABKAlSDWludml0ZWRC",
+            "eVVzZXISIAoLaW52aXRlZFVzZXIYAyABKAlSC2ludml0ZWRVc2VyIpkBCgtC",
+            "b29zdGVyUGFjaxIUCgVzZXRJZBgBIAEoBFIFc2V0SWQSHAoJdGltZVN0YW1w",
+            "GAIgASgDUgl0aW1lU3RhbXASKAoPcmFyaXRpZXNQZXJQYWNrGAMgAygEUg9y",
+            "YXJpdGllc1BlclBhY2sSLAoRZHJvcFJhdGlvc1BlclBhY2sYBCADKARSEWRy",
+            "b3BSYXRpb3NQZXJQYWNrInAKCEFpckRyb3BzEhIKBHZvdGUYASABKAhSBHZv",
+            "dGUSFgoGY3JlYXRlGAIgASgIUgZjcmVhdGUSEAoDYnV5GAMgASgIUgNidXkS",
+            "EgoEcGxheRgEIAEoCFIEcGxheRISCgR1c2VyGAUgASgIUgR1c2VyKlQKDUNv",
+            "dW5jaWxTdGF0dXMSDQoJYXZhaWxhYmxlEAASDwoLdW5hdmFpbGFibGUQARIP",
+            "CgtvcGVuQ291bmNpbBACEhIKDnN0YXJ0ZWRDb3VuY2lsEAMqPAoHQWlyRHJv",
+            "cBIICgRwbGF5EAASCAoEdm90ZRABEgoKBmNyZWF0ZRACEgcKA2J1eRADEggK",
+            "BHVzZXIQBEKmAgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
+            "YXJkY2hhaW5CCVVzZXJQcm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENh",
+            "cmRHYW1lL0NhcmRjaGFpbi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURl",
+            "Y2VudHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRy",
+            "YWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2Fy",
+            "ZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2Vu",
+            "dHJhbENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.CouncilStatus), typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrop), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.User), global::DecentralCardGame.Cardchain.Cardchain.User.Parser, new[]{ "Alias", "OwnedCardSchemes", "OwnedPrototypes", "Cards", "CouncilStatus", "ReportMatches", "ProfileCard", "AirDrops", "BoosterPacks", "Website", "Biography", "VotableCards", "VotedCards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.User), global::DecentralCardGame.Cardchain.Cardchain.User.Parser, new[]{ "Alias", "OwnedCardSchemes", "OwnedPrototypes", "Cards", "CouncilStatus", "ReportMatches", "ProfileCard", "AirDrops", "BoosterPacks", "Website", "Biography", "VotableCards", "VotedCards", "EarlyAccess" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess), global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess.Parser, new[]{ "Active", "InvitedByUser", "InvitedUser" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.BoosterPack), global::DecentralCardGame.Cardchain.Cardchain.BoosterPack.Parser, new[]{ "SetId", "TimeStamp", "RaritiesPerPack", "DropRatiosPerPack" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.AirDrops), global::DecentralCardGame.Cardchain.Cardchain.AirDrops.Parser, new[]{ "Vote", "Create", "Buy", "Play", "User" }, null, null, null, null)
           }));
@@ -134,6 +139,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       biography_ = other.biography_;
       votableCards_ = other.votableCards_.Clone();
       votedCards_ = other.votedCards_.Clone();
+      earlyAccess_ = other.earlyAccess_ != null ? other.earlyAccess_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -293,6 +299,18 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       get { return votedCards_; }
     }
 
+    /// <summary>Field number for the "earlyAccess" field.</summary>
+    public const int EarlyAccessFieldNumber = 15;
+    private global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess earlyAccess_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess EarlyAccess {
+      get { return earlyAccess_; }
+      set {
+        earlyAccess_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -321,6 +339,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Biography != other.Biography) return false;
       if(!votableCards_.Equals(other.votableCards_)) return false;
       if(!votedCards_.Equals(other.votedCards_)) return false;
+      if (!object.Equals(EarlyAccess, other.EarlyAccess)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -341,6 +360,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (Biography.Length != 0) hash ^= Biography.GetHashCode();
       hash ^= votableCards_.GetHashCode();
       hash ^= votedCards_.GetHashCode();
+      if (earlyAccess_ != null) hash ^= EarlyAccess.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -393,6 +413,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       votableCards_.WriteTo(output, _repeated_votableCards_codec);
       votedCards_.WriteTo(output, _repeated_votedCards_codec);
+      if (earlyAccess_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(EarlyAccess);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -437,6 +461,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       votableCards_.WriteTo(ref output, _repeated_votableCards_codec);
       votedCards_.WriteTo(ref output, _repeated_votedCards_codec);
+      if (earlyAccess_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(EarlyAccess);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -474,6 +502,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       size += votableCards_.CalculateSize(_repeated_votableCards_codec);
       size += votedCards_.CalculateSize(_repeated_votedCards_codec);
+      if (earlyAccess_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EarlyAccess);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -516,6 +547,12 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       votableCards_.Add(other.votableCards_);
       votedCards_.Add(other.votedCards_);
+      if (other.earlyAccess_ != null) {
+        if (earlyAccess_ == null) {
+          EarlyAccess = new global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess();
+        }
+        EarlyAccess.MergeFrom(other.EarlyAccess);
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -589,6 +626,13 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           case 114:
           case 112: {
             votedCards_.AddEntriesFrom(input, _repeated_votedCards_codec);
+            break;
+          }
+          case 122: {
+            if (earlyAccess_ == null) {
+              EarlyAccess = new global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess();
+            }
+            input.ReadMessage(EarlyAccess);
             break;
           }
         }
@@ -666,6 +710,277 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             votedCards_.AddEntriesFrom(ref input, _repeated_votedCards_codec);
             break;
           }
+          case 122: {
+            if (earlyAccess_ == null) {
+              EarlyAccess = new global::DecentralCardGame.Cardchain.Cardchain.EarlyAccess();
+            }
+            input.ReadMessage(EarlyAccess);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class EarlyAccess : pb::IMessage<EarlyAccess>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<EarlyAccess> _parser = new pb::MessageParser<EarlyAccess>(() => new EarlyAccess());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<EarlyAccess> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EarlyAccess() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EarlyAccess(EarlyAccess other) : this() {
+      active_ = other.active_;
+      invitedByUser_ = other.invitedByUser_;
+      invitedUser_ = other.invitedUser_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EarlyAccess Clone() {
+      return new EarlyAccess(this);
+    }
+
+    /// <summary>Field number for the "active" field.</summary>
+    public const int ActiveFieldNumber = 1;
+    private bool active_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Active {
+      get { return active_; }
+      set {
+        active_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "invitedByUser" field.</summary>
+    public const int InvitedByUserFieldNumber = 2;
+    private string invitedByUser_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InvitedByUser {
+      get { return invitedByUser_; }
+      set {
+        invitedByUser_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "invitedUser" field.</summary>
+    public const int InvitedUserFieldNumber = 3;
+    private string invitedUser_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string InvitedUser {
+      get { return invitedUser_; }
+      set {
+        invitedUser_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as EarlyAccess);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(EarlyAccess other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Active != other.Active) return false;
+      if (InvitedByUser != other.InvitedByUser) return false;
+      if (InvitedUser != other.InvitedUser) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Active != false) hash ^= Active.GetHashCode();
+      if (InvitedByUser.Length != 0) hash ^= InvitedByUser.GetHashCode();
+      if (InvitedUser.Length != 0) hash ^= InvitedUser.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Active != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Active);
+      }
+      if (InvitedByUser.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InvitedByUser);
+      }
+      if (InvitedUser.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InvitedUser);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Active != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Active);
+      }
+      if (InvitedByUser.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(InvitedByUser);
+      }
+      if (InvitedUser.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(InvitedUser);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Active != false) {
+        size += 1 + 1;
+      }
+      if (InvitedByUser.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InvitedByUser);
+      }
+      if (InvitedUser.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(InvitedUser);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(EarlyAccess other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Active != false) {
+        Active = other.Active;
+      }
+      if (other.InvitedByUser.Length != 0) {
+        InvitedByUser = other.InvitedByUser;
+      }
+      if (other.InvitedUser.Length != 0) {
+        InvitedUser = other.InvitedUser;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 18: {
+            InvitedByUser = input.ReadString();
+            break;
+          }
+          case 26: {
+            InvitedUser = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 18: {
+            InvitedByUser = input.ReadString();
+            break;
+          }
+          case 26: {
+            InvitedUser = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -688,7 +1003,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor.MessageTypes[1]; }
+      get { return global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -977,7 +1292,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor.MessageTypes[2]; }
+      get { return global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

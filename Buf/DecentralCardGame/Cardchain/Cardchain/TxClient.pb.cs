@@ -1660,6 +1660,86 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			});
 		}
         
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse>> SendMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg, Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgInviteEarlyAccess"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse>(
+				r.Result,
+				DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse.Parser
+			));
+		}
+
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgInviteEarlyAccess"
+				}}
+			);
+		}
+
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse>> SimulateAndSendMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg) {
+			return SimulateMsgInviteEarlyAccess(msg).ContinueWith(r => {
+				return SendMsgInviteEarlyAccess(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse>> SendMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg, Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgDisinviteEarlyAccess"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse>(
+				r.Result,
+				DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse.Parser
+			));
+		}
+
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgDisinviteEarlyAccess"
+				}}
+			);
+		}
+
+		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse>> SimulateAndSendMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg) {
+			return SimulateMsgDisinviteEarlyAccess(msg).ContinueWith(r => {
+				return SendMsgDisinviteEarlyAccess(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
 	}
 	
 }
