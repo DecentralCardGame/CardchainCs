@@ -1,8 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
 	<PropertyGroup>
 		<PackageId>CardchainCs</PackageId>
-		<Version>0.2.12</Version>
+		<Version>0.2.13</Version>
 		<Authors>lxgr</Authors>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>enable</Nullable>
@@ -13,15 +12,16 @@
 	<PropertyGroup>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
+	
 	<PropertyGroup>
 		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Cosmcs" Version="0.5.0"/>
+		<PackageReference Include="Cosmcs" Version="0.5.1"/>
 	</ItemGroup>
-
 </Project>

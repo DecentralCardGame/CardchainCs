@@ -32,14 +32,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "bW9zLXNkay90eXBlcy5Db2luUgVwcmljZRJOCgZzdGF0dXMYBSABKA4yNi5E",
             "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlNlbGxPZmZl",
             "clN0YXR1c1IGc3RhdHVzKjIKD1NlbGxPZmZlclN0YXR1cxIICgRvcGVuEAAS",
-            "CAoEc29sZBABEgsKB3JlbW92ZWQQAkKrAgopY29tLkRlY2VudHJhbENhcmRH",
-            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CDlNlbGxPZmZlclByb3RvUAFaOGdp",
-            "dGh1Yi5jb20vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL3gvY2FyZGNo",
-            "YWluL3R5cGVzogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWlu",
-            "LkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJk",
-            "Y2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu",
-            "XEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6",
-            "Q2FyZGNoYWluYgZwcm90bzM="));
+            "CAoEc29sZBABEgsKB3JlbW92ZWQQAkKtAgopY29tLkRlY2VudHJhbENhcmRH",
+            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CDlNlbGxPZmZlclByb3RvUAFaOmdp",
+            "dGh1Yi5jb20vRGVjZW50cmFsQ2FyZGdhbWUvQ2FyZGNoYWluL2NhcmRjaGFp",
+            "bi9jYXJkY2hhaW6iAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hh",
+            "aW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENh",
+            "cmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hh",
+            "aW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWlu",
+            "OjpDYXJkY2hhaW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.SellOfferStatus), }, null, new pbr::GeneratedClrTypeInfo[] {

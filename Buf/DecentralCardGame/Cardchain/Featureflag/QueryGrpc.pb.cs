@@ -91,48 +91,6 @@ namespace DecentralCardGame.Cardchain.Featureflag {
       get { return global::DecentralCardGame.Cardchain.Featureflag.QueryReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of Query</summary>
-    [grpc::BindServiceMethod(typeof(Query), "BindService")]
-    public abstract partial class QueryBase
-    {
-      /// <summary>
-      /// Parameters queries the parameters of the module.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::DecentralCardGame.Cardchain.Featureflag.QueryParamsResponse> Params(global::DecentralCardGame.Cardchain.Featureflag.QueryParamsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Queries a list of QFlag items.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagResponse> QFlag(global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-      /// <summary>
-      /// Queries a list of QFlags items.
-      /// </summary>
-      /// <param name="request">The request received from the client.</param>
-      /// <param name="context">The context of the server-side call handler being invoked.</param>
-      /// <returns>The response to send back to the client (wrapped by a task).</returns>
-      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagsResponse> QFlags(global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagsRequest request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-    }
-
     /// <summary>Client for Query</summary>
     public partial class QueryClient : grpc::ClientBase<QueryClient>
     {
@@ -310,29 +268,6 @@ namespace DecentralCardGame.Cardchain.Featureflag {
       {
         return new QueryClient(configuration);
       }
-    }
-
-    /// <summary>Creates service definition that can be registered with a server</summary>
-    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static grpc::ServerServiceDefinition BindService(QueryBase serviceImpl)
-    {
-      return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_Params, serviceImpl.Params)
-          .AddMethod(__Method_QFlag, serviceImpl.QFlag)
-          .AddMethod(__Method_QFlags, serviceImpl.QFlags).Build();
-    }
-
-    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
-    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
-    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
-    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    public static void BindService(grpc::ServiceBinderBase serviceBinder, QueryBase serviceImpl)
-    {
-      serviceBinder.AddMethod(__Method_Params, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Featureflag.QueryParamsRequest, global::DecentralCardGame.Cardchain.Featureflag.QueryParamsResponse>(serviceImpl.Params));
-      serviceBinder.AddMethod(__Method_QFlag, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagRequest, global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagResponse>(serviceImpl.QFlag));
-      serviceBinder.AddMethod(__Method_QFlags, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagsRequest, global::DecentralCardGame.Cardchain.Featureflag.QueryQFlagsResponse>(serviceImpl.QFlags));
     }
 
   }

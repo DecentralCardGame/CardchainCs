@@ -16,11 +16,13 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 	public class MsgClient {
 		public IClient Client { get; }
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public MsgClient (IClient client) {
 			Client = client;
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>> SendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>> SendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -44,6 +46,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -54,13 +57,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateuserResponse>> SimulateAndSendMsgCreateuser(DecentralCardGame.Cardchain.Cardchain.MsgCreateuser msg) {
 			return SimulateMsgCreateuser(msg).ContinueWith(r => {
-				return SendMsgCreateuser(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgCreateuser(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -84,6 +89,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -94,13 +100,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardSchemeResponse>> SimulateAndSendMsgBuyCardScheme(DecentralCardGame.Cardchain.Cardchain.MsgBuyCardScheme msg) {
 			return SimulateMsgBuyCardScheme(msg).ContinueWith(r => {
-				return SendMsgBuyCardScheme(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgBuyCardScheme(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -124,6 +132,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -134,13 +143,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgVoteCardResponse>> SimulateAndSendMsgVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgVoteCard msg) {
 			return SimulateMsgVoteCard(msg).ContinueWith(r => {
-				return SendMsgVoteCard(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgVoteCard(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -164,6 +175,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -174,13 +186,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContentResponse>> SimulateAndSendMsgSaveCardContent(DecentralCardGame.Cardchain.Cardchain.MsgSaveCardContent msg) {
 			return SimulateMsgSaveCardContent(msg).ContinueWith(r => {
-				return SendMsgSaveCardContent(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSaveCardContent(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -204,6 +218,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -214,13 +229,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferCardResponse>> SimulateAndSendMsgTransferCard(DecentralCardGame.Cardchain.Cardchain.MsgTransferCard msg) {
 			return SimulateMsgTransferCard(msg).ContinueWith(r => {
-				return SendMsgTransferCard(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgTransferCard(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -244,6 +261,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -254,13 +272,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDonateToCardResponse>> SimulateAndSendMsgDonateToCard(DecentralCardGame.Cardchain.Cardchain.MsgDonateToCard msg) {
 			return SimulateMsgDonateToCard(msg).ContinueWith(r => {
-				return SendMsgDonateToCard(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgDonateToCard(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -284,6 +304,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -294,13 +315,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkResponse>> SimulateAndSendMsgAddArtwork(DecentralCardGame.Cardchain.Cardchain.MsgAddArtwork msg) {
 			return SimulateMsgAddArtwork(msg).ContinueWith(r => {
-				return SendMsgAddArtwork(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgAddArtwork(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -324,6 +347,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -334,13 +358,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeArtistResponse>> SimulateAndSendMsgChangeArtist(DecentralCardGame.Cardchain.Cardchain.MsgChangeArtist msg) {
 			return SimulateMsgChangeArtist(msg).ContinueWith(r => {
-				return SendMsgChangeArtist(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgChangeArtist(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -364,6 +390,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -374,13 +401,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncilResponse>> SimulateAndSendMsgRegisterForCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRegisterForCouncil msg) {
 			return SimulateMsgRegisterForCouncil(msg).ContinueWith(r => {
-				return SendMsgRegisterForCouncil(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRegisterForCouncil(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -404,6 +433,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -414,13 +444,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgReportMatchResponse>> SimulateAndSendMsgReportMatch(DecentralCardGame.Cardchain.Cardchain.MsgReportMatch msg) {
 			return SimulateMsgReportMatch(msg).ContinueWith(r => {
-				return SendMsgReportMatch(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgReportMatch(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -444,6 +476,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -454,13 +487,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporterResponse>> SimulateAndSendMsgApointMatchReporter(DecentralCardGame.Cardchain.Cardchain.MsgApointMatchReporter msg) {
 			return SimulateMsgApointMatchReporter(msg).ContinueWith(r => {
-				return SendMsgApointMatchReporter(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgApointMatchReporter(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSetResponse>> SendMsgCreateSet(DecentralCardGame.Cardchain.Cardchain.MsgCreateSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSetResponse>> SendMsgCreateSet(DecentralCardGame.Cardchain.Cardchain.MsgCreateSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -484,6 +519,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreateSet(DecentralCardGame.Cardchain.Cardchain.MsgCreateSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -494,13 +530,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSetResponse>> SimulateAndSendMsgCreateSet(DecentralCardGame.Cardchain.Cardchain.MsgCreateSet msg) {
 			return SimulateMsgCreateSet(msg).ContinueWith(r => {
-				return SendMsgCreateSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgCreateSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSetResponse>> SendMsgAddCardToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSetResponse>> SendMsgAddCardToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -524,6 +562,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgAddCardToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -534,13 +573,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSetResponse>> SimulateAndSendMsgAddCardToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddCardToSet msg) {
 			return SimulateMsgAddCardToSet(msg).ContinueWith(r => {
-				return SendMsgAddCardToSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgAddCardToSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSetResponse>> SendMsgFinalizeSet(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSetResponse>> SendMsgFinalizeSet(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -564,6 +605,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgFinalizeSet(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -574,13 +616,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSetResponse>> SimulateAndSendMsgFinalizeSet(DecentralCardGame.Cardchain.Cardchain.MsgFinalizeSet msg) {
 			return SimulateMsgFinalizeSet(msg).ContinueWith(r => {
-				return SendMsgFinalizeSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgFinalizeSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>> SendMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>> SendMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -604,6 +648,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -614,13 +659,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPackResponse>> SimulateAndSendMsgBuyBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgBuyBoosterPack msg) {
 			return SimulateMsgBuyBoosterPack(msg).ContinueWith(r => {
-				return SendMsgBuyBoosterPack(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgBuyBoosterPack(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSetResponse>> SendMsgRemoveCardFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSetResponse>> SendMsgRemoveCardFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -644,6 +691,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRemoveCardFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -654,13 +702,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSetResponse>> SimulateAndSendMsgRemoveCardFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveCardFromSet msg) {
 			return SimulateMsgRemoveCardFromSet(msg).ContinueWith(r => {
-				return SendMsgRemoveCardFromSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRemoveCardFromSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSetResponse>> SendMsgRemoveContributorFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSetResponse>> SendMsgRemoveContributorFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -684,6 +734,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRemoveContributorFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -694,13 +745,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSetResponse>> SimulateAndSendMsgRemoveContributorFromSet(DecentralCardGame.Cardchain.Cardchain.MsgRemoveContributorFromSet msg) {
 			return SimulateMsgRemoveContributorFromSet(msg).ContinueWith(r => {
-				return SendMsgRemoveContributorFromSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRemoveContributorFromSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse>> SendMsgAddContributorToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse>> SendMsgAddContributorToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -724,6 +777,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgAddContributorToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -734,13 +788,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSetResponse>> SimulateAndSendMsgAddContributorToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddContributorToSet msg) {
 			return SimulateMsgAddContributorToSet(msg).ContinueWith(r => {
-				return SendMsgAddContributorToSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgAddContributorToSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -764,6 +820,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -774,13 +831,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOfferResponse>> SimulateAndSendMsgCreateSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgCreateSellOffer msg) {
 			return SimulateMsgCreateSellOffer(msg).ContinueWith(r => {
-				return SendMsgCreateSellOffer(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgCreateSellOffer(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -804,6 +863,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -814,13 +874,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgBuyCardResponse>> SimulateAndSendMsgBuyCard(DecentralCardGame.Cardchain.Cardchain.MsgBuyCard msg) {
 			return SimulateMsgBuyCard(msg).ContinueWith(r => {
-				return SendMsgBuyCard(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgBuyCard(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -844,6 +906,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -854,13 +917,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOfferResponse>> SimulateAndSendMsgRemoveSellOffer(DecentralCardGame.Cardchain.Cardchain.MsgRemoveSellOffer msg) {
 			return SimulateMsgRemoveSellOffer(msg).ContinueWith(r => {
-				return SendMsgRemoveSellOffer(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRemoveSellOffer(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSetResponse>> SendMsgAddArtworkToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSetResponse>> SendMsgAddArtworkToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -884,6 +949,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgAddArtworkToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -894,13 +960,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSetResponse>> SimulateAndSendMsgAddArtworkToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddArtworkToSet msg) {
 			return SimulateMsgAddArtworkToSet(msg).ContinueWith(r => {
-				return SendMsgAddArtworkToSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgAddArtworkToSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSetResponse>> SendMsgAddStoryToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSet msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSetResponse>> SendMsgAddStoryToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSet msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -924,6 +992,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgAddStoryToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSet msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -934,13 +1003,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSetResponse>> SimulateAndSendMsgAddStoryToSet(DecentralCardGame.Cardchain.Cardchain.MsgAddStoryToSet msg) {
 			return SimulateMsgAddStoryToSet(msg).ContinueWith(r => {
-				return SendMsgAddStoryToSet(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgAddStoryToSet(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -964,6 +1035,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -974,13 +1046,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarityResponse>> SimulateAndSendMsgSetCardRarity(DecentralCardGame.Cardchain.Cardchain.MsgSetCardRarity msg) {
 			return SimulateMsgSetCardRarity(msg).ContinueWith(r => {
-				return SendMsgSetCardRarity(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetCardRarity(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1004,6 +1078,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1014,13 +1089,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncilResponse>> SimulateAndSendMsgCreateCouncil(DecentralCardGame.Cardchain.Cardchain.MsgCreateCouncil msg) {
 			return SimulateMsgCreateCouncil(msg).ContinueWith(r => {
-				return SendMsgCreateCouncil(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgCreateCouncil(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1044,6 +1121,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1054,13 +1132,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponseResponse>> SimulateAndSendMsgCommitCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgCommitCouncilResponse msg) {
 			return SimulateMsgCommitCouncilResponse(msg).ContinueWith(r => {
-				return SendMsgCommitCouncilResponse(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgCommitCouncilResponse(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1084,6 +1164,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1094,13 +1175,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponseResponse>> SimulateAndSendMsgRevealCouncilResponse(DecentralCardGame.Cardchain.Cardchain.MsgRevealCouncilResponse msg) {
 			return SimulateMsgRevealCouncilResponse(msg).ContinueWith(r => {
-				return SendMsgRevealCouncilResponse(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRevealCouncilResponse(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1124,6 +1207,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1134,13 +1218,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncilResponse>> SimulateAndSendMsgRestartCouncil(DecentralCardGame.Cardchain.Cardchain.MsgRestartCouncil msg) {
 			return SimulateMsgRestartCouncil(msg).ContinueWith(r => {
-				return SendMsgRestartCouncil(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRestartCouncil(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1164,6 +1250,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1174,13 +1261,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistrationResponse>> SimulateAndSendMsgRewokeCouncilRegistration(DecentralCardGame.Cardchain.Cardchain.MsgRewokeCouncilRegistration msg) {
 			return SimulateMsgRewokeCouncilRegistration(msg).ContinueWith(r => {
-				return SendMsgRewokeCouncilRegistration(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgRewokeCouncilRegistration(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1204,6 +1293,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1214,13 +1304,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatchResponse>> SimulateAndSendMsgConfirmMatch(DecentralCardGame.Cardchain.Cardchain.MsgConfirmMatch msg) {
 			return SimulateMsgConfirmMatch(msg).ContinueWith(r => {
-				return SendMsgConfirmMatch(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgConfirmMatch(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1244,6 +1336,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1254,13 +1347,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCardResponse>> SimulateAndSendMsgSetProfileCard(DecentralCardGame.Cardchain.Cardchain.MsgSetProfileCard msg) {
 			return SimulateMsgSetProfileCard(msg).ContinueWith(r => {
-				return SendMsgSetProfileCard(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetProfileCard(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1284,6 +1379,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1294,13 +1390,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPackResponse>> SimulateAndSendMsgOpenBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgOpenBoosterPack msg) {
 			return SimulateMsgOpenBoosterPack(msg).ContinueWith(r => {
-				return SendMsgOpenBoosterPack(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgOpenBoosterPack(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1324,6 +1422,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1334,13 +1433,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPackResponse>> SimulateAndSendMsgTransferBoosterPack(DecentralCardGame.Cardchain.Cardchain.MsgTransferBoosterPack msg) {
 			return SimulateMsgTransferBoosterPack(msg).ContinueWith(r => {
-				return SendMsgTransferBoosterPack(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgTransferBoosterPack(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriterResponse>> SendMsgSetSetStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriter msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriterResponse>> SendMsgSetSetStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriter msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1364,6 +1465,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetSetStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriter msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1374,13 +1476,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriterResponse>> SimulateAndSendMsgSetSetStoryWriter(DecentralCardGame.Cardchain.Cardchain.MsgSetSetStoryWriter msg) {
 			return SimulateMsgSetSetStoryWriter(msg).ContinueWith(r => {
-				return SendMsgSetSetStoryWriter(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetSetStoryWriter(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtistResponse>> SendMsgSetSetArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtist msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtistResponse>> SendMsgSetSetArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtist msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1404,6 +1508,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetSetArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtist msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1414,13 +1519,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtistResponse>> SimulateAndSendMsgSetSetArtist(DecentralCardGame.Cardchain.Cardchain.MsgSetSetArtist msg) {
 			return SimulateMsgSetSetArtist(msg).ContinueWith(r => {
-				return SendMsgSetSetArtist(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetSetArtist(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1444,6 +1551,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1454,13 +1562,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsiteResponse>> SimulateAndSendMsgSetUserWebsite(DecentralCardGame.Cardchain.Cardchain.MsgSetUserWebsite msg) {
 			return SimulateMsgSetUserWebsite(msg).ContinueWith(r => {
-				return SendMsgSetUserWebsite(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetUserWebsite(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1484,6 +1594,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1494,13 +1605,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiographyResponse>> SimulateAndSendMsgSetUserBiography(DecentralCardGame.Cardchain.Cardchain.MsgSetUserBiography msg) {
 			return SimulateMsgSetUserBiography(msg).ContinueWith(r => {
-				return SendMsgSetUserBiography(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetUserBiography(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1524,6 +1637,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1534,13 +1648,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCardResponse>> SimulateAndSendMsgMultiVoteCard(DecentralCardGame.Cardchain.Cardchain.MsgMultiVoteCard msg) {
 			return SimulateMsgMultiVoteCard(msg).ContinueWith(r => {
-				return SendMsgMultiVoteCard(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgMultiVoteCard(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenMatchResponse>> SendMsgOpenMatch(DecentralCardGame.Cardchain.Cardchain.MsgOpenMatch msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenMatchResponse>> SendMsgOpenMatch(DecentralCardGame.Cardchain.Cardchain.MsgOpenMatch msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1564,6 +1680,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgOpenMatch(DecentralCardGame.Cardchain.Cardchain.MsgOpenMatch msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1574,13 +1691,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgOpenMatchResponse>> SimulateAndSendMsgOpenMatch(DecentralCardGame.Cardchain.Cardchain.MsgOpenMatch msg) {
 			return SimulateMsgOpenMatch(msg).ContinueWith(r => {
-				return SendMsgOpenMatch(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgOpenMatch(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetNameResponse>> SendMsgSetSetName(DecentralCardGame.Cardchain.Cardchain.MsgSetSetName msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetNameResponse>> SendMsgSetSetName(DecentralCardGame.Cardchain.Cardchain.MsgSetSetName msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1604,6 +1723,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgSetSetName(DecentralCardGame.Cardchain.Cardchain.MsgSetSetName msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1614,13 +1734,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgSetSetNameResponse>> SimulateAndSendMsgSetSetName(DecentralCardGame.Cardchain.Cardchain.MsgSetSetName msg) {
 			return SimulateMsgSetSetName(msg).ContinueWith(r => {
-				return SendMsgSetSetName(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgSetSetName(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeAliasResponse>> SendMsgChangeAlias(DecentralCardGame.Cardchain.Cardchain.MsgChangeAlias msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeAliasResponse>> SendMsgChangeAlias(DecentralCardGame.Cardchain.Cardchain.MsgChangeAlias msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1644,6 +1766,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgChangeAlias(DecentralCardGame.Cardchain.Cardchain.MsgChangeAlias msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1654,13 +1777,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgChangeAliasResponse>> SimulateAndSendMsgChangeAlias(DecentralCardGame.Cardchain.Cardchain.MsgChangeAlias msg) {
 			return SimulateMsgChangeAlias(msg).ContinueWith(r => {
-				return SendMsgChangeAlias(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgChangeAlias(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse>> SendMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse>> SendMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1684,6 +1809,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1694,13 +1820,15 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccessResponse>> SimulateAndSendMsgInviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgInviteEarlyAccess msg) {
 			return SimulateMsgInviteEarlyAccess(msg).ContinueWith(r => {
-				return SendMsgInviteEarlyAccess(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgInviteEarlyAccess(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
-        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse>> SendMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg, Fee? fee = null) {
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse>> SendMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg, Cosmcs.Tx.Fee? fee = null) {
 			return Client.BuildAndBroadcast(new Any[] {
 				new Any
 				{
@@ -1724,6 +1852,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			));
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg) {
 			return Client.BuildAndSimulate(new Any[] {
 				new Any
@@ -1734,9 +1863,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			);
 		}
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public Task<Cosmcs.Client.ClientResponse<DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccessResponse>> SimulateAndSendMsgDisinviteEarlyAccess(DecentralCardGame.Cardchain.Cardchain.MsgDisinviteEarlyAccess msg) {
 			return SimulateMsgDisinviteEarlyAccess(msg).ContinueWith(r => {
-				return SendMsgDisinviteEarlyAccess(msg, new Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+				return SendMsgDisinviteEarlyAccess(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         

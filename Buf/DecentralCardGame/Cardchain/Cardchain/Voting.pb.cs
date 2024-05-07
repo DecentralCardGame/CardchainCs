@@ -43,14 +43,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "ZBgBIAEoBFIGY2FyZElkEksKCHZvdGVUeXBlGAIgASgOMi8uRGVjZW50cmFs",
             "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Wb3RlVHlwZVIIdm90ZVR5",
             "cGUqUAoIVm90ZVR5cGUSDgoKZmFpckVub3VnaBAAEhEKDWluYXBwcm9wcmlh",
-            "dGUQARIPCgtvdmVycG93ZXJlZBACEhAKDHVuZGVycG93ZXJlZBADQqgCCilj",
+            "dGUQARIPCgtvdmVycG93ZXJlZBACEhAKDHVuZGVycG93ZXJlZBADQqoCCilj",
             "b20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbkILVm90",
-            "aW5nUHJvdG9QAVo4Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJk",
-            "Y2hhaW4veC9jYXJkY2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJk",
-            "R2FtZS5DYXJkY2hhaW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVc",
-            "Q2FyZGNoYWluXENhcmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRj",
-            "aGFpblxDYXJkY2hhaW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2Ft",
-            "ZTo6Q2FyZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
+            "aW5nUHJvdG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9DYXJk",
+            "Y2hhaW4vY2FyZGNoYWluL2NhcmRjaGFpbqICA0RDQ6oCJURlY2VudHJhbENh",
+            "cmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2Ft",
+            "ZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2Fy",
+            "ZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRH",
+            "YW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.VoteType), }, null, new pbr::GeneratedClrTypeInfo[] {

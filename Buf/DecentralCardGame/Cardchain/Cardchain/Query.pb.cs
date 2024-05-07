@@ -188,13 +188,13 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "GkEuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVy",
             "eVFDYXJkQ29udGVudHNSZXNwb25zZSJIgtPkkwJCEkAvRGVjZW50cmFsQ2Fy",
             "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NhcmRfY29udGVudHMve2Nh",
-            "cmRJZHN9QqcCCiljb20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbkIKUXVlcnlQcm90b1ABWjhnaXRodWIuY29tL0RlY2VudHJhbENh",
-            "cmRHYW1lL0NhcmRjaGFpbi94L2NhcmRjaGFpbi90eXBlc6ICA0RDQ6oCJURl",
-            "Y2VudHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRy",
-            "YWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2Fy",
-            "ZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2Vu",
-            "dHJhbENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
+            "cmRJZHN9QqkCCiljb20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
+            "cmRjaGFpbkIKUXVlcnlQcm90b1ABWjpnaXRodWIuY29tL0RlY2VudHJhbENh",
+            "cmRnYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vY2FyZGNoYWluogIDRENDqgIl",
+            "RGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWluLkNhcmRjaGFpbsoCJURlY2Vu",
+            "dHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW7iAjFEZWNlbnRyYWxD",
+            "YXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gInRGVj",
+            "ZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SellOfferReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ServerReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.TxReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

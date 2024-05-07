@@ -26,14 +26,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
           string.Concat(
             "CiljYXJkY2hhaW4vY2FyZGNoYWluL3J1bm5pbmdfYXZlcmFnZS5wcm90bxIl",
             "RGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbiIiCg5SdW5u",
-            "aW5nQXZlcmFnZRIQCgNhcnIYASADKANSA2FyckKwAgopY29tLkRlY2VudHJh",
+            "aW5nQXZlcmFnZRIQCgNhcnIYASADKANSA2FyckKyAgopY29tLkRlY2VudHJh",
             "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CE1J1bm5pbmdBdmVyYWdl",
-            "UHJvdG9QAVo4Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hh",
-            "aW4veC9jYXJkY2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2Ft",
-            "ZS5DYXJkY2hhaW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2Fy",
-            "ZGNoYWluXENhcmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFp",
-            "blxDYXJkY2hhaW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6",
-            "Q2FyZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
+            "UHJvdG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9DYXJkY2hh",
+            "aW4vY2FyZGNoYWluL2NhcmRjaGFpbqICA0RDQ6oCJURlY2VudHJhbENhcmRH",
+            "YW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxD",
+            "YXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNo",
+            "YWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1l",
+            "OjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

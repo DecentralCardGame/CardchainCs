@@ -51,14 +51,14 @@ namespace DecentralCardGame.Cardchain.Featureflag {
             "LmZlYXR1cmVmbGFnLlF1ZXJ5UUZsYWdzUmVxdWVzdBo8LkRlY2VudHJhbENh",
             "cmRHYW1lLmNhcmRjaGFpbi5mZWF0dXJlZmxhZy5RdWVyeVFGbGFnc1Jlc3Bv",
             "bnNlIjiC0+STAjISMC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vZmVh",
-            "dHVyZWZsYWcvcV9mbGFnc0KzAgorY29tLkRlY2VudHJhbENhcmRHYW1lLmNh",
-            "cmRjaGFpbi5mZWF0dXJlZmxhZ0IKUXVlcnlQcm90b1ABWjpnaXRodWIuY29t",
-            "L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi94L2ZlYXR1cmVmbGFnL3R5",
-            "cGVzogIDRENGqgInRGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWluLkZlYXR1",
-            "cmVmbGFnygInRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXEZlYXR1cmVm",
-            "bGFn4gIzRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXEZlYXR1cmVmbGFn",
-            "XEdQQk1ldGFkYXRh6gIpRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6",
-            "RmVhdHVyZWZsYWdiBnByb3RvMw=="));
+            "dHVyZWZsYWcvcV9mbGFnc0K1AgorY29tLkRlY2VudHJhbENhcmRHYW1lLmNh",
+            "cmRjaGFpbi5mZWF0dXJlZmxhZ0IKUXVlcnlQcm90b1ABWjxnaXRodWIuY29t",
+            "L0RlY2VudHJhbENhcmRnYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vZmVhdHVy",
+            "ZWZsYWeiAgNEQ0aqAidEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hhaW4uRmVh",
+            "dHVyZWZsYWfKAidEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cRmVhdHVy",
+            "ZWZsYWfiAjNEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cRmVhdHVyZWZs",
+            "YWdcR1BCTWV0YWRhdGHqAilEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWlu",
+            "OjpGZWF0dXJlZmxhZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::DecentralCardGame.Cardchain.Featureflag.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Featureflag.FlagReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {

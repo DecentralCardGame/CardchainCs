@@ -16,6 +16,7 @@ namespace DecentralCardGame.Cardchain.Featureflag {
 	public class MsgClient {
 		public IClient Client { get; }
 
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmosCsharp", null)]
 		public MsgClient (IClient client) {
 			Client = client;
 		}

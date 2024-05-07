@@ -44,14 +44,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "A1llcxAAEgYKAk5vEAESDgoKU3VnZ2VzdGlvbhACKnsKEENvdW5jZWxpbmdT",
             "dGF0dXMSDwoLY291bmNpbE9wZW4QABISCg5jb3VuY2lsQ3JlYXRlZBABEhEK",
             "DWNvdW5jaWxDbG9zZWQQAhIMCghjb21taXRlZBADEgwKCHJldmVhbGVkEAQS",
-            "EwoPc3VnZ2VzdGlvbnNNYWRlEAVCqQIKKWNvbS5EZWNlbnRyYWxDYXJkR2Ft",
-            "ZS5jYXJkY2hhaW4uY2FyZGNoYWluQgxDb3VuY2lsUHJvdG9QAVo4Z2l0aHVi",
-            "LmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4veC9jYXJkY2hhaW4v",
-            "dHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hhaW4uQ2Fy",
-            "ZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFp",
-            "buICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW5cR1BC",
-            "TWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWluOjpDYXJk",
-            "Y2hhaW5iBnByb3RvMw=="));
+            "EwoPc3VnZ2VzdGlvbnNNYWRlEAVCqwIKKWNvbS5EZWNlbnRyYWxDYXJkR2Ft",
+            "ZS5jYXJkY2hhaW4uY2FyZGNoYWluQgxDb3VuY2lsUHJvdG9QAVo6Z2l0aHVi",
+            "LmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL2Nh",
+            "cmRjaGFpbqICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNhcmRjaGFpbi5D",
+            "YXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNo",
+            "YWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFpblxH",
+            "UEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJkY2hhaW46OkNh",
+            "cmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DecentralCardGame.Cardchain.Cardchain.Response), typeof(global::DecentralCardGame.Cardchain.Cardchain.CouncelingStatus), }, null, new pbr::GeneratedClrTypeInfo[] {

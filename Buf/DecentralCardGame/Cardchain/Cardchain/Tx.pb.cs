@@ -303,14 +303,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "cG9uc2USngEKFERpc2ludml0ZUVhcmx5QWNjZXNzEj4uRGVjZW50cmFsQ2Fy",
             "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Nc2dEaXNpbnZpdGVFYXJseUFj",
             "Y2VzcxpGLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4u",
-            "TXNnRGlzaW52aXRlRWFybHlBY2Nlc3NSZXNwb25zZUKkAgopY29tLkRlY2Vu",
-            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CB1R4UHJvdG9QAVo4",
-            "Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4veC9jYXJk",
-            "Y2hhaW4vdHlwZXOiAgNEQ0OqAiVEZWNlbnRyYWxDYXJkR2FtZS5DYXJkY2hh",
-            "aW4uQ2FyZGNoYWluygIlRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENh",
-            "cmRjaGFpbuICMURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hh",
-            "aW5cR1BCTWV0YWRhdGHqAidEZWNlbnRyYWxDYXJkR2FtZTo6Q2FyZGNoYWlu",
-            "OjpDYXJkY2hhaW5iBnByb3RvMw=="));
+            "TXNnRGlzaW52aXRlRWFybHlBY2Nlc3NSZXNwb25zZUKmAgopY29tLkRlY2Vu",
+            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CB1R4UHJvdG9QAVo6",
+            "Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9DYXJkY2hhaW4vY2FyZGNo",
+            "YWluL2NhcmRjaGFpbqICA0RDQ6oCJURlY2VudHJhbENhcmRHYW1lLkNhcmRj",
+            "aGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5c",
+            "Q2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVcQ2FyZGNoYWluXENhcmRj",
+            "aGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENhcmRHYW1lOjpDYXJkY2hh",
+            "aW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
