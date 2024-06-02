@@ -2473,6 +2473,63 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			});
 		}
         
+        /// <summary>
+      	/// SendMsgConnectZealyAccount sends a MsgConnectZealyAccount transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgConnectZealyAccount message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgConnectZealyAccountResponse>> SendMsgConnectZealyAccount(MsgConnectZealyAccount msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConnectZealyAccount"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgConnectZealyAccountResponse>(
+				r.Result,
+				MsgConnectZealyAccountResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgConnectZealyAccount simulates a MsgConnectZealyAccount transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgConnectZealyAccount message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgConnectZealyAccount(MsgConnectZealyAccount msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConnectZealyAccount"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgConnectZealyAccount simulates, estimates fees and then sends a ConnectZealyAccount transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgConnectZealyAccount message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgConnectZealyAccountResponse>> SimulateAndSendMsgConnectZealyAccount(MsgConnectZealyAccount msg) {
+			return SimulateMsgConnectZealyAccount(msg).ContinueWith(r => {
+				return SendMsgConnectZealyAccount(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
 	}
 	
 }

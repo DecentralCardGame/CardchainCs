@@ -33,42 +33,44 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "Y2FyZGNoYWluL3NlbGxfb2ZmZXIucHJvdG8aKWNhcmRjaGFpbi9jYXJkY2hh",
             "aW4vcnVubmluZ19hdmVyYWdlLnByb3RvGiFjYXJkY2hhaW4vY2FyZGNoYWlu",
             "L2NvdW5jaWwucHJvdG8aH2NhcmRjaGFpbi9jYXJkY2hhaW4vaW1hZ2UucHJv",
-            "dG8aIGNhcmRjaGFpbi9jYXJkY2hhaW4vc2VydmVyLnByb3RvGh5jb3Ntb3Mv",
-            "YmFzZS92MWJldGExL2NvaW4ucHJvdG8ijQgKDEdlbmVzaXNTdGF0ZRJLCgZw",
-            "YXJhbXMYASABKAsyLS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2Fy",
-            "ZGNoYWluLlBhcmFtc0IEyN4fAFIGcGFyYW1zEk0KC2NhcmRSZWNvcmRzGAIg",
-            "AygLMisuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5D",
-            "YXJkUgtjYXJkUmVjb3JkcxJBCgV1c2VycxgDIAMoCzIrLkRlY2VudHJhbENh",
-            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uVXNlclIFdXNlcnMSHAoJYWRk",
-            "cmVzc2VzGAQgAygJUglhZGRyZXNzZXMSRgoHbWF0Y2hlcxgGIAMoCzIsLkRl",
-            "Y2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uTWF0Y2hSB21h",
-            "dGNoZXMSPgoEc2V0cxgHIAMoCzIqLkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uU2V0UgRzZXRzElAKCnNlbGxPZmZlcnMYCCADKAsy",
-            "MC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlNlbGxP",
-            "ZmZlclIKc2VsbE9mZmVycxIvCgVwb29scxgJIAMoCzIZLmNvc21vcy5iYXNl",
-            "LnYxYmV0YTEuQ29pblIFcG9vbHMSWwoQY2FyZEF1Y3Rpb25QcmljZRgLIAEo",
-            "CUIvyN4fANreHydnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVz",
-            "LkNvaW5SEGNhcmRBdWN0aW9uUHJpY2USSgoIY291bmNpbHMYDCADKAsyLi5E",
-            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNvdW5jaWxS",
-            "CGNvdW5jaWxzEl8KD1J1bm5pbmdBdmVyYWdlcxgNIAMoCzI1LkRlY2VudHJh",
-            "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUnVubmluZ0F2ZXJhZ2VS",
-            "D1J1bm5pbmdBdmVyYWdlcxJECgZpbWFnZXMYDiADKAsyLC5EZWNlbnRyYWxD",
-            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkltYWdlUgZpbWFnZXMSRwoH",
-            "U2VydmVycxgPIAMoCzItLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
-            "YXJkY2hhaW4uU2VydmVyUgdTZXJ2ZXJzElwKEGxhc3RDYXJkTW9kaWZpZWQY",
-            "ECABKAsyMC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "LlRpbWVTdGFtcFIQbGFzdENhcmRNb2RpZmllZEKrAgopY29tLkRlY2VudHJh",
-            "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW5CDEdlbmVzaXNQcm90b1AB",
-            "WjpnaXRodWIuY29tL0RlY2VudHJhbENhcmRnYW1lL0NhcmRjaGFpbi9jYXJk",
-            "Y2hhaW4vY2FyZGNoYWluogIDRENDqgIlRGVjZW50cmFsQ2FyZEdhbWUuQ2Fy",
-            "ZGNoYWluLkNhcmRjaGFpbsoCJURlY2VudHJhbENhcmRHYW1lXENhcmRjaGFp",
-            "blxDYXJkY2hhaW7iAjFEZWNlbnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2Fy",
-            "ZGNoYWluXEdQQk1ldGFkYXRh6gInRGVjZW50cmFsQ2FyZEdhbWU6OkNhcmRj",
-            "aGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "dG8aIGNhcmRjaGFpbi9jYXJkY2hhaW4vc2VydmVyLnByb3RvGh9jYXJkY2hh",
+            "aW4vY2FyZGNoYWluL3plYWx5LnByb3RvGh5jb3Ntb3MvYmFzZS92MWJldGEx",
+            "L2NvaW4ucHJvdG8i0wgKDEdlbmVzaXNTdGF0ZRJLCgZwYXJhbXMYASABKAsy",
+            "LS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlBhcmFt",
+            "c0IEyN4fAFIGcGFyYW1zEk0KC2NhcmRSZWNvcmRzGAIgAygLMisuRGVjZW50",
+            "cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5DYXJkUgtjYXJkUmVj",
+            "b3JkcxJBCgV1c2VycxgDIAMoCzIrLkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
+            "aGFpbi5jYXJkY2hhaW4uVXNlclIFdXNlcnMSHAoJYWRkcmVzc2VzGAQgAygJ",
+            "UglhZGRyZXNzZXMSRgoHbWF0Y2hlcxgGIAMoCzIsLkRlY2VudHJhbENhcmRH",
+            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uTWF0Y2hSB21hdGNoZXMSPgoEc2V0",
+            "cxgHIAMoCzIqLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hh",
+            "aW4uU2V0UgRzZXRzElAKCnNlbGxPZmZlcnMYCCADKAsyMC5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlNlbGxPZmZlclIKc2VsbE9m",
+            "ZmVycxIvCgVwb29scxgJIAMoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29p",
+            "blIFcG9vbHMSWwoQY2FyZEF1Y3Rpb25QcmljZRgLIAEoCUIvyN4fANreHydn",
+            "aXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5SEGNhcmRB",
+            "dWN0aW9uUHJpY2USSgoIY291bmNpbHMYDCADKAsyLi5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLkNvdW5jaWxSCGNvdW5jaWxzEl8K",
+            "D1J1bm5pbmdBdmVyYWdlcxgNIAMoCzI1LkRlY2VudHJhbENhcmRHYW1lLmNh",
+            "cmRjaGFpbi5jYXJkY2hhaW4uUnVubmluZ0F2ZXJhZ2VSD1J1bm5pbmdBdmVy",
+            "YWdlcxJECgZpbWFnZXMYDiADKAsyLC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJk",
+            "Y2hhaW4uY2FyZGNoYWluLkltYWdlUgZpbWFnZXMSRwoHU2VydmVycxgPIAMo",
+            "CzItLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2Vy",
+            "dmVyUgdTZXJ2ZXJzElwKEGxhc3RDYXJkTW9kaWZpZWQYECABKAsyMC5EZWNl",
+            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlRpbWVTdGFtcFIQ",
+            "bGFzdENhcmRNb2RpZmllZBJECgZ6ZWFseXMYESADKAsyLC5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlplYWx5UgZ6ZWFseXNCqwIK",
+            "KWNvbS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluQgxH",
+            "ZW5lc2lzUHJvdG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9D",
+            "YXJkY2hhaW4vY2FyZGNoYWluL2NhcmRjaGFpbqICA0RDQ6oCJURlY2VudHJh",
+            "bENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNlbnRyYWxDYXJk",
+            "R2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFsQ2FyZEdhbWVc",
+            "Q2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0RlY2VudHJhbENh",
+            "cmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SellOfferReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.RunningAverageReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ImageReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ServerReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SellOfferReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.RunningAverageReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ImageReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ServerReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ZealyReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.GenesisState), global::DecentralCardGame.Cardchain.Cardchain.GenesisState.Parser, new[]{ "Params", "CardRecords", "Users", "Addresses", "Matches", "Sets", "SellOffers", "Pools", "CardAuctionPrice", "Councils", "RunningAverages", "Images", "Servers", "LastCardModified" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.GenesisState), global::DecentralCardGame.Cardchain.Cardchain.GenesisState.Parser, new[]{ "Params", "CardRecords", "Users", "Addresses", "Matches", "Sets", "SellOffers", "Pools", "CardAuctionPrice", "Councils", "RunningAverages", "Images", "Servers", "LastCardModified", "Zealys" }, null, null, null, null)
           }));
     }
     #endregion
@@ -127,6 +129,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       images_ = other.images_.Clone();
       servers_ = other.servers_.Clone();
       lastCardModified_ = other.lastCardModified_ != null ? other.lastCardModified_.Clone() : null;
+      zealys_ = other.zealys_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -284,9 +287,6 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     /// <summary>Field number for the "lastCardModified" field.</summary>
     public const int LastCardModifiedFieldNumber = 16;
     private global::DecentralCardGame.Cardchain.Cardchain.TimeStamp lastCardModified_;
-    /// <summary>
-    /// this line is used by starport scaffolding # genesis/proto/state
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::DecentralCardGame.Cardchain.Cardchain.TimeStamp LastCardModified {
@@ -294,6 +294,20 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       set {
         lastCardModified_ = value;
       }
+    }
+
+    /// <summary>Field number for the "zealys" field.</summary>
+    public const int ZealysFieldNumber = 17;
+    private static readonly pb::FieldCodec<global::DecentralCardGame.Cardchain.Cardchain.Zealy> _repeated_zealys_codec
+        = pb::FieldCodec.ForMessage(138, global::DecentralCardGame.Cardchain.Cardchain.Zealy.Parser);
+    private readonly pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.Zealy> zealys_ = new pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.Zealy>();
+    /// <summary>
+    /// this line is used by starport scaffolding # genesis/proto/state
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::DecentralCardGame.Cardchain.Cardchain.Zealy> Zealys {
+      get { return zealys_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -325,6 +339,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if(!images_.Equals(other.images_)) return false;
       if(!servers_.Equals(other.servers_)) return false;
       if (!object.Equals(LastCardModified, other.LastCardModified)) return false;
+      if(!zealys_.Equals(other.zealys_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -346,6 +361,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       hash ^= images_.GetHashCode();
       hash ^= servers_.GetHashCode();
       if (lastCardModified_ != null) hash ^= LastCardModified.GetHashCode();
+      hash ^= zealys_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -387,6 +403,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(130, 1);
         output.WriteMessage(LastCardModified);
       }
+      zealys_.WriteTo(output, _repeated_zealys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -420,6 +437,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         output.WriteRawTag(130, 1);
         output.WriteMessage(LastCardModified);
       }
+      zealys_.WriteTo(ref output, _repeated_zealys_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -450,6 +468,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       if (lastCardModified_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LastCardModified);
       }
+      size += zealys_.CalculateSize(_repeated_zealys_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -488,6 +507,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         }
         LastCardModified.MergeFrom(other.LastCardModified);
       }
+      zealys_.Add(other.zealys_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -499,7 +519,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -565,6 +589,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             input.ReadMessage(LastCardModified);
             break;
           }
+          case 138: {
+            zealys_.AddEntriesFrom(input, _repeated_zealys_codec);
+            break;
+          }
         }
       }
     #endif
@@ -576,7 +604,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -640,6 +672,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
               LastCardModified = new global::DecentralCardGame.Cardchain.Cardchain.TimeStamp();
             }
             input.ReadMessage(LastCardModified);
+            break;
+          }
+          case 138: {
+            zealys_.AddEntriesFrom(ref input, _repeated_zealys_codec);
             break;
           }
         }

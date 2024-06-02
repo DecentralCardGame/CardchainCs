@@ -116,6 +116,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQCardContentsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQCardContentsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryParamsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryParamsResponse> __Method_Params = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryParamsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryParamsResponse>(
@@ -252,6 +256,14 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         "QCardContents",
         __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQCardContentsRequest,
         __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQCardContentsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse> __Method_QAccountFromZealy = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QAccountFromZealy",
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyRequest,
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -1101,6 +1113,54 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse> QCardContentsAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QCardContents, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QAccountFromZealy items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse QAccountFromZealy(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QAccountFromZealy(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QAccountFromZealy items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse QAccountFromZealy(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QAccountFromZealy, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QAccountFromZealy items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse> QAccountFromZealyAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QAccountFromZealyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QAccountFromZealy items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse> QAccountFromZealyAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QAccountFromZealy, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

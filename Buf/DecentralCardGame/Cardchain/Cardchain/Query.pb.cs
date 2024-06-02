@@ -112,89 +112,97 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "c3QSGAoHY2FyZElkcxgBIAMoBFIHY2FyZElkcyJ0ChpRdWVyeVFDYXJkQ29u",
             "dGVudHNSZXNwb25zZRJWCgVjYXJkcxgBIAMoCzJALkRlY2VudHJhbENhcmRH",
             "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXNw",
-            "b25zZVIFY2FyZHMy1BoKBVF1ZXJ5ErYBCgZQYXJhbXMSOS5EZWNlbnRyYWxD",
-            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UGFyYW1zUmVxdWVz",
-            "dBo6LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVl",
-            "cnlQYXJhbXNSZXNwb25zZSI1gtPkkwIvEi0vRGVjZW50cmFsQ2FyZEdhbWUv",
-            "Q2FyZGNoYWluL2NhcmRjaGFpbi9wYXJhbXMSsgEKBVFDYXJkEjguRGVjZW50",
-            "cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkUmVx",
-            "dWVzdBovLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4u",
-            "T3V0cENhcmQiPoLT5JMCOBI2L0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFp",
-            "bi9jYXJkY2hhaW4vcV9jYXJkL3tjYXJkSWR9EtkBCgxRQ2FyZENvbnRlbnQS",
-            "Py5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5",
-            "UUNhcmRDb250ZW50UmVxdWVzdBpALkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXNwb25zZSJGgtPk",
-            "kwJAEj4vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9x",
-            "X2NhcmRfY29udGVudC97Y2FyZElkfRKvAQoFUVVzZXISOC5EZWNlbnRyYWxD",
-            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVVzZXJSZXF1ZXN0",
-            "GisuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5Vc2Vy",
-            "Ij+C0+STAjkSNy9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
-            "YWluL3FfdXNlci97YWRkcmVzc30S2AEKDlFDYXJkY2hhaW5JbmZvEkEuRGVj",
-            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJk",
-            "Y2hhaW5JbmZvUmVxdWVzdBpCLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
-            "bi5jYXJkY2hhaW4uUXVlcnlRQ2FyZGNoYWluSW5mb1Jlc3BvbnNlIj+C0+ST",
-            "AjkSNy9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ff",
-            "Y2FyZGNoYWluX2luZm8S2AEKDlFWb3RpbmdSZXN1bHRzEkEuRGVjZW50cmFs",
-            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFWb3RpbmdSZXN1",
-            "bHRzUmVxdWVzdBpCLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW4uUXVlcnlRVm90aW5nUmVzdWx0c1Jlc3BvbnNlIj+C0+STAjkSNy9E",
-            "ZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffdm90aW5n",
-            "X3Jlc3VsdHMStwEKBlFDYXJkcxI5LkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZHNSZXF1ZXN0GjouRGVjZW50cmFs",
-            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkc1Jlc3Bv",
-            "bnNlIjaC0+STAjASLi9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2Fy",
-            "ZGNoYWluL3FfY2FyZHMSswEKBlFNYXRjaBI5LkRlY2VudHJhbENhcmRHYW1l",
-            "LmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRTWF0Y2hSZXF1ZXN0GiwuRGVj",
-            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5NYXRjaCJAgtPk",
-            "kwI6EjgvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9x",
-            "X21hdGNoL3ttYXRjaElkfRKtAQoEUVNldBI3LkRlY2VudHJhbENhcmRHYW1l",
-            "LmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRU2V0UmVxdWVzdBouLkRlY2Vu",
-            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uT3V0cFNldCI8gtPk",
-            "kwI2EjQvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9x",
-            "X3NldC97c2V0SWR9EsgBCgpRU2VsbE9mZmVyEj0uRGVjZW50cmFsQ2FyZEdh",
-            "bWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFTZWxsT2ZmZXJSZXF1ZXN0",
-            "GjAuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5TZWxs",
-            "T2ZmZXIiSYLT5JMCQxJBL0RlY2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9j",
-            "YXJkY2hhaW4vcV9zZWxsX29mZmVyL3tzZWxsT2ZmZXJJZH0SvQEKCFFDb3Vu",
-            "Y2lsEjsuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
-            "dWVyeVFDb3VuY2lsUmVxdWVzdBouLkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uQ291bmNpbCJEgtPkkwI+EjwvRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NvdW5jaWwve2NvdW5jaWxJ",
-            "ZH0SvwEKCFFNYXRjaGVzEjsuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
-            "LmNhcmRjaGFpbi5RdWVyeVFNYXRjaGVzUmVxdWVzdBo8LkRlY2VudHJhbENh",
-            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRTWF0Y2hlc1Jlc3Bv",
-            "bnNlIjiC0+STAjISMC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2Fy",
-            "ZGNoYWluL3FfbWF0Y2hlcxLVAQoLUVNlbGxPZmZlcnMSPi5EZWNlbnRyYWxD",
-            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNlbGxPZmZlcnNS",
-            "ZXF1ZXN0Gj8uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFp",
-            "bi5RdWVyeVFTZWxsT2ZmZXJzUmVzcG9uc2UiRYLT5JMCPxI9L0RlY2VudHJh",
-            "bENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZWxsX29mZmVycy97",
-            "c3RhdHVzfRKyAQoHUVNlcnZlchI6LkRlY2VudHJhbENhcmRHYW1lLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uUXVlcnlRU2VydmVyUmVxdWVzdBotLkRlY2VudHJh",
-            "bENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2VydmVyIjyC0+STAjYS",
-            "NC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffc2Vy",
-            "dmVyL3tpZH0SywEKBVFTZXRzEjguRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNo",
-            "YWluLmNhcmRjaGFpbi5RdWVyeVFTZXRzUmVxdWVzdBo5LkRlY2VudHJhbENh",
-            "cmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRU2V0c1Jlc3BvbnNl",
-            "Ik2C0+STAkcSRS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
-            "YWluL3Ffc2V0cy97c3RhdHVzfS97aWdub3JlU3RhdHVzfRLvAQoSUmFyaXR5",
-            "RGlzdHJpYnV0aW9uEkUuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5RdWVyeVJhcml0eURpc3RyaWJ1dGlvblJlcXVlc3QaRi5EZWNl",
-            "bnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UmFyaXR5",
-            "RGlzdHJpYnV0aW9uUmVzcG9uc2UiSoLT5JMCRBJCL0RlY2VudHJhbENhcmRH",
-            "YW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcmFyaXR5X2Rpc3RyaWJ1dGlvbi97",
-            "c2V0SWR9Et4BCg1RQ2FyZENvbnRlbnRzEkAuRGVjZW50cmFsQ2FyZEdhbWUu",
-            "Y2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFDYXJkQ29udGVudHNSZXF1ZXN0",
-            "GkEuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVy",
-            "eVFDYXJkQ29udGVudHNSZXNwb25zZSJIgtPkkwJCEkAvRGVjZW50cmFsQ2Fy",
-            "ZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2NhcmRfY29udGVudHMve2Nh",
-            "cmRJZHN9QqkCCiljb20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
-            "cmRjaGFpbkIKUXVlcnlQcm90b1ABWjpnaXRodWIuY29tL0RlY2VudHJhbENh",
-            "cmRnYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vY2FyZGNoYWluogIDRENDqgIl",
-            "RGVjZW50cmFsQ2FyZEdhbWUuQ2FyZGNoYWluLkNhcmRjaGFpbsoCJURlY2Vu",
-            "dHJhbENhcmRHYW1lXENhcmRjaGFpblxDYXJkY2hhaW7iAjFEZWNlbnRyYWxD",
-            "YXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gInRGVj",
-            "ZW50cmFsQ2FyZEdhbWU6OkNhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "b25zZVIFY2FyZHMiOQodUXVlcnlRQWNjb3VudEZyb21aZWFseVJlcXVlc3QS",
+            "GAoHemVhbHlJZBgBIAEoCVIHemVhbHlJZCI6Ch5RdWVyeVFBY2NvdW50RnJv",
+            "bVplYWx5UmVzcG9uc2USGAoHYWRkcmVzcxgBIAEoCVIHYWRkcmVzczLGHAoF",
+            "UXVlcnkStgEKBlBhcmFtcxI5LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
+            "bi5jYXJkY2hhaW4uUXVlcnlQYXJhbXNSZXF1ZXN0GjouRGVjZW50cmFsQ2Fy",
+            "ZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVBhcmFtc1Jlc3BvbnNl",
+            "IjWC0+STAi8SLS9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNo",
+            "YWluL3BhcmFtcxKyAQoFUUNhcmQSOC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJk",
+            "Y2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNhcmRSZXF1ZXN0Gi8uRGVjZW50cmFs",
+            "Q2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5PdXRwQ2FyZCI+gtPkkwI4",
+            "EjYvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX2Nh",
+            "cmQve2NhcmRJZH0S2QEKDFFDYXJkQ29udGVudBI/LkRlY2VudHJhbENhcmRH",
+            "YW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRQ2FyZENvbnRlbnRSZXF1",
+            "ZXN0GkAuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
+            "dWVyeVFDYXJkQ29udGVudFJlc3BvbnNlIkaC0+STAkASPi9EZWNlbnRyYWxD",
+            "YXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3FfY2FyZF9jb250ZW50L3tj",
+            "YXJkSWR9Eq8BCgVRVXNlchI4LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
+            "bi5jYXJkY2hhaW4uUXVlcnlRVXNlclJlcXVlc3QaKy5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlVzZXIiP4LT5JMCORI3L0RlY2Vu",
+            "dHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV91c2VyL3thZGRy",
+            "ZXNzfRLYAQoOUUNhcmRjaGFpbkluZm8SQS5EZWNlbnRyYWxDYXJkR2FtZS5j",
+            "YXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNhcmRjaGFpbkluZm9SZXF1ZXN0",
+            "GkIuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVy",
+            "eVFDYXJkY2hhaW5JbmZvUmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENh",
+            "cmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9jYXJkY2hhaW5faW5mbxLY",
+            "AQoOUVZvdGluZ1Jlc3VsdHMSQS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hh",
+            "aW4uY2FyZGNoYWluLlF1ZXJ5UVZvdGluZ1Jlc3VsdHNSZXF1ZXN0GkIuRGVj",
+            "ZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5RdWVyeVFWb3Rp",
+            "bmdSZXN1bHRzUmVzcG9uc2UiP4LT5JMCORI3L0RlY2VudHJhbENhcmRHYW1l",
+            "L0NhcmRjaGFpbi9jYXJkY2hhaW4vcV92b3RpbmdfcmVzdWx0cxK3AQoGUUNh",
+            "cmRzEjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
+            "dWVyeVFDYXJkc1JlcXVlc3QaOi5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hh",
+            "aW4uY2FyZGNoYWluLlF1ZXJ5UUNhcmRzUmVzcG9uc2UiNoLT5JMCMBIuL0Rl",
+            "Y2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9jYXJkcxKz",
+            "AQoGUU1hdGNoEjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
+            "aGFpbi5RdWVyeVFNYXRjaFJlcXVlc3QaLC5EZWNlbnRyYWxDYXJkR2FtZS5j",
+            "YXJkY2hhaW4uY2FyZGNoYWluLk1hdGNoIkCC0+STAjoSOC9EZWNlbnRyYWxD",
+            "YXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3FfbWF0Y2gve21hdGNoSWR9",
+            "Eq0BCgRRU2V0EjcuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRj",
+            "aGFpbi5RdWVyeVFTZXRSZXF1ZXN0Gi4uRGVjZW50cmFsQ2FyZEdhbWUuY2Fy",
+            "ZGNoYWluLmNhcmRjaGFpbi5PdXRwU2V0IjyC0+STAjYSNC9EZWNlbnRyYWxD",
+            "YXJkR2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL3Ffc2V0L3tzZXRJZH0SyAEK",
+            "ClFTZWxsT2ZmZXISPS5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2Fy",
+            "ZGNoYWluLlF1ZXJ5UVNlbGxPZmZlclJlcXVlc3QaMC5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlNlbGxPZmZlciJJgtPkkwJDEkEv",
+            "RGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2NhcmRjaGFpbi9xX3NlbGxf",
+            "b2ZmZXIve3NlbGxPZmZlcklkfRK9AQoIUUNvdW5jaWwSOy5EZWNlbnRyYWxD",
+            "YXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNvdW5jaWxSZXF1",
+            "ZXN0Gi4uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5D",
+            "b3VuY2lsIkSC0+STAj4SPC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4v",
+            "Y2FyZGNoYWluL3FfY291bmNpbC97Y291bmNpbElkfRK/AQoIUU1hdGNoZXMS",
+            "Oy5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5",
+            "UU1hdGNoZXNSZXF1ZXN0GjwuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5RdWVyeVFNYXRjaGVzUmVzcG9uc2UiOILT5JMCMhIwL0Rl",
+            "Y2VudHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9tYXRjaGVz",
+            "EtUBCgtRU2VsbE9mZmVycxI+LkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFp",
+            "bi5jYXJkY2hhaW4uUXVlcnlRU2VsbE9mZmVyc1JlcXVlc3QaPy5EZWNlbnRy",
+            "YWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UVNlbGxPZmZl",
+            "cnNSZXNwb25zZSJFgtPkkwI/Ej0vRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNo",
+            "YWluL2NhcmRjaGFpbi9xX3NlbGxfb2ZmZXJzL3tzdGF0dXN9ErIBCgdRU2Vy",
+            "dmVyEjouRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbi5R",
+            "dWVyeVFTZXJ2ZXJSZXF1ZXN0Gi0uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNo",
+            "YWluLmNhcmRjaGFpbi5TZXJ2ZXIiPILT5JMCNhI0L0RlY2VudHJhbENhcmRH",
+            "YW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZXJ2ZXIve2lkfRLLAQoFUVNl",
+            "dHMSOC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1",
+            "ZXJ5UVNldHNSZXF1ZXN0GjkuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5RdWVyeVFTZXRzUmVzcG9uc2UiTYLT5JMCRxJFL0RlY2Vu",
+            "dHJhbENhcmRHYW1lL0NhcmRjaGFpbi9jYXJkY2hhaW4vcV9zZXRzL3tzdGF0",
+            "dXN9L3tpZ25vcmVTdGF0dXN9Eu8BChJSYXJpdHlEaXN0cmlidXRpb24SRS5E",
+            "ZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UmFy",
+            "aXR5RGlzdHJpYnV0aW9uUmVxdWVzdBpGLkRlY2VudHJhbENhcmRHYW1lLmNh",
+            "cmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlSYXJpdHlEaXN0cmlidXRpb25SZXNw",
+            "b25zZSJKgtPkkwJEEkIvRGVjZW50cmFsQ2FyZEdhbWUvQ2FyZGNoYWluL2Nh",
+            "cmRjaGFpbi9yYXJpdHlfZGlzdHJpYnV0aW9uL3tzZXRJZH0S3gEKDVFDYXJk",
+            "Q29udGVudHMSQC5EZWNlbnRyYWxDYXJkR2FtZS5jYXJkY2hhaW4uY2FyZGNo",
+            "YWluLlF1ZXJ5UUNhcmRDb250ZW50c1JlcXVlc3QaQS5EZWNlbnRyYWxDYXJk",
+            "R2FtZS5jYXJkY2hhaW4uY2FyZGNoYWluLlF1ZXJ5UUNhcmRDb250ZW50c1Jl",
+            "c3BvbnNlIkiC0+STAkISQC9EZWNlbnRyYWxDYXJkR2FtZS9DYXJkY2hhaW4v",
+            "Y2FyZGNoYWluL3FfY2FyZF9jb250ZW50cy97Y2FyZElkc30S7wEKEVFBY2Nv",
+            "dW50RnJvbVplYWx5EkQuRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNh",
+            "cmRjaGFpbi5RdWVyeVFBY2NvdW50RnJvbVplYWx5UmVxdWVzdBpFLkRlY2Vu",
+            "dHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uUXVlcnlRQWNjb3Vu",
+            "dEZyb21aZWFseVJlc3BvbnNlIk2C0+STAkcSRS9EZWNlbnRyYWxDYXJkR2Ft",
+            "ZS9DYXJkY2hhaW4vY2FyZGNoYWluL3FfYWNjb3VudF9mcm9tX3plYWx5L3t6",
+            "ZWFseUlkfUKpAgopY29tLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5j",
+            "YXJkY2hhaW5CClF1ZXJ5UHJvdG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxD",
+            "YXJkZ2FtZS9DYXJkY2hhaW4vY2FyZGNoYWluL2NhcmRjaGFpbqICA0RDQ6oC",
+            "JURlY2VudHJhbENhcmRHYW1lLkNhcmRjaGFpbi5DYXJkY2hhaW7KAiVEZWNl",
+            "bnRyYWxDYXJkR2FtZVxDYXJkY2hhaW5cQ2FyZGNoYWlu4gIxRGVjZW50cmFs",
+            "Q2FyZEdhbWVcQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCJ0Rl",
+            "Y2VudHJhbENhcmRHYW1lOjpDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ParamsReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.VotingReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CardReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.UserReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.MatchReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SetReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.SellOfferReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.CouncilReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.ServerReflection.Descriptor, global::DecentralCardGame.Cardchain.Cardchain.TxReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -227,7 +235,9 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionRequest.Parser, new[]{ "SetId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryRarityDistributionResponse.Parser, new[]{ "Current", "Wanted" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsRequest.Parser, new[]{ "CardIds" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse.Parser, new[]{ "Cards" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQCardContentsResponse.Parser, new[]{ "Cards" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest), global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest.Parser, new[]{ "ZealyId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse), global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse.Parser, new[]{ "Address" }, null, null, null, null)
           }));
     }
     #endregion
@@ -364,7 +374,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -379,7 +393,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -555,7 +573,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -577,7 +599,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -751,7 +777,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -770,7 +800,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -941,7 +975,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -960,7 +998,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1160,7 +1202,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1183,7 +1229,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1358,7 +1408,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1377,7 +1431,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1519,7 +1577,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1534,7 +1596,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1864,7 +1930,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1908,7 +1978,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2075,7 +2149,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2090,7 +2168,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2260,7 +2342,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2282,7 +2368,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -2731,7 +2821,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -2798,7 +2892,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3006,7 +3104,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3026,7 +3128,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3198,7 +3304,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3217,7 +3327,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3388,7 +3502,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3407,7 +3525,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3578,7 +3700,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3597,7 +3723,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -3768,7 +3898,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -3787,7 +3921,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4113,7 +4251,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4160,7 +4302,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4359,7 +4505,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4378,7 +4528,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4556,7 +4710,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4580,7 +4738,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -4947,7 +5109,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -4993,7 +5159,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -5220,7 +5390,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -5243,7 +5417,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -5425,7 +5603,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -5449,7 +5631,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -5625,7 +5811,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -5644,7 +5834,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -5786,7 +5980,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -5801,7 +5999,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -6062,7 +6264,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -6098,7 +6304,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -6275,7 +6485,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -6295,7 +6509,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -6467,7 +6685,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -6486,7 +6708,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -6664,7 +6890,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -6689,7 +6919,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -6858,7 +7092,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -6878,7 +7116,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -7039,7 +7281,11 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -7058,12 +7304,412 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
             cards_.AddEntriesFrom(ref input, _repeated_cards_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class QueryQAccountFromZealyRequest : pb::IMessage<QueryQAccountFromZealyRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryQAccountFromZealyRequest> _parser = new pb::MessageParser<QueryQAccountFromZealyRequest>(() => new QueryQAccountFromZealyRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryQAccountFromZealyRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.QueryReflection.Descriptor.MessageTypes[30]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQAccountFromZealyRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQAccountFromZealyRequest(QueryQAccountFromZealyRequest other) : this() {
+      zealyId_ = other.zealyId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQAccountFromZealyRequest Clone() {
+      return new QueryQAccountFromZealyRequest(this);
+    }
+
+    /// <summary>Field number for the "zealyId" field.</summary>
+    public const int ZealyIdFieldNumber = 1;
+    private string zealyId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ZealyId {
+      get { return zealyId_; }
+      set {
+        zealyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryQAccountFromZealyRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryQAccountFromZealyRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ZealyId != other.ZealyId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ZealyId.Length != 0) hash ^= ZealyId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ZealyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ZealyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ZealyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ZealyId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ZealyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ZealyId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryQAccountFromZealyRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ZealyId.Length != 0) {
+        ZealyId = other.ZealyId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ZealyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ZealyId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class QueryQAccountFromZealyResponse : pb::IMessage<QueryQAccountFromZealyResponse>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<QueryQAccountFromZealyResponse> _parser = new pb::MessageParser<QueryQAccountFromZealyResponse>(() => new QueryQAccountFromZealyResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<QueryQAccountFromZealyResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DecentralCardGame.Cardchain.Cardchain.QueryReflection.Descriptor.MessageTypes[31]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQAccountFromZealyResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQAccountFromZealyResponse(QueryQAccountFromZealyResponse other) : this() {
+      address_ = other.address_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public QueryQAccountFromZealyResponse Clone() {
+      return new QueryQAccountFromZealyResponse(this);
+    }
+
+    /// <summary>Field number for the "address" field.</summary>
+    public const int AddressFieldNumber = 1;
+    private string address_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Address {
+      get { return address_; }
+      set {
+        address_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as QueryQAccountFromZealyResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(QueryQAccountFromZealyResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Address != other.Address) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Address.Length != 0) hash ^= Address.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Address.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Address);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Address.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Address);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Address.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Address);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(QueryQAccountFromZealyResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Address.Length != 0) {
+        Address = other.Address;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Address = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Address = input.ReadString();
             break;
           }
         }
