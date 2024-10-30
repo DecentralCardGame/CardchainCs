@@ -2,7 +2,7 @@
 Client library for crowdcontrol cardchain
 
 ## Usage
-```c#
+```csharp
 using CardchainCs.CardchainClient;
 using Cosmcs.Crypto.Secp256k1;
 using Google.Protobuf;
@@ -20,7 +20,8 @@ var privateKey = new PrivateKey(hex);
 var accoutAddress = privateKey.PublicKey().AccountId("cc");
 Console.Out.WriteLine(accoutAddress);
 
-var ccClient = new CardchainClient("http://localhost:9090", "Testnet3", hex);
+var ccQueryClient = new QueryClient("http://lxgr.xyz:9090");
+var ccClient = new CardchainClient(ccQueryClient, "Testnet3", hex);
 var resp = ccClient.SendMsgBuyCardScheme("10000000000000000000", "ucredits").Result;
 Console.Out.WriteLine(resp.RawResponse);
 if (resp.ResponseMessage != null)

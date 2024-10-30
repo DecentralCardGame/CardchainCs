@@ -12,22 +12,15 @@ namespace CardchainCs.CardchainClient
         public EasyClient Ec { get; }
         public MsgClient CcTxClient { get; }
         public Cosmos.Authz.V1beta1.MsgClient AuthzTxClient { get; }
-        public Query.QueryClient CcQueryClient { get; }
-        public Cosmos.Auth.V1beta1.Query.QueryClient AuthQueryClient { get; }
-        public Cosmos.Bank.V1beta1.Query.QueryClient BankQueryClient { get; }
-        public Cosmos.Authz.V1beta1.Query.QueryClient AuthzQueryClient { get; }
-        public Cosmos.Gov.V1beta1.Query.QueryClient GovQueryClient { get; }
+        public QueryClient QueryClient { get; }
 
-        public CardchainClient(string rpcUrl, string chainId, byte[] bytes, EasyClientOptions? options = null)
+
+        public CardchainClient(QueryClient queryClient, string chainId, byte[] bytes)
         {
-            Ec = new EasyClient(rpcUrl, chainId, bytes, "cc", options);
+            QueryClient = queryClient;
+            Ec = new EasyClient(queryClient, chainId, bytes, "cc");
             CcTxClient = new MsgClient(Ec);
             AuthzTxClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
-            CcQueryClient = new Query.QueryClient(Ec.Channel);
-            BankQueryClient = new Cosmos.Bank.V1beta1.Query.QueryClient(Ec.Channel);
-            AuthzQueryClient = new Cosmos.Authz.V1beta1.Query.QueryClient(Ec.Channel);
-            GovQueryClient = new Cosmos.Gov.V1beta1.Query.QueryClient(Ec.Channel);
-            AuthQueryClient = Ec.AuthClient;
         }
 
         public Task<ClientResponse<MsgBuyCardSchemeResponse>> SendMsgBuyCardScheme(
@@ -35,24 +28,24 @@ namespace CardchainCs.CardchainClient
             string bidDenom)
         {
             return CcTxClient.SimulateAndSendMsgBuyCardScheme(new MsgBuyCardScheme
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                Bid = new Cosmos.Base.V1beta1.Coin
                 {
-                    Creator = Ec.AccoutAddress.ToString(),
-                    Bid = new Cosmos.Base.V1beta1.Coin
-                    {
-                        Amount = bidAmout,
-                        Denom = bidDenom
-                    }
+                    Amount = bidAmout,
+                    Denom = bidDenom
                 }
+            }
             );
         }
 
         public Task<SendMsgExecResponse> SendMsgExec(Any[] msgs, MessageParser[] parsers)
         {
             return AuthzTxClient.SimulateAndSendMsgExec(new Cosmos.Authz.V1beta1.MsgExec
-                {
-                    Grantee = Ec.AccoutAddress.ToString(),
-                    Msgs = { msgs }
-                }
+            {
+                Grantee = Ec.AccoutAddress.ToString(),
+                Msgs = { msgs }
+            }
             ).ContinueWith(r => new SendMsgExecResponse(r.Result, parsers));
         }
 
@@ -205,14 +198,14 @@ namespace CardchainCs.CardchainClient
             ulong[] boosterPackIds)
         {
             return SendMsgExec(boosterPackIds.Select(id => new Any
+            {
+                Value = new MsgOpenBoosterPack
                 {
-                    Value = new MsgOpenBoosterPack
-                    {
-                        Creator = creator,
-                        BoosterPackId = id
-                    }.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
-                }).ToArray(),
+                    Creator = creator,
+                    BoosterPackId = id
+                }.ToByteString(),
+                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+            }).ToArray(),
                 boosterPackIds.Select<ulong, MessageParser>(_ => MsgOpenBoosterPackResponse.Parser).ToArray());
         }
     }
