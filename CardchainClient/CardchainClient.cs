@@ -140,6 +140,29 @@ namespace CardchainCs.CardchainClient
             });
         }
 
+        public Task<ClientResponse<MsgEncounterDoResponse>> SendMsgEncounterDo(
+            ulong encounterId, string user)
+        {
+            return CcTxClient.SimulateAndSendMsgEncounterDo(new MsgEncounterDo
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                EncounterId = encounterId,
+                User = user,
+            });
+        }
+
+        public Task<ClientResponse<MsgEncounterCloseResponse>> SendMsgEncounterClose(
+            ulong encounterId, string user, bool won)
+        {
+            return CcTxClient.SimulateAndSendMsgEncounterClose(new MsgEncounterClose
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                EncounterId = encounterId,
+                User = user,
+                Won = won,
+            });
+        }
+
         public Task<SendMsgExecResponse> SendMsgExecMsgBuyBoosterPack(
             string creator,
             ulong setId)
