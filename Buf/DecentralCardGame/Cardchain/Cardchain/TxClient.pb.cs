@@ -2530,6 +2530,177 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 			});
 		}
         
+        /// <summary>
+      	/// SendMsgEncounterCreate sends a MsgEncounterCreate transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterCreate message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgEncounterCreateResponse>> SendMsgEncounterCreate(MsgEncounterCreate msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgEncounterCreate"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgEncounterCreateResponse>(
+				r.Result,
+				MsgEncounterCreateResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgEncounterCreate simulates a MsgEncounterCreate transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterCreate message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgEncounterCreate(MsgEncounterCreate msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgEncounterCreate"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgEncounterCreate simulates, estimates fees and then sends a EncounterCreate transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterCreate message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgEncounterCreateResponse>> SimulateAndSendMsgEncounterCreate(MsgEncounterCreate msg) {
+			return SimulateMsgEncounterCreate(msg).ContinueWith(r => {
+				return SendMsgEncounterCreate(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
+        /// <summary>
+      	/// SendMsgEncounterDo sends a MsgEncounterDo transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterDo message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgEncounterDoResponse>> SendMsgEncounterDo(MsgEncounterDo msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgEncounterDo"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgEncounterDoResponse>(
+				r.Result,
+				MsgEncounterDoResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgEncounterDo simulates a MsgEncounterDo transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterDo message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgEncounterDo(MsgEncounterDo msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgEncounterDo"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgEncounterDo simulates, estimates fees and then sends a EncounterDo transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterDo message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgEncounterDoResponse>> SimulateAndSendMsgEncounterDo(MsgEncounterDo msg) {
+			return SimulateMsgEncounterDo(msg).ContinueWith(r => {
+				return SendMsgEncounterDo(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
+        /// <summary>
+      	/// SendMsgEncounterClose sends a MsgEncounterClose transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterClose message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgEncounterCloseResponse>> SendMsgEncounterClose(MsgEncounterClose msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgEncounterClose"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgEncounterCloseResponse>(
+				r.Result,
+				MsgEncounterCloseResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgEncounterClose simulates a MsgEncounterClose transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterClose message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgEncounterClose(MsgEncounterClose msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgEncounterClose"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgEncounterClose simulates, estimates fees and then sends a EncounterClose transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterClose message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgEncounterCloseResponse>> SimulateAndSendMsgEncounterClose(MsgEncounterClose msg) {
+			return SimulateMsgEncounterClose(msg).ContinueWith(r => {
+				return SendMsgEncounterClose(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
 	}
 	
 }

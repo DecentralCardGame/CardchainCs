@@ -120,6 +120,22 @@ namespace DecentralCardGame.Cardchain.Cardchain {
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersWithImageRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersWithImageResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterWithImageRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse> __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterWithImageResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryParamsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryParamsResponse> __Method_Params = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryParamsRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryParamsResponse>(
@@ -264,6 +280,38 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         "QAccountFromZealy",
         __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyRequest,
         __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQAccountFromZealyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse> __Method_QEncounters = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QEncounters",
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersRequest,
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse> __Method_QEncounter = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QEncounter",
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterRequest,
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse> __Method_QEncountersWithImage = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QEncountersWithImage",
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersWithImageRequest,
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncountersWithImageResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse> __Method_QEncounterWithImage = new grpc::Method<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest, global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "QEncounterWithImage",
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterWithImageRequest,
+        __Marshaller_DecentralCardGame_cardchain_cardchain_QueryQEncounterWithImageResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -1161,6 +1209,198 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyResponse> QAccountFromZealyAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQAccountFromZealyRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_QAccountFromZealy, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncounters items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse QEncounters(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncounters(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncounters items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse QEncounters(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QEncounters, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncounters items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse> QEncountersAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncountersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncounters items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersResponse> QEncountersAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QEncounters, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncounter items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse QEncounter(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncounter(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncounter items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse QEncounter(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QEncounter, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncounter items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse> QEncounterAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncounterAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncounter items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterResponse> QEncounterAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QEncounter, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncountersWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse QEncountersWithImage(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncountersWithImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncountersWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse QEncountersWithImage(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QEncountersWithImage, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncountersWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse> QEncountersWithImageAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncountersWithImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncountersWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageResponse> QEncountersWithImageAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncountersWithImageRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QEncountersWithImage, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncounterWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse QEncounterWithImage(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncounterWithImage(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncounterWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse QEncounterWithImage(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_QEncounterWithImage, null, options, request);
+      }
+      /// <summary>
+      /// Queries a list of QEncounterWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse> QEncounterWithImageAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return QEncounterWithImageAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Queries a list of QEncounterWithImage items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageResponse> QEncounterWithImageAsync(global::DecentralCardGame.Cardchain.Cardchain.QueryQEncounterWithImageRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_QEncounterWithImage, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
