@@ -35,7 +35,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             "c0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1",
             "ZToCOAEiegoSRW5jb3VudGVyV2l0aEltYWdlEk4KCWVuY291bnRlchgBIAEo",
             "CzIwLkRlY2VudHJhbENhcmRHYW1lLmNhcmRjaGFpbi5jYXJkY2hhaW4uRW5j",
-            "b3VudGVyUgllbmNvdW50ZXISFAoFaW1hZ2UYAiABKAxSBWltYWdlQq4CCilj",
+            "b3VudGVyUgllbmNvdW50ZXISFAoFaW1hZ2UYAiABKAlSBWltYWdlQq4CCilj",
             "b20uRGVjZW50cmFsQ2FyZEdhbWUuY2FyZGNoYWluLmNhcmRjaGFpbkIPRW5j",
             "b3VudGVyc1Byb3RvUAFaOmdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZGdhbWUv",
             "Q2FyZGNoYWluL2NhcmRjaGFpbi9jYXJkY2hhaW6iAgNEQ0OqAiVEZWNlbnRy",
@@ -514,10 +514,10 @@ namespace DecentralCardGame.Cardchain.Cardchain {
 
     /// <summary>Field number for the "image" field.</summary>
     public const int ImageFieldNumber = 2;
-    private pb::ByteString image_ = pb::ByteString.Empty;
+    private string image_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pb::ByteString Image {
+    public string Image {
       get { return image_; }
       set {
         image_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
@@ -574,7 +574,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (Image.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteBytes(Image);
+        output.WriteString(Image);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -592,7 +592,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
       }
       if (Image.Length != 0) {
         output.WriteRawTag(18);
-        output.WriteBytes(Image);
+        output.WriteString(Image);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -608,7 +608,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Encounter);
       }
       if (Image.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeBytesSize(Image);
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Image);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -658,7 +658,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             break;
           }
           case 18: {
-            Image = input.ReadBytes();
+            Image = input.ReadString();
             break;
           }
         }
@@ -688,7 +688,7 @@ namespace DecentralCardGame.Cardchain.Cardchain {
             break;
           }
           case 18: {
-            Image = input.ReadBytes();
+            Image = input.ReadString();
             break;
           }
         }
