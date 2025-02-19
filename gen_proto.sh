@@ -1,6 +1,3 @@
-rm -rf ./Buf
-cd ./cardchain/proto
+buf generate --template buf.gen.yaml
 
-buf generate --template ../../buf.gen.yaml
-
-rm $(find ../../Buf | grep "TxGrpc.pb.cs")
+rm $(find Buf | grep "TxGrpc.pb.cs")

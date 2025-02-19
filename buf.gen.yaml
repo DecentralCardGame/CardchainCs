@@ -1,14 +1,21 @@
-version: v1
+version: v2
+clean: true
 managed:
-    enabled: true
-    go_package_prefix:
-        default: github.com/DecentralCardgame/Cardchain
+  enabled: true
+  override:
+    - file_option: go_package_prefix
+      value: github.com/DecentralCardgame/cardchain
 plugins:
-    - plugin: cosmos-csharp
-      out: ../../Buf
-    - plugin: buf.build/protocolbuffers/csharp
-      out: ../../Buf
-      opt: file_extension=.pb.cs,base_namespace=
-    - plugin: buf.build/grpc/csharp
-      out: ../../Buf
-      opt: no_server,file_suffix=Grpc.pb.cs,base_namespace=
+  - local: protoc-gen-cosmos-csharp
+    out: ./Buf
+  - remote: buf.build/protocolbuffers/csharp
+    out: ./Buf
+    opt: file_extension=.pb.cs,base_namespace=
+  - remote: buf.build/grpc/csharp
+    out: ./Buf
+    opt: no_server,file_suffix=Grpc.pb.cs,base_namespace=
+inputs:
+  - git_repo: https://github.com/DecentralCardGame/Cardchain.git
+    branch: 242-cosmos-v50
+    subdir: proto
+    depth: 30

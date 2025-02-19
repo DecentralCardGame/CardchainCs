@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<PackageId>CardchainCs</PackageId>
-		<Version>0.2.17</Version>
+		<Version>0.3.0-rc1</Version>
 		<Authors>lxgr</Authors>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>enable</Nullable>
@@ -22,7 +22,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Cosmcs" Version="0.6.0"/>
+		<PackageReference Include="Cosmcs" Version="0.7.0-rc2"/>
 	</ItemGroup>
 
 	<!-- <ItemGroup>

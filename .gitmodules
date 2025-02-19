@@ -1,3 +1,0 @@
-[submodule "cardchain"]
-	path = cardchain
-	url = https://github.com/DecentralCardgame/cardchain
