@@ -34,8 +34,8 @@ namespace Cardchain.Cardchain {
             "YWluLlNldFN0YXR1c1IGc3RhdHVzEhwKCXRpbWVTdGFtcBgJIAEoA1IJdGlt",
             "ZVN0YW1wEmEKGGNvbnRyaWJ1dG9yc0Rpc3RyaWJ1dGlvbhgKIAMoCzIlLmNh",
             "cmRjaGFpbi5jYXJkY2hhaW4uQWRkcldpdGhRdWFudGl0eVIYY29udHJpYnV0",
-            "b3JzRGlzdHJpYnV0aW9uEj4KCFJhcml0aWVzGAsgAygLMiIuY2FyZGNoYWlu",
-            "LmNhcmRjaGFpbi5Jbm5lclJhcml0aWVzUghSYXJpdGllcyIdCg1Jbm5lclJh",
+            "b3JzRGlzdHJpYnV0aW9uEj4KCHJhcml0aWVzGAsgAygLMiIuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5Jbm5lclJhcml0aWVzUghyYXJpdGllcyIdCg1Jbm5lclJh",
             "cml0aWVzEgwKAVIYASADKARSAVIiaQoQQWRkcldpdGhRdWFudGl0eRISCgRh",
             "ZGRyGAEgASgJUgRhZGRyEgwKAXEYAiABKA1SAXESMwoHcGF5bWVudBgDIAEo",
             "CzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pblIHcGF5bWVudCpPCglTZXRT",
@@ -241,7 +241,7 @@ namespace Cardchain.Cardchain {
       get { return contributorsDistribution_; }
     }
 
-    /// <summary>Field number for the "Rarities" field.</summary>
+    /// <summary>Field number for the "rarities" field.</summary>
     public const int RaritiesFieldNumber = 11;
     private static readonly pb::FieldCodec<global::Cardchain.Cardchain.InnerRarities> _repeated_rarities_codec
         = pb::FieldCodec.ForMessage(90, global::Cardchain.Cardchain.InnerRarities.Parser);

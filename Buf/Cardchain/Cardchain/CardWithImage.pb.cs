@@ -26,14 +26,15 @@ namespace Cardchain.Cardchain {
           string.Concat(
             "CiljYXJkY2hhaW4vY2FyZGNoYWluL2NhcmRfd2l0aF9pbWFnZS5wcm90bxIT",
             "Y2FyZGNoYWluLmNhcmRjaGFpbhoUZ29nb3Byb3RvL2dvZ28ucHJvdG8aHmNh",
-            "cmRjaGFpbi9jYXJkY2hhaW4vY2FyZC5wcm90byJoCg1DYXJkV2l0aEltYWdl",
-            "Ei0KBGNhcmQYASABKAsyGS5jYXJkY2hhaW4uY2FyZGNoYWluLkNhcmRSBGNh",
-            "cmQSFAoFaW1hZ2UYAiABKAlSBWltYWdlEhIKBGhhc2gYAyABKAlSBGhhc2hC",
-            "1gEKF2NvbS5jYXJkY2hhaW4uY2FyZGNoYWluQhJDYXJkV2l0aEltYWdlUHJv",
-            "dG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9jYXJkY2hhaW4v",
-            "Y2FyZGNoYWluL2NhcmRjaGFpbqICA0NDWKoCE0NhcmRjaGFpbi5DYXJkY2hh",
-            "aW7KAhNDYXJkY2hhaW5cQ2FyZGNoYWlu4gIfQ2FyZGNoYWluXENhcmRjaGFp",
-            "blxHUEJNZXRhZGF0YeoCFENhcmRjaGFpbjo6Q2FyZGNoYWluYgZwcm90bzM="));
+            "cmRjaGFpbi9jYXJkY2hhaW4vY2FyZC5wcm90byJuCg1DYXJkV2l0aEltYWdl",
+            "EjMKBGNhcmQYASABKAsyGS5jYXJkY2hhaW4uY2FyZGNoYWluLkNhcmRCBMje",
+            "HwBSBGNhcmQSFAoFaW1hZ2UYAiABKAlSBWltYWdlEhIKBGhhc2gYAyABKAlS",
+            "BGhhc2hC1gEKF2NvbS5jYXJkY2hhaW4uY2FyZGNoYWluQhJDYXJkV2l0aElt",
+            "YWdlUHJvdG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9jYXJk",
+            "Y2hhaW4vY2FyZGNoYWluL2NhcmRjaGFpbqICA0NDWKoCE0NhcmRjaGFpbi5D",
+            "YXJkY2hhaW7KAhNDYXJkY2hhaW5cQ2FyZGNoYWlu4gIfQ2FyZGNoYWluXENh",
+            "cmRjaGFpblxHUEJNZXRhZGF0YeoCFENhcmRjaGFpbjo6Q2FyZGNoYWluYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Cardchain.CardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
