@@ -15,10 +15,10 @@ namespace CardchainCs.CardchainClient
         public QueryClient QueryClient { get; }
 
 
-        public CardchainClient(QueryClient queryClient, string chainId, byte[] privateKey)
+        public CardchainClient(QueryClient queryClient, byte[] privateKey)
         {
             QueryClient = queryClient;
-            Ec = new EasyClient(queryClient, chainId, privateKey);
+            Ec = new EasyClient(queryClient, privateKey);
             CcTxClient = new MsgClient(Ec);
             AuthzTxClient = new Cosmos.Authz.V1beta1.MsgClient(Ec);
         }

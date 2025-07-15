@@ -22,7 +22,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Cosmcs" Version="0.7.0-rc3" />
+		<PackageReference Include="Cosmcs" Version="0.7.0" />
 	</ItemGroup>
 
 	<!-- <ItemGroup>
