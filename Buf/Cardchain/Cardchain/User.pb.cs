@@ -29,9 +29,9 @@ namespace Cardchain.Cardchain {
             "CgRVc2VyEhQKBWFsaWFzGAEgASgJUgVhbGlhcxIqChBvd25lZENhcmRTY2hl",
             "bWVzGAIgAygEUhBvd25lZENhcmRTY2hlbWVzEigKD293bmVkUHJvdG90eXBl",
             "cxgDIAMoBFIPb3duZWRQcm90b3R5cGVzEhQKBWNhcmRzGAQgAygEUgVjYXJk",
-            "cxJICg1Db3VuY2lsU3RhdHVzGAYgASgOMiIuY2FyZGNoYWluLmNhcmRjaGFp",
-            "bi5Db3VuY2lsU3RhdHVzUg1Db3VuY2lsU3RhdHVzEiQKDVJlcG9ydE1hdGNo",
-            "ZXMYByABKAhSDVJlcG9ydE1hdGNoZXMSIAoLcHJvZmlsZUNhcmQYCCABKARS",
+            "cxJICg1jb3VuY2lsU3RhdHVzGAYgASgOMiIuY2FyZGNoYWluLmNhcmRjaGFp",
+            "bi5Db3VuY2lsU3RhdHVzUg1jb3VuY2lsU3RhdHVzEiQKDXJlcG9ydE1hdGNo",
+            "ZXMYByABKAhSDXJlcG9ydE1hdGNoZXMSIAoLcHJvZmlsZUNhcmQYCCABKARS",
             "C3Byb2ZpbGVDYXJkEjkKCGFpckRyb3BzGAkgASgLMh0uY2FyZGNoYWluLmNh",
             "cmRjaGFpbi5BaXJEcm9wc1IIYWlyRHJvcHMSRAoMYm9vc3RlclBhY2tzGAog",
             "AygLMiAuY2FyZGNoYWluLmNhcmRjaGFpbi5Cb29zdGVyUGFja1IMYm9vc3Rl",
@@ -39,8 +39,8 @@ namespace Cardchain.Cardchain {
             "GAwgASgJUgliaW9ncmFwaHkSIgoMdm90YWJsZUNhcmRzGA0gAygEUgx2b3Rh",
             "YmxlQ2FyZHMSHgoKdm90ZWRDYXJkcxgOIAMoBFIKdm90ZWRDYXJkcxJCCgtl",
             "YXJseUFjY2VzcxgPIAEoCzIgLmNhcmRjaGFpbi5jYXJkY2hhaW4uRWFybHlB",
-            "Y2Nlc3NSC2Vhcmx5QWNjZXNzEiYKDk9wZW5FbmNvdW50ZXJzGBAgAygEUg5P",
-            "cGVuRW5jb3VudGVycxIkCg1Xb25FbmNvdW50ZXJzGBEgAygEUg1Xb25FbmNv",
+            "Y2Nlc3NSC2Vhcmx5QWNjZXNzEiYKDm9wZW5FbmNvdW50ZXJzGBAgAygEUg5v",
+            "cGVuRW5jb3VudGVycxIkCg13b25FbmNvdW50ZXJzGBEgAygEUg13b25FbmNv",
             "dW50ZXJzIm0KC0Vhcmx5QWNjZXNzEhYKBmFjdGl2ZRgBIAEoCFIGYWN0aXZl",
             "EiQKDWludml0ZWRCeVVzZXIYAiABKAlSDWludml0ZWRCeVVzZXISIAoLaW52",
             "aXRlZFVzZXIYAyABKAlSC2ludml0ZWRVc2VyIpkBCgtCb29zdGVyUGFjaxIU",
@@ -194,7 +194,7 @@ namespace Cardchain.Cardchain {
       get { return cards_; }
     }
 
-    /// <summary>Field number for the "CouncilStatus" field.</summary>
+    /// <summary>Field number for the "councilStatus" field.</summary>
     public const int CouncilStatusFieldNumber = 6;
     private global::Cardchain.Cardchain.CouncilStatus councilStatus_ = global::Cardchain.Cardchain.CouncilStatus.Available;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -206,7 +206,7 @@ namespace Cardchain.Cardchain {
       }
     }
 
-    /// <summary>Field number for the "ReportMatches" field.</summary>
+    /// <summary>Field number for the "reportMatches" field.</summary>
     public const int ReportMatchesFieldNumber = 7;
     private bool reportMatches_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -311,7 +311,7 @@ namespace Cardchain.Cardchain {
       }
     }
 
-    /// <summary>Field number for the "OpenEncounters" field.</summary>
+    /// <summary>Field number for the "openEncounters" field.</summary>
     public const int OpenEncountersFieldNumber = 16;
     private static readonly pb::FieldCodec<ulong> _repeated_openEncounters_codec
         = pb::FieldCodec.ForUInt64(130);
@@ -322,7 +322,7 @@ namespace Cardchain.Cardchain {
       get { return openEncounters_; }
     }
 
-    /// <summary>Field number for the "WonEncounters" field.</summary>
+    /// <summary>Field number for the "wonEncounters" field.</summary>
     public const int WonEncountersFieldNumber = 17;
     private static readonly pb::FieldCodec<ulong> _repeated_wonEncounters_codec
         = pb::FieldCodec.ForUInt64(138);

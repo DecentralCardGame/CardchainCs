@@ -25,17 +25,17 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CipjYXJkY2hhaW4vY2FyZGNoYWluL3NldF93aXRoX2FydHdvcmsucHJvdG8S",
-            "E2NhcmRjaGFpbi5jYXJkY2hhaW4aHWNhcmRjaGFpbi9jYXJkY2hhaW4vc2V0",
-            "LnByb3RvIlYKDlNldFdpdGhBcnR3b3JrEioKA3NldBgBIAEoCzIYLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uU2V0UgNzZXQSGAoHYXJ0d29yaxgCIAEoDFIHYXJ0",
-            "d29ya0LXAQoXY29tLmNhcmRjaGFpbi5jYXJkY2hhaW5CE1NldFdpdGhBcnR3",
-            "b3JrUHJvdG9QAVo6Z2l0aHViLmNvbS9EZWNlbnRyYWxDYXJkZ2FtZS9jYXJk",
-            "Y2hhaW4vY2FyZGNoYWluL2NhcmRjaGFpbqICA0NDWKoCE0NhcmRjaGFpbi5D",
-            "YXJkY2hhaW7KAhNDYXJkY2hhaW5cQ2FyZGNoYWlu4gIfQ2FyZGNoYWluXENh",
-            "cmRjaGFpblxHUEJNZXRhZGF0YeoCFENhcmRjaGFpbjo6Q2FyZGNoYWluYgZw",
-            "cm90bzM="));
+            "E2NhcmRjaGFpbi5jYXJkY2hhaW4aFGdvZ29wcm90by9nb2dvLnByb3RvGh1j",
+            "YXJkY2hhaW4vY2FyZGNoYWluL3NldC5wcm90byJcCg5TZXRXaXRoQXJ0d29y",
+            "axIwCgNzZXQYASABKAsyGC5jYXJkY2hhaW4uY2FyZGNoYWluLlNldEIEyN4f",
+            "AFIDc2V0EhgKB2FydHdvcmsYAiABKAxSB2FydHdvcmtC1wEKF2NvbS5jYXJk",
+            "Y2hhaW4uY2FyZGNoYWluQhNTZXRXaXRoQXJ0d29ya1Byb3RvUAFaOmdpdGh1",
+            "Yi5jb20vRGVjZW50cmFsQ2FyZGdhbWUvY2FyZGNoYWluL2NhcmRjaGFpbi9j",
+            "YXJkY2hhaW6iAgNDQ1iqAhNDYXJkY2hhaW4uQ2FyZGNoYWluygITQ2FyZGNo",
+            "YWluXENhcmRjaGFpbuICH0NhcmRjaGFpblxDYXJkY2hhaW5cR1BCTWV0YWRh",
+            "dGHqAhRDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Cardchain.Cardchain.SetReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Cardchain.SetReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.SetWithArtwork), global::Cardchain.Cardchain.SetWithArtwork.Parser, new[]{ "Set", "Artwork" }, null, null, null, null)
           }));
