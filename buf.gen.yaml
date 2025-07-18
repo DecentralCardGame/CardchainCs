@@ -16,6 +16,6 @@ plugins:
     opt: no_server,file_suffix=Grpc.pb.cs,base_namespace=
 inputs:
   - git_repo: https://github.com/DecentralCardGame/Cardchain.git
-    branch: 242-cosmos-v50
+    branch: development
     subdir: proto
     depth: 30
