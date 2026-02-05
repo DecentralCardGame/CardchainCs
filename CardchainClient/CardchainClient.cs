@@ -66,7 +66,7 @@ namespace CardchainCs.CardchainClient
                         Outcome = outcome,
                         VotedCards = { votedCards }
                     }.ToByteString(),
-                    TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgConfirmMatch"
+                    TypeUrl = "/cardchain.cardchain.MsgMatchConfirm"
                 }
             }, new MessageParser[] { MsgMatchConfirmResponse.Parser });
         }
@@ -88,7 +88,7 @@ namespace CardchainCs.CardchainClient
                                 VoteType = voteType,
                             }
                         }.ToByteString(),
-                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgVoteCard"
+                        TypeUrl = "/cardchain.cardchain.MsgCardVote"
                     }
                 }, new MessageParser[] { MsgCardVoteResponse.Parser }
             );
@@ -178,7 +178,7 @@ namespace CardchainCs.CardchainClient
                             Creator = creator,
                             SetId = setId,
                         }.ToByteString(),
-                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyBoosterPack"
+                        TypeUrl = "/cardchain.cardchain.MsgBoosterPackBuy"
                     }
                 }, new MessageParser[] { MsgBoosterPackBuyResponse.Parser }
             );
@@ -195,7 +195,7 @@ namespace CardchainCs.CardchainClient
                     Creator = creator,
                     SetId = id,
                 }.ToByteString(),
-                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgBuyBoosterPack"
+                TypeUrl = "/cardchain.cardchain.MsgBoosterPackBuy"
             }).ToArray(), setIds.Select<ulong, MessageParser>(_ => MsgBoosterPackBuyResponse.Parser).ToArray());
         }
 
@@ -212,7 +212,7 @@ namespace CardchainCs.CardchainClient
                             Creator = creator,
                             BoosterPackId = boosterPackId
                         }.ToByteString(),
-                        TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+                        TypeUrl = "/cardchain.cardchain.MsgBoosterPackOpen"
                     }
                 }, new MessageParser[] { MsgBoosterPackOpenResponse.Parser }
             );
@@ -229,7 +229,7 @@ namespace CardchainCs.CardchainClient
                     Creator = creator,
                     BoosterPackId = id
                 }.ToByteString(),
-                TypeUrl = "/DecentralCardGame.cardchain.cardchain.MsgOpenBoosterPack"
+                TypeUrl = "/cardchain.cardchain.MsgBoosterPackOpen"
             }).ToArray(),
                 boosterPackIds.Select<ulong, MessageParser>(_ => MsgBoosterPackOpenResponse.Parser).ToArray());
         }
