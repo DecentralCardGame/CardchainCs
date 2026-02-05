@@ -233,5 +233,16 @@ namespace CardchainCs.CardchainClient
             }).ToArray(),
                 boosterPackIds.Select<ulong, MessageParser>(_ => MsgBoosterPackOpenResponse.Parser).ToArray());
         }
+
+        public Task<ClientResponse<MsgUpgradePicksReportResponse>> SendMsgUpgradePicksReport(
+            string[] picked, string[] dismissed)
+        {
+            return CcTxClient.SimulateAndSendMsgUpgradePicksReport(new MsgUpgradePicksReport
+            {
+                Creator = Ec.AccoutAddress.ToString(),
+                Picked = { picked },
+                Dismissed = { dismissed }
+            });
+        }
     }
 }
