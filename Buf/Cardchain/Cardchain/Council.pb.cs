@@ -25,8 +25,8 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFjYXJkY2hhaW4vY2FyZGNoYWluL2NvdW5jaWwucHJvdG8SE2NhcmRjaGFp",
-            "bi5jYXJkY2hhaW4aFGdvZ29wcm90by9nb2dvLnByb3RvGh5jb3Ntb3MvYmFz",
-            "ZS92MWJldGExL2NvaW4ucHJvdG8i8gIKB0NvdW5jaWwSFgoGY2FyZElkGAEg",
+            "bi5jYXJkY2hhaW4aHmNvc21vcy9iYXNlL3YxYmV0YTEvY29pbi5wcm90bxoU",
+            "Z29nb3Byb3RvL2dvZ28ucHJvdG8i8gIKB0NvdW5jaWwSFgoGY2FyZElkGAEg",
             "ASgEUgZjYXJkSWQSFgoGdm90ZXJzGAIgAygJUgZ2b3RlcnMSSwoNaGFzaFJl",
             "c3BvbnNlcxgDIAMoCzIlLmNhcmRjaGFpbi5jYXJkY2hhaW4uV3JhcEhhc2hS",
             "ZXNwb25zZVINaGFzaFJlc3BvbnNlcxJOCg5jbGVhclJlc3BvbnNlcxgEIAMo",
@@ -49,7 +49,7 @@ namespace Cardchain.Cardchain {
             "XENhcmRjaGFpbuICH0NhcmRjaGFpblxDYXJkY2hhaW5cR1BCTWV0YWRhdGHq",
             "AhRDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Cardchain.Cardchain.Response), typeof(global::Cardchain.Cardchain.CouncelingStatus), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.Council), global::Cardchain.Cardchain.Council.Parser, new[]{ "CardId", "Voters", "HashResponses", "ClearResponses", "Treasury", "Status", "TrialStart" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.WrapClearResponse), global::Cardchain.Cardchain.WrapClearResponse.Parser, new[]{ "User", "Response", "Suggestion" }, null, null, null, null),

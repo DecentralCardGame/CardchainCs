@@ -25,48 +25,50 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFjYXJkY2hhaW4vY2FyZGNoYWluL2dlbmVzaXMucHJvdG8SE2NhcmRjaGFp",
-            "bi5jYXJkY2hhaW4aEWFtaW5vL2FtaW5vLnByb3RvGhRnb2dvcHJvdG8vZ29n",
-            "by5wcm90bxogY2FyZGNoYWluL2NhcmRjaGFpbi9wYXJhbXMucHJvdG8aHmNh",
-            "cmRjaGFpbi9jYXJkY2hhaW4vY2FyZC5wcm90bxoeY2FyZGNoYWluL2NhcmRj",
-            "aGFpbi91c2VyLnByb3RvGh9jYXJkY2hhaW4vY2FyZGNoYWluL21hdGNoLnBy",
-            "b3RvGh1jYXJkY2hhaW4vY2FyZGNoYWluL3NldC5wcm90bxokY2FyZGNoYWlu",
-            "L2NhcmRjaGFpbi9zZWxsX29mZmVyLnByb3RvGiljYXJkY2hhaW4vY2FyZGNo",
-            "YWluL3J1bm5pbmdfYXZlcmFnZS5wcm90bxohY2FyZGNoYWluL2NhcmRjaGFp",
-            "bi9jb3VuY2lsLnByb3RvGh9jYXJkY2hhaW4vY2FyZGNoYWluL2ltYWdlLnBy",
-            "b3RvGiBjYXJkY2hhaW4vY2FyZGNoYWluL3NlcnZlci5wcm90bxofY2FyZGNo",
-            "YWluL2NhcmRjaGFpbi96ZWFseS5wcm90bxojY2FyZGNoYWluL2NhcmRjaGFp",
-            "bi9lbmNvdW50ZXIucHJvdG8aHmNvc21vcy9iYXNlL3YxYmV0YTEvY29pbi5w",
-            "cm90byK2BwoMR2VuZXNpc1N0YXRlEj4KBnBhcmFtcxgBIAEoCzIbLmNhcmRj",
-            "aGFpbi5jYXJkY2hhaW4uUGFyYW1zQgnI3h8AqOewKgFSBnBhcmFtcxI7Cgtj",
-            "YXJkUmVjb3JkcxgCIAMoCzIZLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ2FyZFIL",
-            "Y2FyZFJlY29yZHMSLwoFdXNlcnMYAyADKAsyGS5jYXJkY2hhaW4uY2FyZGNo",
-            "YWluLlVzZXJSBXVzZXJzEhwKCWFkZHJlc3NlcxgEIAMoCVIJYWRkcmVzc2Vz",
-            "EjQKB21hdGNoZXMYBiADKAsyGi5jYXJkY2hhaW4uY2FyZGNoYWluLk1hdGNo",
-            "UgdtYXRjaGVzEiwKBHNldHMYByADKAsyGC5jYXJkY2hhaW4uY2FyZGNoYWlu",
-            "LlNldFIEc2V0cxI+CgpzZWxsT2ZmZXJzGAggAygLMh4uY2FyZGNoYWluLmNh",
-            "cmRjaGFpbi5TZWxsT2ZmZXJSCnNlbGxPZmZlcnMSLwoFcG9vbHMYCSADKAsy",
-            "GS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5SBXBvb2xzEksKEGNhcmRBdWN0",
-            "aW9uUHJpY2UYCyABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CBMje",
-            "HwBSEGNhcmRBdWN0aW9uUHJpY2USOAoIY291bmNpbHMYDCADKAsyHC5jYXJk",
-            "Y2hhaW4uY2FyZGNoYWluLkNvdW5jaWxSCGNvdW5jaWxzEk0KD3J1bm5pbmdB",
-            "dmVyYWdlcxgNIAMoCzIjLmNhcmRjaGFpbi5jYXJkY2hhaW4uUnVubmluZ0F2",
-            "ZXJhZ2VSD3J1bm5pbmdBdmVyYWdlcxIyCgZpbWFnZXMYDiADKAsyGi5jYXJk",
-            "Y2hhaW4uY2FyZGNoYWluLkltYWdlUgZpbWFnZXMSNQoHc2VydmVycxgPIAMo",
-            "CzIbLmNhcmRjaGFpbi5jYXJkY2hhaW4uU2VydmVyUgdzZXJ2ZXJzElAKEGxh",
-            "c3RDYXJkTW9kaWZpZWQYECABKAsyHi5jYXJkY2hhaW4uY2FyZGNoYWluLlRp",
-            "bWVTdGFtcEIEyN4fAFIQbGFzdENhcmRNb2RpZmllZBIyCgZ6ZWFseXMYESAD",
-            "KAsyGi5jYXJkY2hhaW4uY2FyZGNoYWluLlplYWx5UgZ6ZWFseXMSPgoKZW5j",
-            "b3VudGVycxgSIAMoCzIeLmNhcmRjaGFpbi5jYXJkY2hhaW4uRW5jb3VudGVy",
-            "UgplbmNvdW50ZXJzQtABChdjb20uY2FyZGNoYWluLmNhcmRjaGFpbkIMR2Vu",
-            "ZXNpc1Byb3RvUAFaOmdpdGh1Yi5jb20vRGVjZW50cmFsQ2FyZGdhbWUvY2Fy",
-            "ZGNoYWluL2NhcmRjaGFpbi9jYXJkY2hhaW6iAgNDQ1iqAhNDYXJkY2hhaW4u",
-            "Q2FyZGNoYWluygITQ2FyZGNoYWluXENhcmRjaGFpbuICH0NhcmRjaGFpblxD",
-            "YXJkY2hhaW5cR1BCTWV0YWRhdGHqAhRDYXJkY2hhaW46OkNhcmRjaGFpbmIG",
-            "cHJvdG8z"));
+            "bi5jYXJkY2hhaW4aEWFtaW5vL2FtaW5vLnByb3RvGh5jYXJkY2hhaW4vY2Fy",
+            "ZGNoYWluL2NhcmQucHJvdG8aIWNhcmRjaGFpbi9jYXJkY2hhaW4vY291bmNp",
+            "bC5wcm90bxojY2FyZGNoYWluL2NhcmRjaGFpbi9lbmNvdW50ZXIucHJvdG8a",
+            "H2NhcmRjaGFpbi9jYXJkY2hhaW4vaW1hZ2UucHJvdG8aH2NhcmRjaGFpbi9j",
+            "YXJkY2hhaW4vbWF0Y2gucHJvdG8aIGNhcmRjaGFpbi9jYXJkY2hhaW4vcGFy",
+            "YW1zLnByb3RvGiljYXJkY2hhaW4vY2FyZGNoYWluL3J1bm5pbmdfYXZlcmFn",
+            "ZS5wcm90bxokY2FyZGNoYWluL2NhcmRjaGFpbi9zZWxsX29mZmVyLnByb3Rv",
+            "GiBjYXJkY2hhaW4vY2FyZGNoYWluL3NlcnZlci5wcm90bxodY2FyZGNoYWlu",
+            "L2NhcmRjaGFpbi9zZXQucHJvdG8aKGNhcmRjaGFpbi9jYXJkY2hhaW4vdXBn",
+            "cmFkZV9mYWN0b3IucHJvdG8aHmNhcmRjaGFpbi9jYXJkY2hhaW4vdXNlci5w",
+            "cm90bxofY2FyZGNoYWluL2NhcmRjaGFpbi96ZWFseS5wcm90bxoeY29zbW9z",
+            "L2Jhc2UvdjFiZXRhMS9jb2luLnByb3RvGhRnb2dvcHJvdG8vZ29nby5wcm90",
+            "byKCCAoMR2VuZXNpc1N0YXRlEj4KBnBhcmFtcxgBIAEoCzIbLmNhcmRjaGFp",
+            "bi5jYXJkY2hhaW4uUGFyYW1zQgnI3h8AqOewKgFSBnBhcmFtcxI7CgtjYXJk",
+            "UmVjb3JkcxgCIAMoCzIZLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ2FyZFILY2Fy",
+            "ZFJlY29yZHMSLwoFdXNlcnMYAyADKAsyGS5jYXJkY2hhaW4uY2FyZGNoYWlu",
+            "LlVzZXJSBXVzZXJzEhwKCWFkZHJlc3NlcxgEIAMoCVIJYWRkcmVzc2VzEjQK",
+            "B21hdGNoZXMYBiADKAsyGi5jYXJkY2hhaW4uY2FyZGNoYWluLk1hdGNoUgdt",
+            "YXRjaGVzEiwKBHNldHMYByADKAsyGC5jYXJkY2hhaW4uY2FyZGNoYWluLlNl",
+            "dFIEc2V0cxI+CgpzZWxsT2ZmZXJzGAggAygLMh4uY2FyZGNoYWluLmNhcmRj",
+            "aGFpbi5TZWxsT2ZmZXJSCnNlbGxPZmZlcnMSLwoFcG9vbHMYCSADKAsyGS5j",
+            "b3Ntb3MuYmFzZS52MWJldGExLkNvaW5SBXBvb2xzEksKEGNhcmRBdWN0aW9u",
+            "UHJpY2UYCyABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CBMjeHwBS",
+            "EGNhcmRBdWN0aW9uUHJpY2USOAoIY291bmNpbHMYDCADKAsyHC5jYXJkY2hh",
+            "aW4uY2FyZGNoYWluLkNvdW5jaWxSCGNvdW5jaWxzEk0KD3J1bm5pbmdBdmVy",
+            "YWdlcxgNIAMoCzIjLmNhcmRjaGFpbi5jYXJkY2hhaW4uUnVubmluZ0F2ZXJh",
+            "Z2VSD3J1bm5pbmdBdmVyYWdlcxIyCgZpbWFnZXMYDiADKAsyGi5jYXJkY2hh",
+            "aW4uY2FyZGNoYWluLkltYWdlUgZpbWFnZXMSNQoHc2VydmVycxgPIAMoCzIb",
+            "LmNhcmRjaGFpbi5jYXJkY2hhaW4uU2VydmVyUgdzZXJ2ZXJzElAKEGxhc3RD",
+            "YXJkTW9kaWZpZWQYECABKAsyHi5jYXJkY2hhaW4uY2FyZGNoYWluLlRpbWVT",
+            "dGFtcEIEyN4fAFIQbGFzdENhcmRNb2RpZmllZBIyCgZ6ZWFseXMYESADKAsy",
+            "Gi5jYXJkY2hhaW4uY2FyZGNoYWluLlplYWx5UgZ6ZWFseXMSPgoKZW5jb3Vu",
+            "dGVycxgSIAMoCzIeLmNhcmRjaGFpbi5jYXJkY2hhaW4uRW5jb3VudGVyUgpl",
+            "bmNvdW50ZXJzEkoKDnVwZ3JhZGVGYWN0b3JzGBMgAygLMiIuY2FyZGNoYWlu",
+            "LmNhcmRjaGFpbi5VcGdyYWRlRmFjdG9yUg51cGdyYWRlRmFjdG9yc0LQAQoX",
+            "Y29tLmNhcmRjaGFpbi5jYXJkY2hhaW5CDEdlbmVzaXNQcm90b1ABWjpnaXRo",
+            "dWIuY29tL0RlY2VudHJhbENhcmRnYW1lL2NhcmRjaGFpbi9jYXJkY2hhaW4v",
+            "Y2FyZGNoYWluogIDQ0NYqgITQ2FyZGNoYWluLkNhcmRjaGFpbsoCE0NhcmRj",
+            "aGFpblxDYXJkY2hhaW7iAh9DYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFk",
+            "YXRh6gIUQ2FyZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Cardchain.ParamsReflection.Descriptor, global::Cardchain.Cardchain.CardReflection.Descriptor, global::Cardchain.Cardchain.UserReflection.Descriptor, global::Cardchain.Cardchain.MatchReflection.Descriptor, global::Cardchain.Cardchain.SetReflection.Descriptor, global::Cardchain.Cardchain.SellOfferReflection.Descriptor, global::Cardchain.Cardchain.RunningAverageReflection.Descriptor, global::Cardchain.Cardchain.CouncilReflection.Descriptor, global::Cardchain.Cardchain.ImageReflection.Descriptor, global::Cardchain.Cardchain.ServerReflection.Descriptor, global::Cardchain.Cardchain.ZealyReflection.Descriptor, global::Cardchain.Cardchain.EncounterReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Cardchain.Cardchain.CardReflection.Descriptor, global::Cardchain.Cardchain.CouncilReflection.Descriptor, global::Cardchain.Cardchain.EncounterReflection.Descriptor, global::Cardchain.Cardchain.ImageReflection.Descriptor, global::Cardchain.Cardchain.MatchReflection.Descriptor, global::Cardchain.Cardchain.ParamsReflection.Descriptor, global::Cardchain.Cardchain.RunningAverageReflection.Descriptor, global::Cardchain.Cardchain.SellOfferReflection.Descriptor, global::Cardchain.Cardchain.ServerReflection.Descriptor, global::Cardchain.Cardchain.SetReflection.Descriptor, global::Cardchain.Cardchain.UpgradeFactorReflection.Descriptor, global::Cardchain.Cardchain.UserReflection.Descriptor, global::Cardchain.Cardchain.ZealyReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.GenesisState), global::Cardchain.Cardchain.GenesisState.Parser, new[]{ "Params", "CardRecords", "Users", "Addresses", "Matches", "Sets", "SellOffers", "Pools", "CardAuctionPrice", "Councils", "RunningAverages", "Images", "Servers", "LastCardModified", "Zealys", "Encounters" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.GenesisState), global::Cardchain.Cardchain.GenesisState.Parser, new[]{ "Params", "CardRecords", "Users", "Addresses", "Matches", "Sets", "SellOffers", "Pools", "CardAuctionPrice", "Councils", "RunningAverages", "Images", "Servers", "LastCardModified", "Zealys", "Encounters", "UpgradeFactors" }, null, null, null, null)
           }));
     }
     #endregion
@@ -127,6 +129,7 @@ namespace Cardchain.Cardchain {
       lastCardModified_ = other.lastCardModified_ != null ? other.lastCardModified_.Clone() : null;
       zealys_ = other.zealys_.Clone();
       encounters_ = other.encounters_.Clone();
+      upgradeFactors_ = other.upgradeFactors_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -312,13 +315,24 @@ namespace Cardchain.Cardchain {
     private static readonly pb::FieldCodec<global::Cardchain.Cardchain.Encounter> _repeated_encounters_codec
         = pb::FieldCodec.ForMessage(146, global::Cardchain.Cardchain.Encounter.Parser);
     private readonly pbc::RepeatedField<global::Cardchain.Cardchain.Encounter> encounters_ = new pbc::RepeatedField<global::Cardchain.Cardchain.Encounter>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Cardchain.Cardchain.Encounter> Encounters {
+      get { return encounters_; }
+    }
+
+    /// <summary>Field number for the "upgradeFactors" field.</summary>
+    public const int UpgradeFactorsFieldNumber = 19;
+    private static readonly pb::FieldCodec<global::Cardchain.Cardchain.UpgradeFactor> _repeated_upgradeFactors_codec
+        = pb::FieldCodec.ForMessage(154, global::Cardchain.Cardchain.UpgradeFactor.Parser);
+    private readonly pbc::RepeatedField<global::Cardchain.Cardchain.UpgradeFactor> upgradeFactors_ = new pbc::RepeatedField<global::Cardchain.Cardchain.UpgradeFactor>();
     /// <summary>
     /// this line is used by starport scaffolding # genesis/proto/state
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public pbc::RepeatedField<global::Cardchain.Cardchain.Encounter> Encounters {
-      get { return encounters_; }
+    public pbc::RepeatedField<global::Cardchain.Cardchain.UpgradeFactor> UpgradeFactors {
+      get { return upgradeFactors_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -352,6 +366,7 @@ namespace Cardchain.Cardchain {
       if (!object.Equals(LastCardModified, other.LastCardModified)) return false;
       if(!zealys_.Equals(other.zealys_)) return false;
       if(!encounters_.Equals(other.encounters_)) return false;
+      if(!upgradeFactors_.Equals(other.upgradeFactors_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -375,6 +390,7 @@ namespace Cardchain.Cardchain {
       if (lastCardModified_ != null) hash ^= LastCardModified.GetHashCode();
       hash ^= zealys_.GetHashCode();
       hash ^= encounters_.GetHashCode();
+      hash ^= upgradeFactors_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -418,6 +434,7 @@ namespace Cardchain.Cardchain {
       }
       zealys_.WriteTo(output, _repeated_zealys_codec);
       encounters_.WriteTo(output, _repeated_encounters_codec);
+      upgradeFactors_.WriteTo(output, _repeated_upgradeFactors_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -453,6 +470,7 @@ namespace Cardchain.Cardchain {
       }
       zealys_.WriteTo(ref output, _repeated_zealys_codec);
       encounters_.WriteTo(ref output, _repeated_encounters_codec);
+      upgradeFactors_.WriteTo(ref output, _repeated_upgradeFactors_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -485,6 +503,7 @@ namespace Cardchain.Cardchain {
       }
       size += zealys_.CalculateSize(_repeated_zealys_codec);
       size += encounters_.CalculateSize(_repeated_encounters_codec);
+      size += upgradeFactors_.CalculateSize(_repeated_upgradeFactors_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -528,6 +547,7 @@ namespace Cardchain.Cardchain {
       }
       zealys_.Add(other.zealys_);
       encounters_.Add(other.encounters_);
+      upgradeFactors_.Add(other.upgradeFactors_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -620,6 +640,10 @@ namespace Cardchain.Cardchain {
             encounters_.AddEntriesFrom(input, _repeated_encounters_codec);
             break;
           }
+          case 154: {
+            upgradeFactors_.AddEntriesFrom(input, _repeated_upgradeFactors_codec);
+            break;
+          }
         }
       }
     #endif
@@ -710,6 +734,10 @@ namespace Cardchain.Cardchain {
           }
           case 146: {
             encounters_.AddEntriesFrom(ref input, _repeated_encounters_codec);
+            break;
+          }
+          case 154: {
+            upgradeFactors_.AddEntriesFrom(ref input, _repeated_upgradeFactors_codec);
             break;
           }
         }

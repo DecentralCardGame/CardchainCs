@@ -25,8 +25,8 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiljYXJkY2hhaW4vY2FyZGNoYWluL2NhcmRfd2l0aF9pbWFnZS5wcm90bxIT",
-            "Y2FyZGNoYWluLmNhcmRjaGFpbhoUZ29nb3Byb3RvL2dvZ28ucHJvdG8aHmNh",
-            "cmRjaGFpbi9jYXJkY2hhaW4vY2FyZC5wcm90byJuCg1DYXJkV2l0aEltYWdl",
+            "Y2FyZGNoYWluLmNhcmRjaGFpbhoeY2FyZGNoYWluL2NhcmRjaGFpbi9jYXJk",
+            "LnByb3RvGhRnb2dvcHJvdG8vZ29nby5wcm90byJuCg1DYXJkV2l0aEltYWdl",
             "EjMKBGNhcmQYASABKAsyGS5jYXJkY2hhaW4uY2FyZGNoYWluLkNhcmRCBMje",
             "HwBSBGNhcmQSFAoFaW1hZ2UYAiABKAlSBWltYWdlEhIKBGhhc2gYAyABKAlS",
             "BGhhc2hC1gEKF2NvbS5jYXJkY2hhaW4uY2FyZGNoYWluQhJDYXJkV2l0aElt",
@@ -36,7 +36,7 @@ namespace Cardchain.Cardchain {
             "cmRjaGFpblxHUEJNZXRhZGF0YeoCFENhcmRjaGFpbjo6Q2FyZGNoYWluYgZw",
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Cardchain.CardReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cardchain.Cardchain.CardReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.CardWithImage), global::Cardchain.Cardchain.CardWithImage.Parser, new[]{ "Card", "Image", "Hash" }, null, null, null, null)
           }));

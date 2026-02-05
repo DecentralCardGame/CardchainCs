@@ -2588,6 +2588,63 @@ namespace Cardchain.Cardchain {
 		}
         
         /// <summary>
+      	/// SendMsgEncounterEdit sends a MsgEncounterEdit transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterEdit message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgEncounterEditResponse>> SendMsgEncounterEdit(MsgEncounterEdit msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cardchain.cardchain.MsgEncounterEdit"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgEncounterEditResponse>(
+				r.Result,
+				MsgEncounterEditResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgEncounterEdit simulates a MsgEncounterEdit transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterEdit message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgEncounterEdit(MsgEncounterEdit msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cardchain.cardchain.MsgEncounterEdit"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgEncounterEdit simulates, estimates fees and then sends a EncounterEdit transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterEdit message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgEncounterEditResponse>> SimulateAndSendMsgEncounterEdit(MsgEncounterEdit msg) {
+			return SimulateMsgEncounterEdit(msg).ContinueWith(r => {
+				return SendMsgEncounterEdit(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
+        /// <summary>
       	/// SendMsgEncounterDo sends a MsgEncounterDo transaction to the blockchain and waits
       	/// for a response.
       	/// </summary>
@@ -2698,6 +2755,63 @@ namespace Cardchain.Cardchain {
 		public Task<Cosmcs.Client.ClientResponse<MsgEncounterCloseResponse>> SimulateAndSendMsgEncounterClose(MsgEncounterClose msg) {
 			return SimulateMsgEncounterClose(msg).ContinueWith(r => {
 				return SendMsgEncounterClose(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
+        /// <summary>
+      	/// SendMsgEncounterDelete sends a MsgEncounterDelete transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterDelete message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgEncounterDeleteResponse>> SendMsgEncounterDelete(MsgEncounterDelete msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cardchain.cardchain.MsgEncounterDelete"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgEncounterDeleteResponse>(
+				r.Result,
+				MsgEncounterDeleteResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgEncounterDelete simulates a MsgEncounterDelete transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterDelete message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgEncounterDelete(MsgEncounterDelete msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cardchain.cardchain.MsgEncounterDelete"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgEncounterDelete simulates, estimates fees and then sends a EncounterDelete transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgEncounterDelete message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgEncounterDeleteResponse>> SimulateAndSendMsgEncounterDelete(MsgEncounterDelete msg) {
+			return SimulateMsgEncounterDelete(msg).ContinueWith(r => {
+				return SendMsgEncounterDelete(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         
@@ -2983,6 +3097,63 @@ namespace Cardchain.Cardchain {
 		public Task<Cosmcs.Client.ClientResponse<MsgCardCopyrightClaimResponse>> SimulateAndSendMsgCardCopyrightClaim(MsgCardCopyrightClaim msg) {
 			return SimulateMsgCardCopyrightClaim(msg).ContinueWith(r => {
 				return SendMsgCardCopyrightClaim(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
+			});
+		}
+        
+        /// <summary>
+      	/// SendMsgUpgradePicksReport sends a MsgUpgradePicksReport transaction to the blockchain and waits
+      	/// for a response.
+      	/// </summary>
+      	/// <param name="msg">The MsgUpgradePicksReport message that should be send.</param>
+      	/// <param name="fee">The fees that will be paid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+        public Task<Cosmcs.Client.ClientResponse<MsgUpgradePicksReportResponse>> SendMsgUpgradePicksReport(MsgUpgradePicksReport msg, Cosmcs.Tx.Fee? fee = null) {
+			return Client.BuildAndBroadcast(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cardchain.cardchain.MsgUpgradePicksReport"
+				}},
+				fee
+			).ContinueWith(r =>
+			{
+				var res = r.Result;
+				if (res.TxResponse.Code != 0)
+				{
+					return res.TxResponse;
+				}
+				System.Threading.Thread.Sleep(13000);
+				return Client.QueryTx(res.TxResponse.Txhash).Result.TxResponse;
+			})
+			.ContinueWith(r => new Cosmcs.Client.ClientResponse<MsgUpgradePicksReportResponse>(
+				r.Result,
+				MsgUpgradePicksReportResponse.Parser
+			));
+		}
+
+		/// <summary>
+      	/// SimulateMsgUpgradePicksReport simulates a MsgUpgradePicksReport transaction on the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgUpgradePicksReport message that should be simulated.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmos.Tx.V1beta1.SimulateResponse> SimulateMsgUpgradePicksReport(MsgUpgradePicksReport msg) {
+			return Client.BuildAndSimulate(new Any[] {
+				new Any
+				{
+					Value = msg.ToByteString(),
+					TypeUrl = "/cardchain.cardchain.MsgUpgradePicksReport"
+				}}
+			);
+		}
+
+		/// <summary>
+      	/// SimulateAndSendMsgUpgradePicksReport simulates, estimates fees and then sends a UpgradePicksReport transaction to the blockchain.
+      	/// </summary>
+      	/// <param name="msg">The MsgUpgradePicksReport message that should be send.</param>
+		[global::System.CodeDom.Compiler.GeneratedCode("protoc-gen-cosmos-csharp", null)]
+		public Task<Cosmcs.Client.ClientResponse<MsgUpgradePicksReportResponse>> SimulateAndSendMsgUpgradePicksReport(MsgUpgradePicksReport msg) {
+			return SimulateMsgUpgradePicksReport(msg).ContinueWith(r => {
+				return SendMsgUpgradePicksReport(msg, new Cosmcs.Tx.Fee((ulong) Math.Ceiling(r.Result.GasInfo.GasUsed * 1.5))).Result;
 			});
 		}
         

@@ -136,6 +136,10 @@ namespace Cardchain.Cardchain {
     static readonly grpc::Marshaller<global::Cardchain.Cardchain.QuerySellOffersRequest> __Marshaller_cardchain_cardchain_QuerySellOffersRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cardchain.Cardchain.QuerySellOffersRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Cardchain.Cardchain.QuerySellOffersResponse> __Marshaller_cardchain_cardchain_QuerySellOffersResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cardchain.Cardchain.QuerySellOffersResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Cardchain.Cardchain.QueryUpgradeFactorsRequest> __Marshaller_cardchain_cardchain_QueryUpgradeFactorsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cardchain.Cardchain.QueryUpgradeFactorsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Cardchain.Cardchain.QueryUpgradeFactorsResponse> __Marshaller_cardchain_cardchain_QueryUpgradeFactorsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Cardchain.Cardchain.QueryUpgradeFactorsResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Cardchain.Cardchain.QueryParamsRequest, global::Cardchain.Cardchain.QueryParamsResponse> __Method_Params = new grpc::Method<global::Cardchain.Cardchain.QueryParamsRequest, global::Cardchain.Cardchain.QueryParamsResponse>(
@@ -312,6 +316,14 @@ namespace Cardchain.Cardchain {
         "SellOffers",
         __Marshaller_cardchain_cardchain_QuerySellOffersRequest,
         __Marshaller_cardchain_cardchain_QuerySellOffersResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Cardchain.Cardchain.QueryUpgradeFactorsRequest, global::Cardchain.Cardchain.QueryUpgradeFactorsResponse> __Method_UpgradeFactors = new grpc::Method<global::Cardchain.Cardchain.QueryUpgradeFactorsRequest, global::Cardchain.Cardchain.QueryUpgradeFactorsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpgradeFactors",
+        __Marshaller_cardchain_cardchain_QueryUpgradeFactorsRequest,
+        __Marshaller_cardchain_cardchain_QueryUpgradeFactorsResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -1401,6 +1413,54 @@ namespace Cardchain.Cardchain {
       public virtual grpc::AsyncUnaryCall<global::Cardchain.Cardchain.QuerySellOffersResponse> SellOffersAsync(global::Cardchain.Cardchain.QuerySellOffersRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_SellOffers, null, options, request);
+      }
+      /// <summary>
+      /// UpgradeFactors Queries a list of UpgradeFactors items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Cardchain.Cardchain.QueryUpgradeFactorsResponse UpgradeFactors(global::Cardchain.Cardchain.QueryUpgradeFactorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpgradeFactors(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// UpgradeFactors Queries a list of UpgradeFactors items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Cardchain.Cardchain.QueryUpgradeFactorsResponse UpgradeFactors(global::Cardchain.Cardchain.QueryUpgradeFactorsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpgradeFactors, null, options, request);
+      }
+      /// <summary>
+      /// UpgradeFactors Queries a list of UpgradeFactors items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Cardchain.Cardchain.QueryUpgradeFactorsResponse> UpgradeFactorsAsync(global::Cardchain.Cardchain.QueryUpgradeFactorsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpgradeFactorsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// UpgradeFactors Queries a list of UpgradeFactors items.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Cardchain.Cardchain.QueryUpgradeFactorsResponse> UpgradeFactorsAsync(global::Cardchain.Cardchain.QueryUpgradeFactorsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpgradeFactors, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]

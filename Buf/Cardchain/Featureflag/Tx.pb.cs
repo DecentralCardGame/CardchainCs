@@ -25,9 +25,9 @@ namespace Cardchain.Featureflag {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5jYXJkY2hhaW4vZmVhdHVyZWZsYWcvdHgucHJvdG8SFWNhcmRjaGFpbi5m",
-            "ZWF0dXJlZmxhZxoRYW1pbm8vYW1pbm8ucHJvdG8aF2Nvc21vcy9tc2cvdjEv",
-            "bXNnLnByb3RvGhljb3Ntb3NfcHJvdG8vY29zbW9zLnByb3RvGhRnb2dvcHJv",
-            "dG8vZ29nby5wcm90bxoiY2FyZGNoYWluL2ZlYXR1cmVmbGFnL3BhcmFtcy5w",
+            "ZWF0dXJlZmxhZxoRYW1pbm8vYW1pbm8ucHJvdG8aImNhcmRjaGFpbi9mZWF0",
+            "dXJlZmxhZy9wYXJhbXMucHJvdG8aF2Nvc21vcy9tc2cvdjEvbXNnLnByb3Rv",
+            "Ghljb3Ntb3NfcHJvdG8vY29zbW9zLnByb3RvGhRnb2dvcHJvdG8vZ29nby5w",
             "cm90byLHAQoPTXNnVXBkYXRlUGFyYW1zEjYKCWF1dGhvcml0eRgBIAEoCUIY",
             "0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nUglhdXRob3JpdHkSQAoGcGFyYW1z",
             "GAIgASgLMh0uY2FyZGNoYWluLmZlYXR1cmVmbGFnLlBhcmFtc0IJyN4fAKjn",
@@ -48,7 +48,7 @@ namespace Cardchain.Featureflag {
             "XEZlYXR1cmVmbGFnXEdQQk1ldGFkYXRh6gIWQ2FyZGNoYWluOjpGZWF0dXJl",
             "ZmxhZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Featureflag.ParamsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Cardchain.Featureflag.ParamsReflection.Descriptor, global::Cosmos.Msg.V1.MsgReflection.Descriptor, global::CosmosProto.CosmosReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Featureflag.MsgUpdateParams), global::Cardchain.Featureflag.MsgUpdateParams.Parser, new[]{ "Authority", "Params" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Featureflag.MsgUpdateParamsResponse), global::Cardchain.Featureflag.MsgUpdateParamsResponse.Parser, null, null, null, null, null),

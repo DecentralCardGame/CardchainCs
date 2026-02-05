@@ -25,9 +25,9 @@ namespace Cardchain.Featureflag {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiNjYXJkY2hhaW4vZmVhdHVyZWZsYWcvZ2VuZXNpcy5wcm90bxIVY2FyZGNo",
-            "YWluLmZlYXR1cmVmbGFnGhFhbWluby9hbWluby5wcm90bxoUZ29nb3Byb3Rv",
-            "L2dvZ28ucHJvdG8aImNhcmRjaGFpbi9mZWF0dXJlZmxhZy9wYXJhbXMucHJv",
-            "dG8aIGNhcmRjaGFpbi9mZWF0dXJlZmxhZy9mbGFnLnByb3RvIu0BCgxHZW5l",
+            "YWluLmZlYXR1cmVmbGFnGhFhbWluby9hbWluby5wcm90bxogY2FyZGNoYWlu",
+            "L2ZlYXR1cmVmbGFnL2ZsYWcucHJvdG8aImNhcmRjaGFpbi9mZWF0dXJlZmxh",
+            "Zy9wYXJhbXMucHJvdG8aFGdvZ29wcm90by9nb2dvLnByb3RvIu0BCgxHZW5l",
             "c2lzU3RhdGUSQAoGcGFyYW1zGAEgASgLMh0uY2FyZGNoYWluLmZlYXR1cmVm",
             "bGFnLlBhcmFtc0IJyN4fAKjnsCoBUgZwYXJhbXMSRAoFZmxhZ3MYAiADKAsy",
             "Li5jYXJkY2hhaW4uZmVhdHVyZWZsYWcuR2VuZXNpc1N0YXRlLkZsYWdzRW50",
@@ -40,7 +40,7 @@ namespace Cardchain.Featureflag {
             "XEZlYXR1cmVmbGFnXEdQQk1ldGFkYXRh6gIWQ2FyZGNoYWluOjpGZWF0dXJl",
             "ZmxhZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Featureflag.ParamsReflection.Descriptor, global::Cardchain.Featureflag.FlagReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Cardchain.Featureflag.FlagReflection.Descriptor, global::Cardchain.Featureflag.ParamsReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Featureflag.GenesisState), global::Cardchain.Featureflag.GenesisState.Parser, new[]{ "Params", "Flags" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { null, })
           }));

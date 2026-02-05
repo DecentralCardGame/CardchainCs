@@ -25,40 +25,42 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5jYXJkY2hhaW4vY2FyZGNoYWluL2NhcmQucHJvdG8SE2NhcmRjaGFpbi5j",
-            "YXJkY2hhaW4aFGdvZ29wcm90by9nb2dvLnByb3RvGh5jb3Ntb3MvYmFzZS92",
-            "MWJldGExL2NvaW4ucHJvdG8i+gQKBENhcmQSFAoFb3duZXIYASABKAlSBW93",
-            "bmVyEhYKBmFydGlzdBgCIAEoCVIGYXJ0aXN0EhgKB2NvbnRlbnQYAyABKAxS",
-            "B2NvbnRlbnQSGQoIaW1hZ2VfaWQYBCABKARSB2ltYWdlSWQSGAoHZnVsbEFy",
-            "dBgFIAEoCFIHZnVsbEFydBIUCgVub3RlcxgGIAEoCVIFbm90ZXMSNwoGc3Rh",
-            "dHVzGAcgASgOMh8uY2FyZGNoYWluLmNhcmRjaGFpbi5DYXJkU3RhdHVzUgZz",
-            "dGF0dXMSOwoIdm90ZVBvb2wYCCABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGEx",
-            "LkNvaW5CBMjeHwBSCHZvdGVQb29sEhYKBnZvdGVycxgOIAMoCVIGdm90ZXJz",
-            "EigKD2ZhaXJFbm91Z2hWb3RlcxgJIAEoBFIPZmFpckVub3VnaFZvdGVzEioK",
-            "EG92ZXJwb3dlcmVkVm90ZXMYCiABKARSEG92ZXJwb3dlcmVkVm90ZXMSLAoR",
-            "dW5kZXJwb3dlcmVkVm90ZXMYCyABKARSEXVuZGVycG93ZXJlZFZvdGVzEi4K",
-            "EmluYXBwcm9wcmlhdGVWb3RlcxgMIAEoBFISaW5hcHByb3ByaWF0ZVZvdGVz",
-            "EhwKCW5lcmZsZXZlbBgNIAEoA1IJbmVyZmxldmVsEiQKDWJhbGFuY2VBbmNo",
-            "b3IYDyABKAhSDWJhbGFuY2VBbmNob3ISIAoLc3RhcnRlckNhcmQYECABKAhS",
-            "C3N0YXJ0ZXJDYXJkEjcKBnJhcml0eRgRIAEoDjIfLmNhcmRjaGFpbi5jYXJk",
-            "Y2hhaW4uQ2FyZFJhcml0eVIGcmFyaXR5IikKCVRpbWVTdGFtcBIcCgl0aW1l",
-            "U3RhbXAYASABKARSCXRpbWVTdGFtcCqdAQoKQ2FyZFN0YXR1cxIICgRub25l",
-            "EAASCgoGc2NoZW1lEAESDQoJcHJvdG90eXBlEAISCQoFdHJpYWwQAxINCglw",
-            "ZXJtYW5lbnQQBBINCglzdXNwZW5kZWQQBRIKCgZiYW5uZWQQBhIOCgpiYW5u",
-            "ZWRTb29uEAcSEgoOYmFubmVkVmVyeVNvb24QCBIRCg1hZHZlbnR1cmVJdGVt",
-            "EAkqTQoKQ2FyZFJhcml0eRIKCgZjb21tb24QABIMCgh1bmNvbW1vbhABEggK",
-            "BHJhcmUQAhIPCgtleGNlcHRpb25hbBADEgoKBnVuaXF1ZRAEKkMKCUNhcmRD",
-            "bGFzcxIKCgZuYXR1cmUQABILCgdjdWx0dXJlEAESDQoJbXlzdGljaXNtEAIS",
-            "DgoKdGVjaG5vbG9neRADKj4KCENhcmRUeXBlEgkKBXBsYWNlEAASCgoGYWN0",
-            "aW9uEAESCgoGZW50aXR5EAISDwoLaGVhZHF1YXJ0ZXIQA0LNAQoXY29tLmNh",
-            "cmRjaGFpbi5jYXJkY2hhaW5CCUNhcmRQcm90b1ABWjpnaXRodWIuY29tL0Rl",
-            "Y2VudHJhbENhcmRnYW1lL2NhcmRjaGFpbi9jYXJkY2hhaW4vY2FyZGNoYWlu",
-            "ogIDQ0NYqgITQ2FyZGNoYWluLkNhcmRjaGFpbsoCE0NhcmRjaGFpblxDYXJk",
-            "Y2hhaW7iAh9DYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1ldGFkYXRh6gIUQ2Fy",
-            "ZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
+            "YXJkY2hhaW4aI2NhcmRjaGFpbi9jYXJkY2hhaW4vcGFyYW1ldGVyLnByb3Rv",
+            "Gh5jb3Ntb3MvYmFzZS92MWJldGExL2NvaW4ucHJvdG8aFGdvZ29wcm90by9n",
+            "b2dvLnByb3RvIroFCgRDYXJkEhQKBW93bmVyGAEgASgJUgVvd25lchIWCgZh",
+            "cnRpc3QYAiABKAlSBmFydGlzdBIYCgdjb250ZW50GAMgASgMUgdjb250ZW50",
+            "EhkKCGltYWdlX2lkGAQgASgEUgdpbWFnZUlkEhgKB2Z1bGxBcnQYBSABKAhS",
+            "B2Z1bGxBcnQSFAoFbm90ZXMYBiABKAlSBW5vdGVzEjcKBnN0YXR1cxgHIAEo",
+            "DjIfLmNhcmRjaGFpbi5jYXJkY2hhaW4uQ2FyZFN0YXR1c1IGc3RhdHVzEjsK",
+            "CHZvdGVQb29sGAggASgLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgTI",
+            "3h8AUgh2b3RlUG9vbBIWCgZ2b3RlcnMYDiADKAlSBnZvdGVycxIoCg9mYWly",
+            "RW5vdWdoVm90ZXMYCSABKARSD2ZhaXJFbm91Z2hWb3RlcxIqChBvdmVycG93",
+            "ZXJlZFZvdGVzGAogASgEUhBvdmVycG93ZXJlZFZvdGVzEiwKEXVuZGVycG93",
+            "ZXJlZFZvdGVzGAsgASgEUhF1bmRlcnBvd2VyZWRWb3RlcxIuChJpbmFwcHJv",
+            "cHJpYXRlVm90ZXMYDCABKARSEmluYXBwcm9wcmlhdGVWb3RlcxIcCgluZXJm",
+            "bGV2ZWwYDSABKANSCW5lcmZsZXZlbBIkCg1iYWxhbmNlQW5jaG9yGA8gASgI",
+            "Ug1iYWxhbmNlQW5jaG9yEiAKC3N0YXJ0ZXJDYXJkGBAgASgIUgtzdGFydGVy",
+            "Q2FyZBI3CgZyYXJpdHkYESABKA4yHy5jYXJkY2hhaW4uY2FyZGNoYWluLkNh",
+            "cmRSYXJpdHlSBnJhcml0eRI+CgpwYXJhbWV0ZXJzGBIgAygLMh4uY2FyZGNo",
+            "YWluLmNhcmRjaGFpbi5QYXJhbWV0ZXJSCnBhcmFtZXRlcnMiKQoJVGltZVN0",
+            "YW1wEhwKCXRpbWVTdGFtcBgBIAEoBFIJdGltZVN0YW1wKp0BCgpDYXJkU3Rh",
+            "dHVzEggKBG5vbmUQABIKCgZzY2hlbWUQARINCglwcm90b3R5cGUQAhIJCgV0",
+            "cmlhbBADEg0KCXBlcm1hbmVudBAEEg0KCXN1c3BlbmRlZBAFEgoKBmJhbm5l",
+            "ZBAGEg4KCmJhbm5lZFNvb24QBxISCg5iYW5uZWRWZXJ5U29vbhAIEhEKDWFk",
+            "dmVudHVyZUl0ZW0QCSpNCgpDYXJkUmFyaXR5EgoKBmNvbW1vbhAAEgwKCHVu",
+            "Y29tbW9uEAESCAoEcmFyZRACEg8KC2V4Y2VwdGlvbmFsEAMSCgoGdW5pcXVl",
+            "EAQqQwoJQ2FyZENsYXNzEgoKBm5hdHVyZRAAEgsKB2N1bHR1cmUQARINCglt",
+            "eXN0aWNpc20QAhIOCgp0ZWNobm9sb2d5EAMqPgoIQ2FyZFR5cGUSCQoFcGxh",
+            "Y2UQABIKCgZhY3Rpb24QARIKCgZlbnRpdHkQAhIPCgtoZWFkcXVhcnRlchAD",
+            "Qs0BChdjb20uY2FyZGNoYWluLmNhcmRjaGFpbkIJQ2FyZFByb3RvUAFaOmdp",
+            "dGh1Yi5jb20vRGVjZW50cmFsQ2FyZGdhbWUvY2FyZGNoYWluL2NhcmRjaGFp",
+            "bi9jYXJkY2hhaW6iAgNDQ1iqAhNDYXJkY2hhaW4uQ2FyZGNoYWluygITQ2Fy",
+            "ZGNoYWluXENhcmRjaGFpbuICH0NhcmRjaGFpblxDYXJkY2hhaW5cR1BCTWV0",
+            "YWRhdGHqAhRDYXJkY2hhaW46OkNhcmRjaGFpbmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cardchain.Cardchain.ParameterReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Cardchain.Cardchain.CardStatus), typeof(global::Cardchain.Cardchain.CardRarity), typeof(global::Cardchain.Cardchain.CardClass), typeof(global::Cardchain.Cardchain.CardType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.Card), global::Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "StarterCard", "Rarity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.Card), global::Cardchain.Cardchain.Card.Parser, new[]{ "Owner", "Artist", "Content", "ImageId", "FullArt", "Notes", "Status", "VotePool", "Voters", "FairEnoughVotes", "OverpoweredVotes", "UnderpoweredVotes", "InappropriateVotes", "Nerflevel", "BalanceAnchor", "StarterCard", "Rarity", "Parameters" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.TimeStamp), global::Cardchain.Cardchain.TimeStamp.Parser, new[]{ "TimeStamp_" }, null, null, null, null)
           }));
     }
@@ -156,6 +158,7 @@ namespace Cardchain.Cardchain {
       balanceAnchor_ = other.balanceAnchor_;
       starterCard_ = other.starterCard_;
       rarity_ = other.rarity_;
+      parameters_ = other.parameters_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -368,6 +371,17 @@ namespace Cardchain.Cardchain {
       }
     }
 
+    /// <summary>Field number for the "parameters" field.</summary>
+    public const int ParametersFieldNumber = 18;
+    private static readonly pb::FieldCodec<global::Cardchain.Cardchain.Parameter> _repeated_parameters_codec
+        = pb::FieldCodec.ForMessage(146, global::Cardchain.Cardchain.Parameter.Parser);
+    private readonly pbc::RepeatedField<global::Cardchain.Cardchain.Parameter> parameters_ = new pbc::RepeatedField<global::Cardchain.Cardchain.Parameter>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::Cardchain.Cardchain.Parameter> Parameters {
+      get { return parameters_; }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -400,6 +414,7 @@ namespace Cardchain.Cardchain {
       if (BalanceAnchor != other.BalanceAnchor) return false;
       if (StarterCard != other.StarterCard) return false;
       if (Rarity != other.Rarity) return false;
+      if(!parameters_.Equals(other.parameters_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -424,6 +439,7 @@ namespace Cardchain.Cardchain {
       if (BalanceAnchor != false) hash ^= BalanceAnchor.GetHashCode();
       if (StarterCard != false) hash ^= StarterCard.GetHashCode();
       if (Rarity != global::Cardchain.Cardchain.CardRarity.Common) hash ^= Rarity.GetHashCode();
+      hash ^= parameters_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -507,6 +523,7 @@ namespace Cardchain.Cardchain {
         output.WriteRawTag(136, 1);
         output.WriteEnum((int) Rarity);
       }
+      parameters_.WriteTo(output, _repeated_parameters_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -582,6 +599,7 @@ namespace Cardchain.Cardchain {
         output.WriteRawTag(136, 1);
         output.WriteEnum((int) Rarity);
       }
+      parameters_.WriteTo(ref output, _repeated_parameters_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -641,6 +659,7 @@ namespace Cardchain.Cardchain {
       if (Rarity != global::Cardchain.Cardchain.CardRarity.Common) {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Rarity);
       }
+      size += parameters_.CalculateSize(_repeated_parameters_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -705,6 +724,7 @@ namespace Cardchain.Cardchain {
       if (other.Rarity != global::Cardchain.Cardchain.CardRarity.Common) {
         Rarity = other.Rarity;
       }
+      parameters_.Add(other.parameters_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -795,6 +815,10 @@ namespace Cardchain.Cardchain {
             Rarity = (global::Cardchain.Cardchain.CardRarity) input.ReadEnum();
             break;
           }
+          case 146: {
+            parameters_.AddEntriesFrom(input, _repeated_parameters_codec);
+            break;
+          }
         }
       }
     #endif
@@ -883,6 +907,10 @@ namespace Cardchain.Cardchain {
           }
           case 136: {
             Rarity = (global::Cardchain.Cardchain.CardRarity) input.ReadEnum();
+            break;
+          }
+          case 146: {
+            parameters_.AddEntriesFrom(ref input, _repeated_parameters_codec);
             break;
           }
         }

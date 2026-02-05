@@ -25,8 +25,8 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5jYXJkY2hhaW4vY2FyZGNoYWluL2VuY291bnRlcl93aXRoX2ltYWdlLnBy",
-            "b3RvEhNjYXJkY2hhaW4uY2FyZGNoYWluGhRnb2dvcHJvdG8vZ29nby5wcm90",
-            "bxojY2FyZGNoYWluL2NhcmRjaGFpbi9lbmNvdW50ZXIucHJvdG8ibgoSRW5j",
+            "b3RvEhNjYXJkY2hhaW4uY2FyZGNoYWluGiNjYXJkY2hhaW4vY2FyZGNoYWlu",
+            "L2VuY291bnRlci5wcm90bxoUZ29nb3Byb3RvL2dvZ28ucHJvdG8ibgoSRW5j",
             "b3VudGVyV2l0aEltYWdlEkIKCWVuY291bnRlchgBIAEoCzIeLmNhcmRjaGFp",
             "bi5jYXJkY2hhaW4uRW5jb3VudGVyQgTI3h8AUgllbmNvdW50ZXISFAoFaW1h",
             "Z2UYAiABKAlSBWltYWdlQtsBChdjb20uY2FyZGNoYWluLmNhcmRjaGFpbkIX",
@@ -36,7 +36,7 @@ namespace Cardchain.Cardchain {
             "4gIfQ2FyZGNoYWluXENhcmRjaGFpblxHUEJNZXRhZGF0YeoCFENhcmRjaGFp",
             "bjo6Q2FyZGNoYWluYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Gogoproto.GogoReflection.Descriptor, global::Cardchain.Cardchain.EncounterReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Cardchain.Cardchain.EncounterReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.EncounterWithImage), global::Cardchain.Cardchain.EncounterWithImage.Parser, new[]{ "Encounter", "Image" }, null, null, null, null)
           }));

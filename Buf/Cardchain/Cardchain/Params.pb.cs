@@ -25,8 +25,8 @@ namespace Cardchain.Cardchain {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiBjYXJkY2hhaW4vY2FyZGNoYWluL3BhcmFtcy5wcm90bxITY2FyZGNoYWlu",
-            "LmNhcmRjaGFpbhoRYW1pbm8vYW1pbm8ucHJvdG8aFGdvZ29wcm90by9nb2dv",
-            "LnByb3RvGh5jb3Ntb3MvYmFzZS92MWJldGExL2NvaW4ucHJvdG8i7wkKBlBh",
+            "LmNhcmRjaGFpbhoRYW1pbm8vYW1pbm8ucHJvdG8aHmNvc21vcy9iYXNlL3Yx",
+            "YmV0YTEvY29pbi5wcm90bxoUZ29nb3Byb3RvL2dvZ28ucHJvdG8i7wkKBlBh",
             "cmFtcxI+Chp2b3RpbmdSaWdodHNFeHBpcmF0aW9uVGltZRgBIAEoA1Iadm90",
             "aW5nUmlnaHRzRXhwaXJhdGlvblRpbWUSGAoHc2V0U2l6ZRgCIAEoBFIHc2V0",
             "U2l6ZRI7CghzZXRQcmljZRgDIAEoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEu",
@@ -61,7 +61,7 @@ namespace Cardchain.Cardchain {
             "cmRjaGFpblxDYXJkY2hhaW7iAh9DYXJkY2hhaW5cQ2FyZGNoYWluXEdQQk1l",
             "dGFkYXRh6gIUQ2FyZGNoYWluOjpDYXJkY2hhaW5iBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Cosmos.Base.V1beta1.CoinReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Cardchain.Params), global::Cardchain.Cardchain.Params.Parser, new[]{ "VotingRightsExpirationTime", "SetSize", "SetPrice", "ActiveSetsAmount", "SetCreationFee", "CollateralDeposit", "WinnerReward", "HourlyFaucet", "InflationRate", "RaresPerPack", "CommonsPerPack", "UnCommonsPerPack", "TrialPeriod", "GameVoteRatio", "CardAuctionPriceReductionPeriod", "AirDropValue", "AirDropMaxBlockHeight", "TrialVoteReward", "VotePoolFraction", "VotingRewardCap", "MatchWorkerDelay", "RareDropRatio", "ExceptionalDropRatio", "UniqueDropRatio" }, null, null, null, null)
           }));

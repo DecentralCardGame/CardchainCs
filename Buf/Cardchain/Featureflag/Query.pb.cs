@@ -25,11 +25,11 @@ namespace Cardchain.Featureflag {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiFjYXJkY2hhaW4vZmVhdHVyZWZsYWcvcXVlcnkucHJvdG8SFWNhcmRjaGFp",
-            "bi5mZWF0dXJlZmxhZxoRYW1pbm8vYW1pbm8ucHJvdG8aFGdvZ29wcm90by9n",
-            "b2dvLnByb3RvGhxnb29nbGUvYXBpL2Fubm90YXRpb25zLnByb3RvGipjb3Nt",
-            "b3MvYmFzZS9xdWVyeS92MWJldGExL3BhZ2luYXRpb24ucHJvdG8aImNhcmRj",
-            "aGFpbi9mZWF0dXJlZmxhZy9wYXJhbXMucHJvdG8aIGNhcmRjaGFpbi9mZWF0",
-            "dXJlZmxhZy9mbGFnLnByb3RvIhQKElF1ZXJ5UGFyYW1zUmVxdWVzdCJXChNR",
+            "bi5mZWF0dXJlZmxhZxoRYW1pbm8vYW1pbm8ucHJvdG8aIGNhcmRjaGFpbi9m",
+            "ZWF0dXJlZmxhZy9mbGFnLnByb3RvGiJjYXJkY2hhaW4vZmVhdHVyZWZsYWcv",
+            "cGFyYW1zLnByb3RvGipjb3Ntb3MvYmFzZS9xdWVyeS92MWJldGExL3BhZ2lu",
+            "YXRpb24ucHJvdG8aFGdvZ29wcm90by9nb2dvLnByb3RvGhxnb29nbGUvYXBp",
+            "L2Fubm90YXRpb25zLnByb3RvIhQKElF1ZXJ5UGFyYW1zUmVxdWVzdCJXChNR",
             "dWVyeVBhcmFtc1Jlc3BvbnNlEkAKBnBhcmFtcxgBIAEoCzIdLmNhcmRjaGFp",
             "bi5mZWF0dXJlZmxhZy5QYXJhbXNCCcjeHwCo57AqAVIGcGFyYW1zIj4KEFF1",
             "ZXJ5RmxhZ1JlcXVlc3QSFgoGbW9kdWxlGAEgASgJUgZtb2R1bGUSEgoEbmFt",
@@ -54,7 +54,7 @@ namespace Cardchain.Featureflag {
             "cmVmbGFn4gIhQ2FyZGNoYWluXEZlYXR1cmVmbGFnXEdQQk1ldGFkYXRh6gIW",
             "Q2FyZGNoYWluOjpGZWF0dXJlZmxhZ2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::Cardchain.Featureflag.ParamsReflection.Descriptor, global::Cardchain.Featureflag.FlagReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Amino.AminoReflection.Descriptor, global::Cardchain.Featureflag.FlagReflection.Descriptor, global::Cardchain.Featureflag.ParamsReflection.Descriptor, global::Cosmos.Base.Query.V1beta1.PaginationReflection.Descriptor, global::Gogoproto.GogoReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Featureflag.QueryParamsRequest), global::Cardchain.Featureflag.QueryParamsRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Cardchain.Featureflag.QueryParamsResponse), global::Cardchain.Featureflag.QueryParamsResponse.Parser, new[]{ "Params" }, null, null, null, null),
